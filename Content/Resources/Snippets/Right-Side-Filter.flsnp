@@ -2,7 +2,8 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>Click <img src="../Images/AnalyticsInRoomTechFilter.png" style="max-width: 50%;width: 70px;height: 28px;" />.<p>Filter by Category displays over the right side of the table.</p></li>
+            <li>Click <img src="../Images/AnalyticsInRoomTechFilter.png" style="max-width: 50%;width: 70px;height: 28px;" />.
+				<p>Filter by Category displays over the right side of the page.</p></li>
             <li>Click the <img src="../Images/i_down-large.png" style="width: 24px;height: auto;" /> icon for each category to reveal the available category options.</li>
             <li>Select the options you want to filter for in each category.</li>
             <li>Click the <img src="../Images/i_XonWhite-Close.png" style="width: 24px;height: auto;" /> icon to view the table with the selected filters applied.</li>

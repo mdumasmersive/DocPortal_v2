@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Monitor Your Deployment</title>
+    </head>
+    <body>
+        <h1>View and Manage USB&#160;Devices</h1>
+        <p>Solstice Cloud allows you to easily view which Pods in your deployment are connected to which kinds of USB devices, both audio/video devices and other devices, such as input and storage peripherals. Knowing which Pods have connected cameras allows you to then enable Solstice Conference and occupancy counting in the <a href="Cloud-Template-Room-Intelligence.htm">Room Intelligence options</a> for those Pods. User can view USB&#160;Devices data in initial deployment of this feature, and management functionality will be coming soon.</p>
+        <p>
+            <img src="../Resources/Images/ex_CloudManageUSBDevicesStatus.png" style="height: auto;width: 90%;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View USB Devices Summary Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice Cloud reports the number and type of USB&#160;devices connected to the Solstice Pods in your organization, both online and offline, as well as details about specific USB devices that have been used on Pods in your organization. </p>
+                <ol>
+                    <li>In the left sidebar menu of Solstice Cloud, go to <b>Manage</b> &gt; <b>USB Devices</b>. You will see three boxes containing summary data at the top of the page.</li>
+                    <ul>
+                        <li>The summary box on the left reports the number and type of USB&#160;devices connected to Pods in your organization that are currently online. Solstice categorizes these devices into A/V (audio/video) and Non-A/V types.</li>
+                        <li>The circle chart in the Device Status box gives an at-a-glance summary of online/offline status for all USB&#160;devices that have been plugged into both online and offline Pods in your organization.</li>
+                        <li>The Device Model box summarizes the numbers of specific USB&#160;devices you have connected to your Pods in both a list and a handy graph. This makes it easy to see which devices you have the most of in your Solstice deployment.</li>
+                    </ul>
+                    <li>The USB&#160;Plug Event History graph shows a summary of all the times USB&#160;devices have been plugged in to or unplugged from your organization's Pods during the last 30 days.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Use USB Devices Table Details</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Devices table at the bottom of the USB Devices page provides more details about each of the USB&#160;devices that have been connected to the Solstice Pods in your organization. </p>
+                <ol>
+                    <li>In the left sidebar menu of Solstice Cloud, go to <b>Manage</b> &gt; <b>USB Devices</b>. The Devices table appears at the bottom of the page.</li>
+                    <li> To sort USB Devices data by column values, click the <img src="../Resources/Images/I_sortIcon.png" /> icon in the desired column header row: </li>
+                    <ul>
+                        <li>By default, the table is sorted alphabetically by the <b>Pod</b> name in the Pod column.</li>
+                        <li>Sort by <b>USB&#160;Device</b> to alphabetically group similarly named USB&#160;devices together.</li>
+                        <li>Sorting by <b>USB&#160;Status</b> will sort the devices list by online/offline status. A red dot <img src="../Resources/Images/i_reddot.png" style="width: 16px;height: 16px;" />  indicates the USB&#160;device is offline. Hovering over a red or green status dot displays the status in text format.</li>
+                        <li>The <b>Since</b> column reflects the date and time when the USB&#160;device was last plugged in to the Pod.</li>
+                        <li>The <b>Conference Ready</b> column shows whether the Pod a particular USB&#160;device is connected to meets the hardware, software, and configuration requirements for Solstice Conference functionality. A green check<img src="../Resources/Images/i_checkmark.png" style="width: 24px;height: auto;" />indicates all requirements have been met. Hover over the <img src="../Resources/Images/i_no.png" /> status to see which Solstice Conference requirements have not yet been met.</li>
+                        <li>Similarly, the <b>Occupancy Ready</b> column reflects if the Pod a USB&#160;device is connected to meets the requirements to report conference space occupancy data in the <a href="Cloud-Analytics.htm">Analytics information</a> available in Solstice Cloud. A green check<img src="../Resources/Images/i_checkmark.png" style="width: 24px;height: auto;" />indicates all requirements have been met. Hover over the <img src="../Resources/Images/i_no.png" /> status to see which requirements for occupancy counting have not yet been met.</li>
+                        <li>
+                            <p class="warning">No camera data such as video or audio captures ever leave the Pod. All processing occurs locally and only the aggregated occupancy count is sent to your Solstice Cloud account.</p>
+                        </li>
+                    </ul>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Filter for A/V or Non-A/V Devices</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The USB&#160;Device data provided in Solstice Cloud can be filtered by type of USB&#160;device, either audio/video (A/V) or  non-A/V devices, such as input and storage peripherals.</p>
+                <ol>
+                    <li>In the left sidebar menu of Solstice Cloud, go to <b>Manage</b> &gt; <b>USB Devices</b>.</li>
+                    <li>In the left summary box that lists the number of USB Devices Online, click one of the two links at the bottom that list the number of <b>A/V devices</b> or <b>Non-A/V devices</b>.</li>
+                    <li>A button for the selected filter will appear under the page title, to the right of <img src="../Resources/Images/AnalyticsInRoomTechFilter.png" style="height: auto;width: 60px;" />. </li>
+                    <li>Click <img src="../Resources/Images/i_XonBlue-Clear.png" style="height: auto;width: 20px;" /> in the filter button to clear a selected filter and display more general USB&#160;devices data.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Filter USB&#160;Devices by Pod Categories	</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <p>The Manage &gt; USB Device data in Solstice Cloud (accessible from the left sidebar menu) can also be filtered by any category defined  for the Solstice Pods in your organization.</p>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Right-Side-Filter.flsnp" />
+            </MadCap:dropDownBody>
+            <p>
+                <img src="../Resources/Images/ex_CloudMonitorDeploymentFilter.png" style="width: 90%;height: auto;" />
+            </p>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Schedule-Updates.htm#Schedule%20Solstice%20Pod%20Updates%20Using%20Kepler">Schedule Solstice Pod Updates Using Solstice Cloud</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

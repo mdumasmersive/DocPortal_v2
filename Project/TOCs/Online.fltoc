@@ -180,6 +180,9 @@
         Title="[%=System.LinkedTitle%]"
         Link="/Content/Topics/Cloud-Monitor-Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
       <TocEntry
+        Title="View and Manage USB Devices"
+        Link="/Content/Topics/Cloud-Management-USB-Devices.htm"></TocEntry>
+      <TocEntry
         Title="Schedule Software Updates"
         Link="/Content/Topics/Cloud-Schedule-Updates.htm"></TocEntry>
       <TocEntry
