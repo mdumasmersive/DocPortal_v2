@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Create Categories and Assign Pods</title>
+    </head>
+    <body>
+        <h1>Create Categories and Assign Pods</h1>
+        <p>Categories provide the ability to classify Solstice instances in ways that are meaningful to you. Mersive strongly recommends assigning Pods to categories once you've imported them into Solstice Cloud. Once created, categories can be used to  filter, sort, and compare usage data among the different types of Solstice instances to help drive business decisions. For example, data from Solstice Cloud's meeting analytics can help you determine future meeting room construction based on the most utilized types of rooms. Categories can also be used to select specific Solstice Pods to schedule software updates. This allows you to  schedule software updates for your Pods based on location or department to avoid disruptions. </p>
+        <p>The Solstice Cloud portal allows you to automatically categorize Pods by location and create your own custom categories. Creating a robust category scheme allows you to drill down into your deployment usage data in meaningful ways. For example, you can compare Solstice usage between buildings to see how the technology is being adopted at each location or compare the average meeting duration of bookable vs. non-bookable huddle spaces.</p>
+        <p>Mersive recommends that you follow these guidelines when assigning categories.</p>
+        <ul>
+            <li>Create categories that can be applied to all Pods (e.g. create a "City" category instead of a "Denver" category).</li>
+            <li>Start with broad categories then drill down into more specific ones (e.g. create a category for Country, City, Building, then Department or Floor).</li>
+        </ul>
+        <p>Here is an example category scheme: </p>
+        <table style="mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <th colspan="3" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p class="table-text">Automatic </p>
+                    </th>
+                    <th colspan="3" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p class="table-text">Custom</p>
+                    </th>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <th style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Country</th>
+                    <th style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">City</th>
+                    <th style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Building</th>
+                    <th style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Department</th>
+                    <th style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Room Type</th>
+                    <th style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p><b>Bookable</b>
+                        </p>
+                    </th>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">US</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Denver</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Denver HQ</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Marketing</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Conference</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Yes</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">US</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">New York</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">NY Office</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Sales</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Huddle</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">No</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Italy</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Milan</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Corso Vittorio</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Product</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Office</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">UK</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">London</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">141 Sussex Gardens</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Engineering</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Public Area</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">&#160;</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">Beijing</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">China</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">Jiang Jun Si Lu</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">Chemistry</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">&#160;</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>How To</h2>
+        <MadCap:dropDown MadCap:conditions="Default.Future">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign Automatic Categories</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To utilize automatic categories, you will first need to enable Solstice Cloud to automatically set locations for your Pods. Simply enable <a href="Info-Location-Services.htm">Location Services</a> in the Pod’s Features settings.  Location Services will use environmental scans from user devices that connect to the Pod to estimate the location of Pods using AI models that learn over time. After Pods have collected adequate data, Pod locations will be automatically set and the Pods will be assigned to automatic categories based on these locations (Country, City, and Building).  These automatic locations can be viewed or updated on the Pod Location page (Manage &gt;&#160;Location). For more detailed information, see <a href="Cloud-Management-Location.htm">Pod Location Settings</a>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create Categories</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Categories</b>.</li>
+                    <li>Click <b>Add Category</b>.</li>
+                    <li>To create a category from the recommended options:<ol style="list-style-type: lower-alpha;"><li>Click <b>Choose from recommended</b>.</li><li>Select one of the recommended categories, then click <b>Next.</b></li><li>Remove any default options you do not wish to keep.</li><li>Click <b>Save &amp; Apply</b>.</li><li>Click <b>Got It</b>.</li></ol></li>
+                    <li>To create your own custom category:<ol style="list-style-type: lower-alpha;"><li>Click <b>Create custom</b>.</li><li>Enter the <b>Category Name</b>, then click <b>Next</b>.</li><li>Enter in the <b>Options</b>. For example, if you are creating a category to group Pods based on the floor of the building they are on, you can enter Level 1, Level 2, etc.</li><li>If you wish you add another option, click in the last option field and hit the <b>Enter</b> key.</li><li>Once you are done entering options, click <b>Save &amp; Apply</b>.</li><li>Click <b>Got it</b>.</li></ol></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign Categories to Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <p class="tip">Keep in mind, if you change the assigned category of a Pod, it may affect the accuracy of historical data.</p>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Categories</b>. The Pods that have been imported into Solstice Cloud are listed.</li>
+                    <li>To display certain categories in the table, click the expand <img src="../Resources/Images/i_expand.png" />  icon in the Category Manager heading.</li>
+                    <li>Select the checkboxes of all the categories you wish to view. The selected categories appear as columns in the table.</li>
+                    <li>To add Pods to categories individually:<ol style="list-style-type: lower-alpha;"><li>For each Pod, click the drop-down in the corresponding category column and select an option from the list that appears. <b>Note:</b> You can only add one option to each Pod per category.</li></ol></li>
+                    <li>To add Pods to categories in batches:<ol style="list-style-type: lower-alpha;"><li>On the left-hand side of the table, select the checkboxes of each of the Pods you wish to categorize together. A blue bar appears at the top of the table.</li><li>In the blue bar, click the drop-down for the corresponding category column and select an option from the list that appears. A prompt appears asking if you want to assign the category option for the selected displays.</li><li>Click <b>Save</b>.</li><li>To deselect all of the Pods, click the remove   icon in the blue bar.</li></ol></li>
+                    <li>Repeat steps 3-5 to assign all of your Pods to categories.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>To Delete Categories</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Categories</b>. The Pods that have been imported into Solstice Cloud are listed.</li>
+                    <li>At the top of the screen, click the  <img src="../Resources/Images/I_scrollLeft.png" style="max-width: 100%;" /> and <img src="../Resources/Images/I_scrollRight.png" style="max-width: 100%;" /> icons to display the category you want to delete and click it.</li>
+                    <li>Click the edit icon <img src="../Resources/Images/i_editCategory.png" />.</li>
+                    <li>In the category name field, click the <img src="../Resources/Images/i_editCategoryOptions.png" style="width: 12px;height: 12px;" /> icon and click <b>Delete Category</b>.</li>
+                    <li>Click <b>Yes - Delete</b> to confirm deletion.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Management-Templates.htm">Configuration Templates</a>
+        </p>
+    </body>
+</html>

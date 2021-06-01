@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p class="note">The firewall options become available when both the Ethernet Settings and the Wireless Settings using WAP have been enabled. </p>
+        <p>The following firewall options are available on the Network tab of the Solstice Dashboard in the Firewall Settings section:</p>
+        <ul>
+            <li><b>Block all traffic between Wired and&#160;Wireless networks.</b> This allows an administrator to block all traffic between the Pod's Ethernet and wireless connections. </li>
+            <li><b>Allow internet access to the wireless networks.</b> This option allows traffic only through ports 80 and 443.</li>
+            <li><b>Forward all traffic from&#160;WAP to Ethernet interface.</b> This setting can be used if the Pod is connected to Ethernet and also serving as a wireless access point (WAP). This option allows guest users to connect to the Pod’s WAP and be granted Internet access without ever accessing the corporate network, as opposed to the default behavior where a guest user loses internet connectivity when connected to the Pod's WAP. </li>
+        </ul>
+    </body>
+</html>

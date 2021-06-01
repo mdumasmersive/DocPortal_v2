@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin
+  Version="3"
+  SkinType="Component"
+  Comment="HTML5 Search Bar skin"
+  ComponentType="SearchBar"
+  EnableResponsiveOutput="True">
+  <Stylesheet>
+    <Styles>
+      <Style
+        Name="Search Bar">
+        <Properties>
+          <Property
+            Name="BorderTopLeftRadius">36px</Property>
+          <Property
+            Name="BorderTopRightRadius">36px</Property>
+          <Property
+            Name="BorderBottomRightRadius">36px</Property>
+          <Property
+            Name="BorderBottomLeftRadius">36px</Property>
+          <Property
+            Name="BorderTop">solid 2px #6ebe44</Property>
+          <Property
+            Name="BorderRight">solid 2px #6ebe44</Property>
+          <Property
+            Name="BorderBottom">solid 2px #6ebe44</Property>
+          <Property
+            Name="BorderLeft">solid 2px #6ebe44</Property>
+          <Property
+            Name="Width">50%</Property>
+          <Property
+            Name="Height">50px</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Submit Button">
+        <Properties>
+          <Property
+            Name="BackgroundColor">#6EBE44</Property>
+          <Property
+            Name="Height">56px</Property>
+          <Property
+            Name="Body">SEARCH</Property>
+          <Property
+            Name="Width">137px</Property>
+          <Property
+            Name="BackgroundImage">url('searchtext.png')</Property>
+        </Properties>
+      </Style>
+      <Style
+        Name="Search Input">
+        <Properties>
+          <Property
+            Name="Placeholder">...</Property>
+          <Property
+            Name="Color">#334052</Property>
+          <Property
+            Name="FontFamily">Proxima Nova</Property>
+          <Property
+            Name="PaddingLeft">21px</Property>
+          <Property
+            Name="FontSize">22px</Property>
+          <Property
+            Name="BackgroundImage">url('searchplaceholder_1.jpg')</Property>
+        </Properties>
+      </Style>
+      <Medium
+        Name="Tablet">
+        <Style
+          Name="Search Input">
+          <Properties>
+            <Property
+              Name="FontSize">16px</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Search Bar">
+          <Properties>
+            <Property
+              Name="BorderTopLeftRadius">36px</Property>
+            <Property
+              Name="Height">40px</Property>
+          </Properties>
+        </Style>
+      </Medium>
+      <Medium
+        Name="Mobile">
+        <Style
+          Name="Search Bar">
+          <Properties>
+            <Property
+              Name="Width">60%</Property>
+            <Property
+              Name="Height">25px</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Search Submit Button">
+          <Properties>
+            <Property
+              Name="BackgroundImage">url('Artboard%201.png')</Property>
+            <Property
+              Name="Width">65px</Property>
+          </Properties>
+        </Style>
+        <Style
+          Name="Search Filter">
+          <Properties>
+            <Property
+              Name="BackgroundImage">none</Property>
+            <Property
+              Name="BorderRight">none 1px #000000</Property>
+            <Property
+              Name="BorderTop">solid 2px #6ebe44</Property>
+            <Property
+              Name="BorderLeft">none 1px #000000</Property>
+            <Property
+              Name="Width">0px</Property>
+          </Properties>
+        </Style>
+      </Medium>
+    </Styles>
+    <Stylesheet></Stylesheet>
+    <Resources>
+      <Resource
+        Name="searchtext.png">H4sIAAAAAAAEAAFhA578iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAACXBIWXMAAAsSAAALEgHS3X78AAADE0lEQVRoge1ai23jMAxlbwN3BGeE3AjOCO4IyQjOCMkIzgjJCPYIuRGSEZoRfDBAAQJL0rQsX3CCHiAUkakfn8Qf+jEMA2Ski1+Z27SRCU4cmeDEkQlOHJngxJEJThxLCa4A4AQAA2nfANAAQE3kS0ZWa62ydiOMKwV569oPnHsKBcrdmTlOzNkBz+PLaefriOzesKcfWELwFTfBKaPAQ15RAdWCdSRwCgSl34oS937Hc3Bo8BKPclvhu9OPdOH+CUIJbmcoclTAK/JhtoJiIfSmC2twL6xDYi2oUF66KKsjhOCCUeIBAD6w/QaAI/n2R5lv442l7SCM0S5XOcNi0LWP5HtNXuCJmftG5qFzlEaTvw7GUuXMVg0/UTBzjH170lcyY8uAPXyTOR7kd8uMsa59JzKNMv4k7K/G7x3qy/W3hn261hFZqktTC3nB3Gu8Mq96NMuXFW5lTUzeuM55QmYOJGtDrcaTea0O7lXvAKAP3EcUhBD8wgP4qLwI0UXQVl/4UCJazrRRRfd4kXw/XywItiTfzplmDU/DWnvl7FEC09Ag60t5nS6CbpHspVEtnZvOdyN/HULWbRiCHVE0GrYQ+HYsSZPGAOgTzRQ1kQ4Fmu9YJHNuwJlAzqpMpSjUetDo+PVuE7sUSwsdzv8dMYL8FPySllZoUTTnW33cPNPcM+nY0ot18OakLzZGfntRzh7lYsUuVTrCd6Q/hjK43JcqgbqN0Jz4hW7Itwp0ranL89YCh0MowcVEhSp2YQMEhV4ngrJygoiNkLv2jMmnv0vFMtVo/ruVqnhmLKlkbfEA1McWzMG1QocVoa/RYqZpFF4LaRF1Ga4kWTJ94FWyrJWv+AhInhsm4Z9CrRQLNLSkcBCKwlDooOd6CAUcWoCYgj/Pf1HouBhyQB/HmfIcuNckBScbZrzl9V9IICWZ4J1S4KDoUX4Nl2VCaKHjCxUpkeeqPBslhbKCy321CtmT2ZPFTHMVsb3gQ89exsC5nzPqaPfufDn/22ziyP/RkTgywYkjE5w4MsGJIxOcODLBKQMA/gI9CQJ8OTbwcAAAAABJRU5ErkJggovvM5VhAwAA</Resource>
+      <Resource
+        Name="searchplaceholder.jpg">H4sIAAAAAAAEAPt/4/8DBgEvN083BkYgTABChv//GOR9XB1dFEJSkzPy8nPy0zNTixU885L1FMIM9QwMGf7fZmhhYGVl5WDl4GFn5+Hh5OTk4eUBAl4SACMrBwcXOxfIAF4eLpK0QsD/I4yLGBgYWRnBgAEKGJmYWVjZ2Dk4ubgZGZgZYQBDUoCBiZGZmYmFmZWVhQUoUwuUY2ARZBVSNHRkEw5MZFcqFDFqnLiQQ9lp40HRoIsfVIyTipo4ucTEJSSlVNXUNTS1TEzNzC0srZxdXN3cPTy9gkNCw8IjIqOSU1LT0jMys4pLSsvKKyqrmlta29o7OrsmTZ4yddr0GTNnLVq8ZOmy5StWrtq0ecvWbdt37Nx16PCRo8eOnzh56tLlK1evXb9x89bDR4+fPH32/MXLVx8/ff7y9dv3Hz9/CQKdzMTCwszCDnIyI1M5yD+CLKyKhmxCjoHsiYXCSkaNHCJOExduPMipbBz0QTSp6CKXmIrJQ9WPIFeDHU2cm5vIcjTczXAn/z/AIMjBIM/gzcwIdL0gI7Mg4/9bDDzMjEAOsyCDPcNvvQYuBg2GBUyUUfz/bwIAhRZPXsoCAAA=</Resource>
+      <Resource
+        Name="searchplaceholder_1.jpg">H4sIAAAAAAAEAPt/4/8DBgEvN083BkYgTABChv//GOR9XB1dFEJSkzPy8nPy0zNTixU885L1FMIM9QwMGf7fZmhhYGVl5WDl4GFn5+Hh5OTk4eUBAl4SACMrBwcXOxfIAF4eLpK0QsD/I4yLGBgYWRnBgAEKGJmYWVjZ2Dk4ubgZGZgZYQBDUoCBiZGZmYmFmZWVhQUoUwuUY2ARZBVSNHRkEw5MZFcqFDFqnLiQQ9lp40HRoIsfVIyTipo4ucTEJSSlVNXUNTS1TEzNzC0srZxdXN3cPTy9gkNCw8IjIqOSU1LT0jMys4pLSsvKKyqrmlta29o7OrsmTZ4yddr0GTNnLVq8ZOmy5StWrtq0ecvWbdt37Nx16PCRo8eOnzh56tLlK1evXb9x89bDR4+fPH32/MXLVx8/ff7y9dv3Hz9/CQKdzMTCwszCDnIyI1M5yD+CLKyKhmxCjoHsiYXCSkaNHCJOExduPMipbBz0QTSp6CKXmIrJQ9WPIFeDHU2cm5vIcjTczXAn/z/AIMjBIM/gzcwIdL0gI7Mg4/9bDDzMjEAOsyCDPcNvvQYuBg2GBUyUUfz/bwIAhRZPXsoCAAA=</Resource>
+      <Resource
+        Name="tinysearch.jpg">H4sIAAAAAAAEAPt/4/8DBgEvN083BkYgTABChv//GOR9XB1dFEJSkzPy8nPy0zNTixU885L1FMIM9QwMGf7fZmhhYGVl5WDl4GFn5+Hh5OTk4eUBAl4SACMrBwcXOxfIAF4eLpK0QsD/I4yLGBgYWRnBgAEKGJmYWVjZ2Dk4ubgZGZgZYQBDUoCBiZGZmYmFmZWVhQUoUwuUY2ARZBVSNHRkEw5MZFcqFDFqnLiQQ9lp40HRoIsfVIyTipo4ucTEJSSlVNXUNTS1TEzNzC0srZxdXN3cPTy9gkNCw8IjIqOSU1LT0jMys4pLSsvKKyqrmlta29o7OrsmTZ4yddr0GTNnLVq8ZOmy5StWrtq0ecvWbdt37Nx16PCRo8eOnzh56tLlK1evXb9x89bDR4+fPH32/MXLVx8/ff7y9dv3Hz9/CQKdzMTCwszCDnIyI1M5yD+CLKyKhmxCjoHsiYXCSkaNHCJOExduPMipbBz0QTSp6CKXmIrJQ9WPIFeDHU2cm5vIcjTczXAn/z/AIMjBIMQQxswIdL0gI7Mg4/9bDDzMjEAOsyCDPcNvvQYuBg2GBUykU/b/bwIAtY/gbb4CAAA=</Resource>
+      <Resource
+        Name="tinysearch.png">H4sIAAAAAAAEAOsM8HPn5ZLiYmBg4PX0cAkC0mFALMTBBiQPztfsBVKcBR6RxQwMfEdAmHGqNp80UJC9xNPXlf0xh4iYmL7MW/mTYCHXiBLH0pKM/CKGlevOeACFeEBCLqnFyUWZBSWZ+XkMwpyKykBxLpC4c35BZVFmekYJwxr+M1ZAUT6waFFqIkipQklmbiqD6Xd+TpATQDLB+Wkl5YlFqQyxBf9ByrnBhmcWJ+ckApUWMWw/sKUfKMwBEg5PLMrLzEtnOCD9rB3mtOD80qLkVIav/5tfw5Q55+fmpuaVMHw7M20/UIwNJBaSWZKTyrDi3SV1Bgam1Z4ujiERrW9n2PuIBAocq5fw7mEVS6rkTOcW0uDZqKjWZCb2Q18wmVHtlsBW828xi1rFpkUlJC0WWBIgrHqM6XFgdatsRvHVSxG1Yp/Nfs+w5ssrNDT8rTq5Ov/+nps7K++f2ZPTr+L1p1bm13W+P+s1mKMFTh0QazHawKqYn+DekOow8UrjzA12fCp5tlNV1hyP6Lpm3ui15drJa0YXnueENrJuX76xOf9z3vsSdvndhx7KVGsdkF5w31aeaR7j/sZevbe87p/rEnh+bGzfO/mA9QOdC0eaPkq9KK1iPrh98gEv8X1P3eSO3Tv2749YAfOLgzJ1nFcanvvtFysJsmSq6bh2PMN2iWXUzBe5Vw9tVnxgU+agv2FBHuNmx3yRCP5di3POtx2a0L5Rs6rxtITzfebw8gvWXHPKzu9zebzyw24+HSZ+gzbeTX8ZbMIaolPe9PC/4LvJWH9U4m771BaLo3vzj1vtWW/t8Srsl8rVq10ul+4uMJZ79nZCS+l6c/2VSpnGs6rnpnpunvTOO8vFbLmqbuvHtA2bJ/+fW5P9PFnv5OEbagVcFux3WM4xHDd8dqVBOGd9cvSB9RnzXB5zbroSe/DVK/MHTAW8Fa/u2UqqHLO6dmTZC7l727/Uv5G39F/y6pmy4OVXk/Qs1d4d++Ny6bbCvE7Dw1KTwhZ/9T/I52h+7/n9qb/ebFa55p37ZvbGylnhrD86YjNX5V4zNwh73+a4ZlrTxhSlEw5LHkfu4IhRyXZjjpjL8oPnD89j9ZTrqwXfPPsgG/G0YVb4vAN2x2YdET0TyZid0vt46uX97r+r38hESlZ0mC4KuXSA97JUh9oHjZ7fG6O5IiR3yr35mnR99ZXtCxdsPnZvXeFvd79V51dsbbx6dZ9mpUpifYzVpZJvmpqRr35f+Zqq4nd71RLW7//cKp43Tm2Smzqfl9vx59oFClMadTnqGY5sfDQr6VQICzAhM3i6+rmsc0poAgAtylVS4AMAAA==</Resource>
+      <Resource
+        Name="i_search.png">H4sIAAAAAAAEAAGIAXf+iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAACXBIWXMAAAEKAAABCgEWpLzLAAABOklEQVRIib2VAY3DMAxF/04HIBDK4AqhEDYEG4SDcBAKYRAGIRA6BhuDDoFPlhydL7OTZq32pTRV6+TFie3siAgFBQC9+j0DmEoDTDHEaAMRXcjWTEQjEQVn7FOzPp6zqXnSSEST8X3/CiSqSaJ4pP/z6k8CSDq1QEY18LsyMCjPGNgtgXQK8LNwrxl0U15XIcmL29LDpL8ASXK9+ZCIG6QfG4MzArjL+94zSpAv6dtzALhIH2oQvbJWzTX7HNI7diW5HuSQq/RDwdZTOgvfo3dE11vzJM/4Wql4KePX1K5qGbJW2FKFtVzvSwcayZa+T/IFmaV/i5vxDOAo7w9Jg/82jSHrtSnbxn7JdrW2kIEmfT1vBUmg2QJtCYFskwZxYDwVyLXiA9f1r+PH58YQFoMOOiprIbxeAH4BVvsw+SRWYz8AAAAASUVORK5CYIIFRj9FiAEAAA==</Resource>
+      <Resource
+        Name="Artboard 1.png">H4sIAAAAAAAEAAHlARr+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAE/AAABPwHgIuhjAAABl0lEQVRIicVXgXGDMAz8doF4gzICG5QRMgIjMEJGyAZlhGQDugHdgGxAJ/gePcGpqrENFPp3PoMj+7Ekv5wnkkiEA5CLaZM6aRYDcaCVJG8ke/5GS/JCMous4W1zP+SycCouS4l9ri4BvJmxO4BWXJyJy88AXpTNB4ACQL/G1aXZYU3SBb78TLJT9m3Efmr6JTOxLBPd5kxYrkuJazW5WhgzZ3YeTTi92xHNmiwlWZgQJRFXalKxkhjK5X3M9llyrJD+c6M41NKflNh4MRI76dsNpHa+C9hNxIfj34k76V83rleo5y5gNxHrhCo3EI9zHzFiLQAjupVHSctttGjol+sSATAtV3LbL1Eun+ylkudG45PkNrZIG1AyJy61SKpQvnqcS7Kd1NhDxKFVV6DQCbhLvY4ml283tWc3PnSSWPbGEgxVLBaZuLPxhKCWi8BcjjBUm9dWodRE49yF4q+Jk8n3IIbn7tbLB+1OHCXfkxhGDSnJ544ghudYfuv4EfV4qFjvdnDJn7YtGNSukgVugwIeRfwTAL4Abf1UW4byi6kAAAAASUVORK5CYIJLa/Dk5QEAAA==</Resource>
+    </Resources>
+  </Stylesheet>
+  <Strings>
+    <Stylesheet
+      lang="en-us">
+      <Stylesheet>
+        <Styles>
+          <Style
+            Name="Search Bar">
+            <Properties>
+              <Property
+                Name="BorderTopLeftRadius">0px</Property>
+              <Property
+                Name="BorderTopRightRadius">0px</Property>
+              <Property
+                Name="BorderBottomRightRadius">0px</Property>
+              <Property
+                Name="BorderBottomLeftRadius">0px</Property>
+              <Property
+                Name="Width">50%</Property>
+            </Properties>
+          </Style>
+          <Style
+            Name="Search Submit Button">
+            <Properties>
+              <Property
+                Name="BackgroundColor">#6EBE44</Property>
+            </Properties>
+          </Style>
+          <Medium
+            Name="Mobile">
+            <Style
+              Name="Search Bar">
+              <Properties>
+                <Property
+                  Name="Width">75%</Property>
+              </Properties>
+            </Style>
+          </Medium>
+          <Style
+            Name="Search Input">
+            <Properties>
+              <Property
+                Name="Placeholder">...</Property>
+            </Properties>
+          </Style>
+        </Styles>
+        <Stylesheet></Stylesheet>
+      </Stylesheet>
+    </Stylesheet>
+  </Strings>
+</CatapultSkin>

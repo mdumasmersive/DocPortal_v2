@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Step 1:&#160;Import Pods into Solstice Cloud </h1>
+        <p>Solstice Cloud is a secure cloud-based management and analytics portal that allows administrators to easily  configure, monitor, and update their Solstice deployment. Once your Pods are in Solstice Cloud,  you will be able to create unlimited configuration templates  for network settings, security settings, appearance settings, and more to apply across your Solstice deployment. </p>
+        <p>Before beginning the process outlined below. you will need to connect the&#160;Solstice Pods to your network via Ethernet. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 1: Install the Import Application</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Dashboard_install.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 2: Add Pods to the Import Application</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="warning">Ensure that the Windows machine the Dashboard is installed on is connected to the same network as the Solstice Pods.</p>
+                <ol>
+                    <li>In the Dashboard under Import Displays, click the <b>Discover</b> button. A list of discovered displays appears. </li>
+                    <p class="note">If Pods do not appear in the list, they may be on a network that does not support UDP/Broadcast traffic. If this is the case, skip to <u>step 4</u> to learn how to use  the <b>Manual</b> import option.</p>
+                    <li>Select the displays you wish to import. You can Shift+click or Ctrl+click to select multiple displays.</li>
+                    <li>Click the <b>Import</b> button. The displays are added to your list of Your Solstice Instances.</li>
+                    <li>To use the manual import option instead, click the <b>Manual</b> button. The Add Display pop-up will appear. </li>
+                    <li>Enter in the <b>Display Name</b> and <b>IP Address</b> for the instance you are adding. You can also change the default port if desired (optional). If you do not know the IP address for the display, you can find it on the display’s main welcome screen.</li>
+                    <li>Click <b>Add</b>. The display is added to your list of instances. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 3: Create Your Solstice Cloud Account and Add Your&#160;Pods to Solstice Cloud</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Once your Pods have been added to the Dashboard, you can simultaneously create your Solstice Cloud account and import your Pods into Solstice Cloud to manage and configure your deployment. </li>
+                    <li>In the Solstice Dashboard, select all of the Pods in your list of Solstice instances.</li>
+                    <li>Go to the <b>Solstice Cloud</b> tab, then click Connect. A list of your selected displays appears.</li>
+                    <li>If needed, select or remove additional displays, then click <b>Next</b>.</li>
+                    <li>Enter in the login credentials for your Solstice Cloud account. If you don't already have a Solstice Cloud account, follow the steps to create a Solstice Cloud account for your organization. </li>
+                    <li>Once imported, you will see a notification that your displays have been added to Solstice Cloud. Click <b>OK</b>. </li>
+                    <li>Click the <b>Go To My Account</b> button to be directed to the Solstice Cloud login page via a web browser.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Step </h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Templates.htm">Step 2: Create Base Configuration Templates</a>
+        </p>
+    </body>
+</html>

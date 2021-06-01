@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Ethernet Template</h1>
+        <p>Solstice is designed to leverage existing Ethernet networks to support collaboration in meeting rooms and learning spaces. These advanced network settings allow you to configure Solstice to meet the requirements of your IT&#160;security policy and network topology. </p>
+        <p>The Solstice Pod supports secure access to two independent network interfaces. Each is configured independently and uses its own routing table, supporting secure simultaneous access to the Pod from two segmented networks (for example, from a corporate and a guest network). When this dual-network configuration is chosen, the Firewall feature should be enabled.</p>
+        <p>The Ethernet template allows you to customize settings for Ethernet, 802.1x, and VLAN options and batch apply the settings across your deployment. </p>
+        <p>
+            <img src="../Resources/Images/Templates-sidebarnav-Ethernet.png" style="width: 693px;height: 484px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access This Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Ethernet</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create New Ethernet Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <b>Create New Ethernet Template</b>. </li>
+                    <li>Enter the Template Name. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p class="tip"> You can also start by duplicating an existing template and making changes to it. Click on the three dots on the right side of the template you want to start with, and choose <b>Duplicate Template</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit Ethernet Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>To activate the options, select the <b>Enable Ethernet</b> checkbox.</li>
+                    <li>Change the&#160;<b>Network Name</b> to the one that users will see in the list of available networks on their device. </li>
+                    <li>
+                        <p>If you wish to use DNS&#160;resolution  and have added a DNS&#160;entry in your DNS&#160;server that resolves to the Pod's IP&#160;address, you can enter the DNS&#160;entry (for example, hostname.domain) in the <b>DNS&#160;Hostname</b> field. This field will be editable after this template is applied to a Pod. This will display the DNS&#160;hostname on the Pod's welcome screen instead of its IP&#160;address, which allows users to type the hostname into a browser to easily download the Solstice app. </p>
+                        <p class="note">Note that the DNS&#160;Hostname is unique to each Pod, and can be added only after this template is applied to a Pod. You will need to enter this information for each Pod this template is applied to. </p>
+                    </li>
+                    <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</li>
+                    <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+                    <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b> and <b>DNS 1</b> fields. Because it is unique to each Pod, you will enter the IP Address after this template is applied to a Pod.</li>
+                    <p class="note">Note that the IP&#160;Address is unique to each Pod, and can be added only after this template is applied to a Pod. You will need to enter this information for each Pod this template is applied to. </p>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable 802.1x Authentication</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Enable 802.1x.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Connect a Pod to a VLAN</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In addition to handling the usual untagged Ethernet traffic on the default VLAN for the connected switch port, Solstice Pods can communicate using tagged traffic over the wired Ethernet interface on up to three additional VLANs. </p>
+                <p class="note">A default VLAN for the physical switch port must be configured within the switch port’s settings. This default VLAN should be configured as the primary Ethernet network in the Dashboard.</p>
+                <ol>
+                    <li>Click the checkbox <b>Enable VLAN 1</b>. This activates other fields.</li>
+                    <li>In the <b>Network Name</b> field, enter the name of the network that  users will see.</li>
+                    <li>In the <b>Tag</b> field, enter the VLAN&#160;ID number.</li>
+                    <li>
+                        <p>If you wish to use Domain Name System&#160;(DNS) resolution and have added a DNS&#160;entry in your DNS&#160;server to resolve to the Pod's IP&#160;address, you will be able to enter in the <b>DNS&#160;Hostname</b> (for example, hostname.domain) after this template is assigned to a Pod. The DNS&#160;Hostname for that Pod will  show on the display's welcome screen instead of an IP address.</p>
+                        <p class="note">Note that the DNS Hostname is unique to each Pod, and can be added only after this template is applied to a Pod. You will need to enter this information for each Pod that uses this template. </p>
+                    </li>
+                    <li>If you wish to allow administrative access on this VLAN, select the <b>Allow admin configuration access</b> checkbox.</li>
+                    <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+                    <li>If you selected Static IP, enter appropriate information in the <b>Gateway</b>, <b>Network Prefix Length</b>, and <b>DNS 1</b> fields.</li>
+                </ol>
+                <p class="note">Note that the IP&#160;Address is unique to each Pod, and can be added only after this template is applied to a Pod. You will need to enter this information for each Pod that uses this template. </p>
+                <ol MadCap:continue="true">
+                    <li>If attaching the Pod to additional VLANs, select the <b>Enabled</b> checkbox beside <b>VLAN&#160;2</b> or <b>VLAN 3</b>, then repeat steps 2 through 7. </li>
+                    <li>If using SDS, go to Manage &gt; Templates &gt;&#160;<b>Discovery</b> on the left sidebar and enter in the <b>SDS&#160;Host</b> IP&#160;address for each SDS server instance. For more information on SDS, see <a href="Cloud-Template-Discovery.htm" title="Discovery Templates" alt="Discovery Templates">Discovery Templates</a>.</li>
+                    <p class="note">One SDS server instance is required per VLAN using SDS version 3.1 or later. The order of the SDS Host IP addresses entered does not matter. </p>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign the Template to&#160;Your&#160;Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" MadCap:conditions="Default.ScreenOnly" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Proxy.htm">Proxy Template</a>
+        </p>
+    </body>
+</html>

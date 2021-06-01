@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Advanced Template</h1>
+        <p>The Advanced Template gives you the ability to configure advanced settings, such as implementing quality of service to help prioritize Solstice traffic on your enterprise network, automatically rebooting Pods to maximize performance, and enabling HDCP support to play high resolution video. </p>
+        <p>
+            <img src="../Resources/Images/Templates-sidebarnav-Advanced.png" style="height: auto;width: 760px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access This Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Advanced</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create New Advanced Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <b>Create New Advanced Template</b>. </li>
+                    <li>Enter the Template Name. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p class="tip"> You can also start by duplicating an existing template and making changes to it. Click on the three dots on the right side of the template you want to start with, and choose <b>Duplicate Template</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Gateway Check (Deprecated)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Previously, Pods assigned to a template where this setting was enabled would restart networking every ten minutes. However, this feature was deprecated and will no longer work as of Solstice 5.3.2. The setting will also be removed in an upcoming release. </p>
+                <p>Mersive recommends all customers disable this feature as soon as it is convenient to do so. To disable the Gateway Check:</p>
+                <ol>
+                    <li>Uncheck the <b>Enable Gateway Check</b> box.</li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Implement Quality of Service (QoS)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/QoS_overview.flsnp" />
+                <ol>
+                    <li>Select the <b>Implement QoS for Solstice Traffic</b> checkbox.</li>
+                    <li>In the corresponding fields that appear below, enter the 6-digit binary QoS video and audio stream bit settings. Mersive recommends you that use the DSCP Pool 1 Codepoints defined by the IETF.</li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Implement Quality of Service (QoS) for Solstice Client on Windows</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/QoS_Windows_Client.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.Exclude">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Schedule Daily Restart</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Enable and schedule daily Pod software restarts to refresh the Pod’s memory usage and maximize system performance.</p>
+                <ol>
+                    <li>Select the <b>Daily Restart Needed</b> checkbox.</li>
+                    <li>In the <b>Daily Restart Time</b> field, enter in the time you would like the Pods to restart each day. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable HDCP Support</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>On Solstice Gen3 Pods, the HDMI input is HDCP-compliant, which means a laptop or other device can connect to the HDMI-In port and pass digitally protected content through the Pod. HDCP support is disabled by default.</p>
+                <ol>
+                    <li>To enable HDCP support on Pods assigned to this template, select the <b>HDCP Support for HDMI Input</b> checkbox.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p class="note">This feature is available for all Gen3 Pods (serial number MPOD8000A2xxxxxx or higher) on Solstice 5.2 or later.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign the Template to Your Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" MadCap:conditions="Default.ScreenOnly" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Power-Mgmt.htm">Power Management Template</a>
+        </p>
+    </body>
+</html>

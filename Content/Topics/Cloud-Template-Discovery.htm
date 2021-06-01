@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Discovery Template</h1>
+        <p>Display discovery refers to the ability for a user to "discover" what Solstice displays are available to connect to. A user may always connect to a Pod by typing the Pod’s IP address into the Solstice App. However, Solstice discovery can streamline the connection process by listing all Pods available for connection and enabling users to simply click a Pod’s name to connect. This template allows you to configure the settings for two discovery methods that will enable this click-to-connect functionality: broadcast discovery or Solstice Discovery Service (SDS). </p>
+        <p>The Solstice Discovery Service (SDS) is an IT-friendly, non-broadcast mechanism that allows users to discover and click-to-connect to Solstice displays from their own devices to start sharing content. SDS makes connecting to a Solstice display fast and easy for users, especially those on networks that don't allow broadcast traffic. For more information on how to implement and configure SDS, see <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">our 'Solstice Discovery Service (SDS)&#160;Guide'.</MadCap:conditionalText> <a href="SDS-Introduction.htm" MadCap:conditions="Default.ScreenOnly">Solstice Discovery Service (SDS). </a></p>
+        <p>
+            <img src="../Resources/Images/Templates-sidebarnav-Discovery.png" style="width: 703px;height: 491px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access This Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Discovery</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create New Discovery Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <b>Create New Discovery Template</b>. </li>
+                    <li>Enter the Template Name. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p class="tip"> You can also start by duplicating an existing template and making changes to it. Click on the three dots on the right side of the template you want to start with, and choose <b>Duplicate Template</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable/Disable Broadcast Discovery</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Broadcast discovery is only recommended for single network configurations that do not use a switch and that allow UDP&#160;broadcast traffic. If you do not wish for Solstice to utilize broadcast discovery, you can disable it in the Discovery template. However, Mersive strongly recommends utilizing Solstice Discovery Service (SDS) if broadcast discovery is disabled,  to ensure that users will be able to find and connect to Solstice displays. </p>
+                <ol>
+                    <li>Enable or disable the <b>Broadcast display name on network</b> option. </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set the SDS Information to List the Display on SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>First, you will need to find the static IP&#160;address of the SDS host machine. To find this, open a Command Prompt window on the Windows host machine or Windows server that SDS is installed on. Type <b>ipconfig</b> then hit your Enter key. The IP address is listed in the results that appear. </li>
+                    <li>In your Solstice Cloud Discovery template, select the <b>List display to SDS</b> option. </li>
+                    <li>In the <b>SDS&#160;Host field</b>, enter the IP&#160;address of the SDS&#160;host machine. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+                <p class="note">If you have multiple instances of SDS, repeat the steps above for each instance. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign the Template to&#160;Your&#160;Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" MadCap:conditions="Default.ScreenOnly" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Security.htm">Security Template</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Updating Your Organization's Office 365 Calendar Configurations to Integrate with Solstice</h1>
+        <p>Before integrating a Microsoft Office 365 Online calendar with modern authentication, there are some additional admin setup steps you will need to do to configure Office 365 authentication. You will use Microsoft's Azure Active Directory to configure access for the Pod to communicate with the Microsoft Graph API and obtain the information needed to integrate with Solstice. </p>
+        <p class="note">These steps must be performed by a user logged into an Office 365 Administrator tenant account. You will create and save several pieces of information that you will need to enter into Solstice Dashboard. <br /><br />For the most up to date instructions, please refer to Microsoft's documentation to <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis">Configure an app to access a web API</a>&#160;and <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app">Register an app</a>.</p>
+        <h4>Create an App Registration</h4>
+        <ol>
+            <li> Go to <a href="https://portal.azure.com/" target="_blank">https://portal.azure.com</a> and  log in to your O365 administrator account.</li>
+            <li>Click the menu icon in the upper left corner, and select <b>Azure Active Directory</b>. </li>
+            <li>In the left sidebar menu, select <b>App Registrations</b>.</li>
+            <li>From the menu bar in the main window, select <b>New Registration</b>. </li>
+            <li>In the <b>Name</b> field enter a name. </li>
+            <li>Under <b>Supported Account Types</b>, choose the <b>Single Tenant</b> option.</li>
+            <li>Click the blue <b>Register</b> button at the bottom of the window.</li>
+            <li>In the <b>Essentials</b> section in the main window, copy and save the <b>Application (Client) ID</b> and the <b>Directory (Tenant ID)</b>. You will enter these values into Solstice Dashboard.</li>
+        </ol>
+        <h4>Create a Client Secret for the App Registration</h4>
+        <ol>
+            <li>In the left sidebar menu, select <b>Certificates &amp; Secrets</b>. </li>
+            <li>In the <b>Client Secrets</b> section, select <b>New client secret</b>.</li>
+            <li>Enter a name or description for the secret (password) and select the expiration. Click <b>Add</b>. </li>
+            <li>Copy and save the new Secret <b>Value</b>, as you will need to enter it into Solstice. </li>
+        </ol>
+        <p class="note">Be sure to copy and save your Secret <b>Value</b>. You will not be able to retrieve after leaving this page. </p>
+        <h4>Allow Calendar.Read Access to the Microsoft Graph API</h4>
+        <ol>
+            <li>In the left sidebar menu, select <b>API permissions</b>.</li>
+            <li>In the <b>Configured permissions</b> section, select <b>Add a permission</b>.</li>
+            <li>In the <b>Microsoft APIs</b> section, choose <b>Microsoft Graph</b>.</li>
+            <li>Click on <b>Application permissions</b>.</li>
+            <li>Use the <b>Select permissions</b> filter field to find and select <b>Calendars</b>.</li>
+            <li>Select <b>Calendars.Read</b> from the Calendars menu.</li>
+            <li>Click <b>Add permissions</b>.</li>
+            <li>In the <b>Configured permissions</b> section, select <b>Grant admin consent for Mersive</b>.</li>
+            <li>Approve consent by clicking <b>Yes</b>.</li>
+        </ol>
+        <p>After consent has been successfully granted, a green check mark will display in the Configured Permissions table in the Status column of the Calendar.Read row.</p>
+        <p>
+            <img src="../Resources/Images/APIconsentGranted.png" />
+        </p>
+        <h4>Related Topics</h4>
+        <p><a href="Cloud-Template-Calendar.htm">Solstice Cloud: Room Calendar Template</a>
+        </p>
+        <p><a href="Admin-Room-Calendar.htm">Solstice&#160;Dashboard: Room Calendar Settings</a>
+        </p>
+    </body>
+</html>

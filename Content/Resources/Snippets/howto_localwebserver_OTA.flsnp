@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Download the Local OTA zip file at <a href="https://www.mersive.com/download/" target="_blank">mersive.com/download</a> &gt;&#160;Solstice Updates.</li>
+            <li>Extract the files and place them on your internal web server. This zip file will contain all the files needed for an update and will overwrite any previous update package when extracted to the same directory. </li>
+            <p class="tip">To verify the APK file is downloading correctly: Try downloading the APK file from a web browser. If the file automatically begins to download, the download was successful. If the APK files are not downloading properly, you may need to adjust the settings of your web server to treat the APK files correctly.</p>
+            <li>Ensure the Pod is connected to a network with access to your local web server.</li>
+            <li>Go to the <b>Licensing</b> tab of the Solstice Dashboard.</li>
+            <li>Under Software and License Information, select <b>Use web server for upgrades</b> from the drop-down.</li>
+            <li>Go to the <b>Network</b> tab &gt; <b>Local Web Server</b> section.</li>
+            <li>Select <b>Use local web server for updates</b>.</li>
+            <li>In the field below, enter the location of the upgrade files on your local web server. </li>
+            <p class="note">You only need to do this initial configuration once. For future updates, you will only need to place the most current upgrade files in this location.</p>
+            <li>Click <b>Apply</b>.</li>
+            <li>Go to the Licensing tab and click the <b>Check for Updates</b> button. The software will check for updates.</li>
+            <li>If an update is available, select the Pods you wish to update, then click <b>Install Update.</b></li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>For enterprise networks that support differentiated network traffic via QoS, packet headers can be enabled to allow Solstice traffic to be differentiated and prioritized on the enterprise network by utilizing the IETF-defined quality of service (QoS) header information. </p>
+        <p class="note">The Solstice Pod does not manage QoS traffic into or out of the Pod. It simply adds QoS tags to the packet headers, which allows routers on the network to better manage heavy network traffic.&#160;For example, when "Implement QoS for Solstice Traffic" is enabled on the Pod, by default, the Video Stream DSCP field is set to 101 110, which is "Expedited Forwarding" with a precedence value of 46. The Audio Stream DSCP&#160;field is set to 101 000, which is CS5 with a precedence value of 40. Packets with a lower precedence value might be dropped by QoS enabled routers on the network in favor of higher precedence packets.</p>
+    </body>
+</html>

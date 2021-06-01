@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <li>Ensure the required network ports are open. For Solstice Conference, you will need to open the default base ports +17 (e.g. If 53100-53102 are the configured base ports, open TCP/UDP&#160;ports 53100-53119). However, other network ports are required for other Solstice functionality. For more information on all of Solstice's open network port requirements, see <a href="https://documentation.mersive.com/content/topics/admin-network-ports.htm">Open Network Ports.</a></li>
+    </body>
+</html>

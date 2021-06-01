@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Step 2: Create Base Configuration Templates
+        </h1>
+        <p>Solstice Cloud  allows administrators to create unlimited configuration templates to apply across their Solstice deployment. The following are the recommended base configuration templates and settings and are intended to be used as a guide to help you get Solstice quickly deployed. The settings you ultimately need depend on your organization's needs and IT security policies. For network, please consult with IT or network team. For our full list of templates and configurations, see <a href="Cloud-Management-Templates.htm">Solstice Cloud:&#160;Configuration Templates</a>. </p>
+        <p class="note">Mersive recommends updating each template category's Default template. However, you can also create new templates if you wish to have different configurations based on office location, department, etc. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Welcome Screen Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To make it easy for users to discover and connect to the right Solstice display, Mersive recommends renaming the Pod to correspond to the meeting room or space it will be installed in. You can also change the appearance of the Solstice display's welcome screen to match your organization's branding by updating the display's background images, adding customized connection instructions, changing the text color, and more. </p>
+                <ol>
+                    <li>In the left sidebar navigation panel of Solstice Cloud,  click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Welcome Screen</b>. </li>
+                    <li>Click <b>Create New Welcome Screen Template</b>.</li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>To change background images, click on the upload icon for that background image. Then browse to the image file and select. </li>
+                    <li>To disable background images from the rotating display, deselect the checkbox in the lower right-hand corner of the background image preview.&#160; </li>
+                    <li>To customize the connection instructions that display on the welcome screen, go to the <b>Instructions</b> drop-down and select how you would like the connection instructions to display on the Welcome Screen for end-users. <ul><li><b>Default:</b> This setting uses Solstice's default connection instructions. &#160;</li><li><b>Show custom instructions:</b> Allows you to create custom instructions for meeting attendees to see on the Welcome Screen. &#160;</li></ul></li>
+                    <li>If you selected the <b>Show custom instructions</b> option, a rich text field appears below, allowing you to enter and format custom connection instructions. Use responsive variables such as <b>[RoomName]</b> and <b>[ScreenKey]</b> that will be auto-populated with the Pod-specific data.</li>
+                    <li>To hide the Airplay instructions if you are not enabling sharing via AirPlay, deselect the <b>Show Airplay instruction</b> line checkbox. </li>
+                    <li>To hide the Miracast instructions if you are not enabling sharing via Miracast, deselect the <b>Show Miracast instruction</b> line checkbox. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Calendar Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <p>Integrating a room calendar allows you to display  the schedule and calendar information for the room when there is no other content being shared. Participants can see if the space is currently scheduled or available, as well as the next three upcoming meetings in the space. </p>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                In the left sidebar navigation panel of Solstice Cloud,  click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Calendar</b>.</li>
+                    <li>Click <b>Create New Calendar Template</b>.
+                </li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>Select the <b>Enable Calendar Feature</b> checkbox.</li>
+                    <li>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating [for the room]: <b>Microsoft Exchange</b>, <b>Office 365</b>, or <b>3rd Party Only</b>. Only select <b>3rd-party only</b> if you are using <a href="API-OpenControl-Overview.htm">Solstice’s OpenControl API</a> to integrate a third-party calendar. </li>
+                    <li>If you are using Microsoft Exchange server, enter the Microsoft Exchange server URL in the <b>Server URL</b> field. </li>
+                    <li>In the <b>Authentication type</b> drop-down, select the type of authentication your server is using: Basic or NTLM.</li>
+                    <li>If you are a using either an <b>Impersonation</b> or a <b>Delegation Mailbox</b>, select the corresponding radio button. <ul><li>If you selected <b>No</b>, skip to step 6.  </li><li>If you selected either <b>Impersonation or Delegation</b>, you will need to (required) enter in the user name and password for the impersonation or delegation account. <p class="note">The login credentials for email accounts will need to be entered individually for each Pod. These steps are covered in Step 5: Applying Individual Pod Settings.</p></li></ul></li>
+                    <li>If you wish to hide meeting titles or meeting organizers from being visible on the room display, deselect <b>Show meeting titles</b> and/or <b>Show meeting organizers</b>. </li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Features Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>These settings determine which app-free sharing options users will be able to use to share content to the Solstice display. This template is also used to enable use of screen key for added security for Solstice collaboration sessions. </p>
+                <ol>
+                    <li>In the left sidebar navigation panel of Solstice Cloud,   click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Features</b>. </li>
+                    <li>Click <b>Create New Features Template</b>.</li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>Under the Solstice Feature Options section, select <b>Enable screen key</b>. This is an important security setting that requires end-users to enter the 4-digit screen key visible on the display to connect and share to Solstice. </li>
+                    <li>In the same section, enable or disable the various  sharing app-free options based on your organization's needs and policies.</li>
+                    <ul>
+                        <li><b>Miracast WiFi Direct:</b> Allows users to mirror their Windows device screen; streams P2P from the Windows device to the Pod. </li>
+                        <li><b>Miracast Infrastructure:</b> Allows users to mirror their Windows device screen; streams over the existing network. </li>
+                        <li><b>Android mirroring:</b> Allows users to mirror their Android device screen.</li>
+                        <li><b>iOS mirroring (AirPlay):</b> Allows users to mirror their iOS device screen.<ul style="list-style-type: circle;"><li><b>AirPlay discovery proxy:</b> Enable this option if your network does not allow use of Apple's Bonjour. </li><li><b>Bluetooth discovery for AirPlay</b>:&#160;Provides another alternative for discovery for environments that do not allow UDP broadcast traffic or Apple's Bonjour protocol by allowing AirPlay users to discover the Pod using Bluetooth. Users will still have to connect to the same network as the Pod in order to stream content via AirPlay.</li></ul></li>
+                        <li><b>Clientless sharing via browser</b>: Allows users to connect and share content via a web browser without the Solstice App. </li>
+                    </ul>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Room Intelligence Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>These settings allow your Solstice configuration to sense and adapt to the room in which it is installed, integrating any conferencing solution installed on the host's laptop (Zoom, Teams, GoToMeeting, etc.) and automatically detecting useful information about a conference room. </p>
+                <ol>
+                    <li>In the left sidebar navigation panel of Solstice Cloud,   click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Room Intelligence</b> </li>
+                    <li>Click <b>Create New Room Intelligence Template</b>.</li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>Select <b>Enable Solstice Conference</b> if you wish to enable the Solstice Conference capability. </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Ethernet Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice is designed to leverage existing Ethernet networks to support collaboration in meeting rooms and learning spaces. Mersive recommends connecting your Pod to Ethernet for best performance. </p>
+                <p> These steps outline how to configure basic Ethernet network settings to apply across your deployment. For more advanced Ethernet settings, see <a href="Cloud-Template-Ethernet.htm">Solstice Cloud:&#160;Ethernet Template</a>. </p>
+                <ol>
+                    <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Ethernet</b>.</li>
+                    <li>Click <b>Create New Security Template</b>. </li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>To activate the options, select the <b>Enable Ethernet</b> checkbox.</li>
+                    <li>Change the&#160;<b>Network Name</b> to the one that users will see in the list of available networks on their device so that it is easily recognizable.</li>
+                    <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</li>
+                    <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+                    <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b> and <b>DNS 1</b> fields. Because it is unique to each Pod, you will enter the IP Address after this template is applied to a Pod.</li>
+                    <p class="note">Note that the IP&#160;Address is unique to each Pod, and can be added only after this template is applied to a Pod. This is covered in Step 5: Applying Individual Pod Settings.</p>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>WiFi Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice is designed to securely leverage a wireless network connection that can be applied as Solstice's only network connection, or in dual-network mode alongside a wired Ethernet connection. </p>
+                <p>These steps outline how to configure basic WiFi network settings to apply across your deployment. There are two options outlined below: Option 1. Attach the Pod to a Wireless Network, Option 2. Disable&#160;WAP&#160;Mode. If you are not attached the Pod to a wireless network, Mersive strongly recommends following the steps for Option 2 to <a href="#Disable_WAP">disable WAP mode</a>. For more advanced WiFi settings, see <a href="Cloud-Template-WiFi.htm">Solstice Cloud:&#160;WiFi Template</a>.</p>
+                <p><b>Option 1. Attach the Pod to a Wireless Network</b>
+                </p>
+                <ol>
+                    <li>
+                In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Ethernet</b>. </li>
+                    <li>Click <b>Create New Security Template</b>. </li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li> Select the <b>Enable WiFi</b> checkbox. </li>
+                    <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow admin configuration access</b> checkbox. </li>
+                    <li>Select&#160;Existing Network.  This option connects the Pod to an existing network wirelessly. </li>
+                    <li>Enter the network name in the <b>SSID</b> field.</li>
+                    <li>In the <b>Security Type</b> drop-down, choose the appropriate option:&#160;<b>Open</b>, <b>WEP</b>, <b>WPA/WPA2</b>, or <b>802.1x EAP</b>. </li>
+                    <p class="note">If you chose <b>802.1x EAP</b>, see <a href="Cloud-Template-WiFi.htm">Solstice Cloud:&#160;WiFi Template</a> for more information on this configuration. &#160;</p>
+                    <li>
+                If prompted, enter the <b>Password</b> for this network.</li>
+                    <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.
+</li>
+                    <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b> and <b>DNS 1</b> fields.  </li>
+                    <p class="note">Note that the  IP Address and DNS Hostname are unique to each Pod and need to be configured for every Pod. Once this template is applied to your Pods, you be will prompted to enter this information for the each Pod the template is applied to.  </p>
+                    <li>Click <b>Save</b>.          </li>
+                </ol>
+                <p style="font-weight: bold;">Option 2. Disable&#160;WAP&#160;Mode<a name="Disable_WAP"></a></p>
+                <ol>
+                    <li>
+                In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Ethernet</b>. </li>
+                    <li>Click <b>Create New Security Template</b>. </li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>Deselect the <b>Enable WiFi</b> checkbox.</li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Security Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Before deploying your Solstice Pods, certain security baselines should be configured to harden the security of your deployment. The following are the base security settings that Mersive recommends.  </p>
+                <ol>
+                    <li>In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Security</b>.</li>
+                    <li>Click <b>Create New Security Template</b>. </li>
+                    <li>Enter the <b>Template Name</b>. </li>
+                    <li>If you wish to set an admin password to protect configuration, enter in the password you will use to access the Solstice configurations. It is highly recommended that you set the same administrator password for all of your Pods. </li>
+                    <li>If you wish to enforce password validation rules (8-character minimum, one uppercase and one lowercase character, one number or special character), select the <b>Enforce password validation rules</b> option.</li>
+                    <li>Ensure the <b>Enable encryption for Solstice traffic</b> option is selected. </li>
+                    <li>If you wish to upload a custom TLS&#160;certificate to be used instead of the Pod's default self-signed certificate, click the <b>Upload Certificate</b> button, then browse to and select the certificate file. </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Time/Locale Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The Time/Locale Template page allows you to set various system preferences for your Solstice display, including timezone and language settings. </p>
+                <ol>
+                    <li>
+                        In the left sidebar navigation panel of Solstice Cloud, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Time/Locale.</b></li>
+                    <li>Click <b>Create New Time/Locale Template</b>. </li>
+                    <li>Enter the <b>Template Name</b>. &#160;</li>
+                    <li>To set the date and time using a time server, Enable the <b>Set date/time automatically</b> checkbox and enter the time server URL in the corresponding field (the default timeserver URL is pool.ntp.org).</li>
+                    <li>If you want the time to display in 24 hour format (4:00 pm is displayed as 16:00), select the <b>24 hour format</b> checkbox.</li>
+                    <li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in (for example, Eastern Time).</li>
+                    <li> From the <b>Language</b> drop-down, select the language you would like to display on the Pod.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h4 MadCap:conditions="Default.ScreenOnly">Next Topic</h4>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Cloud-Display-Discovery.htm">Step 3:&#160;Set Up Display Discovery</a>
+        </p>
+    </body>
+</html>

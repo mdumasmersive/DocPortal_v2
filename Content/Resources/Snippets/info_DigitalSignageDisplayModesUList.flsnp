@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                <b>Full Screen</b>: Signage content is displayed full screen on the Solstice display. No Solstice connection information is shown — users must know Solstice display name or&#160;IP&#160;address in order to connect.</li>
+            <li>
+                <b>Footer Only</b>: Only the Solstice welcome screen footer is shown over the signage content.  Users familiar with Solstice will be able to see the Solstice display name and/or IP address in the footer area in order to connect and share content (requires the source URL to be viewable within an IFrame).</li>
+            <li>
+                <b>Footer + Overlay</b>: The Solstice welcome screen footer and sidebar overlay are shown on top of digital signage to provide users with full connection instructions and/or room calendar information.</li>
+        </ul>
+    </body>
+</html>

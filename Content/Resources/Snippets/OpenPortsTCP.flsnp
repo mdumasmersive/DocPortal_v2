@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li><b>7</b>: Used for gateway check (feature deprecated on Pods in Solstice version 5.3.2 and later). </li>
+            <li><b>80 and 443</b>: Used if the Solstice host is allowed to connect to the internet for license activation and software upgrades. When pushing a local update file to the Pod, these ports need to be open between the Pod and the Dashboard. These ports are also used by the OpenControl API to interface with 3rd party systems. When network encryption is enabled, the Solstice Dashboard will send SLR updates via port 443. </li>
+            <p class="note">If you are using a Solstice Pod or Solstice Dashboard on 4.1 or higher, communication to Mersive's license server will only occur over https/port 443.</p>
+            <li><b>6443</b>: Used for browser-based sharing connections. </li>
+            <li><b>7236</b>: Miracast WiFi Direct control port used to establish and manage sessions between the source device and the Pod.</li>
+            <li><b>7250</b>: Port on which the Pod listens for Miracast packets when Over Existing Network mode is enabled.</li>
+            <li><b>6000-7000, 7100, 47000, and 47010</b>: Should allow inbound AirPlay® traffic to the Solstice host.</li>
+            <li><b>53100, 53101, and 53102</b>: Used by default for basic communications between the Solstice host and both end user devices and the Solstice Dashboard. The base port (53100 by default) may be changed on a per-Pod basis through the Pod’s configuration panel or the Solstice Dashboard. <b>Important note:</b>&#160;Changing Solstice's base port will also change the sequential streaming port (Solstice base port +1) and notification port (Solstice base port +2) used by Solstice. You must ensure that all three ports are opened on your network. </li>
+            <li><b>53103-53119</b>:&#160;Used by Solstice Conference in addition to the default base ports 53100-53102. As a note, UDP traffic will need to be enabled for TCP ports 53107-53117 as Solstice will pass UDP packets through these ports. <b>Important note:</b>&#160;Changing Solstice's base port will also sequentially change the ports used by Solstice Conference by +100 ports. For example, if you change the configured Solstice base port to 53101, the ports used by Solstice Conference will change to 53204-53220. <ul><li>Ports used for Windows devices: 53103, 53104, 53110-53119.</li><li>Ports used for MacOS devices:&#160;53105-53108. </li></ul></li>
+            <li><b>53200, 53201, and 53202</b>: Used by the Solstice host and end user devices to communicate the Solstice Discovery Service (SDS) host if SDS discovery mode is enabled.</li>
+            <p class="note">The browser-based sharing capability can utilize any non-privileged TCP port from 1024 to 65535.</p>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>
+                <p>Log in to Solstice Cloud at <a href="../../PDF/Solstice_22Miles_Digital_Signage.pdf/#https://cloud.mersive.com/">https://cloud.mersive.com/</a>.</p>
+            </li>
+            <li>
+                <p>Go to <b>Manage</b> &gt; <b>Pods</b> and click the name of the Pod you want to display 22Miles Digital Signage content on.</p>
+            </li>
+            <li>
+                <p>Scroll down and click the down arrow to expand the <b>Digital Signage</b> settings.</p>
+            </li>
+            <li>
+                <p>Check <b>Enable Digital Signage</b> and select a display mode.</p>
+            </li>
+            <li>
+                <p>In <b>Source URL</b>, enter the URL for the 22Miles digital signage device, which should look similar to the following: http://h5.22miles.com/wl/[shortcode from 22Miles]</p>
+            </li>
+            <li>
+                <p>Click <b>Save as Unassigned</b>, or you can <b>Save as New Template</b> to create a digital signage template you can apply to multiple Pods. Any Pod assigned this digital signage template will display the content assigned to that 22Miles device URL.</p>
+            </li>
+        </ol>
+        <p class="note">For more information on how to build your customizable 22Miles Digital Signage  feed, visit <a href="../../PDF/Solstice_22Miles_Digital_Signage.pdf/#http://training.22miles.net/">http://training.22miles.net/</a>.</p>
+    </body>
+</html>

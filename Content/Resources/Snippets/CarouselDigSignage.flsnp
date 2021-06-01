@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Log in to your Carousel Cloud account and go to <b>Configure</b> &gt; <b>Players</b> &gt;&#160;<b>Player Setup</b>. </li>
+            <li>Under Player Setup, select <b>Mersive Solstice</b>. A&#160;Carousel for Mersive Solstice pop-up appears.</li>
+            <li>Copy the link for the player URL.</li>
+            <li>Open the Solstice Dashboard and select the Pod you want to display the Carousel digital signage feed on. </li>
+            <li>On the&#160;<b>Digital Signage</b>&#160;tab, enable&#160;the&#160;digital&#160;signage&#160;feature, then select the&#160;<b>Footer Only</b>&#160;option.&#160;<p class="note"> The Footer Only option is selected in this step so that you can properly view the registration code. This setting can be changed after your device is registered with&#160;Carousel Cloud.</p></li>
+            <li>Paste the copied URL from Carousel into the Solstice Dashboard's <b>Source URL</b>&#160;field. </li>
+            <li>Click <b>Apply</b>.</li>
+            <li>Once it has loaded, the Pod's display will show the Carousel Cloud Player registration page. </li>
+            <li>In your Carousel Cloud account, register the Solstice Pod as a player to begin displaying your initial channel. </li></ol>
+            <p>For more information on how to register your Carousel Cloud player, <a href="https://support.carouselsignage.com/hc/en-us/articles/360032340691-Carousel-Cloud-Player-Registration" target="_blank" title="Carousel Cloud Player Registration" alt="Carousel Cloud Player Registration">click here</a>. </p>
+        
+    </body>
+</html>

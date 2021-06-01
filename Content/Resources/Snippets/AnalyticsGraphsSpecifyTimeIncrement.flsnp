@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>In the upper-left hand corner of the screen, you can click the time increment you want your graph to display. There are four time increments to choose from:</p>
+        <ul>
+            <li>Hours</li>
+            <li>Days</li>
+            <li>Weeks</li>
+            <li>Months</li>
+        </ul>
+        <p>The options listed above that are available for selection are dependent on the time period that is selected on the upper-right hand side of the screen. For example, if the 48 hrs time period is selected, then the only time increment available will be hours. However, if you select a Custom time period, then all options are available for selection.</p>
+        <p>
+            <img src="../Images/AnalyticsTimeIncrementHours.png" />
+        </p>
+        <p>
+            <img src="../Images/AnalyticsTimeIncrementWeeks.png" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="note">To utilize this feature, your Solstice Pod must be connected to two display monitors via the two HDMI out ports on the Pod. The Extend and Seamless Extend display settings are not available when the digital signage feature is enabled.</p>
+        <ol>
+            <li>Select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab.</li>
+            <li>In the Usage and Feature Management section under Display Options, select one of the following radio buttons:<ul><li><b>Mirror</b> (default): Use when a Pod is connected to a single display, or when a Pod is connected to two displays and both displays will be mirrored and display the same content.</li><li><b>Extend</b>: Use with two separate display monitors when you want content to be posted to either display. Solstice will intelligently know where one display ends and the next begins and will never break a content post across the two displays. </li><li><b>Seamless Extend</b>: Use with two separate display monitors when you want content to be posted across both displays as if they are a single seamless display. This mode is recommended for video walls or other setups where there is no bevel or seam between the two displays. </li></ul></li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

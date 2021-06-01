@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab.</li>
+            <li>Under Connection Instructions Overlay, select the <b>Custom instructions overlay</b> option.</li>
+            <li>In the field that appears, enter the custom connection instructions you wish to be visible on the display’s welcome screen. Both plain and rich text formats are supported.</li>
+            <li>To add a dynamic IP address to the instructions, enter the network name in brackets, e.g. [INTERNAL]. The string will be replaced with the corresponding IP address when it displays on the welcome screen.</li>
+            <li>If you wish to remove instructions on how users can connect using AirPlay or Miracast, deselect the <b>Show AirPlay</b> and/or <b>Show Miracast</b> options.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

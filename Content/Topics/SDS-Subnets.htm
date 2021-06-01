@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Configure SDS for Multiple Subnets</title>
+    </head>
+    <body>
+        <h1>Configure SDS for Multiple Subnets (Optional)</h1>
+        <p>If SDS is being used centrally to list Solstice displays across multiple locations, each of which has its own subnet, administrators can now group Solstice displays by subnet which will allow a user’s Solstice App to only see displays on the same subnet they are connected to. There are two ways SDS can group displays by subnet: based on either a single, global prefix length configured in the Windows Registry OR based on an explicit list of subnets with varying prefix lengths via a text file placed in the Solstice program data folder.</p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add Subnets with a Single, Global Prefix Length to SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Open the Windows Registry Editor.</li>
+                    <li>Navigate to the following registry key:</li>
+                    <p class="text-indent">HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Mersive\DirectoryService</p>
+                    <li>In the key, right-click and select <b>New</b>, then select <b>DWORD (32-bit) value</b>.</li>
+                    <li>Name the value “subnetPrefixLength”.</li>
+                    <li>Right-click the value and select <b>Modify</b>.</li>
+                    <li>Enter the prefix length into the <b>Value data</b> field. For example, you can enter in the prefix length value of 16.</li>
+                    <li>Under the Base options, select the <b>Decimal</b> radio button.</li>
+                    <li>Click <b>OK</b>.</li>
+                    <li>Restart the SDS Service.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Add Subnets with Varying Prefix Lengths to SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Create a .txt file named “subnets.txt”.</li>
+                    <li>Add the IP address of each Pod as a new row in the text file. Each IP address should be followed by a forward slash, then the prefix length. Each IP address should be its own row. For example, an IP address row should read:</li>
+                    <p class="text-indent">192.168.3.0/24</p>
+                    <li>Save the .txt file and place it in the following location:</li>
+                    <p class="text-indent">C:\ProgramData\Mersive\Solstice\DiscoveryService</p>
+                    <li>Restart the SDS service.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

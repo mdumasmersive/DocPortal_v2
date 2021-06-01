@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Enable Sharing with AirPlay</title>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Enable Sharing with AirPlay</h1>
+        <p>Screen mirroring for Mac and iOS devices is available through Solstice's support for AirPlay®  mirroring.  This allows users to wirelessly  stream their screen to the Solstice display in real-time without having to install an app. If your network does not allow UDP broadcast traffic or Apple's Bonjour protocol, Solstice provides an AirPlay discovery proxy alternative that can be utilized instead. </p>
+        <h2>Network Routing Requirements</h2>
+        <p>The following network ports/routes are required to support Airplay streaming to Solstice Pods.</p>
+        <ul>
+            <li><b>TCP ports 6000-7000, 7100, 47000, and 47010</b>: Allow inbound AirPlay traffic to the Solstice host.</li>
+            <li><b>UDP&#160;port 5353</b>: Required for iOS mirroring via the Bonjour protocol. It is not required when using the Solstice Bonjour Proxy. </li>
+            <li><b>UDP ports 6000-7000, and 7011</b>: Allow inbound AirPlay traffic to the Solstice host.</li>
+        </ul>
+        <p class="note">For more information on all of the network ports that Solstice utilizes, see <a href="Admin-Network-Ports.htm">Open Network Ports</a>. </p>
+        <h3>How To Enable Sharing with AirPlay</h3>
+        <MadCap:snippetBlock src="../Resources/Snippets/enable_airplay.flsnp" />
+        <h4 MadCap:conditions="Default.ScreenOnly">Related Topics</h4>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="User-Sharing-Content.htm#HowTo_Airplay">How to Mirror Your iOS&#160;Device Screen Using AirPlay</a>
+        </p>
+        <script>
+			(function(d,b,a,s,e){ var t = b.createElement(a),
+			fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
+			fs.parentNode.insertBefore(t, fs); })
+			(window,document,'script','https://tag.demandbase.com/6ad47032.min.js','demandbase_js_lib');  
+		</script>
+    </body>
+</html>

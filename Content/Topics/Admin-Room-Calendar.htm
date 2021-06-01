@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Room Calendar Settings</h1>
+        <p>Using Solstice’s Room Calendar integration, any Solstice-enabled display can receive and display room calendar information to show the schedule for the meeting space when no one is sharing content. Participants can easily see if the space is currently scheduled or available, as well as the next three upcoming meetings in the space. When using the Solstice Conference capability, the room calendar integration also allows Solstice to quickly launch web conferences scheduled on the room calendar. </p>
+        <p>Solstice integrates with any Office365, Microsoft Exchange or Google Workspace resource account. The use of any other 3rd party calendaring system will require advanced configurations using our OpenControl API.</p>
+        <p class="tip">If you plan to integrate a room calendar, Mersive recommends creating a delegation account that can be used to display room accounts. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate a Microsoft Exchange Calendar </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>As a note, if you integrate a Microsoft Exchange account and do not supply an impersonation or delegation account, the personal calendar for that account will be used. You will also need to ensure <b>Modern Welcome Screen</b> is enabled (Appearance and Usage tab).</p>
+                <ol>
+                    <li>In the Solstice Dashboard, select the display from the list of Your Solstice Instances.</li>
+                    <li>Go to the <b>Calendar</b> tab.</li>
+                    <li>Select the <b>Enable</b> option.</li>
+                    <li>From the <b>Calendar Type</b> drop-down, select <b>Microsoft Exchange</b>.</li>
+                    <li>In the <b>Server URL</b> field, enter the Microsoft Exchange server URL if that is the type of calendar you are integrating.</li>
+                    <li>In the <b>Authentication type</b> drop-down, select the type of authentication your Microsoft Exchange server is using: Basic or NTLM.</li>
+                    <li>Enter in the <b>Username</b> and <b>Password</b> for the room calendar account.</li>
+                    <li>If you are a using an <b>Impersonation</b> or <b>Delegation Mailbox</b>, enter them into the corresponding fields.</li>
+                    <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate an Office 365 Online Calendar (Modern&#160;- recommended)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This version of the Office 365 Online calendar integration supports Microsoft's latest modern authentication method. Mersive strongly recommends configuring your Office 365 integration with the Modern authentication type as Microsoft is ending its support for Basic authentication in 2021. If you integrate an Office365 account and do not supply an impersonation or delegation account, the personal calendar for that account will be used. </p>
+                <p>For more information about the additional O365 configurations need to integrate with Solstice, as well as how to obtain the necessary information for the fields below, see <a href="Info-O365-Calendar.htm" target="_blank">Updating Your Organization's Office 365 Calendar Configurations</a>.</p>
+                <ol start="1">
+                    <li>In the Solstice Dashboard, select the display from the list of Your Solstice Instances.</li>
+                    <li>Go to the <b>Calendar</b> tab and select the <b>Enabled</b> option.</li>
+                    <li>From the <b>Calendar Type</b> drop-down, select <b>Office 365 Online - Modern</b>.</li>
+                    <li>In the Tenant ID field, enter the <b>Tenant ID</b>.</li>
+                    <li>In the Client ID field, enter your <b>Client ID</b>.</li>
+                    <li>In the Client Secret field, enter the <b>Client Secret</b>.</li>
+                    <li>In the <b>Username</b>, enter in the full email address of the room calendar. </li>
+                    <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate an Office 365 Online Calendar (Legacy)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This version of the Office 365 Online calendar integration supports Microsoft's legacy Basic authentication method. However, <u>Mersive strongly recommends configuring your Office 365 integration with the Modern authentication type</u> as Microsoft is ending its support for Basic authentication in 2021. If you integrate an Office365 account and do not supply an impersonation or delegation account, the personal calendar for that account will be used. </p>
+                <ol>
+                    <li>In the Solstice Dashboard, select the display from the list of Your Solstice Instances.</li>
+                    <li>Ensure <b>Modern Welcome Screen</b> is enabled (Appearance and Usage tab &gt; Appearance section).</li>
+                    <li>Go to the <b>Calendar</b> tab.</li>
+                    <li>Select the <b>Enabled</b> option.</li>
+                    <li>From the <b>Calendar Type</b> drop-down, select the type of calendar you are integrating: <b>Microsoft Exchange</b>, <b>Office 365</b>, or <b>3rd-party only</b>. Only select <b>3rd-party only</b> if you are using Solstice’s OpenControl API to integrate a third-party calendar.</li>
+                    <li>In the <b>Server URL</b> field, enter the Microsoft Exchange server URL if that is the type of calendar you are integrating.</li>
+                    <li>In the <b>Authentication type</b> drop-down, select the type of authentication your Microsoft Exchange server is using: Basic or NTLM.</li>
+                    <li>Enter in the <b>Username</b> and <b>Password</b> for the room calendar account.</li>
+                    <li>If you are a using an <b>Impersonation</b> or <b>Delegation Mailbox</b>, enter them into the corresponding fields.</li>
+                    <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:microContent id="microcontent1">
+            <MadCap:dropDown>
+                <MadCap:dropDownHead>
+                    <MadCap:dropDownHotspot>Integrate a Google Workspace Calendar</MadCap:dropDownHotspot>
+                </MadCap:dropDownHead>
+                <MadCap:dropDownBody>
+                    <p>For more information about the additional Google Workspace configurations need to integrate with Solstice, as well as how to obtain the necessary information for the fields below, see <a href="Info-Google-Calendar.htm" target="_blank">Updating Your Organization's Google Workspace Resource Calendars</a>.</p>
+                    <MadCap:snippetBlock src="../Resources/Snippets/GoogleCalendar.flsnp" />
+                </MadCap:dropDownBody>
+            </MadCap:dropDown>
+        </MadCap:microContent>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate a 3rd Party Calendar </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="warning">Utilizing this option to integrate a third-party calendar requires advanced configurations  using our <a href="API-OpenControl-Overview.htm">OpenControl API.</a> Please refer to our API documentation for how to utilize the <a href="API-Calendar.htm">Calendar API</a>. </p>
+                <ol>
+                    <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
+                    <li>From the <b>Calendar Type</b> drop-down, select  <b>3rd Party Only</b>. </li>
+                    <li>If you wish to hide meeting titles or meeting organizers from being visible on the room display, deselect <b>Show meeting titles</b> and/or <b>Show meeting organizers</b>. </li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

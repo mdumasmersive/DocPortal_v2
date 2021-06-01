@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Cloud-Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Cloud-Create-Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  <TocEntry
+    Title="Configuration Templates"
+    Link="/Content/Topics/Cloud-Management-Templates.htm"></TocEntry>
+  <TocEntry
+    Title="Welcome Screen"
+    Link="/Content/Topics/Cloud-Template-Welcome-Screen.htm"></TocEntry>
+  <TocEntry
+    Title="Calendar "
+    Link="/Content/Topics/Cloud-Template-Calendar.htm"></TocEntry>
+  <TocEntry
+    Title="Features"
+    Link="/Content/Topics/Cloud-Template-Features.htm"></TocEntry>
+  <TocEntry
+    Title="Digital Signage "
+    Link="/Content/Topics/Cloud-Template-Digital-Signage.htm"></TocEntry>
+  <TocEntry
+    Title="Room Intelligence"
+    Link="/Content/Topics/Cloud-Template-Room-Intelligence.htm" />
+  <TocEntry
+    Title="Message Center "
+    Link="/Content/Topics/Cloud-Template-Message-Center.htm"></TocEntry>
+  <TocEntry
+    Title="Ethernet "
+    Link="/Content/Topics/Cloud-Template-Ethernet.htm"></TocEntry>
+  <TocEntry
+    Title="Proxy "
+    Link="/Content/Topics/Cloud-Template-Proxy.htm"></TocEntry>
+  <TocEntry
+    Title="WiFi "
+    Link="/Content/Topics/Cloud-Template-WiFi.htm"></TocEntry>
+  <TocEntry
+    Title="Discovery"
+    Link="/Content/Topics/Cloud-Template-Discovery.htm"></TocEntry>
+  <TocEntry
+    Title="Security"
+    Link="/Content/Topics/Cloud-Template-Security.htm"></TocEntry>
+  <TocEntry
+    Title="Time/Locale "
+    Link="/Content/Topics/Cloud-Template-Time-Locale.htm"></TocEntry>
+  <TocEntry
+    Title="Advanced "
+    Link="/Content/Topics/Cloud-Template-Advanced.htm"></TocEntry>
+  <TocEntry
+    Title="Power Management "
+    Link="/Content/Topics/Cloud-Template-Power-Mgmt.htm" />
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Cloud-Monitor-Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%]"
+    Link="/Content/Topics/Cloud-Schedule-Updates.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+  <TocEntry
+    Title="[%=System.LinkedTitle%] "
+    Link="/Content/Topics/Cloud-Roles-Permissions.htm" />
+</CatapultToc>

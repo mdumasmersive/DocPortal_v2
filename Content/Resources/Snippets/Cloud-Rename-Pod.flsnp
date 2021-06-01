@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol>
+            <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>  or click <b>Manage</b> &gt; <b>Location</b>.</li>
+            <li>In the table, locate the pod whose location you want to assign, and click the Pod name.<p>If you manage a large number of Pods, you can reduce the number of Pods displayed in the table by entering all or part of the Pod name in the search box or by setting a filter.</p></li>
+            <li>Click in the <b>Pod Name</b> field and edit the current Pod name. Then click <b>Save</b>.</li>
+        </ol>
+        <p>A message displays confirming that the Pod configuration has been updated.</p>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="tip">You must ensure that the Pod has access to a timeserver so that it can validate the certificate.</p>
+        <ol>
+            <li>Select the <b>Enable 802.1x</b> checkbox to see options appear. </li>
+            <li>Select the <b>EAP Method</b>: PEAP, TLS, or TTLS<ol style="list-style-type: lower-alpha;"><li>For PEAP or TTLS methods: <ul><li>From the <b>Phase 2 Authentication</b> drop-down, select one of the phase 2 authentication types: None, MSCHAPV2, or GTC.</li><li>Click the <b>Replace CA&#160;Certificate</b> button, then browse to and select the certificate. </li></ul></li><li>For the TLS method:<ul><li>Click the <b>Replace CA&#160;Certificate</b> button, then browse to and select the certificate.</li><li>Click the <b>Replace User&#160;Certificate</b> button, then browse to and select the certificate. </li></ul><p class="note">Supported certificate file types are .cer, .der, .pem, .crt,  .pfx, and .p12. </p></li></ol></li>
+            <li>If required, enter the <b>Username</b> and <b>Password</b>.</li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2019-09-10T11:49:38.1693631-06:00"
+  ProjectName="Solstice_SideNav"
+  ProjectFolder="C:\Users\mdumas\Documents\My Projects\Solstice_SideNav\"
+  AutoSync="false"
+  AutoFitTables="true"
+  UseHeaderRows="false"
+  LastImport="2019-09-10T11:49:57.8916881-06:00">
+  <Files>
+    <Url
+      Source="../../../../../Downloads/~$enControl API Guide.doc"
+      AbsoluteSource="file:///C:/Users/mdumas/Downloads/~$enControl API Guide.doc" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/~$enControl API Guide/mdumasmdumas šœ U 4 ÿ t kfJV.htm"
+      TimeStamp="9/10/2019 11:49:55 AM" />
+    <Url
+      Source="../TOCs/~$enControl API Guide.fltoc"
+      TimeStamp="9/10/2019 11:49:55 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/~$enControl API Guide.css"
+      TimeStamp="9/10/2019 11:49:55 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles />
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Plain Text" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

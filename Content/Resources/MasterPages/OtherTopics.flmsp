@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <link href="../../../../../Solstice_SideNav093020/Solstice_SideNav/Solstice_SideNav/Content/Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-16236886-1" async="true">
+        </script>
+        <script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-16236886-1');
+		</script>
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async="true" src="file://js.hs-scripts.com/3989243.js">
+        </script>
+        <!-- End of HubSpot Embed Code -->
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <col />
+            <col />
+            <tbody>
+                <tr>
+                    <td>
+                        <MadCap:breadcrumbsProxy class="main-section" />
+                    </td>
+                    <td>
+                        <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" data-mc-skin="/Project/Skins/TopicToolbar.flskn" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <MadCap:bodyProxy />
+    </body>
+</html>

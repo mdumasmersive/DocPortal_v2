@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Overview"
+    Link="/Content/Topics/Solstice-Conference-Introduction.htm"></TocEntry>
+  <TocEntry
+    Title="Configuration and Setup"
+    Link="/Content/Topics/Solstice-Conference-Setup.htm"></TocEntry>
+  <TocEntry
+    Title="Physical Setup"
+    Link="/Content/Topics/Solstice-Conference-Physical-Setup.htm"></TocEntry>
+</CatapultToc>

@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h2>Miracast Performance Overview</h2>
+        <p>Miracast is a standard for wireless connections from sending devices (such as laptops, tablets, or smartphones) to display receivers (such as TVs, monitors, or projectors), introduced in 2012 by the Wi-Fi Alliance. It can roughly be described as "HDMI over Wi-Fi", replacing the cable from the device to the display.</p>
+        <p>The standards for Miracast are defined by the Wi-Fi Alliance, with significant contributions from Microsoft. It has similar functionality to AirPlay from Apple and Chromecast from Google. A variety of devices now natively support Miracast, including laptops running Windows 8.1 and 10, as well as devices from consumer companies such as Samsung, LG, Roku, and Amazon. Mersive introduced Miracast support starting with Solstice 3.5, and made improvements to Miracast connectivity, video and audio delivery, and latency in Solstice 4.6</p>
+        <p class="note">Android phones starting with version 4.2 were Miracast-enabled, but support was dropped at version 6.0.</p>
+        <h2>Mersive's Miracast Support</h2>
+        <p>Mersive’s implementation of Miracast fully complies with the Wi-Fi Alliance specification for Wi-Fi Direct (WFD) and the Miracast over Infrastructure Connection Establishment Protocol (used for the Existing Network implementation). It uses the following protocols:</p>
+        <ul>
+            <li>Device discovery based on Wi-Fi Protected Setup (WPS), a peer-to-peer (P2P) protocol</li>
+            <li>A control protocol based on RTSP, layered on TCP</li>
+            <li>A streaming protocol based on RTP, layered on UDP</li>
+        </ul>
+        <p>Mersive is one of very few vendors that support both WFD and Existing Network implementations. Furthermore, the Mersive’s Existing Network, or infrastructure mode, supports encryption which is critical in enterprise network deployments. Mersive’s implementation of Miracast also honors the use of default or “per Pod” encryption certificates.</p>
+        <h2>Miracast Limitations</h2>
+        <p>Miracast is based on UDP which does not guarantee data packet delivery. Consequently, Miracast connections are more sensitive to network stability. When compounded with wireless infrastructure limitations and environmental factors, Miracast performance may not be optimal. Mersive’s implementation avoids many of these issues as it has been architected to be more resilient in dealing with environmental gaps.  However, your Miracast performance will also depend on the user device’s implementation of Miracast support. For the best performance and collaboration experience, Mersive always recommends using the Solstice app.</p>
+        <h2>Technical Description</h2>
+        <p>Miracast supports sharing over two different transport types:</p>
+        <ul>
+            <li><b>Wi-Fi-Direct (WFD).</b> A peer-to-peer (P2P) connection that does not require a wireless access point (WAP) where your client device connects in a single-hop to the synch device (i.e., the Solstice Pod). In this mode there is no need for any additional network infrastructure</li>
+            <li><b>Existing Network (or Miracast over Infrastructure).</b> A connection over an existing Wi-Fi or Ethernet network using the “Miracast over Infrastructure Connection Establishment Protocol” (MS-MICE). Typically, the existing network is an internal LAN that can be either Wi-Fi or Ethernet.</li>
+        </ul>
+        <h2>Process for Sharing with Miracast</h2>
+        <p>There are three steps in the process of sharing content using Miracast on a Solstice Pod:</p>
+        <ol>
+            <li>Device discovery of Miracast-enabled Solstice Pod (with Miracast enabled)</li>
+            <li>Authenticating to the Solstice Pod</li>
+            <li>Sharing device content to the Solstice Pod over Miracast.</li>
+        </ol>
+        <h3>1. Device discovery of Miracast-enabled Solstice Pod (with Miracast enabled)</h3>
+        <p>After Miracast is enabled, the Solstice Pod broadcasts that it supports Miracast along with some of its capabilities such as SSID, name of Pod, encryption method, infrastructure capability, etc.  This is similar to how a Wi-Fi hotspot broadcasts SSIDs so you can connect.</p>
+        <ul>
+            <li>This broadcast is the required method for devices to find the Miracast-enabled Pod to Miracast using either Wi-Fi Direct or Existing Network. It is even required even if you only use the Existing Network transport.</li>
+            <li>If you disable WFD in Solstice, it does not disable Wi-Fi Discovery broadcast as it is the only way to find the Pod.  In this mode, essentially WFD connections are refused but Wi-Fi itself is still on.</li>
+        </ul>
+        <h3>2. Authenticating to the Solstice Pod</h3>
+        <p>After device discovery, the IP addresses of the client device and Solstice Pod are passed to the protocol layers, which initiate a TCP connection which allows a capabilities exchange and session setup. This is followed by a UDP connection for video and audio streaming.</p>
+        <p>Additionally, the way the device connects to the Pod, and how it authenticates, is different depending on whether the Solstice Pod is set up to use Wi-Fi Direct or Existing Network.</p>
+        <p style="font-weight: bold;">Wi-Fi Direct Mode</p>
+        <p>If the Pod is in Wi-Fi Direct mode, the device will negotiate directly with the Pod via Wi-Fi and join as a P2P group. If Access Control for the Pod has “Enable screen key” checked, the device authenticates via WPS. (This is functionality that the WPS button on your Wi-Fi router employs to connect devices). If “Enable screen key” is not checked, the device will connect without authentication.</p>
+        <p style="font-weight: bold;">Existing Network Mode</p>
+        <p>If the Pod is in Existing Network mode, the device will negotiate and connect with network port (Wi-Fi or Ethernet) and check to see if a screen key is required. If a screen key is required, then it will encrypt traffic using Datagram Transport Layer Security (DTLS).</p>
+        <h3>3. Sharing Device Content over Miracast</h3>
+        <p>Audio and video are shared over Miracast using the Real-time Transport Protocol (RTP). You can have a maximum of four simultaneous Miracast session on a single Pod. However, depending on network bandwidth and latency, two Miracast sessions may be more practical.</p>
+        <p>And, of course, all Miracast connections will be concurrent with all other client connections to the Pod.</p>
+        <h2>Miracast Performance Expectations by Use Case </h2>
+        <p>The sections below describe the options for Miracast network configuration and discuss the setup and use of Solstice’s Miracast support to achieve the best possible performance. </p>
+        <p class="note">Both the Pod’s local configuration panel and the Solstice Dashboard allow the user to select a Miracast mode, or select both modes. For more information on how to configure Miracast, see <a href="Admin-Enabling-Miracast.htm">Enable Sharing with Miracast</a>. </p>
+        <h3>Over Existing Network – Miracast via Ethernet</h3>
+        <ul>
+            <li><b>Miracast mode</b>: Over Existing Network</li>
+            <li><b>Solstice Pod network connection</b>: Attached via Ethernet</li>
+            <li><b>Client device network connection</b>: Attached via Ethernet</li>
+        </ul>
+        <p>This use case offers the highest reliability for Miracast sessions, with ~0% packet loss and &gt;95% connection success. The latency should remain in the range 100-166ms, and corruption should be non-existent. If both Ethernet and Wi-Fi are enabled, Miracast will favor Ethernet. This is the least common use case because it requires an Ethernet cable connection, which in most cases means the device is a laptop.</p>
+        <h3>Over Existing Network – Miracast via Wireless Network</h3>
+        <ul>
+            <li><b>Miracast mode</b>: Over Existing Network</li>
+            <li><b>Solstice Pod network connection</b>: Attached wirelessly</li>
+            <li><b>Client device network connection</b>: Attached wirelessly</li>
+        </ul>
+        <p>The performance of this use case is entirely dependent on the performance of the existing wireless network. Problems such as distant access points or low signal strength can significantly decrease reliability and create packet loss as high as 10% and latency of multiple seconds.</p>
+        <p>Measuring signal strength of the existing wireless network is an important step in setting up this mode. Solstice Pods can internally measure signal strength, but this information is not available to users. Android phones and many other devices can measure Wi-Fi signal strength. Here is a table that lists expected performance based on signal strength:</p>
+        <table style="mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');width: 760px;" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col style="width: 173px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 148px;" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 428px;" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><strong>Signal Strength</strong>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><strong>Signal Quality</strong>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p><strong>Description</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text">&gt; -30 dBm</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text">Excellent	</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p class="table-text">Maximum achievable signal strength</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p class="table-text">&gt; -50 dBm	</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p class="table-text">Very Good	</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p class="table-text" style="font-weight: normal;">Excellent level for all network uses</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text">&gt; -65 dBm</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text">Good</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p class="table-text">Sufficient level for streaming video</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p class="table-text">&gt; -70 dBm</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p class="table-text">Marginal</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p class="table-text">Acceptable only for web browsing and email</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text">&gt; -80 dBm</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p class="table-text">Poor</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p class="table-text">Packet delivery will be unreliable</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p class="table-text">&lt; -90 dBm</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p class="table-text">Very Poor</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">
+                        <p class="table-text">Mostly noise, not usable</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Over Existing Network – Miracast via Ethernet or Wireless Network</h3>
+        <ul>
+            <li><b>Miracast mode</b>: Over Existing Network</li>
+            <li><b>Solstice Pod network connection</b>: Attached via Ethernet or wirelessly</li>
+            <li><b>Client device network connection</b>: Attached via Ethernet or wirelessly</li>
+        </ul>
+        <p>The performance and latency of Miracast in this use case will fall somewhere between that of Miracast via Ethernet and Miracast via Wireless Network, and will be mostly determined by the quality of the wireless network, since Ethernet is highly reliable.</p>
+        <h3>WiFi Direct – Miracast via WiFi Direct</h3>
+        <ul>
+            <li><b>Miracast mode</b>: Stream video over Wi-Fi Direct</li>
+            <li><b>Solstice Pod network connection</b>: No network connection required, but Pod must have Wireless Settings enabled and WAP disabled</li>
+            <li><b>Client device network connnection</b>: No network connection required</li>
+        </ul>
+        <p>This use case offers reasonable reliability for Miracast sessions, generally with &lt;1% packet loss and &gt;90% connection success. The latency should remain in the range 100-166ms, and corruption should be limited. Wi-Fi Direct works well because a link is made directly between the device and the Solstice Pod, thereby avoiding any performance issues with the enterprise wireless network. Wi-Fi Direct depends on the device and the Pod being within approximately 150-200 feet of each other, with mobile devices typically needing to be within a 25-35-foot range. This essentially means that the device and Pod need to be in the same room.</p>
+        <h2>Other Important Considerations</h2>
+        <ul>
+            <li>The resolution of Miracast streaming is limited to 1080p.</li>
+            <li>Miracast beaconing (Wi-Fi Direct mode) occurs on the 2.4 GHz band on channels 1, 6, or 11.</li>
+            <li>Miracast streaming when in Wi-Fi Direct mode also occurs on the 2.4 GHz band on channels 1, 6, or 11. The reason is because Wi-Fi Direct mode does not utilize the 5 GHz band. Solstice cannot configure which channels Wi-Fi Direct utilizes.</li>
+            <li>If using Wi-Fi Direct, ensure that there is no channel overlap within your corporate wireless environment. If there is significant noise on the same channels that are utilized for Wi-Fi Direct, the user experience and performance may be significantly degraded.</li>
+        </ul>
+    </body>
+</html>

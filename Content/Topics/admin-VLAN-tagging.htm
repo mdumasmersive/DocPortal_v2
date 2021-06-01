@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False">
+    <head>
+    </head>
+    <body>
+        <h1>Support for 802.1Q VLAN Tagging</h1>
+        <p>Enterprise Edition Solstice Pods (Gen2i and Gen3 only) can support IEEE 802.1Q VLAN tagging on the wired Ethernet interface. In addition to handling the usual untagged Ethernet traffic on the default VLAN for the connected switch port, Solstice Pods can now communicate using tagged traffic over the wired Ethernet interface on up to three additional VLANs. By allowing the Pod to support multiple VLANs at once, administrators no longer need to create routing between VLANs for users to be able to connect and collaborate from multiple VLANs.</p>
+        <p class="note">
+            <ul>
+                <li>If the VLAN tagging feature is used, it is recommended that SDS is utilized for Pod discovery rather than using broadcast discovery over the network. One SDS server instance will be required per VLAN using SDS version 3.1 or later.</li>
+                <li>A default VLAN for the physical switch port must be configured within the switch port's settings. This default VLAN should be configured as the primary Ethernet network in the Dashboard.</li>
+            </ul>
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Connect a Pod to a VLAN</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/VLANTagging.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

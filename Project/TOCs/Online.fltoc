@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Getting Started"
+    Link="/Content/Topics/General-Solstice-Introduction.htm">
+    <TocEntry
+      Title="Solstice Overview"
+      Link="/Content/Topics/General-Solstice-Introduction.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/General-Solstice-Setup.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Admin-Network-Ports.htm" />
+    <TocEntry
+      Title="Deploy Solstice using Solstice Cloud"
+      Link="/Content/Topics/Deploy-Cloud-Solstice-Setup.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Deploy-Cloud-Import-Pods.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Deploy-Cloud-Templates.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Deploy-Cloud-Display-Discovery.htm"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Deploy-Cloud-Apply-Templates.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Deploy-Cloud-Validate-Deployment.htm"></TocEntry>
+      <TocEntry
+        Title="Other Considerations"
+        Link="/Content/Topics/Deploy-Other-Considerations.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Deploy Solstice using Solstice Dashboard"
+      Link="/Content/Topics/Deploy-Dashboard-Solstice-Setup.htm">
+      <TocEntry
+        Title="Step 1: Install the Solstice Dashboard and Import Pods"
+        Link="/Content/Topics/Deploy-Install-Dashboard.htm"></TocEntry>
+      <TocEntry
+        Title="Step 2: Connect the Pods to the Network"
+        Link="/Content/Topics/Deploy-Connect-Network.htm"></TocEntry>
+      <TocEntry
+        Title="Step 3: Rename the Pod and Customize the Appearance"
+        Link="/Content/Topics/Deploy-Rename-Customize.htm"></TocEntry>
+      <TocEntry
+        Title="Step 4: Set the Pod's Date and Time"
+        Link="/Content/Topics/Deploy-Set-DateTime.htm"></TocEntry>
+      <TocEntry
+        Title="Step 5: Set the Base Security Settings"
+        Link="/Content/Topics/Deploy-Security-Settings.htm"></TocEntry>
+      <TocEntry
+        Title="Step 6: Set Up Display Discovery"
+        Link="/Content/Topics/Deploy-Display-Discovery.htm"></TocEntry>
+      <TocEntry
+        Title="Step 7: Set the Content Sharing Options"
+        Link="/Content/Topics/Deploy-Content-Sharing.htm"></TocEntry>
+      <TocEntry
+        Title="Step 8: Validate Your Deployment"
+        Link="/Content/Topics/Deploy-Validate-Deployment.htm"></TocEntry>
+      <TocEntry
+        Title="Other Considerations"
+        Link="/Content/Topics/Deploy-Other-Considerations.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Using Solstice"
+    Link="/Content/Pages/Using-Solstice.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Solstice-Display-Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Solstice-User-App.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Sharing-Content.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="Using Solstice with Your Web Conference"
+      Link="/Content/Topics/User-Solstice-Conference.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Control-Layout.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Solstice-Ink.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Moderating-Sessions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-Multi-Room-Sessions.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/User-View-Collaboration-Session.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+  </TocEntry>
+  <TocEntry
+    Title="Managing Solstice"
+    Link="/Content/Pages/Managing-Solstice.htm">
+    <TocEntry
+      Title="Solstice Cloud"
+      StartSection="false"
+      Link="/Content/Topics/Cloud-Introduction.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Cloud-Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Cloud-Create-Categories.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="Pod Location Settings"
+        Link="/Content/Topics/Cloud-Management-Location.htm" />
+      <TocEntry
+        Title="Configuration Templates"
+        Link="/Content/Topics/Cloud-Management-Templates.htm">
+        <TocEntry
+          Title="Welcome Screen"
+          Link="/Content/Topics/Cloud-Template-Welcome-Screen.htm"></TocEntry>
+        <TocEntry
+          Title="Calendar "
+          Link="/Content/Topics/Cloud-Template-Calendar.htm"></TocEntry>
+        <TocEntry
+          Title="Features"
+          Link="/Content/Topics/Cloud-Template-Features.htm"></TocEntry>
+        <TocEntry
+          Title="Digital Signage "
+          Link="/Content/Topics/Cloud-Template-Digital-Signage.htm"></TocEntry>
+        <TocEntry
+          Title="Room Intelligence"
+          Link="/Content/Topics/Cloud-Template-Room-Intelligence.htm" />
+        <TocEntry
+          Title="Message Center "
+          Link="/Content/Topics/Cloud-Template-Message-Center.htm"></TocEntry>
+        <TocEntry
+          Title="Ethernet "
+          Link="/Content/Topics/Cloud-Template-Ethernet.htm"></TocEntry>
+        <TocEntry
+          Title="Proxy "
+          Link="/Content/Topics/Cloud-Template-Proxy.htm"></TocEntry>
+        <TocEntry
+          Title="WiFi "
+          Link="/Content/Topics/Cloud-Template-WiFi.htm"></TocEntry>
+        <TocEntry
+          Title="Discovery"
+          Link="/Content/Topics/Cloud-Template-Discovery.htm"></TocEntry>
+        <TocEntry
+          Title="Security"
+          Link="/Content/Topics/Cloud-Template-Security.htm"></TocEntry>
+        <TocEntry
+          Title="Time/Locale "
+          Link="/Content/Topics/Cloud-Template-Time-Locale.htm"></TocEntry>
+        <TocEntry
+          Title="Advanced "
+          Link="/Content/Topics/Cloud-Template-Advanced.htm"></TocEntry>
+        <TocEntry
+          Title="Power Management "
+          Link="/Content/Topics/Cloud-Template-Power-Mgmt.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Analytics"
+        Link="/Content/Topics/Cloud-Analytics.htm">
+        <TocEntry
+          Title="Cloud Analytics Overview"
+          Link="/Content/Topics/Cloud-Analytics.htm"></TocEntry>
+        <TocEntry
+          Title="Usage"
+          Link="/Content/Topics/Cloud-Analytics-Usage.htm"></TocEntry>
+        <TocEntry
+          Title="Compare"
+          Link="/Content/Topics/Cloud-Analytics-Compare.htm"></TocEntry>
+        <TocEntry
+          Title="In-Room Tech"
+          Link="/Content/Topics/Cloud-Analytics-In-Room-Tech.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Cloud-Monitor-Deployment.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="Schedule Software Updates"
+        Link="/Content/Topics/Cloud-Schedule-Updates.htm"></TocEntry>
+      <TocEntry
+        Title="Roles and Permissions"
+        Link="/Content/Topics/Cloud-Roles-Permissions.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Solstice Dashboard"
+      Link="/Content/Topics/Admin-GetStarted-Dashboard.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-GetStarted-Dashboard.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="Using the Solstice Dashboard"
+        Link="/Content/Topics/Admin-Using-Dashboard.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Appearance-Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Content Sharing Settings"
+        Link="/Content/Topics/Admin-Sharing-Options.htm">
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Admin-Sharing-Options.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Admin-Enabling-AirPlay.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="[%=System.LinkedTitle%]"
+          Link="/Content/Topics/Admin-Enabling-Miracast.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Network-Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Security-Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Certificate-Management.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-System-Settings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Digital-Signage.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"
+        StartSection="false"
+        SectionNumberReset="continue"
+        VolumeNumberReset="same"
+        ChapterNumberReset="continue"
+        ComputeToc="false"
+        ReplaceMergeNode="false" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Room-Calendar.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/Admin-Power-Management.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Admin-Updating-Solstice.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%] "
+      Link="/Content/Topics/Admin-MSI-Instuctions.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%] "
+      Link="/Content/Topics/Admin-SCCM-Instuctions.htm" />
+    <TocEntry
+      Title="Solstice Discovery Service (SDS)"
+      Link="/Content/Topics/SDS-Introduction.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/SDS-Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/SDS-DNS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/SDS-Subnets.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/SDS-Autorestart.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="Solstice Conference"
+    Link="/Content/Topics/Solstice-Conference-Introduction.htm">
+    <TocEntry
+      Title="Solstice Conference Overview"
+      Link="/Content/Topics/Solstice-Conference-Introduction.htm"></TocEntry>
+    <TocEntry
+      Title="Solstice Conference Setup"
+      Link="/Content/Topics/Solstice-Conference-Setup.htm"></TocEntry>
+    <TocEntry
+      Title="Solstice Conference Physical Setup"
+      Link="/Content/Topics/Solstice-Conference-Physical-Setup.htm"></TocEntry>
+    <TocEntry
+      Title="How to Use Solstice Conference"
+      Link="/Content/Topics/Solstice-Conference-How-to-Use.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Solstice Active Learning"
+    Link="/Content/Topics/Active-Learning-Introduction.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Active-Learning-Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Active-Learning-Setup.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Active-Learning-Design-Room.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Active-Learning-Facilitate-Session.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+    <TocEntry
+      Title="Active Routing API  ≫"
+      Link="/Content/Topics/Active-Learning-API.html"
+      FrameName="_blank"
+      Skin="/Project/Skins/Side-Navigation.flskn"
+      StartSection="false"
+      SectionNumberReset="continue"
+      VolumeNumberReset="same"
+      ChapterNumberReset="continue"
+      ComputeToc="false"
+      ReplaceMergeNode="false" />
+  </TocEntry>
+  <TocEntry
+    Title="Integrations"
+    Link="/Content/Pages/Integrations.htm">
+    <TocEntry
+      Title="Video Conferencing Integrations"
+      Link="/Content/Topics/Integration-Video-Conferencing.htm">
+      <TocEntry
+        Title="Logitech Tap"
+        Link="/Content/Topics/Integration-Logitech-Tap.htm"></TocEntry>
+      <TocEntry
+        Title="Logitech SmartDock"
+        Link="/Content/Topics/Integration-Logitech-SmartDock.htm"></TocEntry>
+      <TocEntry
+        Title="Logitech Screen Share"
+        Link="/Content/Topics/Integration-Logitech-Screenshare.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="Digital Signage Integrations"
+      Link="/Content/Topics/Integration-Digital-Signage.htm">
+      <TocEntry
+        Title="Appspace Digital Signage"
+        Link="/Content/Topics/Integration-Appspace-Digital-Signage.htm" />
+      <TocEntry
+        Title="Carousel Digital Signage"
+        Link="/Content/Topics/Integration-Carousel-Digital-Signage.htm" />
+      <TocEntry
+        Title="22MILES Digital Signage"
+        Link="/Content/Topics/Integration-22Miles-Digital-Signage.htm" />
+    </TocEntry>
+    <TocEntry
+      Title="OpenControl API"
+      Link="/Content/Topics/API-OpenControl-Overview.htm">
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-OpenControl-Overview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="Setup"
+        Link="/Content/Topics/API-Setup.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-Using-OpenControl-API.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-Configuration.htm">
+        <TocEntry
+          Title="Product/Global Settings"
+          Link="/Content/Topics/API-Configuration.htm#Product/Global_Settings" />
+        <TocEntry
+          Title="Display Communications Settings"
+          Link="/Content/Topics/API-Configuration.htm#Display_Communications_Settings"></TocEntry>
+        <TocEntry
+          Title="Global Display Settings"
+          Link="/Content/Topics/API-Configuration.htm#Global_Display_Settings"></TocEntry>
+        <TocEntry
+          Title="Authentication Modes"
+          Link="/Content/Topics/API-Configuration.htm#Authentication_Modes"></TocEntry>
+        <TocEntry
+          Title="Main Network and Feature Record"
+          Link="/Content/Topics/API-Configuration.htm#Main_Network_and_Feature_Record"></TocEntry>
+        <TocEntry
+          Title="Licensing"
+          Link="/Content/Topics/API-Configuration.htm#Licensing"></TocEntry>
+        <TocEntry
+          Title="Passwords"
+          Link="/Content/Topics/API-Configuration.htm#Passwords"></TocEntry>
+        <TocEntry
+          Title="System Settings Record"
+          Link="/Content/Topics/API-Configuration.htm#System_Settings_Record"></TocEntry>
+        <TocEntry
+          Title="Splashscreen Commands"
+          Link="/Content/Topics/API-Configuration.htm#Splashscreen_Commands"></TocEntry>
+        <TocEntry
+          Title="Power Management"
+          Link="/Content/Topics/API-Configuration.htm#Power_Management" />
+      </TocEntry>
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-Calendar.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-Version-Update-Control.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-Stats.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-Command.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-SDS.htm" />
+      <TocEntry
+        Title="[%=System.LinkedTitle%]"
+        Link="/Content/Topics/API-TimeZones.htm" />
+    </TocEntry>
+  </TocEntry>
+  <TocEntry
+    Title="PDF Guides"
+    Link="/Content/Pages/PDF-Guides.htm" />
+  <TocEntry
+    Title="Release Notes"
+    Link="/Content/Pages/Release-Notes.htm">
+    <TocEntry
+      Title="Solstice Release Notes"
+      Link="/Content/Pages/Release-Notes.htm"></TocEntry>
+    <TocEntry
+      Title="Solstice Cloud Release Notes"
+      Link="/Content/Topics/Release-Notes-Solstice-Cloud.htm"></TocEntry>
+    <TocEntry
+      Title="Solstice Active Learning Release Notes"
+      Link="/Content/Topics/Release-Notes-Solstice-AL.htm" />
+  </TocEntry>
+  <TocEntry
+    Title="Back to Mersive.com ≫"
+    Link="https://www.mersive.com"
+    StartSection="false"
+    SectionNumberReset="continue"
+    VolumeNumberReset="same"
+    ChapterNumberReset="continue"
+    ComputeToc="false"
+    ReplaceMergeNode="false" />
+</CatapultToc>

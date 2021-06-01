@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');" MadCap:searchable="True">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Solstice Discovery Service (SDS)&#160;+&#160;DNS&#160;Resolution (Optional)</h1>
+        <p>SDS and Solstice clients have been engineered to support direct network routing so that the IP address of the SDS host machine does not need to be configured. Although this requires modification to the DNS of the local network by the appropriate IT administrators, this approach has some advantages over a simple SDS installation:</p>
+        <ul>
+            <li>Users are never required to enter an IP address to connect to a display. Instead, any user with a Solstice client will see a drop-down list of Solstice displays and can click to connect.</li>
+            <li>Visiting users whose client SDS has already been set for a different network will still discover the SDS on a network that has been configured with the SDS override.</li>
+        </ul>
+        <h2>Configuring SDS +&#160;DNS Resolution </h2>
+        <p>There are two options for how to modify the local network’s DNS:</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Option One</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The DNS administrator creates a ‘solstice_customer_internal’ domain zone and adds an ‘A’ record which maps the name ‘solsticediscoveryservice.solstice_customer_internal’ to the IP address of the machine where the SDS is installed.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Option Two </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solsticediscoveryservice is an unqualified host name because it does not include a domain name such as ‘mersive.com’ or ‘university.edu’. By leaving off the domain name, we give the client operating system the option of appending the local domain name. This allows the IT department to add an SDS record to their name server using a proprietary domain name, e.g. university.edu.</p>
+                <p>For example, the university could add a record to their name server as follows:</p>
+                <table style="margin-left: auto;margin-right: auto;">
+                    <col>
+                    </col>
+                    <col>
+                    </col>
+                    <col>
+                    </col>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: left;">Type</td>
+                            <td style="text-align: left;">Name</td>
+                            <td style="text-align: left;">IP</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">A</td>
+                            <td style="text-align: left;">solsticediscoveryservice.university.edu</td>
+                            <td style="text-align: left;">192.168.1.100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>This record is added to the existing zone so that there is no poisoning of the customer’s DNS with a ‘mersive.com’ zone. For this to work properly, the client operating system needs to automatically append the local domain name when resolving the host name, so that the DNS can match it to its record.</p>
+                <p>This can be accomplished by configuring the DHCP server (typically a wired or wireless router) to provide the default domain name to the client device when it provides the IP address for the device. Devices should then append this domain name to host names when attempting to resolve the host name to an IP address.</p>
+                <p class="note">Option Two does not work correctly on Android devices because the Android OS does not automatically add the domain to an unqualified name. We expect this to be fixed by Google eventually. In the meantime, please use Option One if you expect Android clients to connect to your Solstice displays within your organization. Alternatively, Android devices can always connect by typing in the IP address of the Solstice display host computer.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Using SDS&#160;+&#160;DNS&#160;Resolution</h2>
+        <p>This direct network routing override method does not require the same IP address-related setup as the standard installation. If SDS is active and correctly routed on the network, the Solstice Dashboard will indicate this by changing the SDS tab logo from dark grey to bright green. By clicking on the SDS tab, the set of displays that are being added to SDS and published to client devices on your network can be viewed. Displays can still be added or removed from SDS on an individual basis by checking or unchecking the <b>Publish display name to SDS</b> feature on the configuration panel’s Network tab.</p>
+        <p>Both the Solstice Pods and the Solstice app communicate to SDS periodically using lightweight TCP/IP packets over ports 53200, 53201, and 53202, which will need to be allowed through the host machines’ firewalls and on the networks. Active displays periodically provide an entry to SDS that includes their current display name and a corresponding IP address. Likewise, client devices will receive a list of available displays from SDS at connection time, allowing users to see and simply click the desired display to connect. The corresponding IP address is then used to facilitate connection between the Solstice App and the display. Displays and apps will automatically attempt to resolve the IP address of the SDS using either of the above methods. No special configuration of the display or app is required.</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Visit <a href="https://www.mersive.com/download/">mersive.com/download</a> and click on <b>Management Tools</b>.</li>
+            <li>Under Solstice Dashboard, click the <b>Download Solstice Dashboard</b> link. </li>
+            <li>Fill out the download form then click <b>Submit</b>.</li>
+            <li>Run the <b>SolsticeDashboardSetup.exe</b> installer and step through the InstallShield wizard until the Dashboard is installed. As a note, you only need to select to additionally install the Demo feature if you wish to be able to demo the Dashboard using a virtual Solstice deployment. </li>
+        </ol>
+    </body>
+</html>

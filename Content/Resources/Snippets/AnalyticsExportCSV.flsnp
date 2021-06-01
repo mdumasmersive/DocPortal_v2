@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Data will only be exported for Pods that currently match your search or filter criteria. This will include both the Pods displayed on the current page as well as Pods contained on additional pages that may not be currently displayed on the screen. For example, if your table is set to display 25 items per page, but there are 30 pods in the list, data for the five currently undisplayed pods will be exported. Additionally only the columns that are currently displayed—that is, columns selected from the Manage Column check-boxes—will be exported.</p>
+        <p>When the Displays table shows all the Pods and columns you want to export, click <b>Export to CSV</b>.</p>
+        <p>For example, to display all the data for all the Pods being managed by Solstice Cloud:</p>
+        <ol>
+            <li>In the Filter by Category section, if you have a filter set, click <b>Clear all filters</b>.</li>
+            <li>In the Search field, if you have entered search criteria, clear it by clicking the <img src="../Images/i_XCircle-Clear.png" />.</li>
+            <li>Click the <b>Manage Columns</b> selector, and select all the check-boxes.</li>
+            <li>At the bottom of the Displays table, click <b>Export to CSV</b>.</li>
+        </ol>
+        <p>Your browser should download the CSV file to its downloads directory.</p>
+    </body>
+</html>

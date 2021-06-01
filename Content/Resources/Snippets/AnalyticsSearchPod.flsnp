@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>
+                <p>In the upper-left hand corner of the table, enter text in the Search field.<img src="../Images/AnalyticsSearch.png" /></p>
+            </li>
+        </ol>
+        <p>The table shows the Pods that match your text.</p>
+        <p class="note">The search filter matches text that occurs  in any of the columns of the table, including columns that are not displayed. For example, searching for the word "conference" will match Pod <i>Names</i> that contain the word "conference." And it will also match any categories that have options defined using the word conference (e.g. where room type might be set to "conference room." If it is not apparent why Pods are matching your search text, use the Manage Columns feature to display additional columns in the table.</p>
+    </body>
+</html>

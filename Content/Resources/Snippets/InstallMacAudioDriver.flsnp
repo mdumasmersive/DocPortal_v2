@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Open your Solstice app and connect to a display.</li>
+            <li>On the <b>Share</b> panel, click <b>Desktop</b>. The Solstice app minimizes. Click <b>Sharing Desktop</b> at the top of your screen to un-minimize the app.</li>
+            <li>Toggle <b>Desktop Audio</b> to <b>Yes</b>. </li>
+            <li>In the prompt that appears, click <b>Yes</b>. <p><img src="../Images/ex_allowmacdriver.png" style="height: auto;width: 50%;" /><br /></p></li>
+            <li>If prompted, enter in your admin password, then click <b>OK</b>. A  System Extension Blocked pop-up appears. </li>
+            <li>Click <b>Open Security Preferences</b>. The Security &amp;&#160;Privacy settings appear. </li>
+            <li>Next to 'System software from developer "Mersive Technologies" was blocked from loading', click <b>Allow</b>. <p><img src="../Images/ex_allowmersive.png" /><br /></p></li>
+            <li>Open <b>System Preferences</b> &gt;&#160;<b>Sound</b>. </li>
+            <li>From the <b>Play sound effects through</b> drop-down, select <b>Desktop Streaming Audio Device</b>. </li>
+            <li>Select the <b>Show volume in menu bar</b> option.<p><img src="../Images/ex_macsoundsettings.png" style="height: auto;width: 50%;" /><br /></p></li>
+            <li>Go back to the Solstice app, stop sharing, and click <b>Disconnect</b>. </li>
+            <li>Reconnect to the Solstice display, then share your desktop. Your desktop audio is automatically streamed to the in-room display. <p class="note">If your desktop audio isn't streaming to the display, make sure the Desktop Audio option in your Solstice app is toggled to ON, and that Desktop Streaming Audio Device is selected from your Mac's Volume control. </p></li>
+        </ol>
+    </body>
+</html>

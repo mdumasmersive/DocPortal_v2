@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Schedule Software Updates Using Solstice Cloud</h1>
+        <p>For Mersive customers with large deployments, <a href="https://cloud.mersive.com/" target="_blank">Solstice Cloud</a> makes Solstice Pod software updates faster, easier, and less disruptive by allowing admins to schedule over-the-air updates during off hours. Solstice Cloud streamlines the update process by allowing targeted updates based on categories, auto-retry after network interruptions, and email reports confirming completion. Along with the ability to schedule updates, administrators can choose to start a software update immediately as well.</p>
+        <p>One of the advantages of Solstice Cloud is the ability to assign Pods to categories. Assigning your Pods to categories allows administrators to easily identify and select which Pods they may want to batch update. For example, an administrator can schedule Pods at their London office to update at a different date and time than their New York office. Please note that scheduled updates will begin according to each Pod's local time. </p>
+        <p class="tip">For software updates to work, Pods must have active <a href="https://www.mersive.com/solstice-subscription/" target="_blank">Solstice Subscription</a>. You also may need to make a firewall exception for https://www.mersive.com so Pods can access Mersive's upgrade server to retrieve the upgrade file. </p>
+        <p>For updates that are scheduled in advance, you can opt-in to be notified via email when the update is completed. Scheduled updates can be edited or deleted up until the point that the upgrade process begins. Once an update is in progress, it cannot be paused or canceled. If an error occurs with a Pod update, Solstice Cloud will flag the update task with a warning. If internet connectivity is interrupted during the update process, Solstice Cloud will retry and resume the update where it left off.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Watch How-to Video</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><iframe width="700" height="394" src="https://www.youtube.com/embed/V5ZP4ucWmcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Update Pods' Software Version Now</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Manage</b> &gt;&#160;<b>Updates</b>.</li>
+                    <li>Select the Pods you want to be upgraded. <p class="note">If you don't see a Pod in the list, it may already be a part of a scheduled task.</p></li>
+                    <li>Click <b>Update Pods</b>. </li>
+                    <li>In the pop-up that appears, use the drop-down to select which software version you would like to update the Pod to. </li>
+                    <li>Click <b>Update Now</b>. A pop-up appears warning you that once that update process begins, it cannot be canceled.</li>
+                    <li>To proceed with the update, click <b>Update Now</b>. You are returned to the Tasks tab where you can view the progress of the update.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Schedule Pods to Update Later</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Manage</b> &gt;&#160;<b>Updates</b>.</li>
+                    <li>Select the Pods you want to be upgraded. <p class="note">If you don't see a Pod in the list, it may already be a part of a scheduled task. </p></li>
+                    <li>Click <b>Update Pods</b>. </li>
+                    <li>In the pop-up that appears, use the drop-down to select which software version you would like to update the Pod to. </li>
+                    <li>Click <b>Schedule for Later</b>.</li>
+                    <li>Select the date and time you wish to schedule the Pods to update. <p class="note">The update will occur based on the local time set in the Pod's system settings.</p></li>
+                    <li>If you wish to, you can select the option to get an email notification when the update is complete. </li>
+                    <li>Click&#160;<b>Schedule</b>. The Pod software update is now scheduled. </li>
+                    <li>To view, edit, or delete your scheduled updates, click on the <b>Tasks</b> tab. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View In Progress and Scheduled Tasks</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Manage</b> &gt;&#160;<b>Updates</b>.</li>
+                    <li>In the Solstice Software Updates Overview section, go to the <b>Tasks</b> tab. <br /><br /><img src="../Resources/Images/ex_kepler_update_tasks.png" style="width: 1068px;height: 500px;" /></li>
+                    <li>On this tab, you can view all in progress and scheduled software updates. Scheduled updates can be edited up until the update begins. Once an update is in progress, it cannot be paused or canceled. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a Scheduled Update</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>You can edit or delete a scheduled task up until the point that the update process starts. Currently, you cannot add or remove Pods from a scheduled update. If you need to change which Pods are a part of a scheduled update, you will need to delete the scheduled task and reschedule it with the correct Pods. </p>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Manage</b> &gt;&#160;<b>Updates.</b></li>
+                    <li>
+                        <p>In the Solstice Software Updates Overview section, go to the Tasks tab.</p>
+                    </li>
+                    <li>You can view the Pods being updated in that scheduled task by clicking the down arrow to the right of the task. </li>
+                    <li>Next to the scheduled task, click <b>Edit</b>. </li>
+                    <li>In the fields that appear, you can adjust the date and time for the scheduled update.</li>
+                    <li>Click <b>Save</b>.</li>
+                    <li>To delete the scheduled update, click the <b>Delete</b><img src="../Resources/Images/i_delete.png" />icon, then click <b>Delete</b> in the pop-up that appears. A notification that your task was deleted momentarily appears.&#160;</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View Update History</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, go to <b>Manage</b> &gt;&#160;<b>Updates</b>.</li>
+                    <li>In the Solstice Software Updates Overview section, go to the <b>History</b> tab. <br></br><br></br><img src="../Resources/Images/ex_kepler_update_history.png" style="width: 1068px;height: 500px;"></img></li>
+                    <li>On this tab, you can view the history of completed update tasks. Click on an item row to view the details of the software update. </li>
+                    <li>If an error occurred during the software update,  a warning icon <img src="../Resources/Images/i_keplerwarning.png" /> will appear next to the completed task. If a Pod’s software update failed, the Pod will appear back in the Updates tab as ready to update. You can then choose to update that Pod, or reschedule it to update at a later time. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Roles-Permissions.htm">Roles and Permissions</a>
+        </p>
+    </body>
+</html>

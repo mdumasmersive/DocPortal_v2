@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+                <p>On the Share tab of the Solstice app, you can share unlimited content using any of the following options. </p>
+                <ul>
+                    <li><b>Desktop</b>: Share a real-time view of your desktop (Windows or Mac) with an option to share your desktop audio to the display. <p class="note">To disable streaming your desktop audio, toggle the Desktop Audio switch to <b>Off</b>. If you are sharing desktop audio on a Mac, you may have additional setup to enable it. See how to <a href="#Enable_Mac_Audio">Enable Desktop Audio Streaming on a Mac</a> below for more information. </p></li>
+                    <li><b>App Window</b>: Share a real-time view of a single application window open on your Windows or Mac laptop. After selecting this option, click on the application window in the list that displays to share it to Solstice. </li>
+                    <li><b>Media File</b>: Share media files such as images and videos. <b>Note:</b> Solstice supports a broad range of video types, but not all video files are supported. If a video file is shared but does not post correctly to the display, you can open and play the video from your desktop, then share your desktop to the display with audio. Images need to have dimensions smaller than 10,240 pixels in order to be shared.</li>
+                </ul>
+                <p>When sharing your Desktop, if your user app is set to hide when you are sharing your desktop, you can click on the bar that appears at the top of your desktop screen to unhide it. You can also click <b>Stop Sharing</b> to quickly stop sharing your desktop.</p>
+    </body>
+</html>

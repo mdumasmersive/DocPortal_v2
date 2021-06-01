@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>
+                <p>In the upper-right hand corner of the screen, click <b>Custom</b>.</p>
+            </li>
+            <li>
+                <p>Click a date in the past where you want the time period to start. </p>
+                <p>You can use the drop-down menu to display a calendar for a month and the year spinner to choose the year. Or you can click the back arrow to go back a month at a time. When the calendar for the year and month you want displays, click the day you want to the time period to start.</p>
+            </li>
+            <li>
+                <p>Click the date you want the time period to end. </p>
+                <p>Again, use the controls on the calendar to find the month and year you want, then click the day you want the time period to stop.</p>
+            </li>
+        </ol>
+        <p>The custom date is set and displays below the time period selection table.</p>
+        <p>
+            <img src="../Images/AnalyticsCustomDate.png" />
+        </p>
+    </body>
+</html>

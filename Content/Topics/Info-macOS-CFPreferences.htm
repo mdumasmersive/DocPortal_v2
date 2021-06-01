@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Configuring the Solstice App with CFPreferences on macOS</h1>
+        <p>Preferences for the Solstice app on macOS can be configured using the <b>Settings</b> screen in the Solstice app or by configuring a Solstice plist (property list) using the macOS command line utility <code>defaults</code>.</p>
+        <h2>Solstice App Settings for macOS</h2>
+        <p>The following client options can be set using the <code>defaults</code> utility.</p>
+        <p class="note">Both the Solstice app and <code>defaults</code> write to the plist. If a user changes a setting in the client, a value that was set using <code>defaults</code> may be overwritten, and vice-versa. </p>
+        <table style="width: 100%;border-left-style: solid;border-left-width: 1px;border-left-color: #f5f6f6;border-right-style: solid;border-right-width: 1px;border-right-color: #f5f6f6;border-top-style: solid;border-top-width: 1px;border-top-color: #f5f6f6;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #f5f6f6;border-collapse: separate;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col style="width: 361px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: 70px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: 378px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-Alternate-Row-Color-Head-Header1">
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1">Option</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadE-Column1-Header1">Type</th>
+                    <th class="TableStyle-Alternate-Row-Color-HeadD-Column1-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/AUTOSHAREDESKTOP</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If set to TRUE, Solstice will automatically share your desktop to the Solstice display once you connect to the Pod.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/AUTOSHAREAUDIOWITHDESKTOP</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">If set to TRUE, Solstice will automatically stream your desktop audio to the Solstice display when you share your desktop</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/CALENDAR_CONFIG/REFRESH_TOKEN</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"> If set to TRUE, an Office 365 calendar has been integrated with the Solstice app. You can set the value to FALSE&#160;to terminate the calendar integration; however, the calendar integration needs to be configured in the Solstice app settings in order to authenticate with Office 365. </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/CPUWARNINGCHECKCOUNT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/CPUWARNINGCHECKINTERVALMS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/CPUWARNINGFAILPERCENTAGE</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/CPUWARNINGTOTALUSAGETHRESHOLD</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/HIDEUIWHENSHARING</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">If set to TRUE, the Solstice app will automatically hide when you share your desktop.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/ISFIRSTRUN</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">When the Solstice app is first installed, this option is set to TRUE. This causes the Solstice app to start with a "get started" screen that prompts the user to enter a profile name. After the app is first run, this value will be set to FALSE.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/ISFIRSTTIMEINMINUI</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">When the Solstice app is first installed, this option is set to TRUE. This causes the Solstice app to display a "got it" prompt the first time the client application is automatically hidden or minimized. (See PROFILE/HIDEUIWHENSHARING.)  After the app is first run, this value will be set to FALSE.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/ISFIRSTWALKTHROUGHRUN</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Bool</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">When the Solstice app is first installed, this option is set to TRUE. This causes the Solstice app to display a "walk through" animation about how to connect your client to a display.  After the app is first run, this value will be set to FALSE.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/MANUALMRUDISPLAYS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">???</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/MANUALSDSADDRESS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">If your organization has implemented the Solstice Discovery Service (SDS), the SDS IP address is set here in order for the Solstice app to display available displays to connect to.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/NAME</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">How your name will appear in the collaboration session.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/NOTIFICATIONLEVEL</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p>Set which notifications you would like to receive:<br />0 – Do not display any notifications. <br />1 – Display only critical notifications.<br />2 – Display all notifications. </p>
+                        <MadCap:snippetBlock src="../Resources/Snippets/Solstice-App-Notifications-Conference.flsnp" />
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/PINGWARNINGCHECKCOUNT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/PINGWARNINGCHECKINTERVALMS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/PINGWARNINGFAILPERCENTAGE</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/PINGWARNINGLATENCYTHRESHOLD</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/RELAYSHORTCUT</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">This setting allows you to configure the shortcut command to quickly open the Solstice Conference pop-up without having to click the icon in your system tray. The default setting is C, which corresponds to Cmd+Opt+C.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">PROFILE/RELAYWARNINGDURATION</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">PROFILE/RELAYWARNINGINTERVALMINS</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Uint32</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Reserved.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">PROFILE/UUID</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">String</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">Reserved.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Examples of Using Defaults on macOS</h2>
+        <p>Here is an example of how to read the values in the Solstice app plist:</p>
+        <p class="codeblock"><code>$ <b>defaults -currentHost read com.mersive.solstice.client</b></code>
+        </p>
+        <p>If a settings option is not currently set in the plist, you can create it by specifying the key type and key value. For example, to configure the Solstice app to automatically share the desktop with the display when it connects, you could enter this:</p>
+        <p class="codeblock">$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE" Bool</b><br />$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE" T</b></p>
+        <p>Here is an example of how to change a configure setting for the profile name to Jerry:</p>
+        <p class="codeblock"><code>$ <b>defaults -currentHost write com.mersive.solstice.client "PROFILE/NAME/VALUE" "Jerry"</b></code>
+        </p>
+        <p>Here is an example of how to delete a configured setting in the Solstice app plist:</p>
+        <p class="codeblock">$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/TYPE"</b><br />$ <b>defaults -currentHost delete com.mersive.solstice.client "PROFILE/AUTOSHAREDESKTOP/VALUE"</b></p>
+        <p class="note">The Solstice app reads the plist settings on start up. If you change plist values using the <code>defaults</code>command while the app is running, the app will not show the change on the Settings page. However, the app will behave in accordance with the new plist setting.<br />For example, if the plist setting for AUTOSHAREDESKTOP is FLASE, then the Solstice app will show that Quick Share Desktop is  OFF. However, if the value is changed to TRUE&#160;using the <code>defaults</code> command, the Settings page does not change; however, when the app connects to the display the desktop will be automatically shared. To force the Solstice app to change what is displayed on the Settings page, you will need to exit and restart the app.</p>
+        <p>&#160;</p>
+    </body>
+</html>

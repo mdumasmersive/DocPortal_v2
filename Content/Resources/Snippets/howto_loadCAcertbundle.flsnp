@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Load a self-signed CA certificate bundle onto one or more Pods to be used for HTTPS communications and to validate the Pod’s access to external data connections such as digital signage feeds, RSS feeds, and Solstice Cloud (formerly known as Kepler). This is especially important for networks that utilize a MITM proxy that intercepts HTTPS requests. The bundle is used in addition to the Pod’s built-in CA certificates, which are suitable for most internet access. </p>
+        <p class="note">Only a PEM certificate with a .crt file extension is supported.</p>
+        <ol>
+            <li>In the Dashboard, select the Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab &gt;&#160;<b>Encryption</b> section.</li>
+            <li>Select the <b>Use Custom CA&#160;Certificate Bundle for External Communications</b> checkbox.</li>
+            <li>Click <b>Browse</b>.</li>
+            <li>In the file explorer that opens, browse and select the CA&#160;certificate bundle, then click <b>Open</b>.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

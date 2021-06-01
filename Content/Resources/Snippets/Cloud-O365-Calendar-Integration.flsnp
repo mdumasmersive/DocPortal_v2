@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>If you integrate an Office365 account and do not supply an impersonation or delegation account, the personal calendar for that account will be used. </p>
+        <p>For more information about the additional O365 configurations need to integrate with Solstice, as well as how to obtain the necessary information for the fields below, see <a href="../../Topics/Info-O365-Calendar.htm" target="_blank">Updating Your Organization's Office 365 Calendar Configurations</a>.</p>
+        <p class="warning">Mersive strongly recommends configuring the OAuth2 authentication type as Microsoft is ending its support for Basic authentication in 2021. </p>
+        <ol start="1">
+            <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
+            <li>From the <b>Calendar Type</b> drop-down, select <b>Office 365 Online</b>.</li>
+            <li>In the <b>Authentication Type</b> drop-down, select <b>OAUTH2</b>.</li>
+            <li>In the Tenant ID field, enter the <b>Tenant ID</b>.</li>
+            <li>In the Client ID field, enter your <b>Client ID</b>.</li>
+            <li>In the Client Secret field, enter the <b>Client Secret</b>.</li>
+            <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+            <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+        <p>A message displays confirming that the Pod configuration has been updated.</p>
+    </body>
+</html>

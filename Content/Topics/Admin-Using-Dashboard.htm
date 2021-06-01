@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');" MadCap:searchable="False">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Using the Solstice Dashboard       </h1>
+        <p>The Dashboard is divided into a few main panels. On the left-hand side is the Instances Panel, which is used to select one or more Solstice displays to manage, and the Action Panel, which can be used to control Solstice Windows Software instances. On the right-hand side is the Configuration Panel which is used to enable and change Solstice display configurations. </p>
+        <p style="text-align: left;">
+            <img src="../Resources/Images/ex_dashboardpanels.png" style="width: 811px;height: 312px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Reestablish Connection with a Display </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the Instances panel, right-click in the list of Your Solstice Instances and select <b>Retry authorization for all displays</b>. This triggers an immediate attempt for the Dashboard to establish network communication with all displays in the instance panel and will prompt you for passwords on any displays that are password protected.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Remove Displays from Dashboard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the Instances panel, select the displays you wish to remove (SHIFT&#160;+&#160;click or CTRL&#160;+ click to select multiple displays), then right-click and select <b>Remove selected displays from Dashboard management</b>. This removes the selected displays from the Dashboard. The display can be added back if needed using one of the import options.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Export a List of Solstice Displays</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the Instances panel, right-click and select <b>Export displays to file</b>. This creates a .csv file that shows the Display Name, IP Address, Port #, MAC Addresses, software version, and unique Device ID. You can choose to export a .csv file that contains only the displays you have selected, or contains all of the displays in your Solstice Dashboard. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Remotely Control Solstice Displays </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Dashboard gives you the ability to remotely control your Solstice displays, as well as the ability to activate or deactivate Windows Display Software instances. Simply select the display in your list of Solstice instances and click on the corresponding button in the bottom-left corner of the Dashboard. </p>
+                <ul>
+                    <li><b>Activate Displays (Windows Display Software-Only)</b>: By clicking this icon, Solstice Software will launch and run in the mode for which it is configured. Users can then connect and post to the Solstice display.</li>
+                    <li><b>Deactivate Displays (Windows Display Software-Only)</b>: This stops the current Solstice session (if any), disconnects users, clears the display of posted media, and then closes the Solstice Software program on the Windows host PC.</li>
+                    <li><b>Disconnect All Users</b>: Any connected users are disconnected from the selected displays. If the action impacts one or more users, a warning pop-up will appear. By continuing the action, connected users will be disconnected and all media posts will be deleted.</li>
+                    <li><b>Clear All Posts</b>: All posts on the set of selected displays will be deleted. Users will remain connected and are free to continue using the Solstice display.</li>
+                </ul>
+                <p>
+                    <img src="../Resources/Images/ex_db_remotecontrol.png" style="width: 282px;height: 402px;" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>FAQ</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="dropdownFAQ">
+                <MadCap:dropDownHotspot>How does a display become unresponsive?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Displays can become unresponsive if the Pod or Windows Display Software host machine is disconnected from the network, powered off, or the Windows Display Software is uninstalled from a host PC.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

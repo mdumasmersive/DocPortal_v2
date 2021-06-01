@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Calendar API</h1>
+        <p><b>Solstice Host URLs:&#160;</b>
+        </p>
+        <ul>
+            <li>IPAddress/api/calendar </li>
+            <li>IPAddress/api/calendar/set </li>
+            <li>IPAddress/api/calendar/clear </li>
+            <li>IPAddress/api/calendar/add </li>
+            <li>IPAddress/api/calendar/delete</li>
+        </ul>
+        <p>The calendar API allows an admin to send scheduling information to a Solstice host in a fully customizable way, without tying the host to a specific calendar via an Exchange server.&#160; </p>
+        <p class="warning">To communicate with a host purely via the API, the Calendar Configuration must be enabled in the Solstice Dashboard and the Calendar Type set to ‘3<sup>rd</sup>-party only’.</p>
+        <p>There are two URLs that affect host endpoints when ‘3<sup>rd</sup>-party only’ is selected as Calendar Type:</p>
+        <ul>
+            <li><b>IPAddress/api/calendar/clear</b>&#160;requires no data.&#160; Hitting this URL clears all calendar data.</li>
+            <li><b>IPAddress/api/calendar/set</b>&#160;lets you POST JSON data about upcoming meetings.&#160; Each POST will override any existing calendar data, so the POST should be an array of all meeting/availability information that should show on the display.</li>
+        </ul>
+        <p>The OpenControl API may also interact with a Microsoft Exchange calendar to integrate with an existing scheduling system.&#160; Once an Exchange account is authenticated through the Dashboard (Calendar Type = Microsoft Exchange), there are two URLs that allow you to add or remove a meeting on the Exchange calendar:</p>
+        <ul>
+            <li><b>IPAddress/api/calendar/add</b> requires the keys ‘startTime’, ‘endTime’, ‘title’ and 'organizer' to add a meeting to the Exchange calendar. A random ‘id’ key will be assigned when the meeting is created and may be used to delete the meeting. </li>
+            <p class="note">Although the 'organizer' key is required for the IPAddress/api/calendar/add call, this key may not be applied when you POST to a Microsoft Exchange calendar.</p>
+            <li><b>IPAddress/api/calendar/delete</b> requires only the ‘id’ key of the meeting to be deleted from the Exchange calendar. </li>
+        </ul>
+        <p>To read calendar data from the display regardless of calendar type, GET the URL IPAddress/api/calendar.&#160; </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Example POST Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p class="codeblock">{<br />&#160; "calendarItems": [<br />&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id": "001",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "startTime": 1767024030,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "endTime": 1767031230,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "title": "Engineering Review",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "organizer": "Molly McNale"<br />&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id": "002",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "startTime": 1767033000,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "endTime": 1767038400,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "title": "Plastics Lunch &amp; Learn",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "organizer": "Greg Clyff"<br />&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160; ]</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 class="Heading3">Calendar Settings&#160;</h3>
+        <p>Note that, like the other values in the config object, if you do not explicitly set a value to empty (‘’, the empty string), then it will keep its old value. This is important when changing to a new Exchange configuration without a delegate or impersonation mailbox.</p>
+        <table style="width: 100%; margin-left: 1%;margin-right: auto;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4" style="text-align: left;">
+                    <p><i>m_calendarCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td style="font-weight: bold;text-align: left;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key&#160;</b>
+                    </p>
+                </td>
+                <td style="font-weight: bold;text-align: left;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type&#160;</b>
+                    </p>
+                </td>
+                <td style="font-weight: bold;text-align: left;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>&#160;</p>
+                </td>
+                <td style="font-weight: bold;text-align: left;" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description&#160;</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>enabled&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>bool&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Enable or disable the use of a calendar service.&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>calendarType&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>int&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: left;">
+                    <p>0: Exchange, 2: Office 365, 3: OpenControl API&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>updateIntervalSeconds</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Number of seconds between when the display checks for updates to the calendar information.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>showTitle&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>bool&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: left;">
+                    <p>Show the meeting title&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>showOrganizer&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>bool&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Show the meeting organizer&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>exchangeUrl&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>string&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: left;">
+                    <p>Exchange server URL&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>exchangeAuthOpt&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>int&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Exchange server authentication type: 0: HTTP Basic, 1: NTLM&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>exchangeAcctDomain&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>string&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: left;">
+                    <p>Exchange NTLM credentials domain.&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>exchangeAcctUser&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>string&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>Exchange account username.&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>exchangeAcctPassword&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>string&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: left;">
+                    <p>Exchange account password.&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>exchangeDelegateMailbox&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>string&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="text-align: left;">
+                    <p>If not using the default mailbox, this is the delegate mailbox.&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>exchangeImpersonationMailbox&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>string&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2" style="text-align: left;">
+                    <p>Get/Post&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2" style="text-align: left;">
+                    <p>If not using the default mailbox, this is the impersonation mailbox.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <h3 class="Heading3">Calendar Commands</h3>
+        <table style="width: 100%; margin-left: 1%;margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col style="width: auto;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: auto;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: auto;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col style="width: auto;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p><i>calendarItems</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>id</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Unique meeting ID.&#160; Used internally only, does not show up on display. Must be supplied in ‘3<sup>rd</sup>-party’ mode; automatically generated in ‘Microsoft Exchange’ mode. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>startTime</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>long int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Meeting start time in Unix epoch seconds.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>endTime</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>long int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Meeting end time in Unix epoch seconds.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>title</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Title of meeting that will show up on the display if meeting names are enabled in the Dashboard.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>organizer</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Name of meeting organizer that will show up on the display if enabled in the Dashboard.</p>
+                </td>
+            </tr>
+        </table>
+        <h3>Next Topic</h3>
+        <p><a href="API-Version-Update-Control.htm">Other APIs</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

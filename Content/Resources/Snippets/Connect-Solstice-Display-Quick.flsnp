@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p style="font-weight: bold;">Quick Connect Method</p>
+        <ol>
+            <li>Click the Solstice icon in the system tray, or use the keyboard shortcut Crtl +&#160;Alt +&#160;C.</li>
+            <li>In the pop-up that appears, enter in the Solstice display's screen key or IP address depending on the option that shows. </li>
+            <li>You are automatically connected to that Solstice display. </li>
+        </ol>
+    </body>
+</html>

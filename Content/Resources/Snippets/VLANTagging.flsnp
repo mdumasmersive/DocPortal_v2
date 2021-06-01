@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>In addition to handling the usual untagged Ethernet traffic on the default VLAN for the connected switch port, Solstice Pods can now communicate using tagged traffic over the wired Ethernet interface on up to three additional VLANs. </p>
+        <p class="note">A default VLAN for the physical switch port must be configured within the switch port’s settings. This default VLAN should be configured as the primary Ethernet network in the Dashboard.</p>
+        <ol>
+            <li>In the Solstice Dashboard, select the Solstice Pods you wish to connect to one or more VLANs. VLAN&#160;settings can be applied to more than one Pod at a time. </li>
+            <li>Go to the <b>Network</b> tab.</li>
+            <li>Enable <b>VLAN&#160;Settings</b>.</li>
+            <li>In the <b>Label</b> field, enter in the name of the network that you wish for users to see. </li>
+            <li>
+                <p>If you wish to utilize DNS&#160;resolution and have added a DNS&#160;entry in your DNS&#160;server to resolve to the Pod's IP&#160;address, you can enter in the <b>DNS&#160;Hostname</b> (for example, hostname.domain) that you wish to show on the display's welcome screen.<MadCap:conditionalText MadCap:conditions="Default.Exclude"> For more information on DNS&#160;resolution, see <a href="../../Topics/Admin-DNS-Resolution.htm">DNS&#160;Resolution</a>. </MadCap:conditionalText></p>
+            </li>
+            <li>In the <b>Tag</b> field, enter in the VLAN&#160;ID number.</li>
+            <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+            <li>If you wish to allow administrative access on this VLAN, select the <b>Allow administration configuration access</b> checkbox.</li>
+            <li>Click <b>Apply</b>. </li>
+            <li>If attaching the Pod to additional VLANs, select the <b>Enabled</b> checkbox under <b>VLAN&#160;2</b> or <b>VLAN 3</b>, then repeat steps 4 through 8. </li>
+            <li>If using SDS, go to the Display Discovery section on the Network tab and enter in the <b>SDS&#160;Host</b> IP&#160;address for each SDS server instance. </li>
+            <p class="note">One SDS server instance is required per VLAN using SDS version 3.1 or later. The order of the SDS Host IP addresses entered does not matter. </p>
+        </ol>
+    </body>
+</html>

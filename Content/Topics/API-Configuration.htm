@@ -1,0 +1,2250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Configuration API</h1>
+        <p><b>Solstice Host URL</b>: IPAddress/api/config</p>
+        <p>The configuration API is focused on setting and reading configuration settings that are available in the Configuration Panel and the Solstice dashboard. These are admin settings that are concerned with customization, security, and network configuration options.</p>
+        <p>The top level keys are primarily associated with device-specific settings and are not grouped into a sub-hierarchy. For each table, other than the ‘Top Level’ table that does not require a hierarchical key, the hierarchical key is shown in the first row. This is the key to the set of values that can be set in that table.</p>
+        <h2><a name="Product/Global_Settings"></a>Product/Global Settings</h2>
+        <table style="margin-left: 10px;margin-right: auto;width: 100%;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col style="width: auto;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                        <p><i>(Top&#160;Level)</i>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p><b>Key</b>
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p><b>Type</b>
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p><b>Get/Post</b>
+                        </p>
+                    </td>
+                    <td style="font-weight: bold;" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p><b>Description</b>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>m_displayId</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>string</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>Get</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p>This is the unique identifier that Solstice uses to manage a single instance, regardless of how the display is named or its current IP Address</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p>m_serverVersion</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p>string</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p>Get</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p>The current software version running on the Solstice host</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>m_productName</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>string</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>Get</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <p>The name of the Solstice software (Solstice).</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p>m_productVariant</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p>string</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                        <p>Get</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <p>The generation and type of Pod hardware as a name. For example, ‘Gen1’ or ‘Gen2’</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p>m_productHardwareVersion</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p>int</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">
+                        <p>Get</p>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">
+                        <p>The Pod hardware generation as a version number (Pod-only). For example, 1 or 2. Software returns 9999.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2"><a name="Display_Communications_Settings"></a>Solstice Display Communications Settings</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_displayInformation</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_ipv4</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>The current primary IP Address assigned to the Solstice display/endpoint.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_displayName</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The display name used for Solstice discovery. This name is shown on the Solstice splash-screen and appears in the client discovery list for connecting to the Solstice display.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_hostName</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>The Solstice host device’s current hostname.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_port</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The base port that Solstice will utilize for TCP/IP communications. Solstice uses three ports defined by the base port value, +1, and +2.</p>
+                </td>
+            </tr>
+        </table>
+        <h2><a name="Global_Display_Settings"></a>Global Display Settings</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_generalCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>language</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>A code that denotes the current language setting. Valid options are: “en_US” for US English, “ja_JP” for Japanese, “de_DE” for German, “fr_FR” for French, “es_ES” for Spanish, “zh_TW” for Traditional Chinese, and “xx”.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>showSplashScreen</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Show or hide the splash screen background image when the splash-screen is visible.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>localConfigEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable access to the local Configuration Panel on the Solstice host (via mouse/keyboard). When disabled the onscreen configuration menu is no longer visible to users.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>browserConfigEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>If this is disabled, the API cannot interact with the host since the device considers the API browser configuration.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>autoConnectOnClientLaunch</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable quick-connect auto launch.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>hideOnLastClientDisconnect</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Windows Only – hide the display software if no connections are active.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>launchOnClientConnect</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Windows Only – bring display software to foreground when a connection is made.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>launchOnSystemStart</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Windows Only – start display software when host machine boots.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>theme</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Windows Only – selects between the 6 preset themes.&#160; Zero indexed, so the options are 0-5.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>advancedRenderingEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Windows Only – enable (1) or disable (0) advanced rendering for better animations at the expense of host processing cycles.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>hdmiOutDisplayMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Gen3 Pods Only – Change the dual display mode to Mirror (1), Seamless Extend (2), or Extend (3).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>inkEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable support for Solstice Ink.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>windowMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Windows Only – shows whether Solstice is displayed as window app (0), fixed size (1) , or fullscreen (2).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>windowTop</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Windows Only – if windowMode = 1, this is the top coordinate for the fixed window.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>windowLeft</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Windows Only – if windowMode = 1, this is the left coordinate for the fixed window.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>windowWidth</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Windows Only – if windowMode = 1, this is the width in pixels of the fixed window.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>windowHeight</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Windows Only – if windowMode = 1, this is the height in pixels of the fixed window.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2"><a name="Authentication_Modes"></a>Authentication Modes</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_authenticationCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>authenticationMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Pre 3.0 Solstice only – security on host is open (0), screen key (1), password (2), moderated (3), or select at runtime (4)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>screenKeyEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Check whether screen is key protected</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>moderatorApprovalDisabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Check whether moderator mode is enabled or disallowed</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>sessionKey</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The current session key currently displayed on the screen and required to be entered by clients before connecting to the display</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2"><a name="Main_Network_and_Feature_Record"></a>Main Network and Feature Record</h2>
+        <p>The m_networkCuration object contains several nested sub-objects. Some of these sub-objects, including wifiConfig, apConfig, and ethernet, need to have all of their properties sent in the same POST request to correctly reconfigure the Pod.</p>
+        <p>An example of how to change the nested wifiConfig sub-object is to first load the object with GET /api/config, then copy config[‘m_networkCuration’][‘wifiConfig’] into a new configuration object, then set the property changes. You must always set the password. If no password is set, the API will set the password as a single asterisk “*” to protect it.</p>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 275px;" />
+            <col style="width: 74px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: auto;" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_networkCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>connectionShowFlags</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Bitwise flags (post as decimal int)</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Bitwise flags for showing various connection related information on the Solstice splash-screen. Before posting, you will need to convert the desired bit flag into an integer. After posting, the resulting GET may include leading 1's due to the JSON parser converting it to a 32-bit integer before displaying it back.&#160;</p>
+                    <p>&#160;</p>
+                    <p>NOTE: The modern splash screen only supports bits 4 through 8.</p>
+                    <p>&#160;</p>
+                    <p>Pod only.&#160; Windows Software returns 32 ‘1’s.</p>
+                    <p>&#160;</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>Bit 1:</p>
+                            </td>
+                            <td>
+                                <p>Main Screen – Display Name Enabled</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 2:</p>
+                            </td>
+                            <td>
+                                <p>(Don’t Care)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 3:</p>
+                            </td>
+                            <td>
+                                <p>Show IP Address on Main Screen</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 4:</p>
+                            </td>
+                            <td>
+                                <p>Presence Bar – Display Name</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 5:</p>
+                            </td>
+                            <td>
+                                <p>Presence Bar – IP Address</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 6:</p>
+                            </td>
+                            <td>
+                                <p>Show Screen Key on Main Screen</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 7:</p>
+                            </td>
+                            <td>
+                                <p>Presence Bar – Screen Key</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 8:</p>
+                            </td>
+                            <td>
+                                <p>Show Presence Bar</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 9:</p>
+                            </td>
+                            <td>
+                                <p>Connect by App Instructions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 10:</p>
+                            </td>
+                            <td>
+                                <p>App Instructions – Artwork/Icons</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 11:</p>
+                            </td>
+                            <td>
+                                <p>Connect by Web Instructions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 12:</p>
+                            </td>
+                            <td>
+                                <p>Web Instructions – Artwork/Icons</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Bit 13:</p>
+                            </td>
+                            <td>
+                                <p>Show SSID Info (when enabled)</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>discoveryBroadcastEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or Disable UDP Discovery broadcast. When enabled the Solstice host will broadcast discovery information on local network every 5 seconds allowing clients to discover and connect.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>publishToNameServer</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Publish discovery information to Solstice Discovery Service so clients can discover the Solstice host without the need for broadcast traffic/discovery.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>maximumConnections</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The current number of maximum allowable simultaneous connections. Cannot be set past maximum allowable based on license for host.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>maximumLicensedConnections</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Number of maximum allowable simultaneous connections based on the installed license.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>maximumImageSize</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Maximum size of an image, in bytes, shared by clients. Clients that share images past the maximum will automatically be resized (to save resources).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>maximumPublished</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Maximum number of posts allowed. Users who post past this limit will be given a message that the system is busy.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>maximumAirPlayUsers</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Maximum number of simultaneous AirPlay users allowed (ie iOS mirroring posts). Cannot be set higher than 4.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>sdsHostName</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Primary hostname or IP Address of Solstice Discovery Service to list discovery information.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>sdsHostName2</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Secondary hostname or IP Address of Solstice Discovery Service to list discovery information.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>remoteViewMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable Browser Look-In feature.&#160; 0=disabled, 1=enabled, 2=allow users to toggle on/off at runtime. Passing a value other than 0,1, or 2 disables look-in.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>firewallMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Modifies Dual-Network firewall (Pod only) to enable or disable internet traffic between two network interfaces. 0=Block all traffic, 1=Allow ports 80/443, 2=Allow all traffic to be ported (note: admin password must be set and sent with the request).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>vlansEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>See if VLANs are enabled or disabled.  For more information on how to set configurations, see VLANs. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>postTypeDesktopSupported</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable support for PC/desktop full screen sharing.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>postTypeApplicationWindowSupported</p>
+                    <p>&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable support for application window sharing.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>postTypeMediaFilesSupported</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable support for image and video file sharing.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>postTypeAirPlaySupported</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable support for iOS mirroring.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>postTypeAndroidMirroringSupported</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable support for Android full screen mirroring.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bonjourProxyEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable the Bonjour Proxy feature that allows iOS users to discover display to mirror to via the Solstice App instead of the Bonjour protocol.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>ethernetEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable the Ethernet network adapter (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>ethernetGatewayCheckEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable the gateway check (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>wifiMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Set the wireless network adaptor mode 0 = Off, 1 = Client Mode/Attach to existing wireless, 2= Wireless Access Point, 3 = Wireless Miracast.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>wifiAllowAdmin</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable administrative access to Solstice configurations on the wireless network.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>localOTAEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable Solstice locating software updates using a local web server.&#160; Useful when Pods don’t have direct or web proxy-based access to the Mersive web server for updates.&#160;The localOTAUrl value is used for the URL that would be used to find the updates.&#160; Learn more about Local OTA here (<a href="https://www.mersive.com/guides/updating-solstice-pods/"><span class="Hyperlink">https://www.mersive.com/guides/updating-solstice-pods/</span></a>).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>localOTAUrl</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>URL of the local web server and path to use when localOTAEnabled = true (localOTAUrl is ignored if localOTAEnabled = false).&#160; Useful when Pods don’t have direct or web proxy-based access to the Mersive web server for updates.&#160; </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bulletinEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable bulletin text across top of Solstice-enabled Display</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bulletinText</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Text to be displayed in bulletin</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>emergencyEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable the emergency broadcast</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>emergencyText</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Text of emergency broadcast</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b style="font-style: italic;">wifiConfig</b> (Pod only)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>ssid</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>SSID of the host wireless network to connect to via wireless client mode.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>security</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Security protocol of the Pod wireless network (Pod-only).&#160; 0=open, 1=WEP, 2=WPA, 3=WPA2, 4=EAP</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>eap</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>EAP method of authentication when in EAP mode (Pod-only). 0=None, 1=PEAP, 2=TLS, 3=TTLS, 4=PWD, 5=SIM, 6=SIM</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>phase2</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Phase2 authentication method.&#160; 0=None, 1=PAP, 2=MSCHAP, 3=MSCHAPv2, 4=GTC.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>password</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Password used to authenticate to host network.&#160; Get returns “*”</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>dhcp</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable DHCP protocol on wireless interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>staticIP</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Static IP address to assign to device on wireless interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>gateway</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Wireless interface gateway.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>prefixlength</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Prefix setting for wireless interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>dns1</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>First DNS for wireless interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>dns2</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Second DNS for wireless interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b style="font-style: italic;">apConfig</b> (Pod only)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>SSID</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>SSID for standalone wireless access point.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>SecurityMode</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Security protocol for wireless interface when in WAP mode (Pod-only). 0=open, 3=WPA2.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>PSK</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Password to use for authenticating users connecting to wireless access point.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p style="font-style: normal;"><b style="font-style: italic;">ethernet</b> (Pod only)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>dhcp</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable DHCP for the Ethernet network interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>staticIP</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Static IP to assign the device’s Ethernet network interface (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>gateway</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Gateway IP Address for the Ethernet network interface (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>prefixLength</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Prefix length value (netmask, Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>dns1</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>First DNS Server IP Address (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>dns2</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Second DNS Server IP Address (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>allowAdmin</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable administrative access to Solstice configurations on the wireless network.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><i style="font-weight: bold;">vlans</i> (Pod only)</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>&#160;</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>label</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Name of the network to be displayed on the Pod's welcome screen instructions. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>tag</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Integer between 1 and 4094 that specifies your VLAN&#160;ID. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>enabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable the VLAN settings. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>dhcp</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable DHCP for the Ethernet network interface.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>staticIP</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Static IP to assign the device’s Ethernet network interface (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>gateway</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Gateway IP Address for the Ethernet network interface (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>prefixLength</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Prefix length value (netmask, Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>dns1</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>First DNS Server IP Address (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>dns2</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Second DNS Server IP Address (Pod-only).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>allowAdmin</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable administrative access to Solstice configurations on the network.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p style="font-style: italic;"><b>httpProxyServerSettings</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>enabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable use of an HTTP Proxy.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>ip</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>IP Address of HTTP proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>port</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Communications port of HTTP proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>username</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Username to be used when authenticating to the HTTP proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>password</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Password to be used when authenticating to the HTTP proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>excludeLocalSubnet </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable the setting that allows addresses on the same subnet as the Pod to bypass the proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b style="font-style: italic;">httpsProxyServerSettings</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>enabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable use of an HTTPS Proxy.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>ip</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>IP Address of HTTPS proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>port</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Communications port of HTTPS proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>username</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Username to be used when authenticating to the HTTPS proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>password</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Password to be used when authenticating to the HTTPS proxy server.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>excludeLocalSubnet  </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable the setting that allows addresses on the same subnet as the Pod to bypass the proxy server.</p>
+                </td>
+            </tr>
+        </table>
+        <h4 class="Heading4">RSS Feeds</h4>
+        <p>m_networkCuration&#160;also has a nested group key ‘m_rssFeedList’ that can GET or POST an array of messages to be displayed in the RSS feed across the top of a Solstice-enabled display.&#160; It may include custom messages or standard RSS URLs. </p>
+        <p>For example:<br /></p>
+        <p class="codeblock">“m_rssFeedList”: [<br />        {<br />“enabled”: true,<br />“name”: “Custom Message”,<br />“length”: 0,<br />“uri”: “This is a test123”<br />},<br />{<br />“enabled”: true,<br />“name”: “solstice wireless display”,<br />“length”: 3,<br />“uri”: “https://www.mersive.com/go.xml”<br />}
+        ]</p>
+        <h4 class="Heading4">Forget Wireless Network</h4>
+        <p>You can send a standard POST IPAddress/api/config request to forget a wireless network with the following request body:</p>
+        <p class="codeblock">json={"disable": {"ssid":"ssid_name"}}</p>
+        <p>As a note, this will keep the Pod in dual network mode with the wireless settings still enabled but will not be connected to a network. This was implemented to increase performance for streaming via Miracast.</p>
+        <h2 class="Heading2"><a name="Licensing"></a>Licensing</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_licenseCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>licenseStatus</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>0=No license; 1=Error reading license; 2=License OK; 3=License Expired</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>trustFlags</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>7=fully trusted; &lt;7 and the license isn’t trusted and must be repaired</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>fulfillmentType</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>“PUBLISHER ACTIVATION” or “TRIAL”</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>enabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Tells whether the license on the machine is enabled (1) or disabled (0)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>fulfillmentId</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>A unique numerical ID used to distinguish between different machines</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>entitlementId</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>activation code used to activate the license on this machine</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>productId</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>“Solstice”</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>suiteId</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Should be blank. Internal use.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>expirationDate</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>“permanent” or the date the license will expire</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>featureLine</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The license string returned from the license server</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>numDaysToExpiration</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>999999999 if the license is permanent, otherwise the number of days until it expires</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>maxUsers</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>max number of users allowed by license.&#160; eg. “Unlimited”, “4”</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>licensing_maxPosts</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>maximum number of posts allowed by the license type.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>licensing_maxPostsIsConfigurable</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Is the user allowed to change the value of maxPosts?</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>licensing_atMaxPostsReplace</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>When the max post count is reached, should the next post replace (1) or not display (0)?</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>licensing_maxUsers</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>maximum users allowed (0=Unlimited)</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>licensing_maxUsersIsConfigurable</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Is the user allowed to change the value of maxUsers?</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>licensing_remoteViewEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Can remote view be enabled?</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>licensing_remoteViewIsConfigurable</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Is remote view able to be configured?</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>licensing_runtimeAccessControls</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Can users can select the runtime access (moderated, screen key, etc.)?</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2"><a name="Passwords"></a>Passwords</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_userGroupCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>adminPassword</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Administrative password for host. Note – Get on this value will always return “unknown”.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>passwordValidationEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable/Disable validation of admin password using the following rules:<br />•&#160;&#160;&#160;&#160; Minimum of 8 characters.<br />•&#160;&#160;&#160;&#160; At least one uppercase and one lowercase character.<br />•&#160;&#160;&#160;&#160; At least one number or special character.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2"><a name="System_Settings_Record"></a>System Settings Record</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>m_systemCuration</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>autoDateTime</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Enable or disable the use of an NTP time server.&#160; If disabled, date and time is set manually.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>ntpServer</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Non-default NTP time server IP Address. If left blank, a default internet time server will be used when autoDateTime is true.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>dateTime</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Date and time value, represented as a 64-bit integer in milliseconds since January 1, 1970, 00:00:00 GMT.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>timeZone</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Time zone code represented as a string from the set of available time zones.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>timeZones</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string array</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Array of available time zone strings. See the <a href="API-TimeZones.htm">Valid Time Zones</a>&#160;topic.&#160; </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>scheduledRestartEnabled</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Enable or disable a daily Pod restart. Restarting the pod helps refresh memory usage and maximize performance.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>scheduledRestartTime</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get/Post</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>View and set the time for the daily Pod restart. </p>
+                    <p>The format is “hh:mm”. Hours are 00 – 23 and minutes are 00 – 59.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2"><a name="Splashscreen_Commands"></a>Splashscreen Commands</h2>
+        <p>The background image shows on a Solstice-enabled display when no content is shared.&#160; The ‘classic’ splash screen has a single, static image, while the ‘modern’ splash screen can have up to 6 custom images in the carousel.</p>
+        <ul>
+            <li><b>Changing the Classic Splash Screen Image:</b>
+            </li>
+            <p>POST your desired file (key is “file”) to IPaddress/api/config/splashbackground as type formData.&#160; In Postman or a similar tool, you can do this by entering the URL, selecting ‘POST’, entering ‘file’ as the key, and changing the value type from ‘text’ to ‘file’.&#160; This will allow you to upload a file from your computer and post it to the Solstice host.</p>
+            <p>Reset the background to the default image by changing the value type back to ‘text’ and entering ‘reset default’ as the value.&#160; POST to the URL to see the change on your Solstice host.</p>
+            <li><b>Changing the Modern Splash Screen Image(s):</b>
+            </li>
+            <p>There are 6 slots for custom images in the modern splash screen carousel, numbered 0-5.&#160; To upload a new image or reset a specific image to the carousel, use the same command as the classic splash screen appended with ‘/n’ where n is the number of the image to be changed.</p>
+            <p>For example, to upload a new image to the 4<sup>th</sup>&#160;place in the carousel, you would POST your image file to IPaddress/api/config/splashbackground/3.</p>
+            <p>Note that you cannot remove images from the carousel via&#160;the API – that can only be done using the dashboard.&#160; If you are only using the first 3 spots then POST ‘reset default’ to IPaddress/api/config/splashbackground/4, the 5<sup>th</sup>&#160;location in the carousel will be populated with the default image and added to your carousel.</p>
+        </ul> <h2 class="Heading2"><a name="Power_Management"></a>Power Management</h2><p>Power management offers the ability to schedule when pods will stop sending an HDMI output signal after being idle for a specified amount of time, as well as the ability to turn the HDMI signal on and off on demand.</p><table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21"><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4"><p><i>m_powerManagementCuration</i></p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p><b>Key&#160;</b></p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p><b>Type</b>&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p><b>Get/Post&#160;</b></p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><p><b>Description&#160;</b></p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>enabled&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>bool&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><p>Enable or disable power management.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>weekdaysAllDay</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>bool&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><p>On weekdays power management applies all day.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>weekdaysBegin</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>string</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><p>When All Day is false, this is the hour and minute that power management starts. <br />The format is “hh:mm”. Hours are 00 – 23 and minutes are 00 – 59.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>weekdaysDelayMinutes</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>int</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><p>On weekdays this is the number of minutes of inactivity until the Pod turns off the display. The accepted range is 1 – 120.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>weekdaysEnd</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>string</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><p>When All Day is false, this is the hour and minute that power management ends. <br />The format is “hh:mm”. Hours are 00 – 23 and minutes are 00 – 59.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>weekendAllDay</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>bool</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><p>On weekends power management applies all day.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>weekendBegin</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>string</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><p>When All Day is false, this is the hour and minute that power management starts. <br />The format is “hh:mm”. Hours are 00 – 23 and minutes are 00 – 59.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body2"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>weekendDelayMinutes</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>int</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2"><p>On weekdays this is the number of minutes of inactivity until the Pod turns off the display. The accepted range is 1 – 120.</p></td></tr><tr class="TableStyle-Alternate-Row-Color-Body-Body1"><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>weekendEnd</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>string</p></td><td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><p>Get/Post&#160;</p></td><td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><p>When All Day is false, this is the hour and minute that power management ends. <br />The format is “hh:mm”. Hours are 00 – 23 and minutes are 00 – 59.</p></td></tr></table><h2 class="Heading2">Power Management Commands </h2><p>In addition to the standard scheduling and configuration settings, power management supports dedicated commands for turning the HDMI output on and off.</p><ul><li>GET IPAddress/api/control/suspend immediately puts the Pod in standby mode.</li><li>GET IPAddress/api/control/wake immediately wakes the Pod from standby mode.</li></ul><p>Note that suspend commands will be ignored if the pod is actively in use, there is a scheduled meeting within 15 minutes of the current time, or when an emergency message is being broadcast.</p><h2><a name="HDMI_API"></a>HDMI Input</h2><p>The <code>hdmi_input</code> object allows you to turn off the HDMI input port on the front of the Pod. When<code> hdmi_input</code> is forced off, the Pod will ignore any device that connects to this port.</p><p>The following cURL command provides an example of how to turn off the HDMI input port:</p><p class="codeblock">C:\API&gt; <b>curl -k https://192.168.2.148/api/config/hdmi_input -d force_off=true</b> <br /><br />{"rebootRequired":false, "restartRequired": false}</p><p>The following cURL command provides an example of how to turn on the HDMI input port:</p><p class="codeblock">C:\API&gt; <b>curl -k https://192.168.2.148/api/config/hdmi_input -d force_off=false</b><br /><br />{"rebootRequired":false, "restartRequired": false}</p><p>If a password has been set on the Pod, use the <code>-u</code> option to have the cURL command prompt for the Pod's <i>admin</i> password. For example, you might enter something like this:</p><p class="codeblock">C:\API&gt; <b>curl -k -u admin https://192.168.2.148/api/config/hdmi_input -d force_off=true</b><br />Enter host password for user 'admin':<br /><br />{"rebootRequired":false, "restartRequired": false}</p><p class="note">The<code> hdmi_input</code> setting does not persist through a Pod reboot. If the Pod reboots, it will revert back to the default setting for <code>hdmi_input</code> which is <code>force_off=false</code>.<br /></p><h3>Next Topic</h3><p><a href="API-Calendar.htm">Calendar API</a></p></body>
+</html>

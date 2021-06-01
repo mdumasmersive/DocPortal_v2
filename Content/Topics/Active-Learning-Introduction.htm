@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Get Started with Solstice Active Learning</h1>
+        <p>Solstice Active Learning is a software-enabled active routing solution for multi-team learning environments that allows educators to control, share, and engage with students. The application provides a simple active learning space design tool, drag-and-drop video sharing between screens, and an instant messaging system that can broadcast information to each display on demand.  </p>
+        <p>Solstice Active Learning can be enabled on Solstice Gen3 Pods with software version 4.5 or later with a current Active Learning subscription.  Additionally, each designer and facilitator must have a Solstice Cloud account in order to virtually design rooms and route video in real-time using the free Active Learning app. </p>
+        <p class="note">Each Active Learning video routing connection is counted towards the licensed number of connections/users for the Pod. For example, Solstice Pods with SGE (Small Group Edition) licensing will allow up to four total connections to it, including those from active video routing. For Solstice Pods with Unlimited user licensing, the maximum number of Active Learning video routing connections is 8; however, an unlimited amount of Solstice users will be able to connect and share to that individual Pod.</p>
+        <h2>Steps to Get Started with Solstice Active Learning </h2>
+        <ul>
+            <li>Physical setup of the Active Learning room. <a href="Active-Learning-Setup.htm" MadCap:conditions="Default.ScreenOnly">Learn More</a> <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">For more information, see the Solstice Active Learning Setup topic below. </MadCap:conditionalText></li>
+            <li>Log in to your Solstice Cloud (formerly known as Kepler) account and invite Active Learning&#160;Designers and Facilitators to create their accounts. </li>
+        </ul>
+        <p class="note">If your organization does not already have a Solstice Cloud account, see <a href="Cloud-Introduction.htm" MadCap:conditions="Default.ScreenOnly">Get Started with Solstice Cloud</a> <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">our Solstice Cloud Admin Guide</MadCap:conditionalText> for more information on how to set up your account. </p>
+        <ul>
+            <li>Designers and Facilitators accept the email invitation to create their accounts </li>
+            <li>Designers and Facilitators download the Solstice Active Learning app </li>
+            <li>Designer virtually designs and sets up the active learning room within the Solstice Active Learning&#160;app  </li>
+            <li>Facilitators use Solstice Active Learning&#160;app to conduct active learning sessions, route video and content, or broadcast messages within the active learning room</li>
+        </ul>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Invite Active Learning Designers and Facilitators to Create Their Accounts </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice administrators must invite Active Learning users and assign an Active Learning user role in the Solstice Cloud portal. </p>
+                <ol>
+                    <li>Log in to the Solstice Cloud portal as an administrator. </li>
+                    <li>Click the <b>User</b> <img src="../Resources/Images/i_kepleruser.png" style="width: 21px;height: 19px;" /> icon in the top-right corner of the portal, then click <b>Account</b>.</li>
+                    <li>In the <b>Invite someone to Solstice Cloud</b> field, enter in the email address of the user you wish to invite. </li>
+                    <li>From the <b>Choose a Role</b> drop-down, select one of the following options:<ul><li><b>Active Learning Designer</b> - Can use the Solstice Active Learning app to virtually design and set up the active learning rooms. Designers are also able to conduct active learning sessions and route video and content in the active learning room. </li><li><b>Active Learning Facilitator</b> - Can use the Active Learning app to conduct active learning sessions and route video and content in the active learning room.</li></ul></li>
+                    <li>Click <b>Send Invite</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Screen Key Verification</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For enhanced in-room security, a Solstice administrator can require a screen key to be entered by the facilitator before connecting to the room.</p>
+                <ol>
+                    <li>Log in to the Solstice Cloud portal as an administrator.</li>
+                    <li>In the left sidebar menu, go to the <b>Active Learning</b> tab.</li>
+                    <li>Next to the Screen Key Verification option (located above the Filter by Category section), hover your mouse over OFF, and in the pop-up, click <b>Turn On</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Download the Solstice Active Learning app</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_downloadSALapp.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Deploy the Active Learning app with MSI</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><a name="ActiveLearningMSI"></a>The MSI installer package of the Solstice Active Learning app allows for a GUI-based installation on a local machine or GPO deployment in Active Directory. This allows your IT administrator to centrally deploy the Active Learning app on Windows machines and can be set to install silently.   The installer does need privileges to install system-wide, but the installer does not explicitly check for these privileges.  This makes it easier to use the MSI in a remote deployment where either an administrator or the SYSTEM account can install this properly.  </p>
+                <p>The MSI&#160;allows you to set the following installation parameter:</p>
+                <ul>
+                    <li><b>INSTALLDIR=</b> controls where the client will be installed.  The default is: “C:\Program Files (x86)\Mersive Technologies, Inc\Active Learning\”.  Note:  The string “INSTALLDIR” must be written in capital letters.</li>
+                </ul>
+                <p>The client-specific data that was stored in each user’s home directory will now be stored in a central shared location.  This allows for centralized management of these settings and the ability to update them for all users at installation time.  </p>
+                <p>Example:</p>
+                <p class="codeblock">msiexec /i ActiveLearning.msi INSTALLDIR=”C:\Program Files (x86)\Mersive Technologies, Inc\Active Learning” /quiet /log c:\ActiveLearningClient.log</p>
+                <p>The above example will:</p>
+                <ul>
+                    <li>Silently install the client in the directory C:\Program Files (x86)\ActiveLearning</li>
+                    <li>Write an installation log file named C:\ActiveLearningClient.log</li>
+                </ul>
+                <p>If stepping through the InstallShield wizard, the installation directory can also be set on the installer's Destination Folder dialog page. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>FAQ</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot class="FAQ">How do I grant Active Learning access to a guest or substitute teacher?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Each Solstice Active Learning user should have a unique login. Mersive does not recommend creating a universal guest account for guest facilitators. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

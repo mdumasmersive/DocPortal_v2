@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>For more information about the additional Google Workspace configurations needed to integrate with Solstice, as well as how to obtain the necessary information for the fields below, see <a href="../../Topics/Info-Google-Calendar.htm" target="_blank">Updating Your Organization's Google Workspace Resource Calendars </a>.</p>
+        <ol>
+            <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
+            <li>From the <b>Calendar Type</b> drop-down, select <b>Google Calendar</b>.</li>
+            <li>Click <b>Upload service account credentials</b>. </li>
+            <li>Navigate to the location of the service account file you created for the Pod and select it.</li>
+            <li>In the <b>Room Email</b> field, enter the resource email address.</li>
+            <li>
+                <p>By default, the meeting titles and meeting organizers will be visible on the display. If you wish to hide these for all meetings, disable <b>Show meeting titles</b> and <b>Show meeting organizers</b>.</p>
+            </li>
+            <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+    </body>
+</html>

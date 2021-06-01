@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Windows allows you to put QoS information into the packets being sent from the Solstice client by creating a local group policy on your computer. </p>
+        <ol>
+            <li>On your Windows computer, press <b>Windows logo key + R</b>.</li>
+            <li>In the Local Group Policy Editor navigate to <b>Local Computer Policy | Computer Configuration | Policies | Windows Settings | Policy-based QoS</b>.<p><img src="../Images/QoSGroupPolicyWindows10.png" /></p></li>
+            <li>Right click <b>Policy-based QoS</b> and select <b>Create new policy</b>.</li>
+            <li>On the first page of the Create a QoS policy wizard, enter a name for this policy in the <b>Policy name</b> field.</li>
+            <li>With the <b>Specify DSCP Value</b> check box selected, enter a value of 46. <p>The precedence value of 46 corresponds to "Expedited Forwarding." However, you can enter other values defined in the DSCP Pool 1 Codepoints defined by the IETF. </p></li>
+            <li>Click <b>Next</b>.</li>
+            <li>Under <b>The QoS policy applies to</b> label, select the radio button for <b>Only applications with this executable name</b> and enter <b>SolsticeClient.exe</b>.</li>
+            <li>Click <b>Next</b>.</li>
+            <li>On the source and destination IP addresses page, click <b>Next</b>.</li>
+            <li>On the protocol and port numbers page, choose <b>TCP and UDP</b>&#160;from the drop down and then click <b>Finish</b>.</li>
+        </ol>
+        <p>Packets from the Solstice client will now be tagged with QoS headers with a precedence value of 46.</p>
+    </body>
+</html>

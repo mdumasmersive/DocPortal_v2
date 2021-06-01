@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>. <p>The Pod Template Assignments table displays. This table is used to apply templates across your deployment. You can apply a template to multiple Pods at once.<br /></p></li>
+            <p class="tip" MadCap:conditions="Default.Quickstart">You can use the filters from the categories you have created to sort Pods in your deployment and make applying templates across your deployment easier. Filters allow you to apply templates by criteria such as location or campus, depending on the categories you have created and assigned to Pods.  </p>
+            <li>Select the checkboxes of the Pods you want to apply the template to. You can select each Pod's checkbox individually, or select the checkbox in the header row of the table to select all Pods you have access to in the table.<br /><p style="text-align: left;"><img src="../Images/ex_SC_selectall.png" style="width: 339px;height: 287px;" /></p></li>
+            <li>For each template you want to apply, go to the corresponding template type column (e.g., Welcome Screen). You can view a different group of template columns by selecting the group name in the upper right-hand corner of the table.</li>
+            <p style="text-align: left;">
+                <img src="../Images/ex_SC_templategrouptoggle.png" style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;border-right-style: solid;border-right-width: 1px;border-right-color: #000000;border-top-style: solid;border-top-width: 1px;border-top-color: #000000;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;width: 582px;height: 161px;" />
+                <br />
+            </p>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Click the corresponding drop-down for one of the checked Pods in the table, then select the name of the created template. This will apply the template to all of the checked Pods.</li>
+        </ol>
+        <p>
+            <img src="../Images/ex_SC_selecttemplate.png" style="width: 179px;height: 296px;margin-left: 41px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>A pop-up will ask you to confirm the changes. Click&#160;<b>Confirm</b>. A green notification that the template was applied then displays. </li>
+            <li>As changes are being applied, a loading <img src="../Images/i_loading.png" /> icon will appear next to the Pod, and the pending changes <img src="../Images/i_pendingchanges.png" style="width: 19px;height: 17px;" /> icon will appear next to the template(s) being applied. Once the changes are applied, the Pod's normal status will resume. <br /></li>
+            <p class="note">If a Pod is offline, any changes made will be applied when the Pod is back online. </p>
+            <li>If a template you applied has any unique settings that need to be applied each Pod individually, a sliding pop-up will appear prompting you to enter the needed information. Once you are done with all of the settings screens, click <b>Save &amp; Close</b>.</li>
+        </ol>
+        <p>
+            <img src="../Images/ex_individualsettings.png" style="width: 653px;height: 352px;" />
+        </p>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Get Started with Solstice Dashboard</h1>
+        <MadCap:snippetBlock src="../Resources/Snippets/DashboardOverview.flsnp" />
+        <p>The Solstice Dashboard should be installed on a Windows computer that the IT administrator uses regularly. It can also be installed on multiple PCs to manage the Solstice displays on the network from multiple locations.</p>
+        <p>
+            <img src="../Resources/Images/ex_dashboard.png" MadCap:mediastyle="@media print { max-width: 80%; }" style="max-width: 60%;" />
+        </p>
+        <h3>System Requirements</h3>
+        <MadCap:snippetBlock src="../Resources/Snippets/Dashboard_SysReq.flsnp" />
+        <h2>Importing Pods into the Dashboard</h2>
+        <MadCap:snippetBlock src="../Resources/Snippets/Dashboard_ImportPods.flsnp" />
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Install the Dashboard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Dashboard_install.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import Displays Using Discovery </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Import instances that are already running and connected to your network. You will need to ensure that the Windows computer the Dashboard is installed on is connected to the same network as the Solstice Pods.</p>
+                <ol>
+                    <li>In the Dashboard under Import Displays, click the <b>Discover</b> button. A list of discovered displays appears. </li>
+                    <p class="note">If Pods do not appear in the list, they may be on a network that does not support UDP/Broadcast traffic. If this is the case, you can either use the <b>CSV File</b> or the <b>Manual</b> import options.</p>
+                    <li>Select the displays you wish to import. You can Shift+click or Ctrl+click to select multiple displays.</li>
+                    <li>Click the <b>Import</b> button. The displays are added to your list of Your Solstice Instances.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import Displays Using a CSV&#160;File</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Import instances using a comma separated values (CSV) file. This is a quick way to get started using the Dashboard while simultaneously renaming your displays. The file can be created by writing an export script from Active Directory, database software, or other management software services. Alternatively, you can create the CSV file using a spreadsheet program. The format of the file is as follows:</p>
+                <p class="codeblock">&lt;display name&gt;,&lt;IP address&gt;,&lt;port&gt;</p>
+                <p>
+                    <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="../Resources/Other/Example.csv" MadCap:conditions="Default.ScreenOnly">Click here</a> to download an example template. </MadCap:conditionalText>
+                </p>
+                <ol>
+                    <li>Create your CSV file in the appropriate application.</li>
+                    <li>In the Dashboard under Import Displays, click the <b>CSV File</b> button.</li>
+                    <li>Browse to and select the CSV file, then click <b>Open</b>. The instances will be imported into the Dashboard. If any errors with the import process occur, a pop-up will appear listing the error log.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Import Displays Manually</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Import a new Solstice instance by manually entering in the details.</p>
+                <ol>
+                    <li>In the Dashboard under Import Displays, click the <b>Manual</b> button. The Add Display pop-up will appear.</li>
+                    <li>Enter in the <b>Display Name</b> and <b>IP Address</b> for the instance you are adding. You can also change the default port if desired (optional). If you do not know the IP address for the display, you can find it on the display’s main welcome screen.</li>
+                    <li>Click <b>Add</b>. The display is added to your list of instances.</li>
+                </ol>
+                <p class="note">If your display information was entered incorrectly, the display will appear under the “Other Instances, Unknown Versions” list. To remove the invalid display, right click on the display then select to Remove from Dashboard management.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

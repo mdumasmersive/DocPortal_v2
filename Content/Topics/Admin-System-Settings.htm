@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1> System Settings</h1>
+        <p>The system settings allow you to set various system preferences for your Solstice display, including the timezone or the language settings. </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set the Pod's Date and Time</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice Pods will need to have their time settings set. Windows Software Displays will inherit the time settings on the PC the software is installed on.</p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>System</b> tab.</li>
+                    <li>To set the date and time using a time server:<ol style="list-style-type: lower-alpha;"><li>Enable the <b>Set Time/Date Automatically</b> option and enter the time server URL in the corresponding field (the default timeserver URL is pool.ntp.org).</li><li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in.</li><li>Click <b>Apply</b>.</li></ol></li>
+                    <li>To set the date and time manually:<ol style="list-style-type: lower-alpha;"><li>Disable the <b>Set Time/Date Automatically</b> option. A pop-up will appear.</li><li>Click <b>Ignore, Keep Manual Time Setting</b>.</li><li>In the <b>Date and Time</b> field, enter or select the date and time you wish to use for the Pod.</li><li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in.</li><li>Click <b>Apply</b>.</li></ol></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Change Language Settings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>System</b> tab &gt;&#160;<b>System</b> section.</li>
+                    <li>From the Language drop-down, select the language you would like to display on the Pod. </li>
+                    <li>Click&#160;<b>Apply</b>. A pop-up appears.</li>
+                    <li>Click <b>Apply Changes and Restart Display</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Reboot the Pod</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>System</b> tab &gt;&#160;<b>Tools</b> section. </li>
+                    <li>Click the <b>Reboot</b> button. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Schedule Daily Reboots</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Enable and schedule daily Pod software reboots to refresh the Pod’s memory usage and maximize system performance.</p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>System</b> tab &gt;&#160;<b>Tools</b> section.</li>
+                    <li>Select the <b>Schedule daily reboot</b> checkbox.</li>
+                    <li>In the <b>Reboot time of day</b> field, enter in the time you would like the Pod to reboot each day. </li>
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Occupancy Counting</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When enabled, Solstice can use a USB camera attached to the back of a Pod to detect the number of occupants in the room and collect that data. This occupancy data  can be visualized  in Solstice Cloud Analytics.</p>
+                <p class="note">This feature is disabled by default.</p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>System</b> tab.</li>
+                    <li>In the <b>Room Services</b> section, select <b>Occupancy Counting</b>. </li>
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+                <p class="warning">No video or audio data from the camera ever leaves the Pod. All processing occurs locally and the aggregated data is sent to your Solstice Cloud account.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Location Services</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When enabled, Solstice scans the environment (such as WiFi SSIDs and Bluetooth) to estimate the approximate geographc location of Pods. This allows Solstice app users to quickly connect to a Pod that they are physically nearby, streamlining the connection process. .</p>
+                <p class="note">This feature is disabled by default.</p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>System</b> tab.</li>
+                    <li>In the <b>Room Services</b> section, select <b>Location Services</b>. </li>
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+                <p class="warning">Solstice’s location services will not collect any personally identifiable information. Use of this feature is subject to the terms and conditions.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <h3 MadCap:conditions="Default.ScreenOnly">Related Topics</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="../../../../Solstice_SideNav_090220/Solstice_SideNav_090220/Solstice_SideNav/Content/Topics/Admin-Power-Management.htm">Display Power Management Settings</a>
+        </p>
+    </body>
+</html>

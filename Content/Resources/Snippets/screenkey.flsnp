@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>When screen key is enabled, in-room users will be required to enter in the screen key that is visible on the Solstice display before they are able to connect.</p>
+        <ol>
+            <li>Select the displays from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>Select the <b>Screen key enabled</b> option. A pop-up warning may appear.</li>
+            <li>If you agree with the requirements of the warning, click <b>Yes, enable Screen Key</b>.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

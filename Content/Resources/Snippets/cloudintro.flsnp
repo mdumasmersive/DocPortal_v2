@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Solstice Cloud is a secure and scalable portal that helps organizations to optimize their Solstice-enabled meeting and learning spaces for greater usability, productivity, and ROI. This is done through its easy to use management, monitoring, and analytics capabilities. Solstice Cloud allows administrators to easily deploy, monitor, and update Solstice Pods from anywhere in the world using custom categories, configuration templates, and scheduled software updates. Once deployed, usage data is securely collected from Solstice Pods and can be compared across room type or location to provide insight into room usage, participation, and meeting or class duration.</p>
+        <p> <MadCap:expanding MadCap:conditions="Default.ScreenOnly"><MadCap:expandingHead>Watch Overview Video</MadCap:expandingHead><MadCap:expandingBody><br /><br /><iframe width="550" height="310" src="https://www.youtube.com/embed/uhnMyR8jwP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe></MadCap:expandingBody></MadCap:expanding></p>
+        <p MadCap:conditions="Default.PrintOnly">
+            <img src="../Images/ex_home.png" style="width: 682px;height: 403px;" /> </p>
+        <p>Once your Solstice Cloud account is created, you simply connect your Solstice Pods to the application using your <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">Solstice Dashboard</MadCap:conditionalText>.<a href="../../Topics/Admin-GetStarted-Dashboard.htm" MadCap:conditions="Default.ScreenOnly">Solstice Dashboard</a>.  This creates a Solstice Cloud account for your organization. As a note, Pods must have internet access to be onboarded into Solstice Cloud. Your organization only needs to create a single master Solstice Cloud account via the Dashboard. After that account is created, you can log in to Solstice Cloud to invite other users to join and simultaneously assign them a user role. This allows those users across your organization to access the same set of data and Pods. For more information, see <a href="../../Topics/Cloud-Roles-Permissions.htm">Roles and Permissions</a>. </p>
+        <h3>Requirements</h3>
+        <ul>
+            <li>To onboard Pods into Solstice Cloud, Pods must have internet access and be on software version 3.4 or later.</li>
+            <li>Deployment management capabilities are available for every Solstice Pod on version 4.5 or later.</li>
+            <li>Standard Solstice Cloud capabilities, including deployment management, are available at no charge for every Pod in perpetuity.</li>
+            <li>Full Solstice Cloud capabilities, including deployment monitoring and analytics, require current Solstice Subscription.</li>
+        </ul>
+    </body>
+</html>

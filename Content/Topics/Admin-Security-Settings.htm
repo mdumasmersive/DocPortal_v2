@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Security Settings</title>
+    </head>
+    <body>
+        <h1>Security Settings</h1>
+        <p>The Pod is a network-attached device that provides straightforward and secure wireless access to existing display infrastructure by leveraging a host IT network. By configuring your Solstice Pods according to these guidelines, users will be able to quickly connect and share content to the displays in Pod-enabled rooms while still maintaining network security standards. Pods that are not configured properly can be vulnerable to user and network security breaches, including unauthorized user access, screen capture and recording, unauthorized changes to configuration settings, and denial-of-service attacks. </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Password Protect Configurations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/passwordconfigs.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable Local Configurations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/disablelocalconfig.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable Captive Portal Checking</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Periodically, the Pod checks to see if it has access to the internet. However, if you want to eliminate this network traffic, you can disable these checks.</p>
+                <ol>
+                    <li>Select all your displays in the list of Your Solstice Instances.</li>
+                    <li>Go to the <b>Security</b> tab.</li>
+                    <li>In the Administration section, select the <b>Disable Captive Portal Checking</b> option.</li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Screen Key</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/screenkey.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Moderator Mode</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/enablemodmode.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable/Disable Browser Look-In Feature</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Enables users to get a full resolution view of the collaboration session on their client device by entering the Solstice display's IP address into a web browser.</p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>Appearance and Usage</b> tab.</li>
+                    <li>In the Usage and Feature Management section, select <b>Browser Look-in</b> option: <ul><li><b>Enabled</b>:&#160;Users will be able to view the session remotely.</li><li><b>Disabled</b>:&#160;Users will not be able to view the session remotely. </li><li><b>Determine at Runtime</b>:&#160;In-room users will determine if it is enabled when a collaboration session begins. </li></ul></li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Network Encryption</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/EnableNetworkEncrypt.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Serve Solstice Client/App via Port 443</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This setting should only be used on insecure networks where users may be subject to man-in-the-middle redirects. Selecting this option adds additional clicks for the user to get started. </p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>Security</b> tab.</li>
+                    <li>In the Administration section, select the <b>Always serve the Solstice client via port 443</b> option.</li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable ICMP Pings</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Disables the ability to ping the Pod on WAP, Wireless Client, and Network and prevents ICMP/Ping flooding that could lock up the Pod. This feature is disabled by default.</p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>Security</b> tab.</li>
+                    <li>In the Administration section, select the <b>Disable ICMP Pings to the Pod</b>.</li>
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Redirect to HTTPS DNS&#160;Hostname</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><a name="Redirect_HTTPS"></a>This option allows you to load a valid client-to-server certificate on the Pod, so that when the user enters the Pod IP address in their browser, they will be automatically redirected to the HTTPS DNS. </p>
+                <p class="note">This feature requires a DNS Hostname to redirect to, and for the Pod to have a valid client-to-server certificate. As a note, Pods ship with a default, generic client-to-server certificate that can be replaced in the Certificate Tools on the  Security tab of the Solstice Dashboard. Enter the Pod's valid DNS Hostname on the Dashboard &gt; Network tab under <b>Wireless Settings</b> and/or <b>Ethernet Settings</b>, depending on your network configurations. </p>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances.</li>
+                    <li>Go to the <b>Security</b> tab.</li>
+                    <li>In the Administration section, select the <b>Redirect to HTTPS hostname</b> option.</li>
+                    <li>Click <b>Apply</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

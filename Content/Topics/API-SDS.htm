@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>SDS API</h1>
+        <p><b>SDS Server URL:</b> IPAddress/api/discover </p>
+        <p>The SDS API reports statistics about the current status of the Solstice Discovery Service directory. These stats are instantaneous and can provide third-party developers with a snapshot of all hosts managed by this SDS server. Note that the target IP address must be the computer with SDS installed, not a Pod or Windows Host. While SDS may be installed on the same machine as a Windows Host, the API should not be used to call the server while the Solstice Software is active. In the Solstice Dashboard, this the IP address shown in the SDS tab, below the "Configure Primary SDS&#160;Host"&#160;button. </p>
+        <p>Hitting a target URL of a Solstice host returns a single dictionary of key:value pairs pertaining to that one host. [sds]/api/discover returns an array of dictionaries, where each dictionary contains the same keys but different values, depending on the values associated with the host in question. For example, sending a ‘GET’ to an SDS server with two associated hosts returns something similar to this:</p>
+        <p class="codeblock">{<br />&#160; "displays": [<br />&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "name": "Pikes Peak PC",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id": "6cebfe86-3998-11e7-ab88-e09467b10fb1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ipv4": "192.168.3.31",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "port": 53100,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "user_count": 0,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "locked": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "airplay_enabled": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "session_capable": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "in_session": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tags": []<br />&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160; {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "name": "Solstice Demo 01",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id": "b242b840-4824-49d7-b5da-adb3a434a846",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ipv4": "192.168.3.31",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "port": 53400,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "user_count": 0,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "locked": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "airplay_enabled": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "session_capable": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "in_session": false,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tags": []<br />&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160; ]</p>
+        <h2 class="Heading2">
+            <br />SDS Commands</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>display</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>name </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Assigned name of the Solstice host. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>id </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>This is the unique identifier that Solstice uses to manage a single instance, regardless of how the display is named or its current IP address. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>ipv4 </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>IP address of Solstice host. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>port </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Base port for host. The base port is always used along with the next two sequential ports. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>user_count </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Number of users currently connected to the host. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>locked </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Checks if the display is locked </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>airplay_enabled </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Checks if AirPlay mirroring is enabled for the display. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>session_capable </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>bool </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Checks if the display is capable of starting a session. Would return ‘false’ if the host is a Windows PC that does not have the Solstice Software actively running. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>in_session </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>bool </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Checks if host is involved in an active session, defined by one or more connections. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>tags </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>array </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>(Only shows if display has assigned tags). Returns array of dictionaries including the assigned tags’ tag names (“tag_name”:string) and color (“tag_color_index”:int). There are four colors of tag: </p>
+                    <ul style="list-style-type: square;margin-left: 72pt;">
+                        <li>0 = blue </li>
+                        <li>1 = orange </li>
+                        <li>2 = green </li>
+                        <li>3 = pink</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>session_name </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Only shows if in_session=true. Returns nothing unless a session name has been assigned, such as for a Multi-Room meeting. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>synced_display_ids </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>array </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Only shows if in_session=true. Returns nothing unless multiple displays are synced to the session, and then returns array of display IDs. </p>
+                </td>
+            </tr>
+        </table>
+        <h3>Next Topic</h3>
+        <p><a href="API-TimeZones.htm">Valid Time Zone Values</a>
+        </p>
+    </body>
+</html>

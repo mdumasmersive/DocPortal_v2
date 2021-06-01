@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head><title>Overview</title>
+    </head>
+    <body>
+        <h1>OpenControl&#160;API&#160;Overview</h1>
+        <p>The OpenControl protocol supports third-party integration with Solstice hosts through a simple RESTful API. OpenControl can be an important component in a Solstice deployment because it allows integrators and installers to more deeply integrate Solstice with existing room infrastructure.  For example, it can be used to monitor the status of a Solstice host, capture usage statistics, and configure endpoints. In short, OpenControl exposes much of the functionality found in the Solstice Dashboard through a straightforward communications protocol that can be read/written both by humans and machines. Creative uses of the API include automatically emailing IT administrators when a Pod’s new settings do not meet enterprise security standards and enabling dynamic switching between input sources for digital signage.</p>
+        <p>OpenControl uses HTTP GET and POST commands to receive and send data to a Solstice host. The approach ensures that the API is composed of simple transactions that can be sent to a Pod without requiring complex management of state by a 3rd party developer. Any language, on any device, that can issue HTTP GET and POST commands to the appropriate URLs of the Solstice host, then, can be integrated into a Solstice deployment.</p>
+        <h2>What is Required to use the OpenControl API?</h2>
+        <ul>
+            <li>A Solstice Pod or Solstice Windows Software host with an Enterprise Edition license. Note that the Pod and Windows host respond differently to different commands and that some commands are Pod or Windows only; see command list for details.</li>
+            <li>A client platform for issuing commands to the Solstice host.</li>
+            <li>A network connection between the client and Solstice host.</li>
+        </ul>
+        <h2>Example Uses of the OpenControl API</h2>
+        <ul>
+            <li>Capturing statistical usage data periodically and storing that data in a third-party database for analytics.</li>
+            <li>Integrating configuration options into a third-party IT dashboard suite, allowing IT dashboards to incorporate status information about a Solstice deployment.</li>
+            <li>Clearing the screen of posted content or booting users from a Solstice session from in-room control panels.</li>
+            <li>Displaying information about a Solstice session – for example the Session Key – on a control panel or second display.</li>
+            <li>Updating the Solstice host splash-screen messaging from a third-party application.</li>
+        </ul>
+        <p>The OpenControl communications protocol utilizes JSON structures to exchange information between the Solstice host and any number of clients. The protocol uses port 80 or 443. Solstice hosts receive request records and respond to requests by either carrying out an action (i.e. modifying configuration, performing an action) or by responding with a JSON response.</p>
+        <p>OpenControl clients can only communicate with Enterprise Edition Solstice hosts. Standard Solstice Pods (i.e. non-Enterprise Edition) will need to be upgraded to Enterprise Edition before using the OpenControl API. The figure below depicts the main components needed to implement OpenControl.</p>
+        <p>
+            <img src="../Resources/Images/ex_APIdiagram.png" style="width: 539px;height: 307px;" />
+        </p>
+        <p>OpenControl operates over existing TCP/IP network infrastructure to allow third-party client platforms to control and query Solstice endpoints. The protocol is based on a REST architecture that encapsulates communication into independent GET/POST events, sent to particular URLs on the Solstice Pods, each of which result in a JSON formatted response.</p>
+        <h3>Next Topic</h3>
+        <p><a href="API-Setup.htm">OpenControl API&#160;Setup</a>
+        </p>
+    </body>
+</html>

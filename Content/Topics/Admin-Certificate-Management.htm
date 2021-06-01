@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/SupportTable.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Enterprise Certificate Management</h1>
+        <p>By default, Solstice Pods are configured with a self-signed certificate from Mersive. However, for enterprises where this is insufficient, Solstice provides enterprise certificate management tools that give Solstice admins a centralized place for managing certificates in the Solstice Dashboard (Security tab &gt; Certificate Tools). These tools allow Solstice admins to manage client-server communication certificates and 802.1x certificates within Solstice. With the certificate tools, you can do the following:</p>
+        <ul>
+            <li>Generate a  certificate signing request (CSR). This option generates a secret key that stays on the Pod as well as a .csr file that can be signed by your certificate authority. After signing, the certificate can be uploaded to the Pod. <MadCap:expanding><MadCap:expandingHead>Example workflow</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/generateCSR.png" style="width: 744px;height: 221px;" /></MadCap:expandingBody></MadCap:expanding><br /></li>
+            <li> Generate a certificate signing request to create and add a unique 802.1x User Certificates to the Pod for 802.1x authenticated networks. <MadCap:expanding><MadCap:expandingHead>Example workflow</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/generateCSR_802.1x.png" style="width: 730px;height: 217px;" /></MadCap:expandingBody></MadCap:expanding><br /></li>
+        </ul>
+        <ul>
+            <li>Upload both a signed certificate and private key to the Pod. <MadCap:expanding><MadCap:expandingHead>Example workflow</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/privateKeyAndCert.png" style="width: 705px;height: 171px;" /></MadCap:expandingBody></MadCap:expanding></li>
+        </ul>
+        <h2>Limitations</h2>
+        <p>Be aware of the following limitations to the Certificate Tools:</p>
+        <ul>
+            <li>
+                <p>If you are using <b>Install certificate and private key</b>, password-protected PEM files and private keys are not supported.</p>
+            </li>
+            <li>
+                <p>If you are using <b>Install certificate</b> to import 802.1x certificates, you will not be able to include intermediate certificates. If you need to include intermediate certificates, use the Network &gt; Wireless Settings or Network &gt; Ethernet Settings sections to upload them in the PKCS#12 (PFX) format.</p>
+            </li>
+        </ul>
+        <h2>Pod Certificate Support</h2>
+        <p>Here are the certificate formats supported by Solstice:</p>
+        <table class="TableStyle-SupportTable" style="width: 75%;mc-table-style: url('../Resources/TableStylesheets/SupportTable.css');" cellspacing="21">
+            <col style="width: 153px;" class="TableStyle-SupportTable-Column-Column1" />
+            <col style="width: 214px;" class="TableStyle-SupportTable-Column-Column1" />
+            <col style="width: 211px;" class="TableStyle-SupportTable-Column-Column1" />
+            <col style="width: 231px;" class="TableStyle-SupportTable-Column-Column1" />
+            <thead>
+                <tr class="TableStyle-SupportTable-Head-Header1">
+                    <th class="TableStyle-SupportTable-HeadE-Column1-Header1">&#160;</th>
+                    <th class="TableStyle-SupportTable-HeadE-Column1-Header1">Pod-server</th>
+                    <th class="TableStyle-SupportTable-HeadE-Column1-Header1">802.1x EAP-TLS for Ethernet and Wireless</th>
+                    <th class="TableStyle-SupportTable-HeadD-Column1-Header1">802.1x EAP-TLS<br /> (from Network Tab)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-SupportTable-Body-Body">
+                    <td class="TableStyle-SupportTable-BodyE-Column1-Body">Install certificate</td>
+                    <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                        <ul>
+                            <li>PEM</li>
+                            <li>PFX</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                        <ul>
+                            <li>PEM (will be converted to PFX)</li>
+                            <li>PFX</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                        <ul>
+                            <li>PFX</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SupportTable-Body-Body">
+                    <td class="TableStyle-SupportTable-BodyB-Column1-Body">Install certificate <br />and private key</td>
+                    <td class="TableStyle-SupportTable-BodyB-Column1-Body">
+                        <ul>
+                            <li>PEM (password-less PK)</li>
+                            <li>PFX</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-SupportTable-BodyB-Column1-Body">&#160;</td>
+                    <td class="TableStyle-SupportTable-BodyA-Column1-Body">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Generate a Certificate Signing Request</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order to generate the certificate signing request, Solstice needs to obtain information about your enterprise, which includes information like domain components, organization, organizational unit, and  common name. Solstice obtains this information by importing an OpenSSL configuration file. If you do not have a configuration file, or if you are unsure of the format required for this file, you can refer to <a href="https://www.openssl.org/docs/man1.0.2/man1/openssl-req.html#CONFIGURATION-FILE-FORMAT">OpenSSL documentation</a>. An example file is also provided on the Certificate Signing Request pop-up. After clicking OpenSSL&#160;config example <b>View</b>, you can examine the contents of the OpenSSL configuration file. Or you can also copy and paste its contents to a text editor where you can modify the entries and save it to your local file system.</p>
+                <ol>
+                    <li>In the Dashboard, select a Pod from the list of Your Solstice Instances.</li>
+                    <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
+                    <li>Click <b>Generate Certificate Signing Request</b>, then click <b>Open</b>.</li>
+                    <li>From the Certificate Signing Request pop-up, click the type of certificate you want to request. This can be a certificate for the Pod or an 802.1x certificate for Ethernet or Wi-Fi.</li>
+                    <li> Click  <b>Browse</b>.</li>
+                    <li>Navigate to the location of the OpenSSL configuration file that you created on your file system. Click on the file, then click <b>Open</b>.</li>
+                    <li>From the Certificate Signing Request pop-up, click <b>Create</b>. A private key is created on the Pod. <p>Note: For security reasons, the private key remains on the Pod and cannot be exported.</p></li>
+                    <li>Navigate to the location on your file system where you want to save the .csr file, then click <b>Save</b>.</li>
+                </ol>
+                <p>After the .csr file has been saved to your file system, deliver the .csr file to your certificate authority so it can sign the request. The signed request should come back to you as a PEM certificate. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Install a Certificate</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>After you have a signed certificate from your certificate authority that corresponds to the private key on the Solstice Pod, you can upload it.</p>
+                <li>
+                    <ol>
+                        <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
+                        <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
+                        <li>Click <b>Install Certificate</b>, then click <b>Open</b>.</li>
+                        <li>To upload a certificate to the Solstice Pod, ensure that <b>Pod server</b> is selected. <p>If you want to begin configuration for 802.1x network device authentication, select either the 802.1x Ethernet option or the 802.1x Wifi option.</p></li>
+                        <li>From the Install Certificate pop-up, click Certificate <b>Browse</b>.</li>
+                        <li>On your file system, navigate to the location of the signed certificate. Click the certificate, then click <b>Open</b></li>
+                        <li>If you are uploading a PFX certificate, enter the password in the PKCS #12 Password field.</li>
+                        <li>Click <b>Import</b>.</li>
+                        <li>From the Import Success pop-up, click <b>OK</b>.</li>
+                    </ol>
+                    <p>The Solstice Pod will now use the certificate you uploaded to validate connection requests. To view the certificate on the Pod, see View Certificate Details below.</p>
+                    <p class="note">If you imported 802.1x certificates, additional configuration steps need to be performed on the Network tab.</p>
+                </li>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Install a Certificate and Private Key</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have both a signed certificate and its private key, you can upload both files to configure encryption for Client/Server communications on the Solstice Pod. </p>
+                <p class="note">If both your signed certificate and private key are contained in a PFX certificate, use the Install Certificate procedure to upload the PFX file to the Pod.</p>
+                <p class="note">This import option is not available for 802.1x certificates.</p>
+                <li>
+                    <ol>
+                        <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
+                        <li>Go to the <b>Security</b> tab &gt;&#160;<b>Certificate Tools</b> section.</li>
+                        <li>Click <b>Install Certificate and private key</b>, then click <b>Open</b>.</li>
+                        <li>From the Install Certificate and Private Key pop-up, click Certificate <b>Browse</b>.</li>
+                        <li>On your file system, navigate to the location of the signed certificate. Click the certificate, then click <b>Open</b></li>
+                        <li>From the Install Certificate and Private Key pop-up, click Private Key <b>Browse</b>.</li>
+                        <li>On your file system, navigate to the location of the private key that corresponds to your certificate. Click the private key file, then click <b>Open</b>.</li>
+                        <li>Click <b>Import</b>.</li>
+                        <li>On the Import Success pop-up, click <b>OK</b>.</li>
+                    </ol>
+                    <p>The Solstice Pod will now use the certificate and private key you uploaded to validate connection requests. To view the certificate on the Pod, see the 'View Certificate Details' steps below.</p>
+                </li>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View Certificate Details</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To view the currently installed certificate:</p>
+                <li>
+                    <ol>
+                        <li>In the Dashboard, select the Pod from the list of Your Solstice Instances</li>
+                        <li>Go to the <b>Security</b> tab &gt;&#160;<b>Encryption</b> section.</li>
+                        <li>Click Certificate <b>View</b>.</li>
+                    </ol>
+                    <p>A read-only listing of the current certificate appears.</p>
+                </li>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Load Custom CA&#160;Certificate Bundle for HTTPS Communications</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_loadCAcertbundle.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

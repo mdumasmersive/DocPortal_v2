@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Deploy the Solstice App with SCCM</h1>
+        <p>The SCCM installer package of the Solstice App allows for an IT administrator to centrally and remotely deploy the Solstice App for users on a Windows machine.     Generic deployment details follow, but please open a <a href="https://customersupport.mersive.com/hc/en-us/requests/new" target="_blank">support case</a> if you have any questions or concerns about your specific use case. </p>
+        <p>Doing a silent install requires that the installer knows how to handle the questions that are asked during the installation wizard. The options '/s /v/qn' require that there is a separate data file with the answers to the questions. By default this file is called 'setup.iss' and it needs to be in the same directory as the installer. As a note, admin or system privileges are needed to install system-wide but the installer does not explicitly check for these privileges. </p>
+        <h3>Silent Install Instructions</h3>
+        <ol>
+            <li>Download the SCCM version of our client installer from <a href="https://www.mersive.com/download/" target="_blank">mersive.com/download</a>. </li>
+            <li>Run the installer on a machine once via a command window and use the command line option '/r'. This will run through the wizard and record a response file that will be used later. Note that the command must be issued from a command prompt with system or admin rights. Example command: </li>
+            <p class="codeblock">SolsticeClientSetup-5.2_SCCM.exe /r</p>
+            <li>			Run through the install wizard and set your desired configurations. <br /><br /> <img src="../Resources/Images/SCCMconfigoptions2.png" style="width: 481px;height: 360px;" /> <img src="../Resources/Images/SCCM_config.png" style="width: 491px;height: 361px;" /></li>
+            <li>Once the install wizard is completed, a file is created with the selected configurations recorded. The file is called 'setup.iss' and is located in the system’s Windows folder (e.g. C:\Windows\setup.iss).</li>
+            <p class="note">If you want to completely uninstall silently, run through the installer to uninstall and use the command line option “/r” as well. This will run the installer in repair/maintenance/uninstall mode. Select the <b>Remove</b> option and uninstall as normal. As a note, this does not apply to installing an upgrade, only to uninstalling the Solstice Client software. For upgrades, only use the install response file created above as the upgrade will uninstall the previous version and install the new version automatically.</p>
+            <li>Save a copy of this setup.iss file (e.g. setup_install.iss). Once the response file(s) have been created, copy them to the system you want to install on as well as the Solstice Client install package, in this case, SolsticeClientSetup.exe.</li>
+            <li>Once the response file(s) have been created, they can be used for this version of the installer over and over. These response files are keyed to unique GUIDs in the install package so there is a possibility that they will need to be created for each version of the Client installer (although the uninstall one should only be done on the version that will be uninstalled).</li>
+            <li>In a command window, run the line below to silently install. For this example we’ve assumed the response files have been written to C:\. Change the command line to match their location. For example: </li>
+            <p class="codeblock">To install: SolsticeClientSetup-5.2_SCCM.exe /s /f1"c:\setup_install.iss"
+		</p>
+            <p class="codeblock">To uninstall: SolsticeClientSetup-5.2_SCCM.exe /x /s /f1"c:\setup_uninstall.iss"</p>
+            <p class="note">The "/f1" option allows the response file to be in any directory, not just the same directory as the install package. The path used to specify the response files should be given as an absolute path instead of a relative one. Using a relative path gives unpredictable results.</p>
+        </ol>
+        <p>&#160;</p>
+        <h4>Related Topics</h4>
+        <p><a href="Admin-MSI-Instuctions.htm">Deploy the Solstice App with MSI</a>
+        </p>
+    </body>
+</html>

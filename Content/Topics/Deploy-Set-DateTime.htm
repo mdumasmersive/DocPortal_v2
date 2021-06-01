@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Step 4: Set the Pod's Date and Time</title>
+    </head>
+    <body>
+        <h1>Step 4:&#160;Set the Pod's&#160;System Settings</h1>
+        <p>Solstice Pods will need to have their time settings set. If you have an 802.1x authenticated network that requires a CA signed certificate, you will need to ensure the Pod has access to a timeserver. You can also configure the Pod's language setting to display your preferred language. </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set the Pod's Date and Time </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances. </li>
+                    <li>Go to the <b>System</b> tab.</li>
+                    <li>To set the date and time using a time server:<ol style="list-style-type: lower-alpha;"><li>Enable the <b>Set Time/Date Automatically</b> option and enter the time server URL in the corresponding field (the default timeserver URL is pool.ntp.org).</li><li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in.</li><li>Click <b>Apply</b>.</li></ol></li>
+                    <li>To set the date and time manually:<ol style="list-style-type: lower-alpha;"><li>Disable the <b>Set Time/Date Automatically</b> option. A pop-up will appear.</li><li>Click <b>Ignore, Keep Manual Time Setting</b>.</li><li>In the <b>Date and Time</b> field, enter or select the date and time you wish to use for the Pod.</li><li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in.</li><li>Click <b>Apply</b>.</li></ol></li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Change the Language Setting</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the Pod from the list of Solstice Instances. </li>
+                    <li>Go to the <b>System</b> tab.</li>
+                    <li>From the <b>Language</b> drop-down, select the preferred language for the Solstice display.</li>
+                    <li>Click <b>Apply</b>. A confirmation pop-up appears.</li>
+                    <li>Click <b>Apply Changes and Restart Display</b>. The Pod will restart with the preferred language setting applied. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Step</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Security-Settings.htm">Step 5: Set the Base Security Settings</a>
+        </p>
+    </body>
+</html>

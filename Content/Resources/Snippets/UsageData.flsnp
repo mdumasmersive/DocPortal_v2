@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>Usage data captures general information around the utilization of your Solstice Pods:</p>
+        <ul>
+            <li>
+                <p><b>Hours in Use</b>: This is the total number of hours that users were connected to or sharing content to the Pod.</p>
+                <p><b>Total Users</b>: This is the total number of hours that users were connected to or were sharing content to the Pod.</p>
+            </li>
+            <li>
+                <p><b>Meetings</b>: 
+						The number of meetings hosted by the Pod per day. In the context of analytics, a meeting starts when the first user connects to the Pod. Any number of additional users can join the meeting, and the meeting  ends when the last user disconnects from the Pod (which can be different than when the last user stops sharing content to the Pod). Consequently, it is common for several of these "analytics meetings" to occur during the course of a single scheduled meeting.</p>
+            </li>
+            <li>
+                <p><b>Average Meeting Duration</b>: 
+
+						The calculated average of the number of meetings that occur in a single day. Multiple daily average meeting durations can be displayed on the Usage and Compare pages by adjusting the selected time range.</p>
+            </li>
+            <li>
+                <p><b>Content Items</b>: 
+
+						On the Usage and Compare pages, content items are summarized as a total number of items that users shared to the Pod per day. More granular detail about the kind of content that was shared or the connection method that was used is provided on the In-Room Tech page.</p>
+            </li>
+            <li>
+                <p><b>Content Per Meeting</b>: 
+
+						The calculated average of the number of posts users shared on the Pod divided by the number of meetings that occurred.</p>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Step 2: Connect the Pods to the Network</title>
+    </head>
+    <body>
+        <h1>Step 2: Connect the Pods to the  Network </h1>
+        <p>Solstice can be configured flexibly to meet the requirements of your IT security policy and network topology. By default, the Solstice Pod comes both with Ethernet enabled, and with its wireless network card configured to act as a wireless access point by default. When deployed in WAP mode, users can connect to the Pod’s hotspot network. However, for performance reasons, Mersive highly recommends disabling WAP mode and attaching the Pod to your enterprise network. </p>
+        <p>You may have connected your Pods to the network in order to import them into the Solstice Dashboard for streamlined deployment. However, there may be some additional network configurations needed. Mersive recommends reviewing the options below on how to attach the Solstice Pod to your network. <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly">For additional network configurations, see <a href="Admin-Network-Settings.htm">Network Settings</a>. </MadCap:conditionalText></p>
+        <p>The following are the primary options for how to attach the Solstice Pod to your network:</p>
+        <ul>
+            <li><b>Attached via Ethernet</b>  – Connect an existing network jack directly into the Pod's Ethernet port. It is best practice to connect the Pod to the primary network via Ethernet. The Pod comes with Ethernet enabled by default, so connecting an active network jack should result in an automatic network connection. However, you may still need to set additional configurations. </li>
+            <li><b>Attached Wirelessly</b> – Connect the Pod to an existing network wirelessly when there is no Ethernet jack in the room. </li>
+            <li><b>Dual Networks (Attached via Ethernet and Wirelessly)</b> - Connect the Pod to the primary network via Ethernet and the secondary/guest network wirelessly. Many deployments take advantage of the Pod’s dual-network capabilities to support secure collaboration between users on separate networks, such as corporate and guest users. The Pod’s two network interface cards are completely distinct with separate routing tables, enabling seamless collaboration without compromising the security of either network. </li>
+            <p class="note">When the dual-network configuration is implemented, the firewall feature should be enabled (Network tab &gt;&#160;Firewall Settings).</p>
+        </ul>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Attach via Ethernet (Recommended)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/AttachviaEthernet.flsnp">
+                </MadCap:snippetBlock>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Attach Wirelessly</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/AttachWirelessly.flsnp">
+                </MadCap:snippetBlock>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable Wireless Access Point (WAP) Mode</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/WAPMode.flsnp">
+                </MadCap:snippetBlock>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Step</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Deploy-Rename-Customize.htm">Step 3:&#160;Rename the Pod and Customize the Appearance</a>
+        </p>
+        <h2 MadCap:conditions="Default.PrintOnly">Open Network Ports</h2>
+        <p MadCap:conditions="Default.PrintOnly">Solstice uses all TCP/IP standard network traffic to communicate across all the required and optional components of the Solstice system. Network ports/routes must be open for Solstice to work correctly. The network that Solstice is ultimately deployed on needs to allow peer-to-peer TCP connections.  The full list of Solstice network ports used can be found  below.</p>
+        <h2 MadCap:conditions="Default.PrintOnly">TCP&#160;Ports</h2>
+        <ul>
+            <li MadCap:conditions="Default.PrintOnly"><b>80 and 443</b>: Used if the Solstice host is allowed to connect to the internet for license activation and software upgrades. When pushing a local update file to the Pod, these ports need to be open between the Pod and the Dashboard. These ports are also used by the OpenControl API to interface with 3rd party systems. When network encryption is enabled, the Solstice Dashboard will send SLR updates via port 443. </li>
+            <p class="note" MadCap:conditions="Default.PrintOnly">If you are using a Solstice Pod or Solstice Dashboard on 4.1 or higher, communication to Mersive's license server will only occur over https/port 443.</p>
+            <li MadCap:conditions="Default.PrintOnly"><b>6443</b>: Used for browser-based sharing connections. </li>
+            <li MadCap:conditions="Default.PrintOnly"><b>7236</b>: Miracast WiFi Direct control port used to establish and manage sessions between the source device and the Pod.</li>
+            <li MadCap:conditions="Default.PrintOnly"><b>7250</b>: Port on which the Pod listens for Miracast packets when Over Existing Network mode is enabled.</li>
+            <li MadCap:conditions="Default.PrintOnly"><b>6000-7000, 7100, 47000, and 47010</b>: Should allow inbound AirPlay® traffic to the Solstice host.</li>
+            <li MadCap:conditions="Default.PrintOnly"><b>53100, 53101, and 53102</b>: Used by default for basic communications between the Solstice host and both end user devices and the Solstice Dashboard. Three sequential ports are required, but the base port (53100 by default) may be changed on a per-host basis through the display’s configuration panel or the Dashboard.</li>
+            <li MadCap:conditions="Default.PrintOnly"><b>53200, 53201, and 53202</b>: Used by the Solstice host and end user devices to communicate the Solstice Discovery Service (SDS) host if SDS discovery mode is enabled.</li>
+            <p class="note" MadCap:conditions="Default.PrintOnly">The browser-based sharing capability can utilize any non-privileged TCP port from 1024 to 65536.</p>
+        </ul>
+        <h2 MadCap:conditions="Default.PrintOnly">UDP&#160;Ports </h2>
+        <ul MadCap:conditions="Default.PrintOnly">
+            <li><b>123</b>: Used to communicate with an NTP server.</li>
+            <li><b>5353</b>: Required for iOS mirroring via the Bonjour protocol. It is not required when using the Solstice Bonjour Proxy. Also, if Miracast Over Existing Network mode is enabled, this port is used for multicast DNS (mDNS). mDNS is broadcasted to the local subnet of each network interface the Pod is connected to. If the computer that is attempting to make an infrastructure connection is on a different subnet, this broadcast will fail. If this happens, a workaround is to create a DNS entry to the Pod’s hostname.</li>
+            <li><b>6000-7000, and 7011</b>: Should allow inbound AirPlay® traffic to the Solstice host.</li>
+            <li><b>55001</b>: Used for display discovery if broadcast discovery mode is enabled.</li>
+            <p class="note">Both the Miracast and browser-based sharing capabilities can utilize any non-privileged UDP port from 1024 to 65536.</p>
+        </ul>
+    </body>
+</html>

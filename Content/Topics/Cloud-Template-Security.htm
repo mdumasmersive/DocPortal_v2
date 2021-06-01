@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');" MadCap:onlyLocalStylesheets="False">
+    <head>
+        <link href="../Resources/Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Security Template</h1>
+        <p>A Solstice Pod is a network-attached device that provides straightforward and secure wireless access to existing display infrastructure by leveraging a host IT network. By configuring your Pods according to these guidelines, users will be able to quickly connect and share content to the displays in Pod-enabled rooms while still maintaining network security standards. Pods that are not configured properly can be vulnerable to user and network security breaches, including unauthorized user access, screen capture and recording, unauthorized changes to configuration settings, and denial-of-service attacks. </p>
+        <p>
+            <img src="../Resources/Images/Templates-sidebarnav-Security.png" style="height: auto;width: 760px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access This Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Security</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create New Security Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <b>Create New Security Template</b>. </li>
+                    <li>Enter the <b>Template Name</b>. For example, you could name the template by location (London Office) or descriptively (High Security). </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p class="tip"> You can also start by duplicating an existing template and making changes to it. Click on the three dots on the right side of the template you want to start with, and choose <b>Duplicate Template</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Password Protect Configurations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Cloud-Password-Protect-Configurations.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable/Disable Local Configurations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you have chosen not to set an admin password to protect Pod configurations, you can still prevent users from making changes by disabling the ability for local configuration (in-room using a keyboard or mouse) or from a web  browser. However, disabling both of these options means that you will only be able to configure the Pod using Solstice Cloud, which requires network connectivity. </p>
+                <ol>
+                    <li>To enable in-room configuration, select the <b>Allow local configuration</b> checkbox. To disable it, uncheck this box.</li>
+                    <li>To enable configuration from a web browser, select the <b>Allow configuration from web browser</b> checkbox. To disable it, uncheck this box.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Serve Solstice Client/App via Port 443</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This setting should only be used on unsecured networks where users may be subject to man-in-the-middle redirects. Selecting this option requires additional clicks for the user to get started. </p>
+                <ol>
+                    <li>On the Manage Security Templates page,  select the <b>Always serve the Solstice client via port 443</b> option.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Redirect to HTTPS Hostname</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice admins have the option to enable Solstice to redirect a user who enters the HTTP version of the Solstice host’s IP address or DNS hostname (e.g. http://111.22.3.44) to the secure HTTPS DNS hostname (e.g. https://hostname.domain) when the Pod’s certificate is validated by the web browser. This ensures that internal users have a secure connection to the Solstice QuickConnect page. This feature is available starting in Solstice 5.1.</p>
+                <ol>
+                    <li>Select  the <b>Redirect to HTTPS hostname</b> checkbox to enable this functionality.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p class="note">This feature requires that Solstice admins enter a valid DNS hostname in the Pod’s network settings and have a valid client-to-server certificate on the Pod.  To enter a Pod's DNS Hostname, go to Manage &gt; Pods, click on the Pod's name, and update the <b>Ethernet</b> and/or <b>Wifi</b> sections (depending on your network configurations). Be sure to <b>Save</b> your changes in each section. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Disable Captive Portal Checking</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Periodically, each Pod checks to see if it has access to the internet. However, if you want to eliminate this network traffic, you can disable these checks. This option is available starting in Solstice 5.3.</p>
+                <ol>
+                    <li>To disable these checks, select the <b>Disable Captive Portal Checking</b> checkbox.</li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+                <p class="tip">To apply this setting to all your Pods at once, go to Manage &gt; Pods and select the checkbox at the top of the first column. This will check all the Solstice Pods available to you in the list. Click <b>Settings</b> to display the <b>Security</b> column and select the Security template with captive portal checking disabled for any one of the selected Pods. You will be prompted to confirm the change on the number of selected Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable Encryption for Solstice Traffic</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Cloud-Enable-Network-Encryption.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Use a Custom CA&#160;Certificate Bundle for HTTPS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This option allows you to load a self-signed CA certificate bundle onto one or more Pods to be used for HTTPS communications and to validate the Pod’s access to external data connections such as digital signage feeds, RSS feeds, and Solstice Cloud. This is especially important for networks that utilize a MITM proxy that intercepts HTTPS requests. The custom CA bundle is used in addition to the Pod’s built-in CA certificates, which are suitable for most internet access. </p>
+                <p class="note">Only a PEM certificate with a .crt file extension is supported.</p>
+                <ol>
+                    <li>Select the <b>Use custom CA&#160;cert bundle for HTTPS</b> checkbox.</li>
+                    <li>Click <b>Upload custom CA&#160;cert bundle</b>.</li>
+                    <li>In the file explorer that opens, browse and select the CA&#160;certificate bundle, then click <b>Open</b>.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign the Template to Your Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" MadCap:conditions="Default.ScreenOnly" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Time-Locale.htm">Time/Locale Template</a>
+        </p>
+    </body>
+</html>

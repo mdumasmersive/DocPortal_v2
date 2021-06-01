@@ -1,0 +1,1447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Solstice Release Notes</h1>
+        <p>Release notes for Solstice are shown below, with the most recent release first.</p>
+        <p class="tip">Looking for other release notes? View our release notes for <a href="../Topics/Release-Notes-Solstice-Cloud.htm">Solstice Cloud</a> and <a href="../Topics/Release-Notes-Solstice-AL.htm">Solstice Active Learning</a>. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.3.2 // May 2021</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Supported Devices for Solstice Conference</h4>
+                <p>New USB room devices are now supported for Solstice Conference. <a href="../Topics/Solstice-Conference-Supported-Peripherals.htm">View the full list here.</a></p>
+                <h4>Resolved Issues for Solstice</h4>
+                <ul>
+                    <li>Streaming video camera feeds with Solstice Conference on a low latency or low jitter network should result in smoother and less pixelated video streams.</li>
+                    <li>Browser-based sharing will now stop when the laptop device that is sharing goes into sleep mode.</li>
+                    <li>Google Workspace calendar settings can now successfully be applied to Pods.</li>
+                    <li>
+                        Browser-based sharing is now compatible with the latest versions of Chrome and Edge browsers (versions 90.x).
+                    </li>
+                    <li>When the Pod is plugged into a persistent HDMI-in content source, the HDMI-in stream no longer experiences intermittent freezing.</li>
+                </ul>
+                <h4>Resolved Issues for Solstice Windows Display Software</h4>
+                <ul>
+                    <li>
+                        Browser-based sharing is now compatible with the latest versions of Chrome and Edge browsers (versions 90.x).
+                    </li>
+                    <li>
+                        Windows Display Software now successfully uninstalls without displaying error messages.
+                    </li>
+                </ul>
+                <h4>Important Notes for 5.3.2</h4>
+                <ul>
+                    <li>The Gateway Check functionality  has been deprecated as of 5.3.2 as it is no longer needed by Solstice Pods and to resolve issues that were being caused by this feature. As a note, this setting is still visible but the underlying functionality has been disabled; however, this setting will be fully removed in an upcoming release. </li>
+                    <li>If a Windows user has the 5.3 or 5.3.1 version of the Solstice app and Solstice Conference drivers installed, they must reboot their laptop machine and re-run the installer before upgrading their Solstice app to the current 5.3.2 version. </li>
+                    <li>
+                        Similarly, admins centrally updating Solstice apps and Solstice Conference drivers from version 5.3 or 5.3.1 to version 5.3.2 via MSI will first need to remotely reboot the user machine, uninstall the current client, then install the 5.3.2 client via MSI. If the current client version is 5.2.1 or earlier, admins can simply update to 5.3.2 without needing to reboot or uninstall. <a href="https://documentation.mersive.com/content/topics/admin-msi-instuctions.htm">Learn More</a></li>
+                    <li>If users experience issues with Solstice Conference after upgrading their app to 5.3.2, rebooting their laptop machine may solve common problems. </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.3.2 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>
+                        Solstice Pod (Gen2i and Gen3 only)
+</li>
+                    <li>Solstice Windows Display Software</li>
+                    <li>Solstice Apps (Windows and macOS only)               </li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods and Windows Display Software to the latest version. You can schedule the latest software update for your Solstice Pods using Solstice Cloud. If using Solstice Dashboard, remember to update Solstice Dashboard instances to the latest available version before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.3 // April 2021</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Solstice Conference Refactor
+</h4>
+                <p>The newest version of Solstice Conference has been refactored to use significantly less network bandwidth and meeting host laptop processing power. Solstice Conference also now has full support for more laptops, including many laptops with i5 processors, supporting a much wider range of users  (<a href="../Topics/Solstice-Conference-Introduction.htm#LaptopSpecs">view supported laptop specs</a>). Note: The open network ports needed for Solstice Conference have been updated. For more information on what network ports are needed, see <a href="../Topics/Admin-Network-Ports.htm">Open Network Ports</a>. Solstice Conference is available for Gen3 Pods with current Solstice Subscription.</p>
+                <p class="warning"><b>Important Note:</b> When a Solstice Pod is upgraded to version 5.3, users will need to upgrade their Solstice app to version 5.3 to use Solstice Conference. Similarly, users will not be able to use the 5.3 Solstice app with previous versions of Solstice Conference (version 5.2.1 or earlier). However, content sharing, control, and markup will still work across old and new versions of Solstice and the Solstice app.</p>
+                <h4>New Supported Devices for Solstice Conference</h4>
+                <p>The following USB room devices are now supported for Solstice Conference. <a href="../Topics/Solstice-Conference-Supported-Peripherals.htm">View the full list here.</a></p>
+                <ul>
+                    <li>AVer VB342+ Soundbar</li>
+                    <li>Blackmagic Web Presenter</li>
+                    <li>Crestron UC-SB1-CAM</li>
+                    <li>Logitech C920</li>
+                    <li>Logitech C930e</li>
+                    <li>Nureva HDL200</li>
+                    <li>Poly Studio (available in 5.3.1)</li>
+                    <li>Poly Studio X50</li>
+                    <li>
+                        <p>Sennheiser SP30T Audio Puck</p>
+                    </li>
+                    <li>Shure IntelliMix P300</li>
+                    <li>Yamaha Adecia</li>
+                </ul>
+                <h4>Other Key Features in 5.3</h4>
+                <ul>
+                    <li><b>New Solstice App Designed for an Improved User Experience.</b> Along with enhanced performance, the newly redesigned Solstice app makes it easier to share and control content on the Solstice display. The new Solstice app also makes it easier to identify which applications windows are currently being shared to the display. And an improved workflow for Solstice Ink allows mobile device users to easily use their smartphones to wirelessly point or draw on the Solstice display, resulting in an even better collaboration experience.</li>
+                    <li><b>New Solstice App Setting to Turn Ability to Share the Room Display in a Solstice Conference Session On/Off.</b> When toggled ‘Off’, Solstice Conference meetings hosts will not be able to share the room display to remote participants in a Solstice Conference session via their web conferencing application. This setting is turned ‘On’ by default; turning this option ‘Off’ may improve performance on some meeting host laptops. Note: When disabled, Solstice users will still be able to share their desktop to remote users in the web conference. However, for the full Solstice Conference experience, Mersive recommends keeping this option enabled.</li>
+                    <li><b>Conference Priority for Connected Audio Devices.</b>  If multiple devices are connected to the Conference-enabled Solstice Pod with overlapping features (e.g. two sets of speakers), Solstice will prioritize audio from the device plugged closest to the power supply. For devices connected to Solstice via a USB device hub, the port with the lowest hub number will be prioritized.</li>
+                </ul>
+                <h4>Other Fixes and Enhancements</h4>
+                <ul>
+                    <li>Solstice’s option to schedule a daily Pod restart has been changed to a daily reboot. This setting allows administrators to schedule a daily reboot for the Pod that restarts both the Pod’s hardware and software to refresh the Pod’s memory usage and maximize system performance. This setting is available in the Solstice Dashboard (System tab &gt; Tools) and the Pod's local configuration panel (Tools tab).</li>
+                    <li>Security-conscious Solstice administrators can now disable captive portal checks used by the Pod periodically to check for a captive portal on the network (Solstice Dashboard &gt; Security tab).</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Solstice and Solstice Conference now fully support Apple M1 machines. As a note, users must install Apple’s Rosetta 2.</li>
+                    <li>Private keys that were generated via a Pod-generated CSR are now applied correctly. Solstice now performs additional validation and checking of key pairs applied to the Pod.</li>
+                    <li>HTTPS redirects using reverse DNS lookup with Ethernet and wireless connected to separate networks now work as intended.</li>
+                </ul>
+                <h4>Other Important Notes for 5.3</h4>
+                <ul>
+                    <li>If a user has a previous version of the Solstice app and Solstice Conference drivers installed, they will be prompted and will need to reboot their laptop machine before uninstalling or upgrading their Solstice app to the current 5.3 version.</li>
+                    <li>Similarly, if a user machine has a previous version of the Solstice app and Solstice Conference drivers installed, admins centrally upgrading Solstice apps to version 5.3 via MSI, or uninstalling a previous version of the Solstice app via MSI, will first need to remotely reboot the user machine. <a href="../Topics/Admin-MSI-Instuctions.htm">Learn More</a></li>
+                    <li>Mersive is no longer releasing 32-bit Windows versions of the Solstice app starting with version 5.3. Only 64-bit Windows versions of the Solstice app will be available for Solstice 5.3 or later.</li>
+                    <li>Solstice’s Multi-Room feature is being discontinued and has been removed from the mobile version of the Solstice app in 5.3. This feature will be removed from the desktop version in an upcoming release.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.3 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>
+                        Solstice Pod (Gen2i and Gen3 only)
+</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps                   </li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. You can schedule the latest software update for your Solstice Pods using Solstice Cloud. If using Solstice Dashboard, remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.2.3 // January 2021</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features for Solstice Display Software for Windows </h4>
+                <ul>
+                    <li>
+                        <p><b>App-free Wireless Sharing via Web Browser. </b>Users can now share to Solstice Display Software for Windows from a web browser on their laptop devices, extending wireless sharing support to Chromebook, Linux, guest, and unmanaged users who cannot install the Solstice App. The new capability also provides an additional sharing option for Windows and macOS devices. To use the new feature, enter the URL visible on the Solstice display in the browser of a laptop device to visit the Solstice Quick Connect page, then click the new option to launch Solstice in a web browser. This capability is supported by Firefox 52+, Chrome 72+, and Edge 88+  browsers. This setting can be disabled in the Solstice Dashboard (Appearance and Usage tab &gt; Client Sharing Options). NOTE: The ability to share with a web browser is not available on mobile devices. For the full Solstice experience, including mobile and audio support, please use the Solstice app.</p>
+                    </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.2.3 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>
+                        <p>Solstice Display Software for Windows</p>
+                    </li>
+                </ul>
+                <p>To access this update for Solstice Display Software for Windows, visit <a href="http://www.mersive.com/downloads">mersive.com/downloads</a>. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.2.1 // January 2021</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li>
+                        <p><b>Solstice Conference Support for Google Workspace Calendar.</b> The Google Workspace room calendar integration now works with Solstice Conference to allow meeting hosts to quickly launch web conferences scheduled on the Google room calendar once they connect to the Solstice display with the Solstice app.</p>
+                    </li>
+                </ul>
+                <h4>New Supported Devices for Solstice Conference</h4>
+                <p>The following USB room devices are now supported for Solstice Conference. <a href="../Topics/Solstice-Conference-Supported-Peripherals.htm">View the full list here.</a></p>
+                <ul>
+                    <li>Aver VC520</li>
+                    <li>
+                        <p>Jabra Link 370</p>
+                    </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>
+                        <p>The capability that allows Solstice Conference users to share the Solstice display in  a conference session is now working properly for Windows machines. <b>Note:</b> Windows users should upgrade their Solstice app to version 5.2.1 or later.</p>
+                    </li>
+                    <li>
+                        <p>Additional resiliency added for the Pod update process.</p>
+                    </li>
+                    <li>
+                        <p>Pods now successfully communicate through proxy after upgrading to the latest version of Solstice.</p>
+                    </li>
+                    <li>
+                        <p>When a Pod is connected to two displays and has the HDMI Input Persistent Post option and the Extend display option enabled, the Pod will no longer reverse the video outputs to the wrong display.</p>
+                    </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.2.1 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Apps (MacOS&#160;and Windows only) </li>
+                </ul>
+                <p class="note"><b>Note:</b> As of 5.2, the Solstice client app has been renamed the “Mersive Solstice” app. Due to this name change, installing the 5.2.1 version of the .dmg Mac client may not automatically overwrite the previous version of the app. End-users will need to manually uninstall the previous version of the app, and may need to update their macOS security settings for the new version of the app.</p>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. You can also use Solstice Cloud to schedule the 5.2.1 software update for your Solstice Pods. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. If using the Solstice Dashboard, remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.2 // December 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="5_2"></a>New Features</h4>
+                <ul>
+                    <li>
+                        <p><b>Google Workspace Room Calendar Support.</b> For organizations that utilize Google Workspace productivity tools, Solstice adds support for the integration of Google Workplace room calendars alongside existing support for Microsoft Exchange and Office365 calendars, allowing organizations to utilize their room calendaring platform of their choice in their Solstice-enabled spaces. Once integrated, Solstice displays the room schedule so that users can quickly view upcoming availability for the meeting space<MadCap:conditionalText MadCap:conditions="Default.Future">, and allows meeting hosts to quickly launch web conferences scheduled on the room calendar</MadCap:conditionalText>. The Google Workspace Calendar integration is available for Solstice Gen2i and Gen3 Pods (Solstice Cloud &gt; Calendar settings, or Solstice Dashboard &gt; Calendar tab). Google Workspace administrators may need to configure <a href="../Topics/Info-Google-Calendar.htm">additional settings</a> in Google Workspace before integrating the room calendar with Solstice.</p>
+                    </li>
+                    <li>
+                        <p><b>Welcome Screen Background Animation.</b> Solstice admins can now enable a slow-moving animation of Solstice display’s Welcome Screen background to mitigate any potential display burn-in. This setting is particularly useful when utilizing only one background image for the Solstice display. This setting can be configured in Solstice Cloud (Welcome Screen settings), or Solstice Dashboard (Appearance and Usage tab).</p>
+                    </li>
+                    <li>
+                        <p><b>Usability Notifications for Solstice Conference Users.</b> Solstice will now display notifications to end-users to alert them of any conditions that may impact Solstice Conference, such as low network bandwidth or the use of an unsupported USB room camera or microphone. This informs admins and end-users if conditions are not ideal for using Solstice Conference, and helps to identify the root of any environmental issue so that it can be resolved to allow for an optimal Solstice Conference experience.</p>
+                    </li>
+                    <li>
+                        <p><b>HDCP Support for Gen3 Pod’s HDMI Input.</b> The Solstice Gen3 Pod’s HDMI-in port can now optionally support <a href="https://www.rgb.com/digital-video-content-protection-and-hdcp">HDCP content</a>. This capability allows Gen3 Pods to support HDCP 1.4 standard edition, allowing the Pod to pass through HDCP content from connected media devices. This feature is only supported on Solstice Gen3 Pods with serial number MPOD8000A2xxxxxx or higher. To locate a Pod’s serial number, reference the manufacturer’s label on the bottom of the Pod.  This setting is disabled by default; Solstice admins can enable this setting using Solstice Cloud (Advanced settings), or Solstice Dashboard (Appearance and Usage tab).</p>
+                    </li>
+                    <li><b>Updated EDID Settings for HDMI Input.</b> Solstice admins are now able to force the accepted resolution for a Gen3 Pod’s HDMI Input port. This allows Solstice to support equipment plugged into Pod’s HDMI input that has an output resolution of 720p, 1080p, or VGA. By default, Solstice is configured to automatically select the accepted resolution. This setting can be configured in the Solstice Dashboard (Appearance and Usage tab &gt; Preferred HDMI Input Resolution).</li>
+                    <li>
+                        <p>OpenControl API Updates:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                <p><b>Toggle HDMI Input Post.</b>  Solstice integrators can now enable or disable a Solstice display’s HDMI-input content post. This allows integrators to connect a device to the Gen3 Pod’s HDMI input and control when the post appears on the Solstice display. <a href="../Topics/API-Configuration.htm#HDMI_API">Learn More</a></p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>New Support Audio/Video Devices for Solstice Conference</h4>
+                <p>The following USB room devices are now supported for Solstice Conference. <a href="../Topics/Solstice-Conference-Supported-Peripherals.htm">View the full list here.</a></p>
+                <ul>
+                    <li>Huddly IQ</li>
+                    <li>Lumens VC-B10U</li>
+                    <li>Jabra Speak 750</li>
+                    <li>Jabra Speak 810</li>
+                    <li>Aver Cam 340+</li>
+                    <li>Aver Cam520</li>
+                    <li>Aver Cam520Pro</li>
+                    <li>Aver Cam540</li>
+                </ul>
+                <h4>Other Fixes and Enhancements</h4>
+                <ul>
+                    <li>
+                        <p>Solstice Conference now supports Big Sur for MacOS, and maintains support for Catalina. As of 5.2, Mojave support will no longer be maintained for Solstice Conference.</p>
+                    </li>
+                    <li>
+                        <p>Solstice admins who centrally deploy the Solstice app using MSI or SCCM are now able to hide the app’s Settings tab as well as any Solstice Conference functionality from end-users if they are not utilizing Solstice Conference.</p>
+                    </li>
+                    <li>
+                        <p>HTTPS Redirect for the QuickConnect page now supports reverse DNS lookups to reduce the configuration burden of the administrator.</p>
+                    </li>
+                    <li>
+                        <p>QuickConnect URL parameters now use standard syntax so that certain security scanners no  longer have false positives because the QuickConnect URLs previously did not use a standard query syntax.</p>
+                    </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>
+                        <p>Android screen mirroring now correctly resizes a video share when the device is flipped into a landscape or portrait orientation.</p>
+                    </li>
+                    <li>
+                        <p>When connected to two displays, Solstice no longer changes the Display Option back to ‘Mirror’ when it wakes from being suspended by display power management.</p>
+                    </li>
+                    <li>
+                        <p>The Solstice Dashboard now consistently persists the Primary SDS Host configuration.</p>
+                    </li>
+                    <li>
+                        <p>Solstice Conference audio for MacOS no longer experiences an audio ringing effect.</p>
+                    </li>
+                    <li>
+                        <p>The Solstice Dashboard now correctly displays .pfx certificate info when an admin selects to view the encryption certificate.</p>
+                    </li>
+                    <li>
+                        <p>Solstice Pods no longer temporarily lose their previously configured SSID.</p>
+                    </li>
+                    <li>
+                        <p>MSI and SCCM installers for the Solstice app will now detect if an emulator is running the installer and will redirect admins to download the supported 32-bit client. As a note, emulators do not support running 64-bit versions of the Solstice app.</p>
+                    </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.2 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p class="note"><b>Note:</b> The Solstice client app has been renamed the “Mersive Solstice” app. Due to this name change, installing the 5.2 version of the .dmg Mac client will not automatically overwrite the previous version of the app. End-users will need to manually uninstall the previous version of the app, and may need to update their macOS security settings for the new version of the app.</p>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. You can also use Solstice Cloud to schedule the 5.2 software update for your Solstice Pods. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. If using the Solstice Dashboard, remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.1 // October 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="5_1"></a>New Features</h4>
+                <ul>
+                    <li><b>Full Solstice Conference Support for Mac.</b> Solstice Conference now has full support for macOS and can be used with most video conferencing apps to add meeting support for remote attendees in Solstice-enabled rooms. Solstice Conference add-on components are required to host a video conferencing meeting. These components require elevated privileges and can be installed on-demand when needed from the new Solstice Conference tab in the 5.1 Solstice App. <a href="../Topics/Solstice-Conference-Introduction.htm" target="_blank">Learn more about getting started with Solstice Conference</a></li>
+                    <li><b>Expanded Support for Room A/V Devices.</b>  Solstice Conference now has expanded compatibility and support for several USB room A/V devices, including the Huddly Go and several key Logitech cameras. These supported devices can be utilized with Solstice Conference, or Solstice’s Room Occupancy feature.  <a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf" target="_blank">View the list of supported devices</a></li>
+                    <li>
+                        <p><b>Updated Solstice Conference Support for Windows Laptops.</b> For Windows laptops that have an i5 processor, a lighter version of Solstice Conference will be installed by default. This will limit sharing the display remotely, and may also limit the number of additional posts that can be shared by that user while hosting a conference. This setting can be overridden by an administrator when centrally deploying the Solstice app via MSI or SCCM; however, it is not recommended. As a note, although the override option may also be present when deploying on i7 machines, this setting does not affect them. <a href="../Topics/Admin-MSI-Instuctions.htm" target="_blank">Learn more about deploying the Solstice app with MSI</a></p>
+                    </li>
+                    <li>
+                        <p><b>Automatic Display Power Management Based on Room Occupancy.</b> Solstice can now leverage a USB camera attached to the Pod as a room occupancy sensor for Solstice display power management, providing an automated, touchless sleep/wake functionality. The feature requires a <a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf" target="_blank">supported USB camera</a> attached to the Pod and can be enabled in Solstice Dashboard or Solstice Cloud.  When Solstice detects that a person is in the room, Solstice will immediately resume the HDMI out signal, resulting in a touchless power on for the display.  When this feature is enabled and Solstice detects that the room has been vacant for the configured period of time (Immediate, 5, 10, 15 minutes), then the HDMI out signal to the display will be turned off, allowing the display monitors to use their own sleep settings. <a href="../Topics/Admin-Power-Management.htm" target="_blank">Learn more about this feature</a></p>
+                    </li>
+                    <li>
+                        <p><b>Security Enhancements for SDS.</b> Several security enhancements have been implemented for Solstice Discovery Service (SDS) that further harden Solstice against potential threats. As a note, Pods on Solstice version 5.1 are compatible with older versions of SDS. However, Mersive recommends updating your SDS version to 5.1 to benefit from the latest enhancements and retain screen key support for Solstice Pods and Solstice apps on version 5.1 or later. <a href="https://www.mersive.com/download/get-sds/" target="_blank">Get SDS 5.1</a></p>
+                    </li>
+                    <li>
+                        <p><b>HTTPS DNS Hostname Redirect.</b> Solstice admins now have the option to enable Solstice to redirect a user who enters the HTTP version of the Solstice host’s IP address or DNS hostname (e.g. http://111.22.3.44) to the secure HTTPS DNS hostname (e.g. https://hostname.domain) when the Pod’s certificate is validated by the web browser. This ensures that internal users have a secure connection to the Solstice QuickConnect page. This feature requires that Solstice admins enter a valid DNS hostname in the Pod’s network settings, have a valid client-to-server certificate on the Pod, and enable the ‘Redirect to HTTPS hostname’ option in Solstice (Solstice Cloud &gt; Security template; OR Solstice Dashboard &gt; Security tab). This feature is available for both Solstice Pods and Solstice Windows Display software. <a href="../Topics/Admin-Security-Settings.htm#Redirect_HTTPS" target="_blank">Learn More</a></p>
+                    </li>
+                    <li>
+                        <p><b>Enterprise Certificate Management Tools.</b> The latest certificate management enhancements give Solstice admins a centralized place for managing certificates in the Solstice Dashboard (Security tab &gt; Certificate Tools). These enhancements mean that Solstice admins can manage more of the certificate lifecycle on the Pod. In addition to generating a certificate signing request, admins can now install and manage client-server certificates and/or 802.1x EAP-TLS certificates from the same location.<MadCap:conditionalText MadCap:conditions="Default.Future"> <a href="../Topics/Admin-Certificate-Management.htm" target="_blank" MadCap:conditions="Default.Future">Learn more</a></MadCap:conditionalText></p>
+                    </li>
+                    <li>
+                        <p><b>Support for Microsoft Office 365’s New Modern Authentication Method.</b> Solstice's room calendar integration now supports Microsoft's modern authentication method for Office 365. Solstice admins that would like to update the O365 room or personal calendar settings for their Solstice Pods to the new authentication type can do so in Solstice Cloud or the Solstice Dashboard (Calendar settings).  <a href="../Topics/Info-O365-Calendar.htm" target="_blank">Learn more about updating these settings.</a></p>
+                    </li>
+                    <li><b>Active Routing API Updates</b>. New capabilities of the of the Active Routing API (requires a current Active Learning Subscription to use):<ul style="list-style-type: circle;"><li>Route audio along with video</li></ul></li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>
+                        <p>The Solstice app’s O365 personal calendar integration utilizes the Credential Manager service on Windows to securely store and authenticate a user's O365 credentials. However, if due to security reasons an IT administrator has disabled the Credential Manager for their Windows deployment, Solstice will not utilize it to store and authorize user credentials, and users will be prompted to re-enter their O365 credentials each time their Solstice app launches if they choose to integrate their personal calendar.</p>
+                    </li>
+                    <li>
+                        <p>Users exiting the Solstice application window are presented with options to simultaneously disconnect and delete all their shared media on the room display.</p>
+                    </li>
+                    <li>
+                        <p>
+                       Solstice app users can now remove a meeting host desktop share when hosting a Solstice Conference.</p>
+                    </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Solstice no longer stops sharing an application window after resizing the window multiple times. </li>
+                    <li>
+The Pod no longer repeatedly attempts to verify internet connectivity if blocked from sending or receiving external network traffic. 
+</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.1 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                    <li>Solstice Discovery Service (SDS)</li>
+                </ul>
+                <p class="note"><b>Note:</b>&#160;Solstice Pod updates will be for version 5.1.1. </p>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. Remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.0.2 // September 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>
+                        <p><b>Improved Solstice Conference Support for i5 Windows Laptops.</b> For Windows laptops that have an i5 processor, a lighter version of Solstice Conference will be installed by default. This will limit sharing the display remotely, and may also limit the number of additional posts that can be shared by that user while hosting a conference to improve performance. This setting can be overridden by an administrator when centrally deploying the Solstice app via MSI or SCCM; however, it is not recommended. As a note, although the override option may also be present when deploying on i7 machines, this setting does not affect them. <a href="../Topics/Admin-MSI-Instuctions.htm">Learn more about deploying the Solstice app with MSI</a></p>
+                    </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Thunderbolt docks are now compatible with Solstice Conference.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.0.2 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. Remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.0.1 // September 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Solstice Conference Enhancements</h4>
+                <h5>Resolved Issues for Windows</h5>
+                <ul>
+                    <li>Increased stability for room cameras and audio devices.</li>
+                    <li>Special characters on calendar invites no longer cause the HTML formatting to be shown in the Solstice app system tray pop-up.</li>
+                    <li>Switching room camera or audio devices while using Solstice Conference no longer causes devices to become unusable.</li>
+                    <li>Logging of issues is now more accurate.</li>
+                    <li>Improvements to Logitech C930 and C920s support.</li>
+                </ul>
+                <h5>Resolved Issues for MacOS</h5>
+                <ul>
+                    <li>There are no longer issues with audio if used after a Windows user.</li>
+                    <li>Improvements to Logitech Rally and MeetUp support.</li>
+                </ul>
+                <h4>Other Resolved Issues</h4>
+                <ul>
+                    <li>When overlays are enabled, third-party cookies can now be used to authenticate a digital signage feed.</li>
+                    <li>Bluetooth driver updated to fix reported crashes.</li>
+                    <li>Solstice app instructions for iOS 13 switched to reflect proper workflow.</li>
+                    <li>Reduced connection issues when using Miracast in Wi-Fi Direct mode.</li>
+                    <li>Miracast Over Infrastructure or Wi-Fi Direct mode now successfully completes the security handshake.</li>
+                    <li>The Windows Connect menu (Windows + K) no longer becomes unresponsive after an unsuccessful Miracast connection.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.0.1 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. Remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>5.0 // August 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="5_0"></a>Solstice Conference Now Available</h4>
+                <p>Use Solstice with most laptop-based conferencing apps to add meeting support for remote attendees in Solstice-enabled rooms. Solstice Conference offers the flexibility to use the conferencing service of choice and provides wireless connectivity to room audio/video devices attached to the Solstice Pod via USB.</p>
+                <ul>
+                    <li>Leverages web conferencing services running on local users’ laptops to connect remote participants to the room.</li>
+                    <li>Enables meeting hosts to wirelessly connect to plug-and-play USB devices attached to the Pod in order to share room audio/video in the web conference.</li>
+                    <li>Supports a one-step auto-launch for scheduled web conferences via support for integration of room and personal calendars.</li>
+                    <li>Allows the meeting host to share the full in-room display to the web conference so remote users can see everything happening on the display, including multi-source content sharing, mark up, and more.</li>
+                </ul>
+                <p><b>Important Specs and Requirements</b>
+                </p>
+                <ul>
+                    <li>Solstice Conference is supported on Gen3 Pods only.</li>
+                    <li>The meeting host is required to have the Solstice app version 5.0 or later installed on a Windows (full support) or macOS (beta) laptop. Admin permissions are needed to install the Solstice Conference drivers. If drivers are not initially installed, they can be installed at a later time (Solstice app &gt; Solstice Conference tab).</li>
+                    <li>Solstice Conference must be enabled on each Pod (Solstice Cloud &gt; Features template OR Solstice Dashboard &gt; Appearance and Usage tab).</li>
+                    <li>To utilize a one-step start for Solstice meetings, Solstice Discovery Service (SDS) is required.</li>
+                    <li>For Solstice to auto-launch web conferences, either the room calendar must be configured for the Pod, or end-users must integrate their Microsoft calendar in their Solstice app.</li>
+                    <li>For more information on how to deploy Solstice Conference, and requirements for a successful deployment, see <a href="../Topics/Solstice-Conference-Introduction.htm">Solstice Conference</a>.</li>
+                </ul>
+                <p style="font-weight: bold;">Known Issues with Solstice Conference</p>
+                <ul>
+                    <li>Meeting hosts switching audio/video sources within the video conferencing application while using Solstice Conference may cause application freezes.</li>
+                    <li>Meeting hosts should avoid using laptop docks, virtual machines, and second monitors when using Solstice Conference.</li>
+                    <li>Users may occasionally experience a “hall of mirrors” effect when sharing the Solstice screen to the web conference. Mersive recommends stopping then screen share, then resharing.</li>
+                    <li>Sharing content during a conference session from a laptop that has its resolution set to 4K may result in reduced performance. Mersive recommends reducing the laptop resolution for 4K&#160;laptops to 1080p.</li>
+                    <li>PowerPoint shares will work with Solstice Conference using the extended desktop; however, PowerPoint should be started before the Solstice Conference session starts.</li>
+                </ul>
+                <h4>Other Key Enhancements in 5.0</h4>
+                <ul>
+                    <li><b>Location Services.</b> Solstice will use environmental scans (such as WiFi SSIDs and Bluetooth) to estimate the location of Pods using AI models that learn over time. Using this information, the Solstice app will reorder the list of discovered Pods to list displays that are closest first, allowing users to quickly connect to the Pod that they are physically nearby, streamlining the connection process. Location services also allow Solstice Cloud admins to visualize Pod locations on an interactive map. Additionally, location services help to facilitate the automatic categorization of Pods by country, city, and building to be used with Solstice Cloud monitoring, management, and data analysis. Solstice Cloud users can use these location-based categories to quickly sort and filter Pods, allowing them to analyze meeting trends by location, or setup location-specific email alerts. Gen3 Pods only.<ul style="list-style-type: circle;"><li>Solstice Location Services will not collect any personally identifiable information. Use of this feature is subject to the terms and conditions.</li><li>Solstice Location Services ships disabled by default; can be enabled/disabled in Solstice Cloud &gt; Features template OR Solstice Dashboard &gt; System tab.</li></ul></li>
+                    <li><b>Occupancy Data.</b> When a USB camera is attached to the back of a Pod, Solstice gives you the option to use the camera as an occupancy counter sensor - one that’s capable of detecting the number of occupants. When enabled, Solstice will be able to detect the number of occupants in the room and collect that data. This occupancy data will be available in your Solstice Cloud analytics and can be visualized alongside other utilization data.This feature can be utilized when any USB camera is plugged into the Pod. Gen2i and Gen3 Pods only.<ul style="list-style-type: circle;"><li>Please note that no camera data (video or audio captures) ever leave the Pod. All processing occurs locally on the Pod and only the resulting occupancy count is sent to your Solstice Cloud account.</li><li>If the Pod is also enabled for Solstice Conference, occupancy data will not be collected while a video conference is taking place.</li><li>Occupancy ships disabled by default; can be enabled/disabled in Solstice Cloud &gt; Features template OR Solstice Dashboard &gt; System tab.</li></ul></li>
+                    <li><b>Support for Presentation Mode in PowerPoint.</b> Solstice users can now use Microsoft PowerPoint’s presentation mode when sharing a PowerPoint presentation to Solstice. This mode makes the user’s personal laptop device a confidence monitor while presenting to the Solstice-enabled display. This Solstice app feature works when sharing PowerPoint with either the Desktop or App Share options using PowerPoint's slideshow capabilities. In PowerPoint's Slide Show option, ensure that the option to 'Use Presenter View' is enabled. This feature is supported on Windows laptops only. </li>
+                    <li><b>Personal Calendar Integration.</b> Users can now integrate their O365 calendar with their Solstice app, allowing Solstice to auto-launch their scheduled web conference when they connect to a Solstice display. Requires the Solstice App version 5.0 or later; supported for Windows or MacOS laptops only.<ul style="list-style-type: circle;"><li>This capability can be configured in your Solstice app settings.</li></ul></li>
+                    <li><b>Auto-share Desktop.</b> Users can now configure their Solstice app to automatically share their desktop once they connect to a Solstice display. This streamlines the sharing workflow and reduces the number of steps needed to start sharing content.<ul style="list-style-type: circle;"><li>Disabled by default; can be enabled in your Solstice app settings.</li></ul></li>
+                    <li><b>Conferencing Hotkey.</b> Users can configure the shortcut command that opens the Solstice Conference dialog box. This allows users to quickly open the dialog box without having to click into their system tray.<ul style="list-style-type: circle;"><li>Configured in Solstice app &gt; Settings.</li><li>Ctrl + Alt + C by default; can be customized.</li></ul></li>
+                    <li><b>Certificate Signing Request.</b> Administrators can now generate a CSR on the Pod and download it prior to a certificate expiring (Dashboard &gt; Security tab). This avoids the need for the private key to be exported out of the Pod. Once generated, the CSR needs to be provided to the customer’s Certificate Authority (CA) to create an updated certificate. Once the CA creates the updated certificate, the admin will then upload it using the Dashboard. Note: The CSR does not contain Subject Alternate Name data due to omission in libssl.</li>
+                    <li><b>Blocking ICMP Pings.</b> Disables the ability to ping the Pod on WAP, Wireless Client, and Network to prevent ICMP/Ping flooding that could lock up the Pod.<ul style="list-style-type: circle;"><li>Disabled by default; can be enabled in Dashboard (Security tab).</li></ul></li>
+                    <li><b>WiFi Regulatory Domains.</b> Pods are now able to ship with the proper WiFi frequencies and channels set to comply with regulations in the region the Pod is shipping to. Typically, Pods ship with WiFi channel support that complies with FCC guidelines. The implementation of this feature now supports WiFi channel restrictions for compliance in Egypt and Israel. Note: This setting is configured by Mersive before a Pod ships. To update this setting after you have received the Pod, contact the Mersive Support team for assistance.</li>
+                    <li><b>Branding Updates.</b> Solstice has been updated to incorporate Mersive’s new branding.</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Sharing application windows for Windows devices has been enhanced, with more robust screen scraping for Windows applications such Microsoft Office.</li>
+                    <li>Solstice now properly displays shared application windows that are obstructed by other open application windows.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 5.0 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Windows Display Software License</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p class="note">When updating Solstice Pods to version 5.0, Pods may experiences slightly longer update times than normal. Please give Pods at least 8 minutes to fully update, and do not unplug or reboot your Pod during the update process. </p>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. Remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot><a name="4_6_5"></a>4.6.5 // December 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>When a Pod is in dual network mode and attached to a wireless network that does not have internet access, the Pod will now successfully attempt to reach Solstice Cloud using the attached Ethernet connection.</li>
+                    <li>Applying a security template from Solstice Cloud no longer hangs when there is a difference between the Pod’s stored security certificate settings and the default security template’s certificate settings.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.6.5 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                </ul>
+                <p>Visit our <a href="../Topics/Download_Links_4_6_x.htm">4.6.5 Downloads</a> article to access all 4.6.5 updates. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot><a name="4_6_4"></a>4.6.4 // September 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Enhancements</h4>
+                <ul>
+                    <li>Bluetooth discovery for AirPlay is now disabled by default.</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Bluetooth driver updated to fix reported crashes.</li>
+                    <li>Boot looping no longer occurs when a custom certificate is installed on the Pod and resulted in an empty certificate or private key.</li>
+                    <li>Reduced connection issues when using Miracast in Wi-Fi Direct mode.</li>
+                    <li>Over Infrastructure or Wi-Fi Direct mode now successfully completes the security handshake.</li>
+                    <li>The Windows Connect menu (Windows + K) no longer becomes unresponsive after an unsuccessful Miracast connection.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.6.4 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit our <a href="../Topics/Download_Links_4_6_4.htm">4.6.4 Downloads</a> article to access all 4.6.4 updates. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.6 // May 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="4_6"></a>New Features</h4>
+                <ul>
+                    <li> <b>Reintroducing Miracast streaming support.</b> Solstice’s support for Miracast provides another easy app-free sharing option for Windows and Android device users who haven’t installed the Solstice app. The latest Miracast implementation is the most enterprise-ready, enabling screen key to be used alongside Miracast streaming over enterprise networks for fully encrypted and secure guest sharing. Solstice also supports multiple Miracast streams with increased connection reliability, reduced latency, and greater overall performance. Solstice supports all Miracast features, including over Infrastructure (with added support for screen key), WiFi Direct, extended desktop and confidence monitor for presenters, audio streaming support, and more. Miracast support is available on Gen2i and Gen3 Pods only.</li>
+                    <li>
+                        <p><b>Bluetooth discovery now available for AirPlay.</b> By adding Bluetooth discovery to Solstice’s support for AirPlay, guest users with Bluetooth enabled on an iOS or macOS device can walk into a Solstice room and connect to the display from their list of available Bluetooth devices. This streamlines the connection process for guest users by allowing them to discover the Solstice display without having to first connect to the network. However, users will have to connect to the same network as the Pod in order to stream content via AirPlay. This provides another alternative for discovery for environments that do not allow UDP broadcast traffic or Apple's Bonjour protocol. Available on Gen3 Pods only.</p>
+                    </li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>
+                        <p>Additional channels have been added for Solstice Pods acting as wireless access points (5GHz only).These channel options are available in the Solstice Dashboard and the OpenControl API.</p>
+                    </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>
+                        <p>Moderators can now fully pass their moderation control to other users via the Solstice app.</p>
+                    </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.6 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods to the latest version. Remember to update Solstice Dashboard instances before updating Solstice Pods.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.5 // March 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="4_5"></a>New Features</h4>
+                <ul>
+                    <li><b>Support for Solstice Active Learning.</b> Solstice Active Learning is a new software-enabled video routing solution for multi-screen environments, facilitating active learning classrooms, confidence monitors, training rooms, and more. Gen3 Pods and an Active Learning subscription are required. Learn More</li>
+                    <li><b>Ability to use RS-232 commands for display power management.</b> Administrators can now use the Display Power Management settings (Solstice Dashboard &gt; System tab) to schedule the Pod to send RS-232 commands to the connected display monitor(s) to turn them on and off. Once the RS-232 codes are entered, Solstice will also use them for the Wake Display and Suspend Display options. ASCII and HEX codes are both supported.</li>
+                    <li><b>Connect directly to a Pod using its DNS hostname.</b> In the Solstice app’s ‘Enter Display URL’ tab, users will now be able to connect to a Solstice display directly using the Pod’s DNS hostname. Previously, users could only connect directly by entering the Pod’s IP address. IP addresses and DNS hostnames entered with a prefixed http:// or https:// protocol string will also be accepted.</li>
+                    <li><b>Enhanced virtual memory for Gen2i Pods.</b> The amount of a Gen2i Pod’s virtual memory being used by default has been significantly reduced, increasing the virtual memory space available and further enhancing stability.</li>
+                    <li><b>Browser-based sharing support for Microsoft Edge.</b> Solstice’s browser-based sharing capability now supports sharing with the latest version of the Microsoft Edge web browser.</li>
+                    <li>Enhancements were made to the Welcome Screen  such as correcting text alignment, icons, and more. As a note, the word "Key" next to the Solstice display's screen key was removed from the initial view of the Welcome Screen. However, the 4-digit key is still visible. </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>The Solstice display now correctly shows the user how much longer the room is available for when the room calendar feature is enabled for that display.</li>
+                    <li>When the scaling setting of a PC's display is greater than 100%, the mouse cursor in a desktop share now appears in the correct location on the Solstice display.</li>
+                    <li>When a digital signage feed is set to display in full screen mode, the browser now reports larger dimensions so that the signage feed displays properly.</li>
+                    <li>When using a Solstice app on a mobile device with iOS v.13.2.3, the app no longer crashes when using the Japanese keyboard.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.5 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Windows Display Software License</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods and Windows Software licenses to the latest 4.5 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.4 // January 2020</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="4_4"></a>New Features</h4>
+                <ul>
+                    <li><b>App-free wireless sharing via web browser.</b> Users can now share to Solstice from a web browser on their laptop devices, extending wireless sharing support to Chromebook, Linux, guest, and unmanaged users who cannot install the Solstice App. The new capability also provides an additional sharing option from Windows and macOS devices. To use the new feature, enter the URL visible on the Solstice display in the browser of a laptop device to visit the Solstice Quick Connect page, then click the new option to launch Solstice in a web browser. This setting can be disabled in the Solstice Dashboard (Appearance and Usage tab &gt; Client Sharing Options). This capability is supported on Gen3 and Gen2i Pods and is supported by Firefox and Chrome browsers. </li>
+                    <p class="note">The ability to share with a web browser is not available on mobile devices and desktop audio sharing is not supported on any device or browser. For the full Solstice experience, including mobile and audio support, please use the Solstice App.</p>
+                    <li><b>Streamlined application window sharing in the Solstice App.</b> When the App Window sharing option is selected in the Solstice app for Windows and macOS devices, the user will now be presented with a list of open applications windows to choose from, and any app window selected from the list will automatically be brought to the top of the user’s desktop. When an application window is being shared to Solstice, it will not appear in the list to prevent double sharing.</li>
+                    <li><b>Increased digital signage caching.</b> To accommodate larger content sources and digital signage feeds, the caching capacity for digital signage has been increased to 1GB. Additionally, the increased caching capacity significantly reduces the network resources needed to run digital signage on a Solstice Pod.</li>
+                    <li><b>OpenControl API Update.</b> When a developer sends an RS-232 request to a display monitor using the /api/serial-passthru endpoint, Solstice will return the monitor’s response back as a JSON response.</li>
+                    <li><b>New HDMI input modes for persistent wired sources</b>. Administrators can now set the default behavior for a wired input source connected to the HDMI-in port of a Gen3 Pod. This is for organizations that wish to utilize a persistent wired input source, such as a dedicated in-room PC or a digital signage media player, between meetings/sessions when the Solstice display is in active use for wireless collaboration. The following options are used to determine how Solstice will treat wired input sources:<ul><li><b>Standard Post:</b> The wired HDMI-in source is treated as a standard Solstice content post, such as when a guest user without network access needs to share content in a meeting.</li><li><b>Persistent Post:</b> The wired HDMI-in source will persistently display full screen when there are no other posts shared to Solstice. When another post is shared, the wired HDMI-in source is automatically moved off screen to the dock. When all wireless posts are deleted, the wired HDMI-in source automatically returns to full screen. This mode is designed to support wired inputs that should appear anytime users are not actively sharing content to Solstice.</li></ul></li>
+                    <p class="note">When in Persistent Post mode, the wired HDMI-in source cannot be deleted by other Solstice users. To remove the post, the wired HDMI-in source must be unplugged.</p>
+                    <li><b>Enhanced security for Solstice Local Release (SLR) updates.</b> When network encryption is enabled for a Pod, the Dashboard will send SLR software updates to the Pod via port 443 to ensure the transmission of the update is secure.</li>
+                    <li><b>Additional power management scheduling option.</b> A new power management drop-down option is available that tells the Solstice Pod to immediately stop sending the HDMI out signal after all users disconnect from the Solstice display. This allows external control units to know to switch the input to another signal.</li>
+                    <li><b>Restart Pod option removed.</b> The Restart button that allowed administrators to restart the Pod’s software was removed from the Dashboard to avoid confusion between the Reboot and Restart options. The Reboot option to restart both the Pod’s hardware and software is still available (System tab &gt; Tools section).</li>
+                    <li><b>Additional Pod details added to Dashboard’s CSV file export.</b> MAC addresses and software versions were added to the exported file.</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>When the Pod is configured to attach to a wireless network, and if it is unable to connect to that network, the Pod’s software no longer occasionally restarts.</li>
+                    <li>The Mac audio driver for the macOS version of the Solstice App now installs correctly.</li>
+                    <li>When applying a static IP address to a Pod, changes made to the DNS 2 field now properly save.</li>
+                    <li>When the HDMI-in share is deleted or docked using the Solstice App, the share’s audio now mutes as expected.</li>
+                    <li>When the Pod is attached to a local wireless network, the Solstice Dashboard no longer displays the firewall settings that can only be utilized when the Pod is in WAP mode.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.4 software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Windows Display Software License</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a> to access all updates. Current Solstice Subscription is required to upgrade Solstice Pods and Windows Software licenses to the latest 4.4 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.3 (15966) // November 2019</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>
+                        <p>Security enhancement to prevent certain types of brute force attacks.</p>
+                    </li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>Resolved issues related to the digital signage feature that could cause Pod crashes. Additionally, the Solstice Dashboard will no longer falsely report that digital signage has been disabled.</li>
+                    <li>When the display power management feature is enabled, Pods will now consistently wake up correctly.</li>
+                    <li>When the display power management feature is enabled, Pods now output correctly when connected to two displays.</li>
+                    <li>When a laptop connected via HDMI-in to a Gen3 Pod goes into sleep mode and is quickly woken back up, the laptop screen no longer appears as a black post on the Solstice display.</li>
+                    <li>The Mac audio driver that enables macOS users to stream their desktop audio to the Solstice display now consistently installs from the Mac version of the Solstice App.</li>
+                    <li>The amount of time needed to load a large list of discovered displays in the Solstice App from SDS has been reduced.</li>
+                    <li>The Solstice App now launches correctly on Windows 8.1 devices.</li>
+                </ul>
+                <h4>Known Issues</h4>
+                <ul>
+                    <li>Currently no audio support for Solstice App desktop sharing on Mac devices with Catalina OS. </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.3 (15966) software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="https://www.mersive.com/download/" target="_blank">mersive.com/download</a> to access all updates. Current Solstice Subscription (formerly known as software maintenance) is required to update Solstice Pods and Windows Software licenses to the latest software version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.3 (15176) // October 2019</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="4_3"></a>New Features</h4>
+                <ul>
+                    <li><b>Audio Support for HDMI Input.</b> The Solstice Gen3 Pod now supports audio streaming when sharing via the HDMI input, improving the wired sharing experience. Audio streaming is also supported when using an adapter with the HDMI-in connection. <a href="https://mersive.force.com/support/s/article/Why-is-my-HDMI-in-adapter-not-working-with-my-Gen3-Pod" target="_blank">Click here</a> for a list of the verified supported adapters.</li>
+                </ul>
+                <h4>New Enterprise Edition Features</h4>
+                <ul>
+                    <li>
+                        <p><b>New capabilities of the OpenControl API</b>:</p>
+                        <ul style="list-style-type: circle;">
+                            <li>
+                                <p>Sending RS-232 commands to display monitors that support RS-232. Pods will now support RS-232 controls such as power, volume, and input for connected screens. Pods will have to connect to screens using a <a href="https://www.bhphotovideo.com/c/product/1420580-REG/sabrent_sbt_usc6m_usb_to_serial_cable.html/c/product/1420580-REG?utm_source=Transaction_Email&amp;utm_medium=Email&amp;utm_campaign=Shipping_Confirmation&amp;utm_term=Product_Detail" target="_blank">USB to serial adapter</a> and a <a href="https://www.bhphotovideo.com/c/product/1001035-REG/startech_scnm9ff_female_to_female_db9.html/c/product/1001035-REG?utm_source=Transaction_Email&amp;utm_medium=Email&amp;utm_campaign=Shipping_Confirmation&amp;utm_term=Product_Detail" target="_blank">null modem cable</a>. This functionality will only work with screens that support RS-232 controls. Administrators will need to know the specific RS-232 code for the control they are trying to pass. For details on those controls, please consult the user manual for the display.</p>
+                            </li>
+                            <li>
+                                <p>Ability to configure 802.1Q VLAN tagging using the API.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>New Solstice Dashboard Features</h4>
+                <ul>
+                    <li><b>Option to Add DNS Hostname for Each Connected Network.</b> Administrators can now manually replace the IP address listed on the Solstice display with the DNS hostname. Users can type the hostname into a browser (for example, http://hostname.domain) to easily download the Solstice App. Network administrators must first configure DNS resolution on their networks, then can enter in the DNS&#160;entry that the Pod’s IP address will resolve to in the DNS Hostname field of each connected network (Solstice Dashboard &gt; Network tab). If the hostnames entered for all connected networks are the same, the hostname will only be displayed once.</li>
+                    <li><b>Option to Always Show Presence Bar.</b> By default, the presence bar on the Solstice display’s welcome screen that shows the display’s IP address minimizes once a wireless or wired users connects to the display. Now, the presence bar can be set to persist at the bottom of the screen during a collaboration session so users in the room who are not yet connected can easily connect to the display (Appearance and Usage tab &gt; Quick Connect Info).</li>
+                    <li>
+                        <p><b>Exclusions for Proxy Server.</b> Two new settings have been added to the Web Proxy Settings. Administrators can choose to bypass the proxy server if Solstice detects a local address on the same subnet as the Pod. Additionally, administrators now have the ability to add an exclusion list for the proxy server (Network tab &gt; Web Server Proxy).</p>
+                    </li>
+                </ul>
+                <h4>Other Fixes and Enhancements</h4>
+                <ul>
+                    <li>Administrators now have the option to add a username for MSI client installations.</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>When power management and digital signage are both enabled, the Pod now works as expected.</li>
+                    <li>The Solstice App installed on a Google Pixel 2 no longer crashes when trying to connect to a Pod.</li>
+                    <li>On the Solstice App, application sharing is now working correctly when sharing a Microsoft Edge browser window.</li>
+                </ul>
+                <h4>Known Issues</h4>
+                <ul>
+                    <li>
+                        <p>When installed on an iOS 13 device and the language is set to Korean, Japanese, or Chinese, the Solstice app incorrectly displays the characters.</p>
+                    </li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.3 (15176) software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Windows Display Software License</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Discovery Service (SDS)</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="https://www.mersive.com/download/" target="_blank">mersive.com/download</a> to access all updates. Current Solstice Subscription (formerly known as software maintenance) is required to upgrade Solstice Pods and Windows Software licenses to the latest 4.3 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.2 (14160) // August 2019</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4><a name="4_2"></a>New Enterprise Edition Features
+                </h4>
+                <ul>
+                    <li><b>Expanded Multi-Network Support via IEEE 802.1Q VLAN Tagging.</b>Enterprise Edition Solstice Pods (Gen2i and Gen3 only) now support IEEE 802.1Q VLAN tagging on the wired Ethernet interface. In addition to handling the usual untagged Ethernet traffic on the default VLAN for the connected switch port, Solstice Pods can now communicate using tagged traffic over the wired Ethernet interface on up to three additional VLANs. By allowing the Pod to support multiple VLANs at once, administrators no longer need to create routing between VLANs for users to be able to connect and collaborate from multiple VLANs. When the Pod is attached to multiple VLANs via the Dashboard, users will be able to connect to the Pod using any of the configured VLANs. If SDS is utilized for Pod discovery, one SDS server instance is required per VLAN (SDS version 3.1 or later).
+                    </li>
+                </ul>
+                <h4>Solstice Dashboard Release Notes
+                </h4>
+                <ul>
+                    <li><b>802.1Q VLAN Tagging Network Configuration. </b>Enterprise Edition Solstice Pods (Gen2i and Gen3 only) can now be configured via the Solstice Dashboard to be attached to up to three VLANs, in addition to the default VLAN for the connected switch port, using the wireless Ethernet interface (Network tab &gt; VLAN Settings).</li>
+                </ul>
+                <h4>Fixes and Enhancements
+                </h4>
+                <ul>
+                    <li>Bandwidth consumption between the Solstice App and the Pod has been reduced to maximize network performance.</li>
+                </ul>
+                <h4>Resolved Issues
+                </h4>
+                <ul>
+                    <li>The Solstice App for Android no longer freezes when permission to access the device’s location is denied.</li>
+                    <li>The Solstice App for macOS now launches correctly due to fixes to the client installer.</li>
+                    <li>The RSS feed is no longer truncated on 4k displays.</li>
+                    <li>Digital signage feeds now work properly when using an HDMI switcher with the Pod.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates
+                </h4>
+                <p>Solstice 4.2 (14160) software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Discovery Service (SDS)</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Important notes: For all Solstice deployments on version 4.2, SDS version 3.1 or later is required. Additionally, users who downloaded the 4.1 macOS Solstice App from the Quick Connect page will need to manually install the 4.2 Solstice App for macOS in order to receive automatic prompts for future software upgrades.</p>
+                <p>Visit <a href="http://www.mersive.com/download">mersive.com/download</a>to access all updates. Current Solstice Subscription (formerly known as software maintenance) is required to upgrade Solstice Pods and Windows Software licenses to the latest 4.2 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.1 (13252) // June 2019</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li><b>Miracast Streaming Enhancements.</b> The latency of Miracast streaming to a Solstice display has been enhanced to improve performance (Pods only).</li>
+                    <li><b>OTA Updates via HTTPS.</b> OTA updates for Solstice now utilize HTTPS as opposed to HTTP for more robust security (Pods and Windows Display Software Licenses).</li>
+                    <li><b>Option to Schedule Daily Restart for Pods.</b> Administrators can now enable and schedule daily Pod software restarts to refresh the Pod’s memory usage and maximize system performance. This setting is available in the Pod’s configuration panel (Tools tab) and the Solstice Dashboard (System tab &gt; Tools).</li>
+                    <li><b>Wired Input Improvements for Gen3 Pods.</b> Significant improvements to wired sharing via the Gen3 Pod’s HDMI input through expanded support and improved performance for various HDMI adapters. However, some adapters are still not supported (such as Apple’s USB-C-to-HDMI adapter) and other adapters introduce long delays between plugging in and content appearing on the display, especially Mini DisplayPort-to-HDMI adapters. For more information, check out our <a href="https://mersive.force.com/support/s/article/Why-is-my-HDMI-in-adapter-not-working-with-my-Gen3-Pod" target="_blank" rel="noopener">support bulletin</a>.</li>
+                </ul>
+                <h4>New Enterprise Edition Features</h4>
+                <ul>
+                    <li><b>Display Power Management Support.</b> The Pod can now be configured to stop sending an HDMI output signal after being idle for the specified amount of time (Solstice Dashboard &gt; System tab). This allows the display monitors connected to the Pods to utilize their own sleep settings. The Pod will resume its normal functionality either when a user attempts to connect to the display, before a scheduled meeting begins, when a mouse or keyboard is plugged in to the Pod, or when an emergency message is sent out via Solstice. (Note: This feature is not supported on Gen2 Pods.)</li>
+                    <li><b>Private Meeting Details Now Hidden.</b> The display’s room calendar will now hide meeting titles and organizers if a meeting on the configured Outlook or Exchange calendar is marked as “Private”.</li>
+                    <li><b>Set Room Calendar Update Frequency.</b> Administrators can now define how often the display will check for updates to the Outlook or Exchange calendar configured for the display. Increasing the update frequency can ensure the display is showing the most current calendar information to in-room users (Solstice Dashboard &gt; Calendar tab).</li>
+                    <li><b>Custom Instructions Dynamically Resize.</b> When customized instructions have been added to the modern splash screen, the display’s Welcome Screen will automatically resize the instructions to fit better within the screen’s layout.</li>
+                    <li><b>OpenControl API Updates.</b> New capabilities of the OpenControl API:
+
+						<ul><li>Power management scheduling</li><li>Forget wireless network</li><li>Set the room calendar update interval</li><li>Daily restart scheduling</li></ul></li>
+                </ul>
+                <h4>Solstice Dashboard Release Notes</h4>
+                <ul>
+                    <li><b>Option to Schedule Daily Restart for Pods.</b> Administrators can now enable and schedule daily Pod software restarts to refresh the Pod’s memory usage and maximize system performance (System tab &gt; Tools).</li>
+                    <li><b>Load Self-Signed CA Certificate Bundle.</b> Administrators are now able to load a self-signed CA certificate bundle onto one or more Pods via the Dashboard to be used for HTTPS communications and to validate the Pod’s access to external data connections such as digital signage feeds, RSS feeds, and Mersive Kepler. This is especially important for networks that utilize a MITM proxy that intercepts HTTPS requests (Security tab &gt; Encryption settings). The bundle is used in addition to the Pod's built-in CA certificates, which are suitable for most internet access. Important note: Only a PEM certificate with a .crt file extension is supported.</li>
+                    <li><b>Display Power Management Support.</b> The Pod can now be configured to stop sending an HDMI output signal after being idle for the specified amount of time (System tab &gt; Power Management). This allows the displays connected to the Pods to utilize their own sleep settings. The Pod will resume its normal functionality either when a user attempts to connect to the display, before a scheduled meeting begins, when a mouse or keyboard is plugged in to the Pod, or when an emergency message is sent to the Pod via the Solstice Dashboard. The Dashboard also gives the options to manually wake or suspend the Pod.</li>
+                    <li><b>Set Room Calendar Update Frequency.</b> Administrators can now define how often the display will check for updates to the Outlook or Exchange calendar configured for the display. Increasing the update frequency can ensure the display is showing the most current calendar information to in-room users (Calendar tab &gt; Update Settings). The interval can be set to update as frequently as every 5 seconds, or more periodically.</li>
+                </ul>
+                <h4>Solstice Discovery Service (SDS) Release Notes</h4>
+                <ul>
+                    <li><b>Scalability and Usability Improvements.</b> If SDS is being used centrally to list Solstice displays across multiple locations, each of which has its own subnet, administrators can now group Solstice displays by subnet which will allow a user’s Solstice App to only see displays on the same subnet they are connected to, as opposed to viewing a list of every display on the main network that was configured for SDS. SDS can now group displays by subnet based on either a single, global prefix length configured in the Windows Registry OR based on an explicit list of subnets with varying prefix lengths via a text file placed in the Solstice program data folder. This feature allows administrators to scale their centrally managed deployments without negatively impacting the user’s display discovery experience. For more information on how to configure SDS with subnets, see our<a href="https://www.mersive.com/guides/solstice-discovery-service-sds-guide/#subnets" target="_blank" rel="noopener"> SDS Guide</a>.</li>
+                </ul>
+                <h4>Resolved Issues</h4>
+                <ul>
+                    <li>For the Classic Splash Screen, the wireless IP connection was not possible to read due to a white background.</li>
+                    <li>When an internal time server was set for a Pod, the Pod would still attempt to reach out to the default internet time server.</li>
+                    <li>In the Solstice Dashboard, the 30-character limit for a wireless network password has been removed.</li>
+                    <li>When digital signage was running, proxy settings were not being applied when Solstice would attempt to load a remote digital signage URL.</li>
+                    <li>Minor stability and usability issues were fixed for the Solstice App.</li>
+                    <li>Airplay sharing performance has been improved on the Gen3 platform.</li>
+                    <li>Additional bugs fixes and stability improvements.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Updates</h4>
+                <p>Solstice 4.1 (13252) software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Windows Display Software License</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Discovery Service (SDS)</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="http://www.mersive.com/download" target="_blank" rel="noopener">mersive.com/download</a> to access all updates. Current Solstice Subscription (formerly known as software maintenance) is required to upgrade Solstice Pods and Windows Software licenses to the latest 4.1 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>4.0 (11766) // March 2019</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features (All Solstice Pods and Display Software Licenses)</h4>
+                <ul>
+                    <li><b>Solstice Ink.</b> Available in the Solstice iOS and Android App, Solstice Ink allows users to highlight and temporarily mark up content on the Solstice display from anywhere in the room by simply pointing and drawing with their smartphones (feature not supported on tablets). This feature is also supported in moderator mode. Solstice Ink has three modes of use:
+						<ul><li><b>Pointer.</b> Press and hold the Ink button, or drag the button to the center of the screen, to use your phone as a pointer.</li><li><b>Pulse.</b> Tap the Ink button to pulse the pointer.</li><li><b>Temporary markup.</b> Drag the Ink button to the center of the screen, then press and hold the button to draw.</li></ul></li>
+                </ul>
+                <ul>
+                    <li><b>Internationalization Expansion.</b> Ten new languages are now supported in the Solstice Pod and Windows Display Software, Solstice App, and Solstice Dashboard -- Arabic, Danish, Korean, Norwegian, Polish, Portuguese, Russian, Swedish, Turkish, and Simplified Chinese.</li>
+                </ul>
+                <h4>New Enterprise Edition Features</h4>
+                <ul>
+                    <li><b>Software Support for Solstice Pod Gen3 Platform.</b> The 4.0 version of Solstice adds support for the new Gen3 Solstice Pod hardware platform to integrate the new hardware capabilities, such as expanded input/output options, into a unified meeting experience. Gen3 Pods are available as Enterprise Edition only.
+						<ul><li><b>Wired Content Source via HDMI Input.</b> Wired content sources can be shared as a post into the Solstice session via an HDMI input on the front of the Solstice Pod Gen3.</li><li><b>Dual Display Support via Two HDMI Outputs.</b> Allows the Pod to be simultaneously connected to two displays and supports the following modes, configurable in the Solstice Dashboard or a Pod’s configuration panel.
+								<ul><li><b>Mirror (default).</b> Both displays will be mirrored and display the same content.</li><li><b>Extend.</b> Two displays are treated as a single collaboration panel. Content can be shared to both displays and moved between them. Solstice intelligently knows where one display ends and the next begins and will never break a content post across the two displays. </li><li><b>Seamless Extend.</b> Content will be posted across both displays as if they are a single seamless display. This mode is recommended for video walls or other setups where there is no bevel or seam between the two displays. </li></ul></li><li><b>4K Display Support and Streaming.</b> Supports streaming content from a 4K device to a single 4K display without any loss of resolution. Important note: Only one 4K display supported; dual displays render at 1080p.</li><li><b>Power over Ethernet plus (PoE+).</b> Can be used in lieu of traditional power adapter.</li><li>Increased processing power for improved streaming performance.</li></ul></li>
+                    <li><b>Customizable Welcome Screen Instructions.</b> Administrators can now customize instructions that appear on the Welcome Screen of Enterprise Edition Pods and Windows Display Software licenses using a rich text editor (Solstice Dashboard &gt; Appearance and Usage tab). Admins can add a dynamic IP address in the instructions by including the network name in brackets, e.g. [INTERNAL], and the string will be replaced with the corresponding IP address. Once configured, the instructions will appear on the display’s Welcome Screen.</li>
+                    <li><b>OpenControl API Updates.</b> New capabilities of the OpenControl API: </li>
+                    <li style="list-style-type: none;">
+                        <ul>
+                            <li>Update wireless network password </li>
+                            <li>Open the firewall</li>
+                            <li>Bulk configure calendar integrations</li>
+                            <li>Turn Solstice Ink on/off</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Security Updates</h4>
+                <ul>
+                    <li>Critical security update for the Solstice Pod (upgrade highly recommended).</li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>General usability improvements. </li>
+                    <li>Time-server and time zone fixes. The default time server was changed to NTP for added reliability. The last known time is also stored in the datastore in the event the time server can’t be reached. </li>
+                </ul>
+                <h4>Solstice Dashboard Release Notes</h4>
+                <ul>
+                    <li><b>Customizable Welcome Screen Instructions.</b> Administrators can now customize the instructions that appear on the Welcome Screen of Enterprise Edition Pods and Windows Display Software licenses using a rich text editor (Appearance and Usage tab). Admins can add a dynamic IP address in the instructions by including the network name in brackets, e.g. [INTERNAL], and the string will be replaced with the corresponding IP address. Once configured, the instructions will appear on the display’s Welcome Screen. </li>
+                    <li><b>Dual Display Options.</b> When a Solstice Pod Gen3 is simultaneously connected to two displays, the following dual display modes can be configured in the Solstice Dashboard (Appearance and Usage tab &gt; Display Options). Note: Classic splash screen mode not supported in Extend or Seamless Extend. 
+						<ul><li><b>Mirror (default).</b> Both displays will be mirrored and display the same content.</li><li><b>Extend.</b> Two displays are treated as a single collaboration panel. Content can be shared to both displays and moved between them. Solstice intelligently knows where one display ends and the next begins and will never break a content post across the two displays. </li><li><b>Seamless Extend.</b> Content will be posted across both displays as if they are a single seamless display. This mode is recommended for video walls or other setups where there is no bevel or seam between the two displays.</li></ul></li>
+                </ul>
+                <h4>Availability and Requirements of Software Upgrades</h4>
+                <p>Solstice 4.0 (11766) software upgrades are available for the following components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Windows Software</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Apps</li>
+                </ul>
+                <p>Visit <a href="https://www2.mersive.com/download/" target="_blank" rel="noopener">mersive.com/download</a> to access all updates. Current <a href="https://www.mersive.com/products/how-to-buy/solstice-subscription/" target="_blank" rel="noopener">Solstice Subscription </a>(formerly known as software maintenance) is required to upgrade Solstice Pods and Windows Software licenses to the latest 4.0 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+                <p><i>New</i> The Local OTA update method is available to install the 4.0 software updates. Please contact <a href="https://customersupport.mersive.com/hc/en-us" target="_blank" rel="noopener">Mersive Support</a> for access to the Local OTA update file. See <a href="https://www.mersive.com/updating-solstice/" target="_blank" rel="noopener">Updating Solstice</a> for more information. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.5 (11296) // December 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li><b>Support for Miracast streaming.</b> Miracast-enabled Windows and Android devices can now stream to Mersive Solstice Pods via the Miracast streaming protocol without the need for the Solstice user app.
+
+						<ul><li>Support for up to four simultaneous Miracast streams from Windows 8, 10, and Android devices with Miracast capabilities.</li><li>All Miracast features are supported, including second screen and confidence monitor for presenters.</li><li>Support for Miracast streaming via WiFi Direct connections and/or over the existing IT network infrastructure (Windows 10 devices only).</li><li>The Solstice Pod’s wireless network interface card must be enabled to support Miracast discovery. For the best experience, the Solstice Pod should be deployed on the user network via Ethernet with the Pod’s wireless network interface card enabled to facilitate Miracast discovery.</li><li>Miracast support is available on Solstice Pod Gen2i hardware only.</li><li>Solstice screen key support for Miracast connections is available via WiFi Direct only.</li></ul></li>
+                </ul>
+                <h4>New Enterprise Edition Features</h4>
+                <ul>
+                    <li><b>Spoken screen key.</b> When this Solstice Pod feature is enabled, the four-digit screen key will be ‘spoken’ from the Solstice-enabled display’s audio output when a user attempts to connect. The screen key will be spoken a maximum of once every 10 seconds if multiple connection attempts occur in short succession. The screen key is enabled separately; both must be enabled for a screen key to be spoken.</li>
+                </ul>
+                <h4>Solstice Dashboard Release Notes</h4>
+                <ul>
+                    <li><b>Miracast streaming configuration.</b> Enterprise Edition Solstice Pods can now be configured via the Solstice Dashboard to support streaming from Miracast-enabled Windows and Android devices without the need for the Solstice user app via the Miracast protocol. Miracast streaming can be enabled on the ‘Appearance and Usage’ tab of the Solstice Dashboard under the ‘Client Sharing Options’ using one of the following modes.
+
+						<ul><li><b>Miracast – Stream video over WiFi Direct.</b> Content streams over a peer-to-peer WiFi Direct connection. Supports all Miracast-enabled user devices as well as screen key authentication (when screen key is enabled for the Solstice Pod).</li><li><b>Miracast – Stream video over existing network.</b> Initial connections are established via WiFi Direct but all content streams over the existing network. Compatible with Windows 10 devices only; screen key not supported in this mode.</li><li><b>Both Miracast modes enabled.</b> When both Miracast modes are enabled, initial connections are established via WiFi Direct and the existing network will be utilized for streaming if possible. Otherwise, the Pod auto-switches to the WiFi Direct for streaming content. Screen key not supported in this mode.</li></ul></li>
+                </ul>
+                <br />
+                <ul>
+                    <li><b>Spoken screen key configuration.</b> Enterprise Edition Solstice Pods can now be configured on the ‘Appearance and Usage’ tab in the Solstice Dashboard to ‘speak’ the four-digit screen key from the Solstice-enabled display’s audio output when a user attempts to connect. The screen key feature itself is enabled separately on the ‘Security’ tab of the Solstice Dashboard; both features must be enabled for the screen key to be spoken.</li>
+                    <li><b>Local over-the-air Solstice Pod update method.</b> For the best upgrade experience, Solstice Pods should have access to the Internet to complete over-the-air (OTA) updates directly from the Mersive update server. If Pods do not have Internet access, either direct or through a proxy server, there is a new ‘Local OTA’ method introduced with the 3.5 Dashboard for upgrading beyond the initial 3.5 release. The Local OTA method allows Pod admins to download the Solstice upgrade file from<a href="https://www.mersive.com/downloads/" target="_blank" rel="noopener">mersive.com/download</a>, manually place it on a local web server, and configure Pods to point to the local web server for updates in the Dashboard ‘Network’ tab. Please see<a href="https://www.mersive.com/guides/updating-solstice-pods/" target="_blank" rel="noopener">http://www.mersive.com/updating-solstice</a>for more information.</li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>General usability improvements.</li>
+                </ul>
+                <h4>Availability and Requirements of Software Upgrades</h4>
+                <p>Solstice 3.5 (11296) software upgrades are available for all components of the Solstice product suite:</p>
+                <ul>
+                    <li>Solstice Pod</li>
+                    <li>Solstice Dashboard</li>
+                    <li>Solstice Discovery Service</li>
+                    <li>Solstice user apps</li>
+                </ul>
+                <p>Visit <a href="https://www.mersive.com/downloads/" target="_blank" rel="noopener">mersive.com/download</a> to access all updates. Current Solstice <a href="https://www.mersive.com/solstice-subscription/" target="_blank" rel="noopener">software maintenance</a> is required to upgrade Solstice Pods and Windows Software licenses to the latest 3.5 version. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licenses.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.4 (11276) // November 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements:</h4>
+                <ul>
+                    <li>When Solstice Discovery Service (SDS) is deployed and Mersive Solstice Pods, user apps, Dashboard and/or Windows Display Software instances cannot reach SDS due to unavailability on the network, the number of attempts to reconnect to SDS have been significantly reduced to utilize fewer network resources and mitigate potential adverse impacts to network performance.</li>
+                </ul>
+                <h4>Solstice Dashboard Release Notes:</h4>
+                <ul>
+                    <li>When Solstice Discovery Service (SDS) is deployed and the Mersive Solstice Dashboard cannot reach SDS due to unavailability on the network, the number of attempts to reconnect to SDS have been significantly reduced to utilize fewer network resources and mitigate potential adverse impacts to network performance.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.4 (11202) // November 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements:</h4>
+                <ul>
+                    <li>Improved the performance and reliability of AirPlay connections when the Solstice Pod is deployed in dual network mode.</li>
+                    <li>Resolved an issue where the Solstice display screen would not fully clear upon the last user disconnecting from sessions with content stacks.</li>
+                    <li>Resolved an issue causing the time-since-last-connection API call to return an inaccurate result.</li>
+                    <li>Other general stability enhancements.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.4 (11107) // October 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features:</h4>
+                <ul>
+                    <li>Support added for streaming video content from the iOS YouTube app via AirPlay.
+
+						<ul><li>When shared via the iOS YouTube app, videos stream directly to the Pod from the internet (not through the iOS user device), reducing network bandwidth and increasing performance.</li><li>Videos automatically play at full resolution on the Solstice-enabled display.</li><li>Solstice Pods and Windows Display Software host PCs must have internet access to support iOS YouTube app streaming. If the Solstice endpoints don’t have internet access, iOS users can still stream YouTube videos via AirPlay from YouTube.com (instead of via the iOS YouTube app).</li></ul></li>
+                    <li>Solstice release version number format changes from<i>x.y.z</i>version numbering to the new<i>x.y. (5 digit build number)</i>format to improve version control and modernize the Solstice version paradigm.</li>
+                </ul>
+                <h4>New Enterprise Edition Features:</h4>
+                <ul>
+                    <li>Enterprise Edition Solstice Pods now support playback of HTML digital signage feeds and other web-based content when displays are not in active use for meetings.
+
+						<ul><li>When enabled and configured via the Solstice Dashboard, Solstice Pods will show web-based content from a source URL when no users are connected, including digital signage feeds and/or other HTML content.</li><li>Three signage modes are available, including full screen mode as well as options to overlay Solstice user connection instructions, calendar information, and footer.</li><li>The Solstice digital signage feature can be configured to start 10 seconds, 30 seconds, 1 minute, 5 minutes, or 10 minutes after the last user disconnects from the Pod.</li></ul></li>
+                </ul>
+                <p><i>(Digital signage feature not available for Solstice Windows Display Software licenses.)</i>
+                </p>
+                <ul>
+                    <li>Enterprise Edition Solstice Pods and Windows Display Software licenses now ship with the modern welcome screen. This will not affect existing Solstice endpoints with the classic welcome screen enabled that update to version 3.4.</li>
+                </ul>
+                <p><i>(Standard Edition Solstice Pods and Windows Display Software licenses will continue to ship with the classic welcome screen by default.)</i>
+                </p>
+                <h4>Fixes and Enhancements:</h4>
+                <ul>
+                    <li>If a Windows user has an SCCM/MSI Solstice user app installed and attempts to connect via the Quick Connect webpage, the existing SCCM/MSI Solstice app will be detected and launched instead of an additional Solstice app being installed.</li>
+                    <li>The gateway check feature is disabled by default for new standard and enterprise Pods. This will not affect existing Pods where gateway check has been enabled previously. Additionally, the gateway check configuration has been added to the web and local Configuration Panels for the Solstice Pod.<br /><i>(Gateway check feature does not apply to Solstice Windows Display Software licenses.)</i></li>
+                    <li>Network hardening and infrastructure improvements to better support a broad range of IT network conditions, especially for large scale Solstice deployment. This includes better handling of network security scans.</li>
+                </ul>
+                <h4>Solstice Dashboard Release Notes:</h4>
+                <ul>
+                    <li>New Kepler tab in the Solstice Dashboard. Kepler is Mersive’s upcoming deployment monitoring and meeting analytics service. Initially Dashboard users can sign up to be notified when Kepler launches via the Kepler tab in the Dashboard. Following the Kepler launch, the Kepler tab in the Dashboard will be used to create a Kepler account and onboard Solstice Pods to the cloud-based Kepler portal.</li>
+                    <li>Enterprise Edition Solstice Pods can now be configured via the Solstice Dashboard to support playback of HTML digital signage feeds and other web-based content when displays are not in active use for meetings.
+
+						<ul><li>The new Digital Signage tab of the Solstice Dashboard provides all configuration options for the Digital Signage feature.</li><li>Solstice Pods will show web-based content from a source URL when no users are connected, including digital signage feeds and/or other HTML content.</li><li>Three signage modes are available, including full screen mode as well as options to overlay Solstice user connection instructions, calendar information, and footer.</li><li>The Solstice digital signage feature can be configured to start 10 seconds, 30 seconds, 1 minute, 5 minutes, or 10 minutes after the last user disconnects from the Pod.</li></ul></li>
+                </ul>
+                <p><i>(Digital signage feature not available for Solstice Windows Display Software licenses.)</i>
+                </p>
+                <ul>
+                    <li>The gateway check feature is disabled by default in the Network tab of the Solstice Dashboard for new Pods. This will not affect existing Pods where gateway check has been enabled previously.</li>
+                </ul>
+                <h4><b>Availability and Requirements of 3.4 Software Updates</b>
+                </h4>
+                <ul>
+                    <li>Solstice 3.4 software upgrades are available for all components of the Solstice product suite:
+
+						<ul><li>Solstice Pod</li><li>Solstice Dashboard</li><li>Solstice Discovery Service</li><li>Solstice Display Software for Windows</li><li>Solstice user apps</li></ul></li>
+                    <li>Visit<a href="https://www.mersive.com/downloads/" target="_blank" rel="noopener"> mersive.com/download</a>to access all updates. Current Solstice<a href="https://www.mersive.com/solstice-subscription/" target="_blank" rel="noopener"> software maintenance</a>is required to upgrade Solstice Pods and Windows Software licenses to version 3.4. Remember to update Solstice Dashboard instances before updating Solstice Pods and Windows Display Software licences.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.3.2 // June 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Improvements to EDID handling for certain displays/devices.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.3.0 // May 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li><b>Minimal Solstice App User Interface on MacOS and Windows Devices.</b> The Solstice app automatically minimizes to the top of the screen when a user shares their entire desktop.</li>
+                    <li><b>BETA – Windows Virtual Machine (VM) Support for Solstice User App.</b> The Solstice app is now supported on Windows Server for virtual machine environments.</li>
+                    <li><b>Expanded Support for Microsoft Installer (MSI).</b> Administrators may now silently install/update the Solstice user app for Windows with additional configuration options, such as disabling automatic startup and specifying the relevant SDS server.</li>
+                    <li><b>Additional SDS Logging Control.</b> Administrators may now configure a registry value that determines how long an inactive Solstice Pod should remain in the SDS directory.</li>
+                </ul>
+                <h4>New Enterprise Edition Features:</h4>
+                <ul>
+                    <li><b>802.1x Ethernet Support.</b> Certificates may now be loaded into the Dashboard to facilitate connections between the user app and the Solstice Pod over existing 802.1x Ethernet infrastructure.</li>
+                    <li><b>Support for SSL Certificates.</b> Administrators may now load a certificate to prevent users from seeing a browser warning when they attempt to access the Solstice Quick Connect, browser look-in, and web configuration pages of a Solstice Pod.</li>
+                    <li><b>Fully Qualified Domain Name (FQDN) Support.</b> Administrators may choose to show the fully qualified domain name, if available, on the Solstice display.</li>
+                    <li><b>Enhanced Calendar API Command Set.</b> The OpenControl API may now interact with an authenticated Microsoft Exchange calendar to dynamically read, write, and delete meetings.</li>
+                    <li><b>Software Restart API Command.</b> The OpenControl API may now restart the Solstice software without performing a complete reboot of the Solstice Pod.</li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Security enhancements have been made to improve the install process and prevent brute force attacks.</li>
+                </ul>
+                <h4>Solstice Dashboard New Features</h4>
+                <ul>
+                    <li><b>802.1x Ethernet Support.</b> Administrators may now load a certificate into the Dashboard to facilitate connections between the user app and the Solstice Pod over existing 802.1x Ethernet infrastructure.</li>
+                    <li><b>Solstice Pod Support for SSL Certificates.</b> Administrators may now load a certificate into the Dashboard to prevent users from seeing a browser warning when they attempt to access the Solstice Quick Connect, browser look-in, and web configuration pages of a Solstice Pod.</li>
+                    <li><b>Fully Qualified Domain Name (FQDN) Support.</b> Administrators may choose to show the fully qualified domain name, if available, on the Solstice display.</li>
+                    <li>General bug fixes and enhancements.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.2.1 // February 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Bug Fixes</h4>
+                <ul>
+                    <li>Resolved an issue with assignment of static IP addresses.</li>
+                    <li>Resolved an issue that would cause Multi-Room sessions to be prematurely ended.</li>
+                    <li>Improvements to 802.1x wireless authentication.</li>
+                    <li>Improvements to Gateway Check settings.</li>
+                </ul>
+                <h4>Solstice Dashboard Bug Fixes</h4>
+                <ul>
+                    <li>General usability improvements to the Solstice Dashboard.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.2.0 // February 2018</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li>New capabilities of the OpenControl API:
+
+						<ul><li>Room scheduling data may now be read via ‘GET’.</li><li>Gateway check control is now exposed.</li></ul></li>
+                    <li>On the modern welcome screen, the customizable background images now have improved animations.</li>
+                    <li>International language support added to include French, Italian, German, Spanish, and Chinese Traditional.</li>
+                    <li>Japanese translations updated.</li>
+                </ul>
+                <h4>Fixes and Enhancements:</h4>
+                <ul>
+                    <li>Improvements to the Solstice Dashboard related to the speed and performance of Pod statuses and read/write configuration.</li>
+                    <li>Improvements to Microsoft Exchange Server calendar integration.</li>
+                    <li>Solstice user app improvements:
+
+						<ul><li>Improved the usability of the Pod discovery panel.</li><li>MacOS user app now leverages standard CFPreferences for application preferences management.</li><li>Enterprise .msi installer is now available for the Solstice Windows client application.</li><li>Improved sharing performance on Surface Books and Surface Pros.</li><li>Resolved macOS AirPlay connection issue.</li><li>Addressed Multi-Room configuration issues.</li><li>Audio streaming no longer lags when video sharing is paused and resumed.</li><li>Improved overall stability for Android and iOS apps.</li></ul></li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.1.1 // December 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Improved support for EDID (Extended Display Identification Data) resolution and refresh rates for specific displays.</li>
+                    <li>Resolved an issue where Pods on an isolated network would not update successfully when using a proxy to connect to the internet.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.1 // December 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features (Enterprise Only)</h4>
+                <p><b>New, Redesigned Welcome Screen:</b> The welcome screen has been updated to support several important new features:</p>
+                <ul>
+                    <li>Existing welcome screen customizations are retained in ‘classic’ mode but you may enable ‘modern’ mode to see and utilize the features listed below:
+
+						<ul><li>First time user instructions are presented in a simplified step-by-step manner.</li><li>Reactive screen key. When a user begins the connection process, the screen key will grow help users find and read the on-screen.</li><li>The SSID of the wireless network can optionally be presented as part of the on-screen instructions.</li><li>DNS Support – if a Pod’s IP Address is listed in a DNS server, the welcome screen will display the DNS name and not the IP address as part of the getting started instructions.</li><li>Up to 6 different background images, customizable.</li><li>On screen room calendar display (see feature below).</li></ul></li>
+                </ul>
+                <p><b>Room Scheduling via Calendar Integration:</b> Solstice will show the upcoming meetings for the room on the welcome screen.</p>
+                <ul>
+                    <li>Integrates with Microsoft Exchange and Office 365 to automatically maintain an updated room calendar.</li>
+                    <li>Calendar support for any 3rd party calendar system via the Solstice OpenControl API.</li>
+                    <li>Supports various Exchange/O365 authentication modes:
+
+						<ul><li>Resource calendars for meeting rooms or other shared resources</li><li>Direct account access for personal and in-office wall displays</li><li>Impersonation accounts</li><li>Account delegation</li></ul></li>
+                    <li>Easy to view ‘In-Use’ or ‘Available’ indicators in Solstice apps so that users can find open rooms for ad-hoc meetings.</li>
+                    <li>A straightforward display of upcoming meetings during the day gives users a simple way to know when a room may be used/empty.</li>
+                </ul>
+                <p><b>Export managed display list from the Solstice Dashboard:</b> The Dashboard can now export a list of managed displays to a human-readable file. The file contains the display name, the IP Address, and the Device ID for all managed displays, or a selected sub-set. This file can be imported into another Dashboard instance or used to collect Device IDs for co-terming maintenance or other administrative tasks. <b>WiFi Certificate Installation</b>: Solstice Pods can now accept a new WiFi certificate for 802.1X networks. The Solstice Dashboard can upload a certificate generated by a Certificate Authority to ensure the identity of a Pod when attaching as a wireless client to the enterprise network. <b>WiFi Channel Selection for WAP Mode (Gen2i Hardware Only)</b>: The wireless access point of the Solstice Pod can be configured to use a specific wireless channel. Channels across both the 2.4Ghz and 5Ghz ranges are available.</p>
+                <h4>New Features</h4>
+                <p><b>In-app Room Availability</b>: The Solstice app will indicate room availability in the ‘discovery’ panel, based on current connection and calendar scheduling information. This gives users an easy mechanism to find open rooms directly on their mobile device, based on how much longer the rooms will be free. <b>OpenControl API Extensions</b>: The OpenControl API has received several new REST calls to expose additional functionality to 3rd party systems. These extensions include the following capabilities:</p>
+                <ul>
+                    <li>Set custom background images</li>
+                    <li>Control welcome screen messaging including RSS feeds and custom message tickers</li>
+                    <li>Control emergency broadcast state</li>
+                    <li>Check for and initiate software updates</li>
+                    <li>Read current software version</li>
+                    <li>Reboot Pod</li>
+                </ul>
+                <p><b>Redesigned QuickConnect Web Page:</b> The new design displays a background image that is independent of the customized welcome screen image(s) and is optimized for readability and user experience. <b>Name Your Wired Network</b>: The Dashboard now allows you to give your internal or wired network a meaningful name, instead of the default ‘Internal’.</p>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Improved stability and reliability.</li>
+                    <li>Resolved issue where Pod would not find an available update if connected to two networks and the WiFi network did not have access to the internet.</li>
+                    <li>Improved performance on Windows apps when sharing desktop or app windows.</li>
+                    <li>Improved performance, reduced bandwidth of RSS scrolling.</li>
+                    <li>Enhanced image quality when sharing from high resolution devices.</li>
+                    <li>Reduced bandwidth of streams that are in the dock.</li>
+                    <li>Fixed issue where sharing notifications would appear too frequently.</li>
+                    <li>Resolved issue on the Pod where rolling back to a previous version could cause instability.</li>
+                    <li>Improved stability when using AirPlay to share to Solstice.</li>
+                    <li>Resolved issue that would prevent SLR updates when guest configuration was disabled.</li>
+                    <li>Resolved issue that would disallow OpenControl API calls when guest configuration was disabled.</li>
+                    <li>Resolved issue that could prevent Mac OS X apps from updating successfully when connecting to a newer Solstice display.</li>
+                </ul>
+                <h4>Notes</h4>
+                <p>Version 3.1 Dashboard is required to manage 3.1 Solstice displays. It is highly recommended that you update the Dashboard prior to updating displays. You can get the latest version of the Solstice Dashboard <a href="https://www.mersive.com/thank-solstice-dashboard/" target="_blank" rel="noopener noreferrer">here</a>. Support for Windows XP client discontinued.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.0.5 // September 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Added support for iOS 11. (Note: Solstice iOS user apps must also be updated to the latest version for full iOS 11 support.)</li>
+                    <li>Added support for macOS High Sierra.</li>
+                    <li>Improved video streaming performance for Microsoft SurfaceBook/SurfacePro platforms running Windows 10.</li>
+                </ul>
+                <h4>Enterprise Only</h4>
+                <ul>
+                    <li>New configuration option added in the Solstice Dashboard to disable periodic network status checks for Solstice hosts.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.0.3 // August 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Fixed an issue that could cause a blank box to appear on the display while mirroring with AirPlay.</li>
+                    <li>Improved tolerance of inconsistent network conditions and overall uptime.</li>
+                    <li>Resolved ‘incorrect screen key’ error that could appear when the correct screen key was entered.</li>
+                    <li>Resolved issue in Solstice Display Software for Windows where settings could fail to save properly.</li>
+                    <li>Fixed issue that could result in an OpenControl API call failing unnecessarily.</li>
+                    <li>Other general improvements to product stability and reliability.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>3.0.1 // July 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Multi-Room (Enterprise Only)</h4>
+                <p><a href="https://www.mersive.com/guides/multi-room-user-guide/" target="_blank" rel="noopener">See the Multi-Room User Guide.</a> Multi-Room allows Pods in multiple locations on your network to collaborate in a single, unified session. Content from any user in any location will be synced in real-time across each participating location.</p>
+                <h4>Multi-Room Features (Enterprise Only)</h4>
+                <ul>
+                    <li><b>New Menu for Meeting Options</b>: A ‘Meeting’ menu has been added to the Solstice App. From here, users can easily start a Multi-Room session when connected to a Pod.</li>
+                    <li><b>Session Names</b>: Multi-Room sessions can be given descriptive names by end users.</li>
+                    <li><b>Arbitrary Audio Bridge Support:</b> Users have the ability of adding supplemental audio bridge information. Solstice will parse the audio bridge and create clickable links to easily integrate any audio service.</li>
+                    <li><b>Invites:</b> Users can quickly invite other team members to join an existing Multi-Room session within the app. The invite opens an email with an embedded invite link for easy distribution. The invite link can also be copy/pasted for arbitrary use.</li>
+                    <li><b>Group Chat:</b> When in a Multi-Room session, a new navigation tab is available in the app which will allow users to chat with other session participants. Chat messages can contain clickable URLs. This tab will also provide an overview of who is connected and from which room.</li>
+                    <li><b>Auto-Complete During Session Initiation</b>: For ease of use, the Solstice App will remember previously used session names and audio bridge information. When starting a new session, this content will auto-complete for quicker start times.</li>
+                    <li><b>Intuitive Joining of Sessions:</b> Users will see ongoing Multi-Room sessions in the discovery panel of the app. Joining a Multi-Room session uses the same workflow as joining a single Solstice display, requiring little-to-no training for end users.</li>
+                    <li><b>Routing of Content Video and Audio</b>: During a Multi-Room session, Solstice will automatically route all content to be visible on each participating display. Content audio will also be delivered and synchronized with the video, regardless of network latency.</li>
+                    <li><b>Welcome Screen Updates:</b> When in a Multi-Room session, the welcome screen (splash screen) of the display will be updated to reflect the pertinent info for end users.</li>
+                    <li><b>Ability to Disable Multi-Room</b>: Administrators have the ability (via the Dashboard) to disable any Pod from being able to start a session.</li>
+                </ul>
+                <h4>Authentication Model Improvements (Enterprise and Standard)</h4>
+                <p>Based on customer feedback and user testing, the methods for users to authenticate when connecting to Solstice displays has been simplified and refined.</p>
+                <h4>Authentication Model Features</h4>
+                <ul>
+                    <li><b>Screen Key with Moderator Mode:</b> With 3.0, displays can support Screen Key as well as Moderator Mode simultaneously.</li>
+                    <li><b>Password-Free Moderator Mode</b>: Moderator Mode has been enhanced to be simpler and more user friendly. It can be enabled at any time by connected users. The one who enables Moderator Mode becomes the moderator and can promote others to also be moderators.</li>
+                    <li><b>Simplified Connections in Moderator Mode</b>: With Moderator Mode enabled, new users are no longer forced to choose to connect as guest or host, simplifying the workflow and reducing confusion. The privilege level of new connections will be determined by existing moderator(s).</li>
+                    <li><b>Easy Configuration for Admins</b>: Administrators have the ability to completely disable Moderator Mode on any Solstice Display. They also have the ability to enable or disable Screen Key in parallel. Screen Key is no longer a ‘determine at runtime’ option for end users.</li>
+                </ul>
+                <h4>Security Updates</h4>
+                <ul>
+                    <li><b>Solstice passes penetration testing for secure deployment.</b> Solstice 3.0 introduces numerous enterprise network/admin security improvements (beyond penetration testing requirements) as a result of our diligent attention to security. We recommend that you keep your software up to date as a best practice. Please <a href="https://www.mersive.com/contact-us/" target="_blank" rel="noopener noreferrer">contact Mersive support</a> for a complete summary of these security updates.</li>
+                </ul>
+                <h4>Other Features</h4>
+                <ul>
+                    <li><b>Flow Control Network Connectivity:</b> A flow control algorithm has been added to streaming traffic that will automatically adjust streaming rate based on current network quality. This is especially effective for Multi-Room sessions where routes to participating locations may vary greatly in latency or other conditions.</li>
+                    <li><b>Auto-Reconnect and Connection Stability</b>: Solstice has been enhanced to handle short interruptions in network connectivity without disconnecting the user and removing shared content, providing a more stable, robust experience in unreliable network conditions.</li>
+                    <li><b>QuickConnect Webpage to Auto-Launch App if Previously Installed:</b> The QuickConnect page hosted on each Solstice instance will now auto-launch a previously installed app without having to download anything from the display. If no previous install is detected, users will still download and connect similar to previous versions.</li>
+                    <li><b>Captive Portal Support</b>: Pods will now support attaching to networks that use Captive Portal authentication.</li>
+                    <li><b>File-Based License Updates (Enterprise Only):</b> For deployments without internet access, Solstice licenses can now be updated by a file based mechanism distributed via the Dashboard.</li>
+                </ul>
+                <h4>Design &amp; Usability Improvements</h4>
+                <ul>
+                    <li><b>Icons and Aesthetic Improvements</b>: The Solstice app has been enhanced with a more representative icon set and layout/color changes for more intuitive use.</li>
+                    <li><b>Readability:</b> Text and background colors in certain parts of the UI have been modified to comply with accessibility guidelines for readability.</li>
+                    <li><b>Welcome Screen Design Improvements</b>: Default artwork for the Welcome Screen (Splash Screen) has been updated.</li>
+                </ul>
+                <h4>Notes</h4>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <ul>
+                            <li><b>Previous Authentication Options Removed</b>: Some of the previous authentication options have been removed. Global Password was removed. The ability to have Screen Key determined at runtime was removed. Moderator Mode can no longer be password protected.</li>
+                            <li><b>Solstice Display / App Compatibility:</b> Due to changes in the authentication protocol, in order to use a 3.0+ Solstice Display, a 3.0+ Solstice app is required. Users with a 2.x app will be prompted to upgrade upon a connection attempt to a 3.0+ display. The upgrade process is simple and automatic, with the new app automatically downloaded and launched (with the exception of mobile apps, which must be downloaded from their respective store).</li>
+                            <li><b>Solstice Apps are Backwards Compatible:</b> Once users have the updated app on their device, they’ll be able to use it to connect to previous versions of Solstice Displays.</li>
+                            <li><b>Multi-Room Requirements:</b> For a display to be able to participate in Multi-Room sessions, Screen Key must be enabled (Dashboard will warn you if you attempt to disable Screen Key with Multi-Room enabled).</li>
+                            <li><b>Multi-Room Connectivity</b>: For Pods to participate in Multi-Room sessions, they must be reachable within your organization’s network infrastructure. No routing through the cloud is provided – this is for security and performance reasons.</li>
+                            <li><b>All Components Required to Update</b>: For 3.0 features to function properly, all Solstice components (displays, user apps, Dashboard, and SDS) must be updated to 3.0+.</li>
+                            <li><b>Minimum Dashboard Requirement</b>: To manage 3.0+ displays, the 3.0 Dashboard must be used. We highly recommend updating the Dashboard before updating displays.</li>
+                            <li><b>Minimum Hardware Requirement:</b> Solstice 3.0 and beyond will be supported on gen 2 and gen 2i Pods only. If you have gen 1 hardware, please contact <a href="mailto:customerrelations@mersive.com" target="_blank" rel="noopener">customerrelations@mersive.com</a> for a special offer on hardware upgrades.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.8.9 // April 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Added support for configuration of two independent Solstice Directory Service (SDS) servers when the Pod is connected to two networks simultaneously via dual-network mode. Administrators can now assign a different SDS for each network interface. In this way, users on each network can discover and connect to available Pods without needing to enter an IP address or rely on UDP broadcast discovery. This feature maintains the independence of the two networks; no network traffic passes between them.</li>
+                    <li>Added DNS support when the Pod is in Dual-Network mode. Hostnames can be entered into the Solstice Directory Service (SDS) IP address fields and those hostnames will correctly resolve to the appropriate IP address on the correct network.</li>
+                    <li>Resolved issue where Pod could become unresponsive in certain networking conditions.</li>
+                    <li>Improved performance of sharing app windows when using Windows 7.</li>
+                    <li>Resolved issue that could cause the Pod to improperly change the user access mode to ‘locked’ after a session disconnect.</li>
+                    <li>Improved stability of Pods connected via Ethernet when certain DHCP Linux servers are used.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.8.7 // April 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li>Added support for dual Solstice Directory Service (SDS) implementations. The Dashboard can now configure two SDS instances – one for each network connection – on Solstice displays.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.8.4 // January 2017</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Critical security update for the Solstice Pod (software update recommended).</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.8.0 // November 2016</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li><b>Streaming Optimization for Adverse Network Conditions.</b> Solstice will monitor and detect variations in network performance and dynamically optimize video/audio streaming to accommodate a broader range of network conditions. Jitter/choppiness is significantly reduced and audio-video synchronization is significantly improved when there are high volumes of traffic on the host network.</li>
+                    <li><b>Improved Security for Browser Look-In.</b> When the Browser Look-In feature is enabled for a Solstice display and the user authentication mode set to Screen Key, users will now be required to enter the display’s Screen Key in order to view the display in their device browser.</li>
+                    <li><b>Option to Run Solstice at Startup for Windows and Mac Laptops.</b> For Windows and Mac users that download or update to the 2.8 Solstice client app, the app will automatically launch at startup of the client device. The default launch-at-startup option can easily be disabled in the client settings menu.</li>
+                    <li><b>Performance Improvements for High Resolution Devices over 1080p.</b> When sharing desktop/screen to a Solstice display from a high-resolution device (beyond 1080p), throughput (fps) is significantly improved and less network bandwidth is utilized.</li>
+                    <li><b>Support for 24-Hour Time Format.</b> The clock in the lower right corner of the Solstice display interface can now be set to 24-hour time formatting via the Solstice configuration panel or the Solstice Dashboard.</li>
+                    <li><b>‘Getting Started’ Online Help.</b> New web pages have been created to provide quick, informative help for end users and re-sellers, including setup instructions for Solstice admins and easier access to Solstice support. Links to the new pages have been added in convenient locations in the product.</li>
+                </ul>
+                <p>Solstice Pod Quickstart URL: <a href="https://www.mersive.com/go/" target="_blank" rel="noopener">www.mersive.com/go/</a></p>
+                <p>Solstice Windows Software Quickstart URL: <a href="https://www.mersive.com/start/" target="_blank" rel="noopener">www.mersive.com/start/</a></p>
+                <ul>
+                    <li><b>Easy Upgrades to Enterprise Edition.</b> Non-enterprise Solstice displays can be upgraded to Enterprise Edition quickly and easily via the Solstice Dashboard or the web Configuration Panel for the Solstice Pod. To upgrade, click the new upgrade link, which will take you to a web page to complete the upgrade</li>
+                </ul>
+                <h4>New Solstice Enterprise Edition Features</h4>
+                <ul>
+                    <li><b>RSS Feeds Added to the Solstice Dashboard Message Center.</b> The Solstice Dashboard’s Message Center can now accept RSS feeds as content for the bulletin message ticker posted to Solstice displays. Bulletin messages can now show multimedia content from RSS feeds and animate between sources. An unlimited number of RSS feeds can be curated with existing messaging features. Enterprise Edition Pods and Windows Software licenses will ship with a default RSS feed enabled that provides helpful information to get started with Solstice.</li>
+                    <li><b>Support for Pod Software Updates Behind the Firewall via the Solstice Dashboard.</b> The 2.8 version of the Solstice Dashboard can now deploy software updates behind a network firewall. This greatly improves the ease of updating Pods that do not directly have internet access due to network firewalls and provides more user control of release version updates.</li>
+                    <li><b>In-Product Software Update Path for the Solstice Dashboard.</b> The Solstice Dashboard now provides a direct update path from within the Dashboard when new versions become available.</li>
+                    <li><b>New Quick Connect Configuration Option.</b> In the Solstice Dashboard, a new option exists to disable automatic connection to a Solstice display when Solstice client apps are downloaded directly from the display.</li>
+                </ul>
+                <h4>Solstice Dashboard for Enterprise Edition</h4>
+                <ul>
+                    <li>Fixed update messaging that might improperly warn of a downgrade when not actually downgrading.</li>
+                    <li>Resolved issue where updating Solstice Pods with a Solstice Local Release (SLR) file from the Dashboard might not update all Pods as intended.</li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Solstice Dashboard efficiency enhanced to reduce CPU usage.</li>
+                    <li>Solstice Android app has improved user experience for keyboard input.</li>
+                    <li>Resolved issue where shared desktops periodically appear as blank posts on the Solstice display.</li>
+                    <li>Resolved issue where certain configuration options on the Solstice host were not being saved properly.</li>
+                    <li>Resolved issue where participants could be disconnected after an iOS device is mirrored.</li>
+                    <li>Improved stability of AirPlay mirroring from Mac OSX desktops.</li>
+                    <li>Resolved issue where certain video files would not share from Android devices.</li>
+                </ul>
+                <h4>Compatibility</h4>
+                <p>2.8 Solstice displays cannot be managed by pre-2.8 Solstice Dashboards. It is highly recommended to update the Solstice Dashboard to software version 2.8 <b>before</b> updating the Solstice Pods and/or Windows Software.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.7.3 // November 2016</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Solstice Pod Fixes and Enhancements</h4>
+                <ul>
+                    <li>Resolved issue that can cause a Pod to become unreachable on some networks based on certain DHCP configurations.</li>
+                    <li>Resolved issue where the Pod’s display output could get in a frozen state.</li>
+                </ul>
+                <h4>Solstice Client App Fixes and Enhancements</h4>
+                <ul>
+                    <li>Fixed problem on Solstice client app for Mac that could result in unreadable text in certain parts of the user interface.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.7.2 // October 2016</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Solstice Pod Fixes and Enhancements</h4>
+                <ul>
+                    <li>Resolved issue that would occasionally cause the Pod to freeze and become unusable after a certain period of time.</li>
+                    <li>Resolved issue that would unexpectedly disconnect users attached to the Pod’s wireless access point.</li>
+                    <li>Resolved issue where Pods would go offline after losing signal from a display or after long periods of inactivity.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.7.0 // September 2016</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li><b>Client Discovery List Search.</b> Solstice users now have the option to search for a display for connection by name in their Solstice client discovery list. Users simply enter text into a search field, allowing them to dynamically search for a specific Solstice display by name.</li>
+                    <li><b>Broader Support for Client Video File Sharing on the Solstice Pod.</b> Client video file sharing to the Solstice Pod has been expanded to support additional video file formats. Supported video codecs are H.263, H.264, and H.265/HEVC, and supported file formats are .mp4, .mov, .3gp. The number of simultaneous video files that can be shared to the Pod has increased from 1 to 4.</li>
+                    <li><b>Support for Simultaneous iOS Mirroring Posts.</b> The Solstice Pod will now support up to four simultaneous iOS mirroring posts via AirPlay. Users attempting to mirror additional iOS devices (beyond four) will be asked to wait until at least one iOS mirroring post is removed from the screen. Note Solstice Windows Software already supports multiple simultaneous iOS mirroring posts.</li>
+                    <li><b>Robust Restart Management Services.</b> The Solstice Pod has been equipped with a self-monitoring capability that, in the event of a system failure, will attempt to restart the Pod automatically. This can be useful if the Pod experiences an unforeseen network event that causes the Solstice service to fail.</li>
+                    <li><b>Optional Software Update for Connected Clients.</b> Solstice users may now opt to be notified when a software update is detected for their Solstice client app. When users enable the new client update notification option in the Solstice client settings menu, they will be prompted to update their client software when they connect to a Solstice display that has a more recent software version number than their Solstice client app. Windows and Mac client updates will be downloaded from the Solstice display host, and the client app will restart and reconnect to the Solstice display host. In the case of mobile clients, users will be redirected to the app store ‘install’ page for the most recent version.</li>
+                    <li><b>Remove Media when PC is Locked/Sleeps.</b> When a PC is explicitly locked (via ALT-CTRL-DEL for example) while still connected to a Solstice display, any posts from that user will be removed from the display.</li>
+                    <li><b>Display ‘No Network’ in Presence Bar on Network Loss.</b> The words ‘No Network’ will appear in the presence bar of the Solstice display interface when a Pod loses network connectivity, even when the IP address is disabled for viewing on the Solstice display welcome screen.</li>
+                </ul>
+                <h4>New Enterprise Edition Features</h4>
+                <ul>
+                    <li><b>Discovery Tags – Dynamic Discovery Filtering.</b> Discovery tags allow Solstice users to filter a list of available displays for connection in their client devices by selecting one/multiple display group ‘tag(s)’ to filter by. A discovery tag denotes a logical group for a set of displays – such as location, department, etc. – and are created and applied to Solstice Enterprise Edition displays via the Solstice Dashboard. Multiple tags can be applied to Solstice Enterprise Edition displays.</li>
+                    <li><b>Full Solstice Display Welcome Screen Customization and Branding.</b> The Solstice Dashboard now presents a larger set of customization options for the Solstice welcome screen design. In addition to modifying the background image for the welcome screen, all other welcome screen elements can now also be modified. Each element can be shown/hidden and aligned left, right, or center. Color values can also be assigned to text and other elements to better match organizational branding.</li>
+                    <li><b>Quality of Service – Differentiated Network Traffic Support.</b> Solstice network traffic will now be augmented to utilize the IETF defined quality of service (QoS) header information. By configuring a 6-digit QoS bit string in the Solstice Dashboard, the Solstice deployment can implement the TCP/IP QoS headers that are utilized by the enterprise network to differentiate and prioritize network traffic.</li>
+                    <li><b>Solstice Dashboard Update Notification and Warnings.</b> Solstice Dashboard admins will now be warned when they attempt to update Solstice Pods to a software version that will make the Pods unsupported/unmanageable via their current Dashboard version. When this occurs, Dashboard admins will be prompted to update their Dashboard software first, and a download link for the newest Solstice Dashboard update will be provided. This warning dialog will appear before the Solstice Pod(s) update is applied.</li>
+                    <li><b>Microsoft qWAVE Requirement for Solstice Dashboard and Solstice Directory Service.</b> As a result of new enterprise features added in the 2.7 release, the Solstice Dashboard version 2.7 and Solstice Directory Service version 2.7 will require a Windows component called ‘Quality Windows Audio Video Experience’ (qWAVE) to be installed on the Windows host computer or server. Note the qWAVE component is installed by default on Windows desktop hosts but is disabled by default on Windows Servers and must be installed separately. Refer to the installation instructions for Windows Server 2008 R2 and for Windows Server 2012 R2.</li>
+                </ul>
+                <h4>Fixes and Enhancements (All Platforms)</h4>
+                <ul>
+                    <li>Desktop and app window posts from Microsoft Surface Pro client devices will now maintain correct orientation on the Solstice display when the client device is rotated between landscape and portrait orientations.</li>
+                    <li>On Microsoft Surface Pro and Windows 10 high-resolution clients, the UI and text sizes have been adjusted and scroll bars have been added so that all of the options are readable and visible in the client UI window.</li>
+                    <li>A ‘cancel’ option has been added to the Solstice Dashboard admin password dialog to allow the user to return to operation of the Dashboard if the admin password is not known.</li>
+                    <li>Android and iOS users that have already installed the Solstice client app on their devices are no longer redirected to the app stores when they connect to a Solstice display via Quickconnect from a web browser. Instead, the installed client app is detected and launched.</li>
+                    <li>A proxy test error has been resolved. The proxy test no longer passes when invalid authorization credentials are provided. Now the test fails in these cases.</li>
+                    <li>Solstice users with Galaxy S6 client devices can now share photos correctly via the share media option.</li>
+                    <li>Support for sharing Microsoft Office applications to a Solstice display from Mac clients has been improved. The applications update correctly on the Solstice display when the Office application is advanced to subsequent pages/slides on the client device.</li>
+                    <li>Windows 10 client screens with lower resolutions than the Solstice display now appear correctly when shared to a Solstice display.</li>
+                    <li>A blinking graphics artifact no longer appears on the Solstice display when the access control setting is changed from moderated to open mode during a Solstice session.</li>
+                    <li>AirPlay connections from Mac OS X clients to a Solstice Pod no longer freeze.</li>
+                    <li>The performance of status checks of Solstice displays from the Solstice Dashboard has been improved.</li>
+                    <li>Users can now share Internet Explorer 11 app windows from Windows 8 clients to the Solstice display.</li>
+                    <li>Audio quality has been improved when desktop sharing with audio from Mac OS X clients to Solstice appliances (NUCs).</li>
+                    <li>Mac OSX clients no longer show corrupted text in the discovery panel.</li>
+                    <li>Error messaging has been improved upon the expiration of a Solstice Windows Software trial license.</li>
+                    <li>File selection for media files has been updated to allow file names with ‘diacritical marks’ such as accents, umlauts, cedillas and tildes. Examples include é, ü, and ñ.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.6.2 // June 2016</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Video File Playback with high bitrate videos improved. Sharing video files larger than 200MB that are encoded at high bitrates is now possible. These videos will periodically buffer but still continue to play properly through the ‘Media Share’ option.</li>
+                    <li>Video file framerate is improved when looping video. When looping a video, a framerate drop was possible previously. The framerate is now consistent when looping a video file multiple times.</li>
+                    <li>Text and high-resolution image quality is greatly improved. When sharing desktops from PC-based clients (OS X and Windows) image quality should be noticeably improved from previous versions.</li>
+                    <li>Keynote App Window sharing now works properly in fullscreen and presentation modes. Presentations are now displayed correctly when a user switches to full screen or presentation mode.</li>
+                    <li>Periodic audio drops on networks with variable quality have been fixed. Audio streaming has been improved when the ‘Desktop Audio’ toggle is used. Previously, periodic drops of audio occurred when network jitter was significant. This has been addressed.</li>
+                    <li>Pods can now be configured to SSID networks as a wireless client.</li>
+                    <li>Client software connectivity is more resilient to network variability. If poor or variable network connectivity is experienced between the client and Pod, clients could easily lose connectivity. Clients will now attempt to reconnect automatically if network conditions improve.</li>
+                    <li>Pod connectivity is more resilient to network variability. Pods are now more resilient to situational network variability in certain network circumstances where they would have previously lost network connectivity.  Long-term connection stability on both OS X and Windows clients has been improved.</li>
+                    <li>PC client software no longer crashes when the client PC goes into sleep mode. In certain OS configurations, if a client PC went to sleep while the Solstice client was active, the Solstice client could crash. The user is now disconnected and the client software remains running.</li>
+                    <li>Improved support for application window sharing on OSX when those applications are in full screen mode including, Keynote, Safari, and Powerpoint.</li>
+                    <li>OS X client no longer crashes when disconnecting from AirPlay while sharing desktop.</li>
+                    <li>Display now returns to ‘Align to Grid’ mode after last user disconnects. If ‘Align to Grid’ was turned off during a session, ‘Align to Grid’ will now be automatically turn back on after the last user disconnects from the Pod.</li>
+                    <li>Moderator mode client posts are now removed after a client disconnects. Previously, when non-moderator users disconnected while in Moderator Mode, their posts would remain on the display. Posts are now removed when the client disconnects.</li>
+                    <li>Moderator control over video playback. Moderators can successfully operate video playback controls of guest video posts once they have been accepted from the moderator queue.</li>
+                    <li>Desktop audio will wait for moderator acceptance. Audio will not play from guests who share desktops with audio until the moderator accepts the post.</li>
+                    <li>Chrome version 50 and above now displays properly when using App Window sharing in Windows 10. Windows 10 clients attempting to use App Window sharing in Windows 10 would display a black share window on the display. Chrome is now properly displayed.</li>
+                    <li>PC clients can continue to use the Solstice client after changing primary display in system settings.</li>
+                    <li>User is now warned if changing OS X audio device while sharing audio. Previously, if a user changed audio devices (i.e. plugging or unplugging headphones) while the Solstice client was running, audio sharing would not work properly. Users are now warned if this occurs.</li>
+                    <li>Pods are now compatible with a wider range of CEC-enabled displays. Previously some CEC implementations would cause the Pod to not come back up after the display was turned off. The Pod is now more resilient to variable CEC implantations.</li>
+                    <li>Splash screen IP address changes to ‘No Network’ accurately. IP address on the Splash Screen is automatically refreshed to read ‘No Network’ when the Pod is not attached to a valid network.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead class="releasenoteheading">
+                <MadCap:dropDownHotspot>2.6.0 // April 2016</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <h4>New Features</h4>
+                <ul>
+                    <li>Low-latency audio/video streaming for desktop and app window sharing. The 2.6 updates for Solstice Software and Pods reduces latency between the user’s device and the Solstice display by 75%.</li>
+                    <li>Increased video frame-rates when multiple, simultaneous desktops are shared. Both Solstice Software and Pods now supports substantially higher framerates when multiple live desktops are shared on the display at the same time. In tests, framerates improved by 50% over the previous version when four desktops are shared at 1080p.</li>
+                    <li>1X enterprise wireless support. The Pod now supports 802.1X EAP protocol when connecting to wireless networks. This option allows for entry of a username and password to connect to an authentication server at the time of deployment.</li>
+                    <li>Web proxy support for Solstice Software and Pod web processes. Solstice can now be configured with a proxy server IP address for internet traffic access. Options include Username/password credentials for secure access and ports 80/443 traffic can be routed to different proxy server locations on the network. This allows Solstice Pods deployed behind a secure web proxy to still reach the over-the-air update server. The proxy server allows Solstice Software instances to be licensed and activated when deployed behind a secure proxy server.</li>
+                    <li>Updated user-interface workflow for iOS mirroring. IOS users that select the ‘Mirror my Device’ button in the Solstice app on their devices will now see an instructional animation that shows how to select and mirror to the Solstice display from the AirPlay® menu.</li>
+                    <li>Dashboard support for customization of splash screen elements. The Solstice Dashboard now allows administrators to control toggle on/off splash screen elements to appear on the Solstice display. Dashboard admins can independently control the appearance of Display Name, IP Address, and Screen Key for both the main Solstice display splash screen as well as the presence bar.</li>
+                </ul>
+                <h4>Fixes and Enhancements</h4>
+                <ul>
+                    <li>Improved audio synchronization from Mac OSX devices. Synchronization accuracy is now on par with performance levels from Windows-based devices.</li>
+                    <li>QuickConnect with dual-network works on both interfaces. Users connecting to the ‘second’ network in dual-network mode, no longer have to re-type an IP address to get the client to connect. QuickConnect will automatically connect users from either network and populate their most-recently-used list correctly.</li>
+                    <li>Sharing MS Office Suite applications from Surface Pro devices corrected. Office Suite applications will correctly share to the display. Users no longer need to answer a dialog box asking ‘Did your application share correctly?’.</li>
+                    <li>IOS mirroring with dual-network modes usability improvement. Enabling the iOS mirroring AirPlay proxy feature will no longer require a Pod restart when in dual network modes.</li>
+                    <li>Pod loss of wireless settings. Intermittent loss of wireless settings when powering down a Pod has been fixed.</li>
+                    <li>Ethernet IP Address and Screen Key visibility. The Screen Key and IP Address will both continues to be displayed on screen correctly when selecting customization options in the Solstice Dashboard.</li>
+                    <li>Sharing multiple application windows/desktop from Surface Pro. Sharing more than one desktop application window will no longer cause the second application window to appear as a white screen on the shared display.</li>
+                    <li>Audio streaming quality while sharing videos from the Safari browser. Noisy, choppy audio due to resource contention while playing YouTube videos in the Safari have been fixed.</li>
+                    <li>Audio repeating on OSX Desktop Shares. Repeated audio looping when sharing desktop audio from an OSX device no longer occurs.</li>
+                    <li>iOS Mirroring Service Stability. A stability issue that could cause the iOS mirroring service to stop on a Pod has been resolved.</li>
+                    <li>Installing a new license on a windows host. Installing a new license on a PC that was previously licensed for a 30-day trial no longer causes Solstice to crash and a reboot of that PC.</li>
+                    <li>Touch sensitivity and selection of media playback elements. Controls related to video file playback (seek/pause/mute) are easier to select when using a touch screen.</li>
+                    <li>Unselecting a Display in the AirPlay® menu no longer prompts for a Password. When the screen key is enabled and a user stops mirroring an iOS device to the display by unselecting it, the screen key password dialog no longer appears.</li>
+                    <li>Solstice Windows Software Instabilities when Sharing Audio to a PC with No Audio Device Connected. This issue has been resolved. Users can share desktop audio to Solstice installed on a PC with no active audio device. Those users will not hear audio, but the Solstice will continue to be stable.</li>
+                    <li>Clicking Meeples using Touch or Mouse on Display. Issues that made it difficult to correctly click a meeple to open its menu on the display have been resolved.</li>
+                    <li>Play/Pause Synchronization. The icon that depicts video play/pause when sharing a video file remains in the correct state even when looping a video multiple times.</li>
+                    <li>Long-term use of both network interfaces on Pod. Potential issues where the Pod could become unresponsive over long periods of time when both network interfaces were being used have been fixed</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <br />
+    </body>
+</html>

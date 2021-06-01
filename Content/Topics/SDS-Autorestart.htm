@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Configure SDS to Auto-restart</title>
+    </head>
+    <body>
+        <h1>Configure SDS to Auto-restart (Optional)</h1>
+        <p>It is recommended that customers who deploy SDS configure the Windows host machine to automatically restart the service if it ever stops running. Enabling the auto-restart of SDS on the Windows host machine will reduce the risk of SDS becoming unreachable by the Solstice Pods, Apps, Dashboard, and/or Windows Display Software instances.</p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Configure SDS to Auto-restart if the Service Goes Down</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Navigate to the Windows Start menu and search for “Services”.</li>
+                    <li>Open the Services desktop app.</li>
+                    <li>Find Solstice Discovery Service in the list, then right-click and select <b>Properties</b>.</li>
+                    <li>Go to the <b>Recovery</b> tab.</li>
+                    <li>For the <b>First</b>, <b>Second</b>, and <b>Subsequent failures</b> options, select <b>Restart the Service</b> from the drop-downs.<br /><img src="../Resources/Images/ex_sdsautorestart.png" style="mc-thumbnail-max-height: 100px;mc-thumbnail: none;width: 478px;height: 430px;" /></li>
+                    <li>Click <b>Apply</b>, then click <b>OK</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

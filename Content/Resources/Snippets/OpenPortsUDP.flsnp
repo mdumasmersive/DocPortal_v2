@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li><b>123</b>: Used to communicate with an NTP server.</li>
+            <li><b>5353</b>: Required for iOS mirroring via the Bonjour protocol. It is not required when using the Solstice Bonjour Proxy. Also, if Miracast Over Existing Network mode is enabled, this port is used for multicast DNS (mDNS). mDNS is broadcasted to the local subnet of each network interface the Pod is connected to. If the computer that is attempting to make an infrastructure connection is on a different subnet, this broadcast will fail. If this happens, a workaround is to create a DNS entry to the Pod’s hostname.</li>
+            <li><b>6000-7000, and 7011</b>: Should allow inbound AirPlay® traffic to the Solstice host.</li>
+            <li><b>55001</b>: Used for display discovery if broadcast discovery mode is enabled.</li>
+            <p class="note">Both the Miracast and browser-based sharing capabilities can utilize any non-privileged UDP port from 1024 to 65535.</p>
+        </ul>
+    </body>
+</html>

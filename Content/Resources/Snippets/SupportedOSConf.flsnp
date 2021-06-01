@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStylesheets/SupportTable.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>Solstice Conference capabilities are supported on laptop devices that meet the following requirements. The meeting host capability for Solstice Conference is <u>not</u> supported on mobile devices. However, in-room users can share content to the Solstice display using either laptops or mobile devices. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Hardware Recommendations for Laptops Running Solstice Conference</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p><b>Windows</b>
+                </p>
+                <table style="width: 100%;mc-table-style: url('../TableStylesheets/SupportTable.css');" class="TableStyle-SupportTable" cellspacing="21">
+                    <col class="TableStyle-SupportTable-Column-Column1" style="width: 241px;" />
+                    <col class="TableStyle-SupportTable-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><b>Operating System</b>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">Windows 10 version 1903 or later</td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><b>Recommended Specs</b>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">Intel i7 processor; 16GB memory; processor speed of 1.6 GHz/min or better.</td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p class="table-text" style="vertical-align: top;"><b>Minimum Specs</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                                <p>Intel i5 processor X400 series or better; 8GB memory; processor speed of 1.6 GHz/min or better.  </p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyB-Column1-Body">
+                                <p class="table-text"><b>Important Notes</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyA-Column1-Body">
+                                <ul>
+                                    <li>Laptop machines with dual-core processors not currently supported.</li>
+                                    <li> Microsoft Surface devices and similar tablet-like devices are not currently supported. </li>
+                                    <li>For Windows laptops that have an i5 processor, a lighter version of Solstice Conference will be installed by default. This will limit sharing the display remotely and may also limit the number of additional posts that can be shared by that user while hosting a conference to improve performance.
+Administrators can choose to override this feature restriction setting when centrally deploying the Solstice app via <a href="../../Topics/Admin-MSI-Instuctions.htm">MSI</a> or <a href="../../Topics/Admin-SCCM-Instuctions.htm">SCCM</a>; however, it is not recommended.                       </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="tip"><b>Tip:</b> To check your laptop specs, open Command Prompt, enter “dxdiag”, then run.</p>
+                <p><b>MacOS&#160;</b>
+                </p>
+                <table style="width: 100%;mc-table-style: url('../TableStylesheets/SupportTable.css');" class="TableStyle-SupportTable" cellspacing="21">
+                    <col class="TableStyle-SupportTable-Column-Column1" style="width: 241px;" />
+                    <col class="TableStyle-SupportTable-Column-Column1" />
+                    <tbody>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><b>Operating System</b>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">Catalina 10.15 or later</td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body"><b>Recommended Specs</b>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">Intel i7 processor; 16GB memory; processor speed of 1.6 GHz/min or better.</td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                                <p class="table-text" style="vertical-align: top;"><b>Minimum Specs</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                                <p>Intel i5 processor; 8GB memory; processor speed of 1.6 GHz/min or better.</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-SupportTable-Body-Body">
+                            <td class="TableStyle-SupportTable-BodyB-Column1-Body">
+                                <p class="table-text"><b>Important Notes</b>
+                                </p>
+                            </td>
+                            <td class="TableStyle-SupportTable-BodyA-Column1-Body">
+                                <p class="table-text"><span style="font-size: 11pt;">Although MacOS laptops with 4 core i5 processors are the minimum requirement, users may experience suboptimal performance. Dual-core processors not currently supported.</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="note">If you are using a 4K laptop, Mersive recommends scaling your screen resolution down to 1080p when using Solstice Conference. </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

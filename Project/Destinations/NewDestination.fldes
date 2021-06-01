@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host=""
+  User="MyAccountId"
+  Password=""
+  Directory="C:\Users\mdumas\Documents\Builds\4.3"
+  Port="22"
+  ViewUrl="documentation.mersive.com"
+  Type="file"
+  SftpServerValidation="validation-none"
+  SftpAuthentication="authentication-password"></CatapultDestination>

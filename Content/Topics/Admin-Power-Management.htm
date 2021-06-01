@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Display Power Management Settings</title>
+    </head>
+    <body>
+        <h1>Display Power Management Settings</h1>
+        <p>Display power management allows you to schedule  when a Pod will be suspended, i.e. when the Pod will signal to the display monitor to turn off after being idle for the specified amount of time. There are two independent modes that trigger the display power management functionality. As a note, a Pod can only utilize one of these power management modes at a time.</p>
+        <ul>
+            <li>Scheduled off-hours for the Pod, including separate schedule for weekdays vs. weekends</li>
+            <li>Using the room's detected occupancy (requires USB camera plugged into Pod; Gen3&#160;Pods only)&#160;</li>
+        </ul>
+        <p> Once triggered, display power management to turn the display on or off can be accomplished one of two ways:</p>
+        <ul>
+            <li>Suspending the HDMI out signal being sent to the display, which allows the display monitors connected to the Pod to utilize their own sleep settings </li>
+            <li>Sending RS-232 commands to the display to turn it on or off</li>
+        </ul>
+        <p class="note">Mersive highly recommends only using this feature if the Pod is connected to a commercial grade monitor. TV monitors may not have the same sleep settings or RS-232 support required for this feature. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Schedule Display Power Management for Off-Hours</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li class="fieldname" id="fieldname">In the Solstice Dashboard, go to the <b>System</b> tab &gt;&#160;<b>Display Power Management</b> section.</li>
+                    <li>Select the <b>Schedule Off-Hour Display Suspend Settings</b> checkbox. </li>
+                    <li>From the <b>Suspend After Inactive</b> drop-down, select the amount of time the Pod will be idle before the display is suspended. For example, you can select "10 Minutes" for the Pod to be suspended after  10 minutes of inactivity. </li>
+                    <p class="note">To allow external control units to know to switch the input to another signal, you can select the <b>Immediate</b> option from the drop-down to tell the Solstice Pod to immediately stop sending the HDMI out signal after all users disconnect from the Solstice display. This option should only be used if you are using the <b>Suspend HDMI&#160;Signal</b> method for display power management. </p>
+                    <li>For either <b>Weekdays</b> or <b>Weekend</b>, select the hours during which this display power management setting will be active:<ol style="list-style-type: lower-alpha;"><li>For this setting to be active all day, select the <b>All Day</b> checkbox. Mersive highly recommends only using this option on weekends. </li><li>For this setting to only be active during certain hours, deselect the <b>All Day</b> checkbox and enter in a <b>Start Time</b> and <b>End Time</b>. As a note, these fields use a 24-hour clock. Mersive highly recommends only scheduling during hours where no collaboration sessions will occur. For example, a corporate office could enter in a Start Time of 19:00 (7:00 pm) and an End Time of 06:00 (6:00 am). </li></ol></li>
+                    <li>From the <b>Choose Method</b> options, select the method you wish to use to signal display monitors to turn off:<ul><li><b>Suspend HDMI&#160;Signal</b> - The Solstice Pod will suspend the HDMI out signal being sent to the display which allows the display monitors connected to the Pod to utilize their own sleep settings. </li><li><b>RS-232</b> - The Solstice Pod will send the RS-232 commands you enter to the display monitor to turn it on and off. </li></ul></li>
+                    <li>If the RS-232 option was selected, enter in the RS-232 codes to turn your display monitor on and off in the corresponding fields that appear below. Solstice will also use them for the Wake Display and Suspend Display options. ASCII and HEX codes are both supported.</li>
+                    <p class="note">Administrators will need to know the specific RS-232 code for the control they are trying to pass. For details on those controls, please consult the user manual for the display.</p>
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Set Up Room Occupancy-Based Display Power Management</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Solstice can now use a USB camera attached to the Pod as a room occupancy sensor for Solstice display power management, providing a touchless meeting room experience that’s easy to use. When this feature is enabled and Solstice detects that the room has been vacant for the configured period of time (5, 10, 15 minutes), then the HDMI out signal to the display will be turned off, allowing the display monitors to use their own sleep settings. When Solstice detects that a person is in the room, Solstice will immediately resume the HDMI out signal, resulting in a touchless power on for the display.</p>
+                <p class="note"> This feature requires a Gen3 Pod, that Occupancy Counting has been enabled (System tab)&#160;, and that a <a href="https://documentation.mersive.com/content/pdf/solsticeconferencesupportedperipherals.pdf" target="_blank">supported USB camera</a> be attached to the Pod. As a note, this feature will not turn the display off if a conference is in session, regardless of detected room occupancy. </p>
+                <ol>
+                    <li>In the Solstice Dashboard, go to the <b>System</b> tab &gt;&#160;<b>Display Power Management</b> section.</li>
+                </ol>
+                <ol MadCap:continue="true">
+                    <li>Select the <b>Occupancy Based Display Management</b> checkbox.</li>
+                    <li>Select the time increment you want the display to wait before turning off after detecting no occupancy. </li>
+                </ol>
+                <p class="warning">Mersive advises against using the Immediate option, as this could trigger the display to turn off if the camera is temporarily blocked. Occupancy is detected every 10 seconds, so there may be a delay before the display reawakens.</p>
+                <ol MadCap:continue="true">
+                    <li>Click <b>Apply</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Additional Options</h2>
+        <p><b>Wake Display</b>: Manually wakes the suspended Pod to resume its functionality.</p>
+        <p><b>Suspend Display</b>: Manually suspends the Pod. This option to manually suspend the Pod will not work if there is a currently scheduled meeting on the integrated calendar, if any user is connected to the display, or if there is a current emergency message being displayed. </p>
+        <p><b>Schedule Display Suspend Settings</b>: Enables display power management and allows you to set the schedule for when the setting will be active. Different schedules can be set for weekdays (Monday - Friday) and weekends (Saturday - Sunday). If you wish for this setting to be enabled all day, select the <b>All Day</b> checkbox, or if you wish to schedule it during specific hours, enter in a <b>Start Time</b> and <b>End Time</b>. As a note, the Start and End Time fields use a 24-hour clock. </p>
+        <h2>FAQ</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>If I have scheduled display power management for off-hours, when will a Pod wake back up after it has been suspended? </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If using the scheduled Pod off-hours option for power management, the Pod will resume its normal functionality if any of the following events occur:</p>
+                <ul>
+                    <li>15 minutes before a meeting scheduled on the integrated room calendar begins. See <a href="Admin-Room-Calendar.htm">Room Calendar Settings</a> for more information on how to integrate a room calendar.</li>
+                    <li>When a user attempts to connect to the display, either  wirelessly using the Solstice App, or  via a wired connection using the HDMI in port (Gen3 Pods only). As a note, the user will need to know the name of the display in order to connect using the Solstice App as it will not be visible on the display monitor when the Pod is suspended. </li>
+                    <li>When a USB&#160;mouse or keyboard is plugged in to a USB&#160;port on the Pod.</li>
+                    <li>When an emergency message is sent to the Pod via the Solstice Dashboard. </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

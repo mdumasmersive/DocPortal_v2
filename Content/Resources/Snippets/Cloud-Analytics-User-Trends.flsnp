@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ul>
+            <li><b>Daily Active User</b> graph: This shows a graph of the number of users who connect to Pods.</li>
+            <li><b>Daily Active Users</b> summary: This displays the number of unique users connecting to Pods, how much time they’ve spent presenting in meetings, number of unique meeting rooms they’ve visited, and more.</li>
+            <li><b>User Collaboration</b> chart: This shows the percentage of users that collaborated in meetings compared with users who were the sole presenter in meetings.</li>
+            <li><b>Most Collaborative Spaces</b> view: This shows the location and activity levels of the Pods which are most used for collaboration.</li>
+            <li><b>User Mobility</b> graph: This shows how many different rooms users visit for meetings.</li>
+            <li><b>Activity by User Mobility</b> graph: This shows how user mobility correlates to their level of meeting engagement.</li>
+        </ul>
+    </body>
+</html>

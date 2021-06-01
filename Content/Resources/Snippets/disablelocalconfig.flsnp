@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>If you have not set an admin password to protect Pod configurations, you can prevent users from making in-room changes by disabling the ability to configure the display using the local configuration panel (accessed directly via the Pod) or the web configuration panel (accessed via a web browser). However, doing so means that you will only be able to configure the Pod using the Solstice Dashboard which requires network connectivity. </p>
+        <ol>
+            <li>Select all your displays in the list of Your Solstice Instances.</li>
+            <p class="note">If you have multiple instance groups, you will have to apply the change to each group separately. For example, you will need to apply the change to Pods and Windows Display Software instances separately.</p>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Administration section, disable the <b>Allow Local Configuration</b> option.</li>
+            <li>Disable the <b>Allow Browsers to Configure Pod</b> option.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>As a note, if you integrate a Microsoft Exchange account and do not supply an impersonation or delegation account, the personal calendar for that account will be used. </p>
+        <ol>
+            <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
+            <li>From the <b>Calendar Type</b> drop-down, select <b>Microsoft Exchange</b>.</li>
+            <li>In the <b>Server URL</b> field, enter the Microsoft Exchange server URL if that is the type of calendar you are integrating.</li>
+            <li>In the <b>Authentication Type</b> drop-down, select the type of authentication your Microsoft Exchange server is using: Basic or NTLM.</li>
+            <li>Enter in the <b>Username</b> and <b>Password</b> for the room calendar account.</li>
+            <li>If you are a using an <b>Impersonation</b> or <b>Delegation Mailbox</b>, enter them into the corresponding fields.</li>
+            <li>By default, the meeting titles and meeting organizers will be visible on the display unless the meeting is marked in the organizer’s calendar application as “private”. If you wish to hide these for all meetings, disable the corresponding options under <b>Privacy Settings</b>.</li>
+            <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+    </body>
+</html>

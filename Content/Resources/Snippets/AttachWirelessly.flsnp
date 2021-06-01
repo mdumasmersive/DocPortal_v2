@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>In the Dashboard, select a Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Network</b> tab.</li>
+            <li>Enable <b>Wireless Settings</b>.</li>
+            <li>	Select <b>Attached to Existing Network</b> radio button.</li>
+            <li>Hit <b>Apply</b> to populate a list of networks. The list may take a few seconds to populate.</li>
+            <li>Click on the drop-down and select a wireless network.</li>
+            <li>If you are unable to find the network you want to connect to:<ol style="list-style-type: lower-alpha;"><li>Click <b>Add Wireless Network</b>.</li><li>Enter in the name of the network in the <b>SSID</b> field.</li><li>Select the type of network from the radio buttons listed below it.</li><li>Click <b>Ok</b>.</li></ol></li>
+            <li>In the <b>Password</b> field, enter the network password.</li>
+            <li>
+                <p>If you wish to utilize DNS&#160;resolution  and have added a DNS&#160;entry in your DNS&#160;server to resolve to the Pod's IP&#160;address, you can enter in the <b>DNS&#160;Hostname</b> (for example, hostname.domain) that you wish to show on the display's welcome screen. <MadCap:conditionalText MadCap:conditions="Default.Exclude">For more information on DNS&#160;resolution, see <a href="../../Topics/Admin-DNS-Resolution.htm">DNS&#160;Resolution</a>. </MadCap:conditionalText></p>
+            </li>
+            <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+            <li>
+                <p>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</p>
+            </li>
+            <li>If your network is 802.1x authenticated, additional fields will appear. Follow the steps below to load your certificates:<ol style="list-style-type: lower-alpha;"><li>First, ensure there is network access between the Pod and the Windows machine running Dashboard. You must also ensure that the Pod has access to a timeserver so that it can validate the certificate.</li><li>Select <b>Enable 802.1x</b>.</li><li>Select the <b>EAP Method</b> and the <b>Phase 2 Authentication</b> (if applicable) from the drop-downs.</li><li>Browse and select the certificates needed. Supported certificate file types are .cer, .der, .crt, .pem, .pfx, and .p12.</li><p class="note">If loading a .p12 certificate, the Password field is for the .p12 file.</p></ol></li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

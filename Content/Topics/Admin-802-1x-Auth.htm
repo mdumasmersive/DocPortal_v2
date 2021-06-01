@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" MadCap:conditions="Default.Exclude">
+    <head>
+    </head>
+    <body>
+        <h1>802.1x Authentication</h1>
+        <p>802.1x is a way for network administrators to restrict access to their switched network. There are benefits to doing this, from something as mundane as preventing a well-meaning employee from “accidentally” bringing down your network by plugging in a Linksys router from home, to avoiding someone from maliciously trying to disrupt or intercept traffic on your network after they gain physical access.</p>
+        <h2>Solstice's Supported Configurations</h2>
+        <h4>EAP Methods (authentication schemes)</h4>
+        <ul>
+            <li><b>PEAP</b> - Simple, secure username and password-based authentication</li>
+            <li><b>TLS</b> - Certificate-based authentication. The Solstice Pod is loaded with a specific private key and a certificate that has been signed by your Certificate Authority. This is a “mutual implicit model” of trust, i.e. your networking hardware sees the pod sending a certificate that was signed by a CA that it trusts, and the pod uses the CA file uploaded through the Solstice Dashboard to validate the networking equipment’s certificate as well.</li>
+            <li><b>TTLS</b> - The Solstice Pod uses a username and password to authenticate, but uses the CA-signed certificate you upload to make sure the networking equipment is legitimate before sending over any sensitive information. </li>
+        </ul>
+        <h4>Phase 2 (password authentication) </h4>
+        <ul>
+            <li>None - No Phase 2 Authentication is needed</li>
+            <li>MSCHAPV2 - Username and password authentication </li>
+            <li>GTC</li>
+        </ul>
+        <p>The differences are all very subtle and are just different methods of doing username/password authentication.</p>
+        <p>How To</p>
+        <p>Load an 802.1x Certificate using EAP-TLS&#160;Method</p>
+        <script>
+			(function(d,b,a,s,e){ var t = b.createElement(a),
+			fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
+			fs.parentNode.insertBefore(t, fs); })
+			(window,document,'script','https://tag.demandbase.com/6ad47032.min.js','demandbase_js_lib');  
+		</script>
+    </body>
+</html>

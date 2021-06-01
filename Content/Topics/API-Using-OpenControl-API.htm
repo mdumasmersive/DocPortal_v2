@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Using the OpenControl API</h1>
+        <p>The OpenControl API&#160;protocol is divided into areas based on functional types. These types are: Config, Stats, and Command. Each is associated with a different URL. By sending an appropriately formatted JSON record to the corresponding URL, third-party developers can query and set values or settings related to the Solstice host. These URLs are:</p>
+        <ul>
+            <li>/api/config – Used for posting and getting information related to administrative configuration of Solstice host. For example, modifying the network settings of a Pod.</li>
+            <li>/api/stats – Used to get instantaneous status about a Solstice host. For example, capturing the number of users currently connected to a Solstice Windows Software endpoint.</li>
+            <li>/api/control – Used to post commands to a Solstice host that will impact runtime behavior. For example, clearing a screen of all media.</li>
+            <li>Other URLs are used in the Calendar and Version APIs. See the <a href="API-Calendar.htm">Calendar API</a> and <a href="API-Version-Update-Control.htm">Version and Update Control API</a> topics for more details. </li>
+        </ul>
+        <p>Users of OpenControl can set values by using a POST structure to the appropriate URL. This is used to modify configuration, or POST actions to a Solstice host to control runtime behavior. In addition, users can query current configuration and status using GET commands to the appropriate URL.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>JSON Record Structure</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>POST and GET records sent to and received from the different URLs are made up of key/value pairs that represent the various capabilities exposed through the API. This structure uses the JSON syntax. Example:</p>
+                <p class="codeblock">{key1: value1, key2: value2, … keyN, valueN} </p>
+                <p>POST records do not need to contain all key/value pairs and can contain any subset of key/values based on the needs of the integration. The order of a request record is not important, so long as the key/value pairs follow the format above. For example, POSTing the string ‘{key2:value2}’ to the appropriate URL of a Solstice host can set that value.</p>
+                <p>In some cases, key/value pairs are organized hierarchically based on logical groupings. In these cases, the JSON syntax is simply nested within the value of a particular key. Those key/value pairs appear within brackets and are separated from other key/value pairs with a comma. Example:</p>
+                <p class="codeblock">{key1:value1, key2:value2, GroupKey:{ NestedKey1:GroupValue1, …, NestedKeyN:GroupValueN }, key3:value3}</p>
+                <p>This represents a JSON structure that contains three key/value pairs at the top level, and a set of key/value pairs that are grouped within ‘GroupKey’.</p>
+                <p>Using this syntax, for example, a user could set the display name for a particular Solstice host by sending the following JSON record:</p>
+                <p class="codeblock">{m_displayInformation:{m_displayName:‘NewDisplayName’}}</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Securing API Communications</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order to ensure that only valid third-party users are able to communicate with Solstice Hosts, the administration password, when set, must be provided with each POST or GET record. The administration password, for a particular host, can be set both in the Solstice host Configuration Panel, or through the Solstice Dashboard. It is important to note that if no password is set, then any third-party application can utilize the OpenControl APIs to modify a Solstice host over the network.</p>
+                <p>When an administrator password is set, each POST request record must include a key/value pair that is: ‘password: admin_password’ at the top level of the record. A request record sent to a Solstice host that has password enabled, then, must follow this format:</p>
+                <p class="codeblock">{password: admin_password, key1: value1, key2: value2, … keyN, valueN}</p>
+                <p>In the case of a GET record, the password is simply appended to the GET URL request as follows:</p>
+                <p class="codeblock">?password=admin_password</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Basic GET</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are two URLs for each IP address that will respond with text to a GET command.  For our example IP address of 192.168.3.127, the valid URLs are:</p>
+                <ul>
+                    <li>http://192.168.3.127/api/stats</li>
+                    <li>http://192.168.3.127/api/config</li>
+                </ul>
+                <p>While there is some overlap in information, the “stats” URL generally gives a snapshot of important values and instantaneous usage while the “config” URL gives more detail about everything from enabled options to display screen layout.  Note that while you can GET from either URL, you can only POST to /api/config.</p>
+                <p>To test the stats URL, set up your environment as described in the previous section and send the following command (with your own URL):</p>
+                <p class="codeblock">&gt;&gt;&gt; rs=requests.get(‘http://192.168.3.127/api/stats’)</p>
+                <p>If you have an admin password protecting access to the display, append the password in the following way, with “adminpassword” as whatever the actual password is for the display.</p>
+                <p class="codeblock">&gt;&gt;&gt; rs=requests.get(‘http://192.168.3.127/api/stats?password=adminpassword’)</p>
+                <p>To display the raw results, type:</p>
+                <p class="codeblock">&gt;&gt;&gt; rs.text</p>
+                <p>You should see a continuous chunk of text with the first distinct value of “m_displayID”.  To pull out a specific value in a clean format, the string needs to be converted to a dictionary of key:value pairs.</p>
+                <p class="codeblock">&gt;&gt;&gt; rstats = eval(rs.text)</p>
+                <p>If you print the new value (rstats.text) you will still see a chunk of continuous text, but the formatting will be slightly different.  We can now use get() to find specific terms, like the display name.  m_displayName is a part of the m_displayInformation group key, so we will use nested get() commands:</p>
+                <p class="codeblock">&gt;&gt;&gt; print “Display Name:”, rstats.get(‘m_displayInformation’,{}).get(‘m_displayName’)</p>
+                <p>The result should be “Display Name: Pikes Peak” with the actual display name reflecting the name on your Solstice display. Any of the values can be pulled from the list in this manner.</p>
+                <p>&#160;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Basic POST</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Many of the key:value pairs that can be read using GET can also be changed through the API using POST.  While the same values may appear in the GET of both URLs, POSTs may only be sent to the /api/config URL:</p>
+                <ul>
+                    <li>http://192.168.3.127/api/config</li>
+                </ul>
+                <p>The requests command now changes from GET to POST and requires a payload parameter.  To change the display name, use the following command:</p>
+                <p class="codeblock">&gt;&gt;&gt; r=requests.post(‘http://192.168.3.207/api/config’, json={‘m_displayInformation’:{‘m_displayName’:’New Name’}})</p>
+                <p>If you have an admin password protecting the display, send the following command where ‘adminpassword’ is the actual password for the display:</p>
+                <p class="codeblock">&gt;&gt;&gt; r=requests.post(‘http://192.168.3.207/api/config’, json={‘password’: ‘admin_password’, ‘m_displayInformation’:{‘m_displayName’:’New Name’}})</p>
+                <p>NOTE: if you copy either of these lines directly into Python or a formatted text editor and get a syntax error, the single quotes are likely to blame.  They may come through formatted such that requests.post() does not recognize them.  If this happens, manually delete each mark and re-enter it in the terminal window to get the appropriate format.</p>
+                <p>To see the new name, run GET on the same URL and look for the ‘m_displayName’ key, which should now have a value of ‘New Name’:</p>
+                <p class="codeblock">&gt;&gt;&gt; rc=requests.get(‘http://192.168.3.127/api/config’)<br />&gt;&gt;&gt; rconfig=eval(rc.text)<br />&gt;&gt;&gt; print “Display Name:”, rconfig.get(‘m_displayInformation’,{}).get(‘m_displayName’)</p>
+                <p>If you have an admin password protecting the display, you will need to add in the password as before.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>GET/POST Example Script (Python 2.7)</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The complete script provides additional comments and the option for an admin password. Download the complete script <a href="https://github.com/LauraMersive/APIdemo/blob/master/OpenControlGETPOSTdemo.py" target="_blank" MadCap:conditions="Default.PrintOnly">here</a> (https://github.com/LauraMersive/APIdemo/blob/master/OpenControlGETPOSTdemo.py). </p>
+                <p>This pared down version gets the Display Name from both /config and /stats URLs, changes the name, then gets both values again to confirm the name has changed.</p>
+                <p class="codeblock">import sys<br />import requests<br />import random<br />from random import choice<br />true=1<br />false=0<br /><br />newname = “New Name”<br />myurl = “http://192.168.3.227”<br />admin_password = “”<br />mystatsurl = myurl+’/api/stats’<br />myconfigurl = myurl+’/api/config’<br /><br />rs=requests.get(mystatsurl)<br />rc=requests.get(myconfigurl)<br />rstats=eval(rs.text)<br />rconfig=eval(rc.text)<br /><br />print “Current Display Name from Stats:”, rstats.get(‘m_displayInformation’,{}).get(‘m_displayName’)<br />print “Current Display Name from Config:”, rconfig.get(‘m_displayInformation’,{}).get(‘m_displayName’)<br /><br />r=requests.post(myconfigurl, json={‘password’:’admin_password’,’m_displayInformation’:{‘m_displayName’:newname}})<br /><br />print “Changing Name to: “,newname<br />print “………….”<br /><br />rs=requests.get(mystatsurl)<br />rc=requests.get(myconfigurl)<br />rstats=eval(rs.text)<br />rconfig=eval(rc.text)<br /><br />print “New Display Name from Stats:”, rstats.get(‘m_displayInformation’,{}).get(‘m_displayName’)<br />print “New Display Name from Config:”, rconfig.get(‘m_displayInformation’,{}).get(‘m_displayName’)</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Tips for Writing Your Own Script</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you start writing your own script, you will need to import the requests package before attempting to execute any GET/POST code.  You will also need to import sys, and will likely want time as well.  Though it seems redundant, you can avoid errors later on by explicitly defining true=1 and false=0 in your new Python window or at the top of your script.</p>
+                <p>In general, start with all the following commands:</p>
+                <p class="codeblock">&gt;&gt;&gt; import sys<br />&gt;&gt;&gt; import time<br />&gt;&gt;&gt; import datetime<br />&gt;&gt;&gt; import requests<br />&gt;&gt;&gt; import json<br />&gt;&gt;&gt;
+        &gt;&gt;&gt; true=1<br />&gt;&gt;&gt; false=0</p>
+                <p class="note">The “&gt;&gt;&gt;” characters are not something you type into the window – they are already at the start of each line in the Python terminal.  They are shown in the code example here to clarify where new lines begin.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3>Next Topic</h3>
+        <p><a href="API-Configuration.htm">Configuration API</a>
+        </p>
+    </body>
+</html>

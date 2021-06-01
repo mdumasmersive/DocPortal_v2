@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>By integrating your O365 calendar with your Solstice app, Solstice can start any scheduled web conferences on your calendar when you connect to a Solstice display. This capability requires  Solstice app version 5.0 or later, and is supported for Windows or MacOS laptops only.</p>
+        <p>When integrating your calendar, you will be prompted to sign into your Office365 account using the secure Microsoft Graph API OAuth2 authorization flow. Microsoft will present you with the option to grant Solstice read-only access to your calendar. This allows the Solstice app to retrieve your calendar entries for upcoming meetings and enable a one-step start for scheduled video conferences. </p>
+        <p class="note">If you are unable to save your O365 credentials and are prompted to re-enter them each time you launch the Solstice app, the Credential Manager service in Windows may have been disabled by your IT&#160;team. </p>
+        <ol>
+            <li>In the Solstice app, click <b>Settings</b>. </li>
+            <li>Under&#160;Calendar Integration, click <b>Sign in with Microsoft</b>. The Microsoft Online login page opens in a web browser.</li>
+            <li>Enter your login credentials and sign in. If successful, the browser will display a "Success" message. </li>
+            <li>Close the browser and return to your Solstice app. </li>
+            <li>If you wish to disconnect your O365 calendar at any time, go to the Solstice app &gt;&#160;Settings &gt;&#160;Calendar Integration, then click <b>Sign out</b>. </li>
+        </ol>
+    </body>
+</html>

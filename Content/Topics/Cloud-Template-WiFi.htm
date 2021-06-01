@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>WiFi Settings Template</h1>
+        <p>Solstice is designed to leverage existing WiFi  networks to support wireless collaboration in meeting rooms and learning spaces. The Solstice Pod supports secure access to two independent network interfaces: one for attaching the Pod to a network via Ethernet, and one to attach to a wireless network. Mersive recommends attaching the Pod to your main enterprise network via Ethernet for best performance, while the secondary wireless network can be utilized for guest access or a backup network. </p>
+        <p>This template is used to configure the wireless network. Within this template, there are two wireless options, but only one can be applied:&#160;</p>
+        <ul>
+            <li><b>WAP&#160;(Wireless Access Point):</b> When in WAP mode, the Pod acts as a wireless access point, creating a local network on the Pod with no internet access that users can discover in their list of available networks, allowing them to connect directly to the Pod without needing an external network. Pods are shipped with WAP&#160;enabled by default for easy initial configuration. However, for performance reasons, Mersive highly recommends disabling WAP mode. This can be done by disabling WiFi altogether, or by applying the Existing Network option. </li>
+            <li><b>Existing Network:</b> This option connects the Pod to an existing network wirelessly. This is best utilized when there is no Ethernet jack in the room, or if you wish to connect a secondary guest network. If enabling WiFi, using the Existing Network option is strongly recommended. </li>
+        </ul>
+        <p>
+            <img src="../Resources/Images/Templates-sidebarnav-WiFi.png" style="width: 703px;height: 491px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access This Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Solstice Cloud Home page, in the left sidebar navigation panel, click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>WiFi</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create New WiFi Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <b>Create New WiFi Template</b>. </li>
+                    <li>Enter the Template Name. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit WiFi Options</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>To connect the Pod to a wireless network, select the <b>Enable WiFi</b> checkbox. </li>
+                    <li>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow admin configuration access</b> checkbox. </li>
+                    <li>Select one of the following radio buttons: <ul><li><b>WAP:</b> The Pod will act as a wireless access point. Proceed to step 4. </li><li><b>Existing network:</b> This option connects the Pod to an existing network wirelessly. Proceed to step 5. </li></ul></li>
+                    <li>If you selected <b>WAP</b>:<ol style="list-style-type: lower-alpha;"><li>In the <b>SSID</b>&#160;field, enter in an easily identifiable name for the&#160;network. For example, you could name it the same as the Pod so that users can easily find it. </li><li>If you wish, you can select the <b>Hide SSID</b> checkbox. This prevents the network name from being displayed in a device's list of available networks. </li><li>Under <b>Security</b> select one of the following options:<ul><li><b>Open</b>: The WAP network will be open with no password protections to connect.</li><li><b>WPA2</b>: Allows you to secure the network by creating a network password. When selected, a field to enter the <b>WPA2 Password</b> will appear.</li></ul></li><li>Under <b>Frequency</b>, select either the 2.4 GHz or 5GHz wireless band. </li><li>Next select the wireless channel for the WAP network from the <b>Channel</b> drop-down.</li><li>The DNS Hostname is unique to each Pod. You will be able to enter this information after applying this template to a Pod. <p class="note">Note that the DNS&#160;Hostname is unique to each Pod, and can be added only after this template is applied to a Pod. You will need to enter this information for each Pod that uses this template. </p></li><li>Click <b>Save</b>. Skip the following steps. </li></ol></li>
+                    <li>If you selected <b>Existing Network</b>:<ol style="list-style-type: lower-alpha;"><li>Enter the network name in the <b>SSID</b> field.</li><li>In the <b>Security Type</b> drop-down, choose the appropriate option:&#160;<b>Open</b>, <b>WEP</b>, <b>WPA/WPA2</b>, or <b>802.1x EAP</b>. </li><p class="note">If you chose <b>802.1x EAP</b>, see the <a href="#802.1x">Enable 802.1x Authentication</a> how-to below for more information on this configuration. &#160;</p><li>If prompted, enter the <b>Password</b> for this network.</li></ol></li>
+                    <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+                    <li>If you selected Static IP, enter the <b>Gateway</b>, <b>Network Prefix Length</b> and <b>DNS 1</b> fields. </li>
+                    <p class="note">Note that the  IP Address and DNS Hostname are unique to each Pod and need to be configured for every Pod. Once this template is applied to your Pods, you be will prompted to enter this information for the each Pod the template is applied to. </p>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Enable 802.1x Authentication</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Enable 802.1x.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign the Template to Your Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" MadCap:conditions="Default.ScreenOnly">
+                </MadCap:snippetBlock>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Discovery.htm">Discovery Template</a>
+        </p>
+    </body>
+</html>

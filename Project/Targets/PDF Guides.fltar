@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget
+  Version="2"
+  Comment=""
+  Type="PDF"
+  Destinations=""
+  ShowMadCapBacklink="true"
+  MasterStylesheet="/Content/Resources/Stylesheets/Styles.css"
+  ConditionTagExpression="include[Default.PrintOnly], exclude[Default.Exclude or Default.Future or Default.ScreenOnly]"
+  PatchHeadingLevels="true"
+  GetLatestBeforeCompile="false"
+  MasterToc="/Project/TOCs/Solstice Conference Supported Peripherals.fltoc"
+  OutputFolder="C:\Users\mdumas\Documents\Documentation"
+  InjectBookHeadings="true">
+  <PrintedOutput
+    CollapseMargins="true"
+    GenerateTOCProxy="true"
+    GenerateIndexProxy="false"
+    GenerateGlossaryProxy="false"
+    OutputFormat="doc" />
+  <DocumentProperties
+    Author="Mersive Documentation"
+    Title="" />
+  <PDF
+    ShowUsedBookmarks="false"
+    InitialMagnification="Fit"
+    PageLayout="OneColumn"
+    TitleBar="DocumentTitle" />
+</CatapultTarget>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Solstice Cloud Analytics: Compare</title>
+    </head>
+    <body>
+        <h1>Solstice Cloud Analytics: Compare</h1>
+        <p> The Category Compare page allows you to compare Pod usage data based on the categories and options you select. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead>.<MadCap:expandingBody><br /><img src="../Resources/Images/SolsticeCloudCompare.png" style="width: 834px;height: 782px;" /></MadCap:expandingBody></MadCap:expanding><br /></p>
+        <p>This page is divided into two main parts:</p>
+        <ul>
+            <li><b>Category Compare Graph</b> - This is a graph at the top half of the page that displays data by category on a timeline.</li>
+            <li><b>Displays Table</b> - This table can list all the Pods that are being managed in your Solstice Cloud instance, or it can display a filtered subset of Pods. Any filters you apply will affect the data that is displayed in the table. Clicking the check-boxes to the left of filtered Pods will show only the data from the selected Pods on the graph.</li>
+        </ul>
+        <h2>Collected Data</h2>
+        <p>Solstice data is uploaded to Solstice Cloud on a daily basis. After it is uploaded to Solstice Cloud, the data is deleted from the Solstice Pod. Solstice Cloud tracks the following  data for Solstice Pods.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Usage Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/UsageData.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Room Occupancy Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your Pod is connected to a USB camera and has Room Occupancy enabled (Features settings), the following room occupancy data can be collected. As a note, room occupancy data is only tracked as an aggregate numerical value. No image or video ever leaves the Solstice Pod.</p>
+                <ul>
+                    <li>
+                        <p><b>Average Hourly Occupancy</b>: 
+						The average number of people detected in the room each hour. Hour increments are determined at the top of the hour. For example, 1:00 p.m. to 2:00 p.m. If a meeting runs from 1:45 p.m. to 2:15 p.m., the number of people in the room will be averaged in to both the 1:00 p.m. and 2:00 p.m. calculations.</p>
+                    </li>
+                    <li>
+                        <p><b>Peak occupancy</b>: 
+						The maximum number of people that have been detected in the room during the course of the meeting.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Insights from Analytics</h2>
+        <p> Here are examples of how to generate graphs that can provide insights into how your Pods are being used.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="How"></a>How often are your meeting spaces used?</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To determine how often meeting spaces that contain Mersive Pods are being used:</p>
+                <p class="note">This example assumes you have defined a category named Room Type and that you have assigned Pods to options in that category. The category name used below is arbitrary, and if you have a category that is roughly similar, choose the name of that category instead in step 4.</p>
+                <ol>
+                    <li>
+                        <p>In the left sidebar menu of the Solstice Cloud portal, go to <b>Analytics &gt; Compare</b>.</p>
+                    </li>
+                    <li>
+                        <p>At the top left of the page, click the time increment you want for your graph: <b>Days</b> or <b>Weeks</b>. </p>
+                    </li>
+                    <li>
+                        <p>At the top right of the page, click the time period you want the graph: <b>48 hrs</b>, <b>7 days</b>, <b>30 days</b>, or <b>Custom</b>. </p>
+                        <p>For information on specifying a custom time frame, see <a href="#Set">Set a Custom Time Period for Your Graph</a> .</p>
+                    </li>
+                    <li>
+                        <p>From the category drop-down, which is on the left just below the graph, choose <b>Room Type</b>.</p>
+                    </li>
+                    <li>
+                        <p>From the compare drop-down, choose <b>Meetings</b>.</p>
+                    </li>
+                    <li>Using the check-boxes above the graph, select or unselect the options you want to display.</li>
+                </ol>
+                <p>Each meeting space is rendered with a different colored line. By mousing over a plot point on the graph, you can display information about all the meetings spaces for that specific time period. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody> <br /><img src="../Resources/Images/SolsticeCloudAnalytics_compareRoomTypeAndMeetings.png" style="width: 833px;height: 478px;" /></MadCap:expandingBody></MadCap:expanding></p>
+                <p> By selecting additional analytic data or categories in the Displays table, you can gain additional insights into the meeting context for each meeting. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/SolsticeCloudAnalytics_compare_displaysTable.png" style="width: 833px;height: 679px;" /></MadCap:expandingBody></MadCap:expanding></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>How To</h2>
+        <p>Below are the instructions on how to use the controls and filters on the Category Compare page.<br /></p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Specify Time Increments for Your Graph</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/AnalyticsGraphsSpecifyTimeIncrement.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Set"></a>Set a Custom Time Period for Your Graph</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/AnalyticsGraphsCustomTimePeriod.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Select Category Options and Data to Compare</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Below the graph, click the left drop-down and select the category to graph.</li>
+                    <li>Click the right drop-down to select the data you want to graph. This will be the Y-axis of the graph.<p>Above the graph, check-boxes appear that allow you to select the category options you want to graph.</p></li>
+                    <li>
+                        <p>Check, or un-check, the category option boxes you want to graph.</p>
+                    </li>
+                </ol>
+                <p>Each category option check box that you select is graphed in a separate color.</p>
+                <p>
+                    <img src="../Resources/Images/AnalyticsCategoryCompareCheckMarks.png" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Filter the Pods in Your Data Set</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>By default, data from all the Pods being managed by Solstice Cloud is included in the graphs. </p>
+                <MadCap:snippetBlock src="../Resources/Snippets/AnalyticsFilterByCategory.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Search for Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/AnalyticsSearchPod.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manage Columns in the Displays Table</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>
+                        <p>In the upper-right hand corner of the Displays table, click the Manage Columns drop down.</p>
+                        <p>Check-boxes for all the data options and defined categories in your Solstice Cloud account appear. By default, any data or categories that you have selected to graph will be selected. <img src="../Resources/Images/AnalyticsManageColumnsCompare.png" /></p>
+                    </li>
+                    <li>Click the check-boxes for the data or categories you want to display as columns.</li>
+                </ol>
+                <p>The selected data or categories appears in the Displays table. You can use the sort controls to the right of column labels to manipulate the sort order of the table.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Export a CSV File of Displays Table</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/AnalyticsExportCSV.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Analytics-User-Trends.htm">Solstice Cloud Analytics: User Trends</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

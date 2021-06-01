@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Open the Solstice Dashboard and select the Pod you want to add the digital signage channel to.<br /></li>
+            <li>On the&#160;<b>Digital Signage</b>&#160;tab, enable&#160;the&#160;digital&#160;signage&#160;feature, then select the&#160;<b>Footer Only</b>&#160;option.&#160;<p class="note"> The Footer Only option is selected in this step so that you can properly view the registration code. This setting can be changed after your device is registered with&#160;AppSpace.</p></li>
+            <li>In the&#160;Source URL&#160;field, enter&#160;https://cloud.appspace.com/app/&#160;then click&#160;<b>Apply</b>. The Pod’s display will show an&#160;Appspace&#160;screen with a registration code.<br /><br /><img src="../Images/ex_digsignage.png" /></li>
+            <li>Log in to Appspace&#160;and go to the dashboard. Enter the registration code in the&#160;<b>Device Registration</b>&#160;section, then click&#160;<b>Go</b>.<br /><br /><img src="../Images/ex_registerdevice.png" style="width: 475px;height: 384px;" /></li>
+            <li>Complete the fields&#160;to register your device&#160;and assign a channel.</li>
+            <li>Click&#160;<b>Register</b>. The Pod will begin&#160;displaying the content from the assigned&#160;Appspace&#160;channel.</li>
+        </ol>
+        <p class="note">For more information on how to use Appspace or more in-depth information on how to registering a player, see the <a href="https://docs.appspace.com/">Appspace documentation</a>. </p>
+    </body>
+</html>

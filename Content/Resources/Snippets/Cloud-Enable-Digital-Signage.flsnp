@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol>
+            <li>Select the <b>Enable Digital Signage</b> checkbox. This activates the other options. </li>
+            <li>In the <b>Source URL</b> field, enter the URL&#160;of the digital signage feed or source content. </li>
+            <li>In <b>Start After</b>, select the amount of time after which you want the digital signage feed to start playing. </li>
+            <li>To the right of the thumbnail preview, select a digital signage display mode. The thumbnail preview will demonstrate a preview of how the digital signage feed will appear on the Solstice display. </li>
+            <MadCap:snippetBlock src="info_DigitalSignageDisplayModesUList.flsnp" />
+            <li>Click <b>Save</b>. </li>
+        </ol>
+        <p class="note">Some signage providers require you to register your signage endpoints. Please refer to your signage content providers instructions to complete this process as needed.</p>
+    </body>
+</html>

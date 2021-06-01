@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol>
+            <li>Click the <b>Meeting</b> control in the user app sidebar.</li>
+            <li>Toggle <b>Moderate this meeting</b> to “<b>On</b>”.</li>
+            <li>When a new collaborator tries to connect to the display, an alert will appear in the app’s sidebar. Click <b>Alerts</b> to view the request. Three options display for the connection request:<ul><li><b>Reject</b>: Connection is rejected. The collaborator will be notified that their connection attempt was canceled by the moderator.</li><li><b>Approve</b>: The collaborator will be connected to the display.</li><li><b>Approve as Moderator</b>: The collaborator will join with full moderator rights to approve and reject requests to join and post media content.</li></ul></li>
+            <li>When a collaborator tries to post media content to the display, another alert will appear in the app’s sidebar. Click Alerts to view the request. Two options display for the media post request:<ul><li><b>Reject</b>: The post will not appear on the display. Rejecting the request will not alert the user that their post has been rejected.</li><li><b>Approve</b>: The post will appear on the display.</li></ul></li>
+            <li>To control collaborators in the session, click on the meeple group     icon in the user panel. A list of the connected users will appear with an option to <b>Disconnect</b> the user or <b>Make Moderator</b>.</li>
+            <li>To exit moderator mode, go to <b>Meeting</b> in the sidebar and toggle <b>Moderate this meeting</b> to “<b>Off</b>”.</li>
+        </ol>
+    </body>
+</html>

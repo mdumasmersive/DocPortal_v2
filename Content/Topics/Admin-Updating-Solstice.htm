@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Updating Solstice to the Latest Version</h1>
+        <p>There are several components of the Solstice product suite that should be updated when a new software version is released. This guide for Solstice administrators provides an overview of how each component is updated, as well as step-by-step instructions for the various methods for updating Pods. A current <a href="https://www.mersive.com/solstice-subscription/" target="_blank">Solstice Subscription</a> is needed to access software updates.</p>
+        <p class="note">If using the Solstice Dashboard, you must first upgrade your Dashboard before you upgrade your Pods and/or Windows Display Software licenses. To upgrade your Solstice Dashboard, download and install the latest version from our <a href="http://www.mersive.com/download" target="_blank">downloads page</a>, where you can also access the latest versions of the Solstice Apps and Solstice Discovery Service (SDS).</p>
+        <h2>Access to Solstice Software Updates</h2>
+        <ul>
+            <li><b>Solstice Dashboard</b> - If you have Enterprise Edition Pods and are using the Solstice Dashboard, you must first update your Dashboard before updating your Pods. The latest version of the Dashboard is available on the <a href="https://www.mersive.com/download/" target="_blank">Mersive Download page</a>.</li>
+            <li><b>Solstice Pods</b> - There are several ways to update Pods. For more information about the various ways to update your Pods, see the <a href="#Solstice">Solstice Pod Update Options</a> section below.</li>
+            <li><b>Solstice Windows Display Software</b> - To access updates, log in to the <a href="http://www.mersive.com/downloads" target="_blank">Mersive Download Center</a>, download the latest software update onto the Windows host PC, and run the installer. </li>
+            <li><b>Solstice Discovery Service (SDS)</b> - The latest version of SDS is available on the <a href="https://www.mersive.com/download/" target="_blank">Mersive Download page</a>.</li>
+            <li><b>Solstice User Apps</b> - Users will be automatically prompted to update their Solstice Apps to the latest version when they connect to a Solstice display running the latest version. If you centrally manage your apps, or wish to manually install the latest version, you can access the all Solstice apps from the <a href="https://www.mersive.com/download/" target="_blank">Mersive Download page</a> (for laptop PCs) or from your mobile device’s app store.</li>
+            <li><b>MSI for silent Solstice App installs</b> - The Solstice Windows App can be installed via either a GUI-based install process or a silent install for all users on a machine. MSI updates can be accessed in the <a href="http://www.mersive.com/downloads" target="_blank">Mersive Download Center</a>. For more information on MSI installation, see <a href="Admin-MSI-Instuctions.htm">Installing the Solstice App with MSI</a>.</li>
+        </ul>
+        <h2><a name="Solstice"></a>Solstice Pod Update Options Summary</h2>
+        <p>The following are the available methods for updating Solstice Pods:</p>
+        <ul>
+            <li><b>Standard Over-The-Air (OTA) Updates via Solstice Cloud</b> - Recommended method for Enterprise Edition Pods. Administrators can choose to schedule over-the-air updates to begin at a later time, or can choose to start the update process immediately. Pods can be scheduled to update in batches, with an option to notify you when the scheduled update is complete. If internet connectivity is interrupted during the update process, Solstice Cloud will retry and resume the update where it left off. To use this method, Pods must be added to your Solstice Cloud account, have direct internet access, and the Mersive web server (https://www.mersive.com) must be allowed through your firewall. Pods will reach out to the Mersive web server to access software updates. Once Pods are imported into Solstice Cloud using the Solstice Dashboard, you can login to the Solstice Cloud portal (https://kepler.mersive.com) to update the Pods. For more information, see <a href="Cloud-Schedule-Updates.htm">Schedule Solstice Pod Updates Using Solstice Cloud</a>.</li>
+            <li><b>Standard OTA Updates via Solstice Dashboard</b> – The Pod’s default update method reaches out to the Mersive web server to access updates. To use this method, Pods must have direct internet access and the Mersive web server (https://www.mersive.com) must be allowed through your firewall. This method can be configured via Dashboard or a Pod’s local/web configuration panel.</li>
+            <li><b>OTA via Web Proxy</b> – This method can be used when Pods have internet access via web proxy. Pods will still receive OTA updates from the Mersive web server, but the Pod must have the proper web proxy settings configured to do so. This method is useful if the network requires Pods to be behind a firewall and can be configured via Dashboard or a Pod’s local/web configuration panel.</li>
+            <li><b>Local OTA</b> – The Local OTA method can be used when Pods don’t have direct or web proxy-based access to the Mersive web server for updates. This method requires you to download the Solstice upgrade file, place it on a local web server, and configure Pods to point to that location for updates via the Solstice Dashboard. This is only available for Enterprise Edition Pods version 3.5 or later and can only be configured using Dashboard version 3.5 or later.</li>
+            <li><b>Solstice Local Release (SLR)</b> – This method should only be used when Pods can’t receive OTA updates due to not having access to the Mersive web server or a local web server for updates. This method uses a local file downloaded to the Solstice Dashboard machine for upgrades and is only available for Enterprise Edition Pods using the Dashboard. When network encryption is enabled, the Solstice Dashboard will send SLR updates via port 443. </li>
+        </ul>
+        <p class="note">When updating Solstice Pods to version 5.0, Pods may experiences slightly longer update times than normal. Please give Pods at least 8 minutes to fully update, and do not unplug or reboot your Pod during the update process. </p>
+        <h2>How To </h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Update Pods using the Solstice Cloud Portal</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In order to use the Solstice Cloud portal to update your Pods, you or your organization must first create a Solstice Cloud  account if you do not already have one (Solstice Dashboard &gt;&#160;Kepler tab) and import Pods into Solstice Cloud  using the Solstice Dashboard. For more information on creating a Solstice Cloud  account, see <a href="Cloud-Introduction.htm">Get Started with Solstice Cloud</a>.</p>
+                <ol>
+                    <li>Log in to <a href="https://kepler.mersive.com/">Solstice Cloud</a>.</li>
+                    <li>In the left sidebar menu, go to <b>Manage</b> &gt;&#160;<b>Updates</b>.</li>
+                    <li>Select the Pods you want to be upgraded. <p class="note">If you don't see a Pod in the list, it may already be a part of a scheduled task.</p></li>
+                    <li>Click <b>Update Pods</b>. The pop-up that appears give two update options.</li>
+                    <li>To update Pods now:<ol style="list-style-type: lower-alpha;"><li>Click <b>Update Now</b>. A pop-up appears warning you that once that update process begins, it cannot be canceled.</li><li>To proceed with the update, click <b>Update Now</b>. You are returned to the Tasks tab where you can view the progress of the update.</li></ol></li>
+                    <li>
+                        <p>To schedule Pods to update at a later date and time: </p>
+                        <ol style="list-style-type: lower-alpha;">
+                            <li>Click <b>Schedule for Later</b>.</li>
+                            <li>Select the date and time you wish to schedule the Pods to update. <p class="note">The update will occur based on the local time set on the Pod's system settings.</p></li>
+                            <li>If you wish to, you can select the option to get an email notification when the update is complete. </li>
+                            <li>Click&#160;<b>Schedule</b>. The Pod software update is now scheduled. </li>
+                        </ol>
+                    </li>
+                    <li>To view or edit your scheduled updates, click on the <b>Tasks</b> tab in the Solstice Software Update Overview section. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Update Pods using Standard OTA Method via Solstice Dashboard</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This method can be configured using the Dashboard or a Pod’s local/web configuration panel.</p>
+                <ol>
+                    <li>Ensure the Pod is connected to the internet via Ethernet cable or attached to an existing wireless network.</li>
+                    <li>Go to the Licensing tab of the Solstice Dashboard or Pod’s local/web configuration panel.</li>
+                    <li>Under Software and License Information, select <b>Use web server for upgrades</b> from the drop-down. By default, the Mersive web server is used.</li>
+                    <li>Click the <b>Check for Updates</b> button. The software will check for updates.</li>
+                    <li>If an update is available, select the Pods you wish to update, then click <b>Install Update</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Update Pods using OTA via Web Proxy Method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This method can be configured using the Dashboard or a Pod’s local/web configuration panel.</p>
+                <ol>
+                    <li>Ensure the Pod is connected to the internet via Ethernet cable or attached to an existing wireless network.</li>
+                    <li>Go to the Licensing tab of the Solstice Dashboard or Pod’s local/web configuration panel.</li>
+                    <li>Under Software and License Information, select <b>Use web server for upgrades</b> from the drop-down. By default, the Mersive web server is used.</li>
+                    <li>Go to the <b>Network</b> tab &gt; <b>Web Server Proxy</b> section.</li>
+                    <li>Enable one or both of the web proxy settings.</li>
+                    <li>Enter in the required web proxy details. To verify, click <b>Test Proxy Settings.</b></li>
+                    <li>Click <b>Apply</b>.</li>
+                    <li>Go to the Licensing tab and click the <b>Check for Updates</b> button. The software will check for updates.</li>
+                    <li>If an update is available, select the Pods you wish to update, then click <b>Install Update</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Update Pods using Local OTA Method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>In the steps below, you will receive a Local OTA zip file that will need to be extracted and placed on your internal corporate web server. The web server should be able to respond to https requests for the extracted files.</p>
+                <p>This method can only be configured for Enterprise Edition Pods version 3.1.1 or later using the Dashboard version 3.5 or later. You must first upgrade your Dashboard to 3.5 or later before upgrading your Pods.</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/howto_localwebserver_OTA.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Update Pods using SLR method</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This method can only be configured for Enterprise Edition Pods using the Dashboard. </p>
+                <ol>
+                    <li>Download the Solstice Local Release (.slr) file at <a href="https://www.mersive.com/download/" target="_blank">mersive.com/download</a> &gt;&#160;Solstice Updates.</li>
+                    <li>Go to the <b>Licensing tab</b> of the Solstice Dashboard.</li>
+                    <li>Under Software and License Information, select <b>Use local file for upgrades</b> from the drop-down.</li>
+                    <li>Click the <b>Load Local Update File</b> button, then browse to and select the .slr file.</li>
+                    <li>Click <b>Open</b>.</li>
+                    <li>Once the file is loaded, select the Pods you wish to update, then click <b>Install Update</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+    </body>
+</html>

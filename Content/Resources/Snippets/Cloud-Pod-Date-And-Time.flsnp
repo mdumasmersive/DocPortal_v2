@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol>
+            <li>To set the date and time using a time server, enable the <b>Set date/time automatically</b> checkbox and enter the time server URL in the corresponding field (the default timeserver URL is pool.ntp.org).</li>
+            <li>If you want the time to display in 24 hour format (4:00 pm is displayed as 16:00), select the <b>24 hour format</b> checkbox.</li>
+            <li>From the <b>Timezone</b> drop-down, select the timezone the Pod is in (for example, Eastern Time).</li>
+            <li>
+                Click <b>Save</b>. </li>
+        </ol>
+        <p>A message displays confirming that the Pod configuration has been updated.</p>
+    </body>
+</html>

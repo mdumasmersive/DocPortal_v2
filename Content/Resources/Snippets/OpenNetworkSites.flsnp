@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>You may also need to make firewall or proxy bypass exceptions for the following sites:</p>
+        <ul>
+            <li>Required for software updates, Solstice Cloud, default RSS feed, default digital signage feed: 
+						<ul><li>mersive.com</li><li>*.mersive.com</li></ul><p>Specific sites required for Solstice Cloud Management (formerly known as Kepler):</p><ul><li>Kepler.mersive.com</li><li>Kepler-backend.mersive.com</li><li>Kepler-auth.mersive.com</li><li>Kepler-auth-svc.mersive.com</li><li>Kepler-onboarding.mersive.com</li></ul></li>
+            <li> Required for pod activation, licensing, and subscription updates: 
+			<ul><li>manager.flexnetoperations.com</li></ul></li>
+            <li>To detect captive portals, Solstice may periodically attempt a connection to:
+						<ul><li>clients3.google.com/generate_204</li></ul><p class="note">Captive portal checks can be turned off as of Solstice version 5.3.</p></li>
+        </ul>
+    </body>
+</html>

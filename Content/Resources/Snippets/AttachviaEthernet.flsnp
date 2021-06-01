@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Plug a network-connected Ethernet cable into the Ethernet port on the back of the Pod(s).</li>
+            <li>In the Dashboard, select a Pod from the list of Your Solstice Instances. </li>
+            <li>Go to the <b>Network</b> tab and ensure <b>Ethernet</b> is enabled.</li>
+            <li>Change the&#160;<b>Network Name</b> to the one that users will see in their device's list of available networks to connect to. </li>
+            <li>
+                <p>If you wish to utilize DNS&#160;resolution  and have added a DNS&#160;entry in your DNS&#160;server that resolves to the Pod's IP&#160;address, you can enter the DNS&#160;entry (for example, hostname.domain) in the <b>DNS&#160;Hostname</b> field. This will display the DNS&#160;hostname on the Pod's welcome screen instead of the its IP&#160;address, which allows users to type the hostname into a browser to easily download the Solstice app. <MadCap:conditionalText MadCap:conditions="Default.Exclude">For more information on DNS&#160;resolution, see <a href="../../Topics/Admin-DNS-Resolution.htm">DNS&#160;Resolution</a>. </MadCap:conditionalText></p>
+            </li>
+            <li>Select either <b>DHCP</b> for the Pod to be dynamically assigned an IP address, or select <b>Static IP</b> to enter your network configuration manually.</li>
+            <li>
+                <p>If you wish to allow admin access to make configuration changes on this network, select the <b>Allow administrative configuration access</b> checkbox.</p>
+            </li>
+            <li>If your network is 802.1x authenticated:</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>First, ensure there is network access between the Pod and the Windows machine running Dashboard. You must also ensure that the Pod has access to a timeserver so that it can validate the certificate.</li>
+                <li>Select <b>Enable 802.1x</b>.</li>
+                <li>Select the <b>EAP Method</b> and the <b>Phase 2 Authentication</b> (if applicable) from the drop-downs.</li>
+                <li>Browse and select the certificates needed. Supported certificate file types are .cer, .der, .crt, .pem, .pfx, and .p12.</li>
+                <p class="note">If loading a .p12 certificate, the Password field is for the .p12 file.</p>
+            </ol>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

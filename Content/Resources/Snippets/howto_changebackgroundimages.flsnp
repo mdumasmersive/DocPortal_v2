@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab.</li>
+            <li>Under Customize Welcome Screen, select the <b>Modern Splash Screen</b> option.</li>
+            <li>Under <b>Background images</b>, click on an image you want to change. A file explorer window opens.</li>
+            <li>Browse to the image you wish to add, select the file, then click <b>Open</b>.</li>
+            <li>To disable a background image, deselect the checkbox to the left of the image. This is useful if you do not wish to utilize six background images. </li>
+            <li>To change the images back to the default background images, click the <b>Reset to default images</b> button.</li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

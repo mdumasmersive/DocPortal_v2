@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Solstice Active Learning Setup </h1>
+        <p>The Solstice Active Learning solution leverages existing TCP/IP-based networking, a flexible software control platform, and the Solstice Pod platform connected to each team table.</p>
+        <h2>System Components</h2>
+        <p>Physical setup and configuration of a Solstice Active Learning room is straightforward. The system only requires a few components:</p>
+        <ul>
+            <li><b>Solstice Pods.</b> The Solstice Pod is a network attached wireless sharing device that supports collaboration at each of the team tables as well as the primary display.  It supports HDMI output at up to 4K to the display monitor and attaches to the network via standard Ethernet.</li>
+            <li><b>Student devices.</b> These devices are brought to the room by the students participating in the active learning space.  </li>
+            <li><b>Facilitator device.</b>  This device is used by the facilitator or faculty member to control multi-screen routing, send messages to the team table displays, and generally interact with the displays.  </li>
+            <li><b>Solstice Active Learning app.</b> The Solstice Active Learning app is what designers and facilitators use to virtually design and sets up active learning rooms, and conduct active learning sessions and route video and content in the active learning room within active learning spaces.  </li>
+            <li><b>Solstice app.</b> The Solstice app is what students can use to share content to the team table displays. The Solstice app can be installed on Windows, macOS, Android and iOS devices. However, there are also multiple app-free sharing options supported such as AirPlay, Miracast, or wired HDMI input. Browser-based sharing is also available and supported for Chromebook, Windows, macOS, and Linux devices. </li>
+        </ul>
+        <h2>System Requirements</h2>
+        <ul>
+            <li>Each group display monitor must be directly connected to a Solstice Pod through an HDMI video cable. Mersive recommends using the Pod's outer HDMI port.</li>
+            <li>Each of the Solstice Pods must be directly connected to the same Gigabit switch with a Pod-to-Pod latency of less than 3-4ms.  While there are network topologies that can effectively maintain this performance by segmenting Pod traffic to a dedicated VLAN, for simplicity, we recommend simply wiring Ethernet to a local switch. </li>
+            <li>Student devices and the facilitator device must all be able to route TCP traffic to each of the Pods in the room. For example, a facilitator device may be deployed on an internal faculty network and student devices may be connected to a student network.  However, both of these networks must support peer-to-peer routing between the facilitator or student device and the Solstice Pods.  This allows students at each of the team tables to collaboratively share content from their devices to the group display. You may also need to <a href="Admin-Network-Ports.htm">open certain network ports</a> for Solstice and Solstice Active Learning to work correctly. </li>
+            <li>The facilitator device must have access to the internet so that management, configuration changes, and the state of the application can be stored.</li>
+            <li>   The Solstice Active Learning app is supported on the following devices with a 1024x768 resolution or a 10" screen or greater: </li>
+            <ul style="list-style-type: circle;">
+                <li>Windows 10 laptops </li>
+                <li>Mac laptops with Catalina OS </li>
+                <li>iOS tablets with latest OS</li>
+                <li>Android tablets with latest OS&#160;</li>
+            </ul>
+        </ul>
+        <h3>Example Network Configuration</h3>
+        <p>Shown below is an example network configuration for an Active Learning Space with several group displays and a primary display.  Each Pod is routed to a local switch that is attached to the campus network.  Different network segments can be configured to carry different device traffic as long as they are routable between one another.  Finally, the facilitator device must be able to reach the cloud for management and configuration. </p>
+        <p>
+            <img src="../Resources/Images/ex_ActiveLearningTopology.png" style="width: 1012px;height: 496px;" />
+        </p>
+        <h2>System Performance</h2>
+        <p>When configured as described, Solstice Active Learning enables users to route content and videos from one display to another within the room. Bandwidth utilization and frame rate are dependent on both the number of simultaneous video sends as well as the compressibility of the content on the source display. To learn more about Mersive's bandwidth and frame rate testing for active learning scenarios, <a href="https://www.mersive.com/wp-content/uploads/2021/01/ActiveLearningPerformanceWhitepaper10.7-1.pdf" target="_blank">view the full whitepaper here</a>. </p>
+        <h2>FAQ</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot class="FAQ">Can students and facilitators be on different networks?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Yes, the facilitator (via the Solstice Active Learning app) and students (via the Solstice app) can be on different VLANs as long as the appropriate <a href="Admin-Network-Ports.htm">network ports</a> are opened. The apps utilize the same network ports and rely on routable TCP traffic.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot class="FAQ">Do I need a special Ethernet switch?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>No, virtually any Ethernet switch will work with Solstice Active Learning.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot class="FAQ">What is the maximum number of displays I can have within a Solstice Active Learning environment?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Our recommended number of displays varies depending on use case and type of content being shared. Download our Active Learning performance white paper to see the expected frame rate based on the number of displays.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p>&#160;</p>
+        <script>
+			(function(d,b,a,s,e){ var t = b.createElement(a),
+			fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
+			fs.parentNode.insertBefore(t, fs); })
+			(window,document,'script','https://tag.demandbase.com/6ad47032.min.js','demandbase_js_lib');  
+		</script>
+    </body>
+</html>

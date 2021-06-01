@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>When enabled, in-room users will be required to enter the randomly generated screen key on the Solstice display before they can connect. You can also choose to turn on the option that will read the screen key out lout when a user attempts to connect to the display. </p>
+        <ol>
+            <li>In the <b>Solstice Feature Options</b> section, select <b>Enable screen key</b>.</li>
+            <li>If desired, select the <b>Speak screen key:</b> option to read the screen key aloud. The screen key will be spoken a maximum of once every 10 seconds if multiple connection attempts occur in short succession.</li>
+            <li>Click <b>Save</b>. </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Setup</title>
+    </head>
+    <body>
+        <h1>OpenControl API&#160;Setup</h1>
+        <p>This section is intended for users who want to demo the API capability or run one of the Mersive supplied Python applications, and assumes no familiarity with general purpose programing.  If you are familiar with programming and have a preferred way of sending and receiving HTTP GET and POST commands, jump to the list of commands.</p>
+        <p>If you simply want to experiment with receiving and sending information via the API, Postman is a great tool that can help you develop an intuitive grasp of the capabilities and workflows of the OpenControl API.  Enter the URL of your target host or server and click 'GET' to confirm connectivity with your target and see the results of every key:value set associated with that target.</p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot> Setup </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you want to run complete scripts and are starting from scratch, follow the comprehensive instructions below.</p>
+                <p>The following steps assume a Windows operating system on the client device. If you have a different operating system, you will need to modify the steps to suit your platform.  It also assumes that you want to use Python version 2.7 to communicate with the API.  While the OpenControl API is agnostic to client programming language and version, the examples in this document utilize Python 2.7.</p>
+                <ol>
+                    <li>Download Python 2.7 from python.org/downloads/.  Later versions of Python may not be fully compatible with 2.7, therefore the example scripts may not run properly if using a later version.</li>
+                    <li>Install as close to the main drive as possible. The default location is likely C:\Python27, which is perfect.</li>
+                    <li>Download get-pip from https://pip.pypa.io/en/stable/installing/ and move the file into the same folder as your new installation of Python 2.7.</li>
+                    <li>Open Windows PowerShell.</li>
+                    <li>Navigate to the Python directory. If you installed in the default location, type:</li>
+                    <p class="codeblock">cd C:\Python27\</p>
+                    <li>If you installed into a different directory, navigate through your file system using “cd [folder name]” to enter a subfolder or “cd .. “ to move up a level.  The command “ls” (that’s a lowercase L) lets you see everything inside the current directory.</li>
+                    <li>Once you’re in the Python folder, type “ls” to verify that get-pip.py is in the folder.</li>
+                    <li>If so, type “py get-pip.py” and wait for pip to install.</li>
+                    <li>Next, install the requests package with the following command:</li>
+                    <p class="codeblock">python -m pip install requests</p>
+                    <li>Wait for requests to finish installing. Information on this package is available at http://docs.python-requests.org/en/master/.</li>
+                    <p>Once the requests package is installed, you can GET/POST individual messages to or from specific IP addresses directly from the Python terminal window (access by double-clicking the python.exe file), or you can write a Python script in an editor (such as Notepad++) and run the script from PowerShell or the Python terminal window.</p>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Test Connectivity to a Solstice Host</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Now, test that you have network connectivity to a Solstice IP address (Pod or Software Instance) by pinging the IP address.  If the IP address is http://192.168.3.127, the shell command would be:</p>
+                <p class="codeblock">&gt;&gt;&gt; ping 192.168.3.127</p>
+                <p>Wait for the ping to finish.  The result should be 4 packets sent and 4 packets received.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Download and Run the Example GET&#160;Script</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>At this point, we recommend downloading and running the example GET script to see all the available options.  Download the script from our GitHub repository <a href="https://github.com/Mersive-Technologies/opencontrolv1-examples">here</a> <MadCap:conditionalText MadCap:conditions="Default.PrintOnly">(https://github.com/LauraMersive/APIdemo/blob/master/OpenControlGETPOSTdemo.py) </MadCap:conditionalText>and move it to a known location.  You can double-click the file to run it immediately, or open it in an editor to modify the script.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3>Next Topic</h3>
+        <p><a href="API-Using-OpenControl-API.htm">Using OpenControl API</a>
+        </p>
+    </body>
+</html>

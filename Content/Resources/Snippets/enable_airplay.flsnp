@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Go to the <b>Appearance and Usage</b> tab &gt;&#160;<b>Client Sharing Options</b> section. </li>
+            <li>Select the <b>iOS Mirroring</b> option.</li>
+            <li>If your network does not allow UDP broadcast traffic, select one of the following options:<ul><li><b>Enable AirPlay Discovery Proxy</b>- Utilizes an alternative discovery proxy if the network does not allow the use of Apple's Bonjour. Note:&#160;This option may not support video sharing. </li><li><b>Enable AirPlay Bluetooth Discovery</b> - Allows Bluetooth-enabled Apple devices to discover and connect to the Pod using Bluetooth. The Solstice display will appear in their device's list of available Bluetooth devices. However, users will have to connect to the same network as the Pod in order to stream content via AirPlay. </li></ul></li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

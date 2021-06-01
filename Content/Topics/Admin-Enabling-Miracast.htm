@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Enable Sharing with Miracast</title>
+    </head>
+    <body>
+        <h1>Enable Sharing with Miracast</h1>
+        <p>Screen mirroring for Windows devices is available through Solstice's support for Miracast streaming.  This allows users to wirelessly  mirror or extend their screen to the Solstice display in real-time without having to install an app. </p>
+        <p>Solstice's support for Miracast works in two stages. In the discovery stage, a Miracast-enabled device searches for active Miracast receivers nearby for the user to connect and stream to. This requires the Solstice Pod’s wireless network interface card to be enabled and not acting as a wireless access point. In the second stage, the device streams content to the Miracast receiver using either an existing network (Miracast over Existing Network) or a peer-to-peer wireless connection (WiFi Direct).</p>
+        <p>Solstice's Miracast support has three modes:</p>
+        <ul>
+            <li><b>Over Existing Network and WiFi Direct (recommended).</b> Allows Pods to dynamically select best video streaming mode. Most robust device connection and setup configuration. Supported devices: Win8, Win10, Android</li>
+            <li><b>Over Existing Network.</b> Leverages existing network to support larger number of simultaneous Miracast users. All Miracast traffic is subjected to network security and monitoring. Supported devices:&#160;Windows 10 only</li>
+            <li><b>WiFi Direct.</b> Good for use cases where one Miracast device will be used at a time. Supported devices:&#160;Win8, Win10, Android</li>
+        </ul>
+        <h2>Network Routing Requirements</h2>
+        <p>The following network ports/routes are required to support Miracast streaming to Solstice Pods.</p>
+        <ul>
+            <li><b>TCP port 7236</b>: WiFi Direct control port used to establish and manage sessions between the source device and the Pod.</li>
+            <li><b>TCP port 7250</b>: Port on which the Pod listens for Miracast packets when Over Existing Network mode is enabled.</li>
+            <li><b>UDP port 5353</b>: If Miracast Over Existing Network mode is enabled, this port is used for multicast DNS (mDNS). mDNS is broadcasted to the local subnet of each network interface the Pod is connected to. If the computer that is attempting to make an infrastructure connection is on a different subnet, this broadcast will fail. If this happens, a workaround is to create a DNS entry to the Pod’s hostname.</li>
+            <li>Confirm that&#160;port <b>32768:60999</b> (for Gen2i Pods) is also open.</li>
+            <p class="note">Miracast may utilize any non-privileged UDP port from 1024 to 65535 for video streaming.</p>
+        </ul>
+        <h2>Important Considerations</h2>
+        <ul>
+            <li>Miracast requires that the Pod be located in close proximity to the display. Miracast discovery operates over a range of approximately 150-200 feet. Only Pods within this range will be displayed in the Miracast source list on the client device.&#160;</li>
+            <li>There are many factors that can affect the performance of Miracast streaming. For more information on Miracast performance by configuration and use case, view the <a href="../PDF/MiracastPerformanceTechNote.pdf" target="_blank">Miracast Performance Tech Note</a>. </li>
+        </ul>
+        <h3>How To Enable Sharing with Miracast</h3>
+        <p>Find the Pod's network configuration in the table below and apply the corresponding configuration in the Solstice Dashboard.</p>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col style="width: 186px;" class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1"><strong>Pod's Network Configuration</strong>
+                    </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><strong>Pod Configuration for Miracast via Solstice Dashboard</strong>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Ethernet Only (recommended)</td>
+                    <td width="65%" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <ol>
+                            <li>On the Network tab, enable <strong>Wireless Settings</strong>.</li>
+                            <li>Select <strong>Attached to Existing Network</strong> radio button to enable wireless antenna for Miracast discovery and click <strong>Apply</strong>. Do not attach the network interface to an existing network. This interface will remain idle and will only be used for the Miracast discovery stage.</li>
+                            <li>On the Appearance and Usage tab, enable <strong>Miracast – Stream video over WiFi Direct </strong>and <strong>over Existing Network</strong>.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                        <p>Wireless attached to existing network only</p>
+                    </td>
+                    <td width="65%" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                        <ol>
+                            <li>On the Security tab, make sure screen key is disabled. </li>
+                            <li>On the Appearance and Usage tab, enable <strong>Miracast – Stream video over Existing Network</strong>.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Ethernet + Wirelessly Attached to Existing Network</td>
+                    <td width="65%" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                        <ol>
+                            <li>On the Security tab, make sure screen key is disabled. </li>
+                            <li>On the Appearance and Usage tab, enable <strong>Miracast – Stream video over Existing Network</strong>.</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Ethernet + Wireless Access Point</td>
+                    <td rowspan="2" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1"><strong>Miracast Not Supported</strong>. When the Pod is acting as an access point, Miracast discovery cannot operate. Contact Mersive to discuss other options like attaching your Pod to an existing network.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td valign="middle" class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Wireless Access Point Only</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 MadCap:conditions="Default.ScreenOnly">Related Topics</h4>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="User-Sharing-Content.htm#howto_Miracast">How to Share Your Windows Device Screen Using Miracast</a>
+        </p>
+    </body>
+</html>

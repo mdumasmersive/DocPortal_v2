@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>You can also filter the Pods included in your graph's dataset by choosing filters from the Filter by Category section. The Filter by Category section lists all the categories that have been defined in Solstice Cloud. Clicking on any of the categories displays all the defined options for that category and indicates how many displays have that option set. Whenyou select one or more options under that category, the table  will display all Pods that belong to ANY of the selected options.</p>
+        <p>However, when you make selections in a second category, the table will only display Pods that belong to either option selected in the first category AND either option selected in the second category.</p>
+        <p>
+            <img src="../Images/AnalyticsFilterAndsOrs.png" />
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

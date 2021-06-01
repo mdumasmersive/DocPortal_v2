@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True">
+    <head>
+    </head>
+    <body>
+        <h1>Pod Location Configuration Settings</h1>
+        <p>Location features in Solstice Cloud use GPS estimates that are learned from Location Services to automatically group your Pods into categories for Country, City, and Building. These categories will behave just like other categories except they’ll be populated automatically and don’t require editing. This allows a user to walk into a room, open the Solstice app, and see the Pod they are physically closest to at the top of the display list. If the automatic categories aren't intuitive enough for your users, you can assign a “friendly name” for each  building which end users will see when they open the Solstice app. </p>
+        <p>Additionally, for administrative purposes, Solstice Cloud admins can easily segment groups of Pods based on their location while managing template configurations, viewing usage analytics, monitoring uptime, and much more. Using an interactive map admins can see how Pods are clustered together based on their location, and they can fine tune the location of a pod down to a few feet or even identify which floor of the building the pod is on.</p>
+        <p>The use of Location Services requires the following:</p>
+        <ul>
+            <li>Pods must be imported into Solstice Cloud</li>
+            <li>Pods need location services enabled (Manage &gt; Templates &gt; Features &gt; Room Services)</li>
+            <li>Pods must be running Solstice 5.1 or greater</li>
+        </ul>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>View Pod Locations</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Location</b>.</li>
+                    <li>On the bottom left-hand corner of the map, select <b>Cluster by Pods</b> or <b>Cluster by Buildings</b>.</li>
+                    <li>Click on one of the clusters of pods or building icons to zoom in on the map. Continue clicking on clusters until the map shows individual Pods or until you the level of detail you want to see appears.<p class="note">The Cluster by Buildings display may not represent all Pods as some Pods may not yet have a building assignment. However, all the Pods that have been imported into Solstice cloud will be represented on the map with an estimated initial location. The Cluster by Buildings display will begin to display these individual Pods when it is with two stops of maximum zoom.</p></li>
+                    <li>Click on an individual Pod to display the Pod Configuration page.</li>
+                </ol>
+                <p>On the Pod configuration page you can perform the following actions:</p>
+                <ul>
+                    <li><a href="#Manually">Manually set the location for the Pod</a>
+                    </li>
+                    <li><a href="#Fine-tun">Fine-tune the location of a pod</a>
+                    </li>
+                    <li><a href="#Add">Add a New Building</a>
+                    </li>
+                    <li><a href="file:///D:/Mersive/WIP/2021-01-05_Solstice_SideNav/Content/Topics/Cloud-Management-Templates.htm#Apply">Apply template configurations to the Pod</a>.</li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Manually Assign a Location for a Newly Imported Pod</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>To manually assign the location of a newly imported pod:</p>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>  or click <b>Manage</b> &gt; <b>Location</b>.</li>
+                    <li>In the table, locate the pod whose location you want to assign, and click the Pod name.<p>If you manage a large number of Pods, you can reduce the number of Pods displayed in the table by entering all or part of the Pod name in the search box or by setting a filter.</p></li>
+                    <li>Use the Set location wizard to set assign the Pod location:<ol style="list-style-type: lower-alpha;"><li>From the Select building drop-down menu, select the building, and then click <b>Next</b>.<p><img src="../Resources/Images/cloud_setLocation.png" /></p></li><li><p>If the desired building is not in the list add a new building. (For details on how to do this see <a href="#Add">How to Add a Building</a>.)</p><p>The new building now appears in the Select Building field.</p></li><li>Click <b>Next</b>.</li></ol></li>
+                </ol>
+                <p>The location is set for the Pod, and the map zooms in to the Pod's location.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Manually"></a>Manually Change a Pod Location</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>  or click <b>Manage</b> &gt; <b>Location</b>.</li>
+                    <li>In the table, locate the pod whose location you want to assign, and click the Pod name.<p>If you manage a large number of Pods, you can reduce the number of Pods displayed in the table by entering all or part of the Pod name in the search box or by setting a filter.</p></li>
+                    <li>Click in the <b>Building</b> field. (Do not click the drop-down menu.)<p>The field will change to a search box, and you can start typing the building name in the field.</p><p><img src="../Resources/Images/cloud_buildingSearch.png" /></p></li>
+                    <li> From the filtered building list that appears, select the desired building.</li>
+                    <li>If the desired building is not in the list add a new building. (For details on how to do this see <a href="#Add">How to Add a Building</a>.)</li>
+                    <li>If there a multiple floors in a building, use the drop-down to select the floor that the Pod is on. If the correct floor does not show up on the list, click <b>Add New Floor</b> and enter the floor number. Then click <b>Save</b>.</li>
+                </ol>
+                <p>The location is set for the Pod, and, if the change is location is significant, the map zooms in to the Pod's location.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Rename"></a>Rename a Pod</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Cloud-Rename-Pod.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Fine-tun"></a>Fine-tune a Pod Location</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>When the map is zoomed in on the Pod's location, you can “fine tune” the location if it is not accurate.</p>
+                <p>To fine tune a pod location:</p>
+                <ol>
+                    <li>Click <b>Fine-tune Location</b>.<p>The cursor changes to a hand icon.</p></li>
+                    <li>Click in the map area and drag the map around as necessary until the Pod is in the exact location.</li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+                <p>The Pod now displays at the correct position on the map.</p>
+                <p class="note">After you have fine-tuned a Pod location, Location Services will no longer attempt to refine the location of the Pod.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Add"></a>Add a Building</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If the building where the Pod is located does not exist in a Building drop-down list, you can add a new building:</p>
+                <ol>
+                    <li>At the bottom of the Building drop down list, click <b>Add New Buidling</b>.</li>
+                    <li>In the Building Address field, start typing the building address, and from the filtered address list that appears, select the appropriate address.<p><img src="../Resources/Images/cloud_AddNewBuidling.png" /></p></li>
+                    <li>If desired, in the Building Name field, enter a common or "friendly name" for the building.</li>
+                    <li>Click <b>Save</b></li>
+                </ol>
+                <p>The new building appears in the Select Building feld.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Welcome-Screen.htm">Welcome Screen Template</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>
+                <p>In the upper-right hand corner of the Displays table, click the Manage Columns drop down.</p>
+                <p>Check boxes for all the data options and defined categories in your Solstice Cloud account appear. By default, any data or categories that you have selected to graph will be selected. <img src="../Images/AnalyticsManageColumns.png" /></p>
+            </li>
+            <li>Click the check-boxes for the data or categories you want to display as columns.</li>
+        </ol>
+        <p>The selected data or categories appears in the Displays table. You can use the sort controls to the right of column labels to manipulate the sort order of the table.</p>
+        <p class="note">The check-boxes used to Manage Columns affects only the Displays table. That is, none of the Manage Columns check boxes affect the data that is being displayed in the graphs.</p>
+    </body>
+</html>

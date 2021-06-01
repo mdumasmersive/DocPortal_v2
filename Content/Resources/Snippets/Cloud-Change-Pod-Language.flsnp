@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <ol>
+            <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>  or click <b>Manage</b> &gt; <b>Location</b>.</li>
+            <li>In the template configuration section at the bottom of the screen, click the drop-down menu for <b>Time/Locale</b>.</li>
+            <li>Click the drop-down arrow for <b>Language</b>.</li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+        <p>A message displays confirming that the Pod configuration has been updated.</p>
+    </body>
+</html>

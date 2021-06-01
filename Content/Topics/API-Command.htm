@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Command API</h1>
+        <p><b>Solstice Host URL:</b>&#160;IPAddress/api/control</p>
+        <p>The Command API addresses runtime control of a Solstice host from a third-party application. Commands are executed by issuing a GET to the URL that corresponds to the command to be executed. The Command API does not make use of the JSON key/value records as the other APIs do.</p>
+        <p>Security is enforced by requiring password authentication when an administrator password has been set. If an incorrect or no password is appended to the GET when one is needed, the command will be ignored.</p>
+        <p>The URLs for each of the commands and their effects are listed below:</p>
+        <h3 class="Heading3">Command URL List</h3>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p><b>URL</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p><b>Impact</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>/api/control/clear</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Clears the display of all posts.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>/api/control/boot</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Boots all connected users and deletes all posts on the display.&#160;Returns display to splash-screen.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>/api/control/reboot</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Reboots host as soon as command is sent. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>/api/control/restart</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Restarts the Solstice software without rebooting the hardware. </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>/api/control/resetkey</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Replace the current screen key with a new random screen key for connection authentication.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>/api/control/suspend</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Goes into power management mode and suspends the display.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>/api/control/wake</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Wakes a suspended display.</p>
+                </td>
+            </tr>
+        </table>
+        <h3>Next Topic</h3>
+        <p><a href="API-SDS.htm">Solstice Discovery Service (SDS) API</a>
+        </p>
+    </body>
+</html>

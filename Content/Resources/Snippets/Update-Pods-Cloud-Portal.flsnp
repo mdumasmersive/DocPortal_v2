@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>In order to use the Solstice Cloud portal to update your Pods, you or your organization must first create a Solstice Cloud  account if you do not already have one (Solstice Dashboard &gt;&#160;Kepler tab) and import Pods into Solstice Cloud  using the Solstice Dashboard. For more information on creating a Solstice Cloud  account, see <a href="../../Topics/Cloud-Introduction.htm">Get Started with Solstice Cloud</a>.</p>
+        <ol>
+            <li>Log in to <a href="https://kepler.mersive.com/">Solstice Cloud</a>.</li>
+            <li>In the left sidebar menu, go to <b>Manage</b> &gt;&#160;<b>Updates</b>.</li>
+            <li>Select the Pods you want to be upgraded. <p class="note">If you don't see a Pod in the list, it may already be a part of a scheduled task.</p></li>
+            <li>Click <b>Update Pods</b>. The pop-up that appears give two update options.</li>
+            <li>To update Pods now:<ol style="list-style-type: lower-alpha;"><li>Click <b>Update Now</b>. A pop-up appears warning you that once that update process begins, it cannot be canceled.</li><li>To proceed with the update, click <b>Update Now</b>. You are returned to the Tasks tab where you can view the progress of the update.</li></ol></li>
+            <li>
+                <p>To schedule Pods to update at a later date and time: </p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>Click <b>Schedule for Later</b>.</li>
+                    <li>Select the date and time you wish to schedule the Pods to update. <p class="note">The update will occur based on the local time set on the Pod's system settings.</p></li>
+                    <li>If you wish to, you can select the option to get an email notification when the update is complete. </li>
+                    <li>Click&#160;<b>Schedule</b>. The Pod software update is now scheduled. </li>
+                </ol>
+            </li>
+            <li>To view or edit your scheduled updates, click on the <b>Tasks</b> tab in the Solstice Software Update Overview section. </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Solstice Setup"
+    Link="/Content/Topics/Deploy-Cloud-Solstice-Setup.htm">
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/General-Solstice-Setup.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Deploy-Cloud-Import-Pods.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Deploy-Cloud-Templates.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Deploy-Cloud-Display-Discovery.htm"></TocEntry>
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Deploy-Cloud-Apply-Templates.htm" />
+    <TocEntry
+      Title="[%=System.LinkedTitle%]"
+      Link="/Content/Topics/Deploy-Cloud-Validate-Deployment.htm"></TocEntry>
+    <TocEntry
+      Title="Other Considerations"
+      Link="/Content/Topics/Deploy-Other-Considerations.htm" />
+  </TocEntry>
+</CatapultToc>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Open a browser on the user device and enter the IP address visible on the Solstice display. The Solstice Quick Connect page opens.</li>
+            <img src="../Images/ex_quickconnect.png" style="width: 568px;height: 345px;" />
+            <li>Click the <b>Get the App &amp; Join</b> button.</li>
+            <li>
+                <p>	If you are on a laptop PC:</p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                         The Solstice app installer (SolsticeClientWin.exe) will download. Click the downloaded file to install the Solstice app. 
+                    </li>
+                    <li>
+                        Once installed, the app will open automatically. 
+                    </li>
+                    <li>
+                        To install Solstice Conference, go to Conference tab and click <b>Install</b>. 
+                    </li>
+                    <li>
+					Walk through the InstallShield wizard to install Solstice Conference. 
+</li>
+                    <p class="note">Installing Solstice Conference requires elevated permissions. If you do not have elevated permissions, contact your IT&#160;administrator. 					</p>
+                </ol>
+            </li>
+            <li>
+                <p>If you are on an Android or iOS device, the appropriate app marketplace will open and display the user app available for download. Once installed, the app will remain on the device for future use and will not need to be installed again. Note:&#160;Solstice Conference capabilities are not available with the mobile version of the Solstice app. </p>
+            </li>
+        </ol>
+    </body>
+</html>

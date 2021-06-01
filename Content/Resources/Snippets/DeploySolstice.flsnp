@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>There are two key ways to get a standard Solstice deployment up and running: </p>
+        <ul>
+            <li>Using Solstice Cloud, our secure cloud-based management portal.</li>
+            <li>Using Solstice Dashboard, our on-premises management tool, if you are unable to use Solstice Cloud. </li>
+        </ul>
+        <p>Before deploying Solstice, be sure to review the following topics:</p>
+        <ul>
+            <li><a href="../../Topics/General-Solstice-Introduction.htm">Solstice Overview</a>
+            </li>
+            <li><a href="../../Topics/General-Solstice-Setup.htm">Solstice Setup</a>
+            </li>
+            <li><a href="../../Topics/Admin-Network-Ports.htm">Network Requirements</a>
+            </li>
+        </ul>
+        <h2>Deploying Solstice Using Solstice Cloud (recommended)</h2>
+        <p>Below are the recommended steps for getting a standard Solstice deployment up and running using Solstice Cloud, our secure cloud-based management portal.  </p>
+        <ul>
+            <li><a href="../../Topics/Deploy-Cloud-Import-Pods.htm">Step 1: Import Pods into Solstice Cloud</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Cloud-Templates.htm">Step 2: Create Base Configuration Templates</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Cloud-Display-Discovery.htm">Step 3: Set Up Display Discovery</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Cloud-Apply-Templates.htm">Step 4: Apply Configuration Templates</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Cloud-Validate-Deployment.htm">Step 5: Validate Your Deployment</a>
+            </li>
+        </ul>
+        <h2>Deploying Solstice Using Solstice Dashboard</h2>
+        <p>Below are the recommended steps for getting a standard Solstice deployment up and running using Solstice Dashboard, our on-premises management tool. This method is recommended if you are unable to use Solstice Cloud. </p>
+        <ul>
+            <li><a href="../../Topics/Deploy-Install-Dashboard.htm">Step 1: Install the Solstice Dashboard and Import Pods</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Connect-Network.htm">Step 2: Connect the Pods to the Network</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Rename-Customize.htm">Step 3: Rename the Pod and Customize the Appearance</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Set-DateTime.htm">Step 4: Set the Pod's Date and Time</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Security-Settings.htm">Step 5: Set the Base Security Settings</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Display-Discovery.htm">Step 6: Set Up Display Discovery</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Content-Sharing.htm">Step 7: Set the Content Sharing Options</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Validate-Deployment.htm">Step 8: Validate Your Deployment</a>
+            </li>
+            <li><a href="../../Topics/Deploy-Other-Considerations.htm">Other Considerations</a>
+            </li>
+        </ul>
+        <h2>Other Resources</h2>
+        <p>If you are deploying Solstice Conference or Solstice Active Learning, view our resources below to learn more about the additional configurations needed to get these solutions up and running. </p>
+        <p><a href="../../Topics/Solstice-Conference-Introduction.htm">Solstice Conference Guide</a>
+        </p>
+        <p><a href="../../Topics/Active-Learning-Introduction.htm">Solstice Active Learning Guide</a>
+        </p>
+    </body>
+</html>

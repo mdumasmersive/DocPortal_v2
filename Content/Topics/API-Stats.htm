@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+        <link href="../Resources/TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Stats API</h1>
+        <p><b>Solstice Host URL:</b> IPAddress/api/stats</p>
+        <p>The stats API reports statistics about the current status of the Solstice host. These stats are instantaneous and can provide third-party developers with a snapshot of activity.<br /></p>
+        <h2 class="Heading2">Global Stats Record</h2>
+        <table style="width: 100%;margin-left: 10px; margin-right: auto; mc-table-style: url('../Resources/TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" colspan="4">
+                    <p><i>(Top Level)</i>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Key</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Type</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p><b>Get/Post</b>
+                    </p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p><b>Description</b>
+                    </p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_displayId</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>This is the unique identifier that Solstice uses to manage a single instance, regardless of how the display is named or its current IP address</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_serverVersion</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The current software version running on the Solstice host.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>m_displayInformation</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_displayName</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The name of the display, shown on welcome screen and used for discovery.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_productName</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>The name of the Solstice software (Solstice).</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_productVariant</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>string</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>The generation and type of Pod hardware as a name (Pod-only). For example, ‘Gen1’ or ‘Pod Gen2’.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_productHardwareVersion</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>The Pod hardware generation as a version number (Pod-only).&#160; For example, 1 or 2.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td colspan="4" class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>m_statistics</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_currentPostCount</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Total number of posts currently shared to the display.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_currentBandwidth</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Total network bandwidth being used in Mbps.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_connectedUsers</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Number of currently connected users.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>m_timeSinceLastConnectionInitialize</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">
+                    <p>Time since the device last has a session initiated.&#160; Returns in milliseconds.</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>m_currentLiveSourceCount</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>int</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">
+                    <p>Get</p>
+                </td>
+                <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">
+                    <p>Number of current live sources such as a capture card; for Windows Display Software only. </p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

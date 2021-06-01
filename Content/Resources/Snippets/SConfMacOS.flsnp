@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStylesheets/SupportTable.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <table style="width: 90%;mc-table-style: url('../TableStylesheets/SupportTable.css');" class="TableStyle-SupportTable" cellspacing="21">
+            <col class="TableStyle-SupportTable-Column-Column1" style="width: 241px;">
+            </col>
+            <col class="TableStyle-SupportTable-Column-Column1">
+            </col>
+            <tbody>
+                <tr class="TableStyle-SupportTable-Body-Body">
+                    <td class="TableStyle-SupportTable-BodyE-Column1-Body"><b>Operating System</b>
+                    </td>
+                    <td class="TableStyle-SupportTable-BodyD-Column1-Body">Catalina 10.15 or later</td>
+                </tr>
+                <tr class="TableStyle-SupportTable-Body-Body">
+                    <td class="TableStyle-SupportTable-BodyE-Column1-Body">
+                        <p class="table-text" style="vertical-align: top;"><b>Minimum Specs</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-SupportTable-BodyD-Column1-Body">
+                        <p>Intel i5 quad core processor; 8GB memory; processor speed of 1.2 GHz or better</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SupportTable-Body-Body">
+                    <td class="TableStyle-SupportTable-BodyB-Column1-Body">
+                        <p class="table-text"><b>Important Notes</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-SupportTable-BodyA-Column1-Body">
+                        <ul>
+                            <li>Apple M1 devices are supported.</li>
+                            <li>Laptop machines with dual-core processors not currently supported.</li>
+                            <li>Macbook Air 2021 laptops can be used with Solstice Conference; however, older Macbook Air laptops are not currently supported.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">If you are using a 4K laptop, Mersive recommends scaling your screen resolution down to 1080p when using Solstice Conference. </p>
+    </body>
+</html>

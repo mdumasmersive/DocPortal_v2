@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <p>Connection instructions give end-users the information they need to connect to Solstice. You can customize these instructions according to how your organization has configured Solstice to allow users to quickly connect. </p>
+        <ol>
+            <li>From the Instructions drop-down, select how you would like the connection instructions to display on the Welcome Screen for end-users. <ul><li><b>Default:</b> Selecting this setting displays Solstice's default connection instructions to meeting attendees on the Welcome Screen. </li><li><b>Show custom instructions:</b> Allows the creation of custom connection instructions specific to your organization's Solstice configuration. </li></ul></li>
+            <li>When <b>Show custom instructions</b> is selected, a rich text field appears below, allowing you to enter and format custom connection instructions. Use the defined responsive variables, such as <b>[RoomName]</b> and <b>[ScreenKey]</b>, to display Pod-specific data in your instructions.</li>
+            <li>To hide the Airplay instructions, deselect the <b>Show Airplay instruction line</b> checkbox. </li>
+            <li>To hide the Miracast instructions, deselect the <b>Show Miracast instruction line</b> checkbox. <p><img src="../Images/Welcome-CustomInstructions.png" style="width: 279px;height: 439px;border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #808080;" /></p></li>
+            <li>Click <b>Save</b>. A message displays confirming that the Pod configuration has been updated.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,1785 @@
+﻿/*<meta />*/
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * lato:
+ *   - http://typekit.com/eulas/00000000000000000001522d
+ *   - http://typekit.com/eulas/000000000000000000015232
+ *   - http://typekit.com/eulas/000000000000000000015231
+ *   - http://typekit.com/eulas/00000000000000000001522c
+ * proxima-nova:
+ *   - http://typekit.com/eulas/00000000000000003b9b3068
+ *   - http://typekit.com/eulas/00000000000000003b9b3069
+ *   - http://typekit.com/eulas/00000000000000003b9b3062
+ *   - http://typekit.com/eulas/00000000000000003b9b3063
+ * proxima-nova-condensed:
+ *   - http://typekit.com/eulas/00000000000000003b9b3078
+ *   - http://typekit.com/eulas/00000000000000003b9b3079
+ *   - http://typekit.com/eulas/00000000000000003b9b3072
+ *   - http://typekit.com/eulas/00000000000000003b9b3073
+ * proxima-nova-extra-condensed:
+ *   - http://typekit.com/eulas/00000000000000003b9b3089
+ *   - http://typekit.com/eulas/00000000000000003b9b3088
+ *   - http://typekit.com/eulas/00000000000000003b9b3083
+ *   - http://typekit.com/eulas/00000000000000003b9b3082
+ *
+ * © 2009-2019 Adobe Systems Incorporated. All Rights Reserved.
+ */
+
+/*{"last_published":"2019-10-04 17:44:41 UTC"}*/
+
+@import url('https://p.typekit.net/p.css?s=1&k=xxd5gff&ht=tk&f=139.140.175.176.143.144.147.148.156.157.161.162.15701.15703.15705.15708&a=19013246&app=typekit&e=css');
+
+@font-face 
+{
+	font-family: "proxima-nova";
+	src: url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova";
+	src: url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova";
+	src: url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova";
+	src: url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-condensed";
+	src: url("https://use.typekit.net/af/0ff5e1/00000000000000003b9b3078/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/0ff5e1/00000000000000003b9b3078/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/0ff5e1/00000000000000003b9b3078/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-condensed";
+	src: url("https://use.typekit.net/af/519896/00000000000000003b9b3079/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/519896/00000000000000003b9b3079/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/519896/00000000000000003b9b3079/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-condensed";
+	src: url("https://use.typekit.net/af/8e2bbd/00000000000000003b9b3072/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/8e2bbd/00000000000000003b9b3072/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/8e2bbd/00000000000000003b9b3072/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-condensed";
+	src: url("https://use.typekit.net/af/5364bc/00000000000000003b9b3073/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/5364bc/00000000000000003b9b3073/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/5364bc/00000000000000003b9b3073/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-extra-condensed";
+	src: url("https://use.typekit.net/af/4a329e/00000000000000003b9b3089/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/4a329e/00000000000000003b9b3089/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/4a329e/00000000000000003b9b3089/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-extra-condensed";
+	src: url("https://use.typekit.net/af/7b18df/00000000000000003b9b3088/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/7b18df/00000000000000003b9b3088/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/7b18df/00000000000000003b9b3088/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-extra-condensed";
+	src: url("https://use.typekit.net/af/bcf2f4/00000000000000003b9b3083/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/bcf2f4/00000000000000003b9b3083/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/bcf2f4/00000000000000003b9b3083/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "proxima-nova-extra-condensed";
+	src: url("https://use.typekit.net/af/0dfb3d/00000000000000003b9b3082/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/0dfb3d/00000000000000003b9b3082/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/0dfb3d/00000000000000003b9b3082/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "lato";
+	src: url("https://use.typekit.net/af/bdde80/00000000000000000001522d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/bdde80/00000000000000000001522d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/bdde80/00000000000000000001522d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face 
+{
+	font-family: "lato";
+	src: url("https://use.typekit.net/af/6c7e72/000000000000000000015232/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/6c7e72/000000000000000000015232/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/6c7e72/000000000000000000015232/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+	font-display: auto;
+	font-style: italic;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "lato";
+	src: url("https://use.typekit.net/af/220823/000000000000000000015231/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/220823/000000000000000000015231/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/220823/000000000000000000015231/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face 
+{
+	font-family: "lato";
+	src: url("https://use.typekit.net/af/180254/00000000000000000001522c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/180254/00000000000000000001522c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/180254/00000000000000000001522c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.tk-proxima-nova
+{
+	font-family: "proxima-nova", sans-serif;
+}
+
+.tk-proxima-nova-condensed
+{
+	font-family: "proxima-nova-condensed", sans-serif;
+}
+
+.tk-proxima-nova-extra-condensed
+{
+	font-family: "proxima-nova-extra-condensed", sans-serif;
+}
+
+.tk-lato
+{
+	font-family: "lato", sans-serif;
+}
+
+:root
+{
+	--Black: #000000;
+	--Medium-Gray: #b9bec1;
+	--Light-Gray: #d0d3d5;
+	--White: #ffffff;
+	--Brand: #66cc33;
+	--Dark-Gray: #333333;
+	--Blue: #3399CC;
+	--Orange: #cA6632;
+}
+
+header-links
+{
+	margin: auto;
+}
+
+body
+{
+	font-family: Lato;
+}
+
+.body-container
+{
+	padding-left: 2%;
+	padding-right: 25%;
+	padding-top: 2%;
+	border-top: solid 8px #6EBE44;
+	font-family: Lato;
+}
+
+/* Backmatter */
+
+div.GlossaryPageDefinition
+{
+	font-size: 10pt;
+}
+
+div.GlossaryPageHeading
+{
+	font-size: 21pt;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom-color: var(--Medium-Gray);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: left;
+	color: inherit;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 10px;
+	background-image: url('../Images/Backmatter-Heading-Background.png');
+	background-repeat: no-repeat;
+}
+
+div.GlossaryPageTerm
+{
+	font-size: 12pt;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+MadCap|glossaryProxy
+{
+	border-top: none;
+}
+
+MadCap|indexProxy
+{
+	border-top: none;
+}
+
+p.Index1
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+p.Index2
+{
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+p.IndexHeading
+{
+	font-size: 21pt;
+	font-weight: normal;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-bottom-color: var(--Medium-Gray);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: left;
+	color: inherit;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	padding-top: 12px;
+	padding-right: 10px;
+	background-image: url('../Images/Backmatter-Heading-Background.png');
+	background-repeat: no-repeat;
+}
+
+/* Content */
+
+div.Banner
+{
+	background-color: #C5D0DE;
+	font-size: 11pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+div.sidetoc
+{
+	position: sticky;
+	margin-top: 10px;
+	margin-right: 10px;
+	top: 0px;
+}
+
+.downloadbutton
+{
+	background-color: #3399cc;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	border-radius: 28px;
+	border: 1px solid #3399cc;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: "proxima-nova", "lato", sans-serif, helvetica;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 8px 20px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.downloadbutton:hover
+{
+	background-color: #66CC33;
+	border: 1px solid #66CC33;
+}
+
+.downloadbutton:active
+{
+	position: relative;
+	top: 1px;
+}
+
+.headerbutton
+{
+	background-color: #3399cc;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	border-radius: 28px;
+	border: 1px solid #3399cc;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: proxima-nova, sans-serif, helvetica;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 8px 20px;
+	text-decoration: none;
+}
+
+.headerbutton:hover
+{
+	background-color: #66CC33;
+	border: 1px solid #66CC33;
+}
+
+.headerbutton:active
+{
+	position: relative;
+	top: 1px;
+}
+
+img
+{
+	border: none;
+	max-width: 100%;
+}
+
+img.homepage
+{
+	border: none;
+	min-width: 75%;
+}
+
+img.noborder
+{
+	border: 1px solid #ECECEC;
+	max-width: 100%;
+}
+
+p
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+	line-height: 15pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	font-size: 11pt;
+	color: #474747;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	font-family: Lato, "proxima nova";
+}
+
+p.table-text
+{
+	font-size: 12pt;
+	line-height: 13pt;
+}
+
+table
+{
+	width: 90%;
+}
+
+td
+{
+	letter-spacing: 0.25;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	font-size: 11pt;
+	font-family: "lato";
+	color: #474747;
+}
+
+a.footer2
+{
+	color: #848484 !important;
+	font-style: normal !important;
+	font-family: "Proxima Nova";
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 31px;
+	padding-left: 10px;
+	text-decoration: none !important;
+	padding-top: -5px;
+}
+
+/* Frontmatter */
+
+hr.title-page
+{
+	border: solid 0px transparent;
+	background-color: var(--Light-Gray);
+	height: 1px;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 370px;
+}
+
+MadCap|tocProxy
+{
+	border-top: none;
+	margin-right: 0.25in;
+}
+
+p.created-using-flare
+{
+	color: var(--Dark-Gray);
+	font-weight: bold;
+	margin-top: 18px;
+	font-size: 9pt;
+	line-height: 15pt;
+	text-transform: uppercase;
+}
+
+p.title
+{
+	font-size: 55pt;
+	line-height: 65pt;
+	margin-top: 85px;
+}
+
+p.title-page-footer
+{
+	color: var(--Dark-Gray);
+	font-size: 9pt;
+	line-height: 15pt;
+}
+
+p.TOC1
+{
+	color: var(--Dark-Gray);
+	font-weight: normal;
+	line-height: 21pt;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	page-break-after: avoid;
+	font-size: 12pt;
+}
+
+p.TOC2
+{
+	color: var(--Dark-Gray);
+	font-weight: normal;
+	line-height: 21pt;
+	margin-bottom: 13px;
+	margin-left: .5in;
+	margin-top: 13px;
+	font-size: 12pt;
+}
+
+p.TOC3
+{
+	color: var(--Dark-Gray);
+	line-height: 21pt;
+	font-weight: normal;
+	margin-bottom: 10px;
+	margin-left: 1in;
+	margin-top: 10px;
+	font-size: 12pt;
+}
+
+/* Headings */
+
+h1
+{
+	padding-top: 0pt;
+	color: #333333;
+	font-weight: 800;
+	font-size: 20.0pt;
+	mc-heading-level: 1;
+	font-family: Proxima Nova, "proxima-nova";
+	font-weight: 800;
+}
+
+h2
+{
+	font-size: 18.0pt;
+	color: #3d3d3d;
+	font-weight: 800;
+	mc-heading-level: 0;
+	font-family: Proxima Nova, "proxima-nova";
+}
+
+h3
+{
+	color: #474747;
+	font-weight: 800;
+	font-size: 14.0pt;
+	mc-heading-level: 0;
+	font-family: Proxima Nova, "proxima-nova";
+	margin-bottom: -2px;
+}
+
+h4
+{
+	font-weight: bold;
+	color: #474747;
+	font-size: 12.0pt;
+	mc-heading-level: 0;
+	font-family: Lato, "lato", futura;
+	margin-bottom: -2px;
+}
+
+h5
+{
+	font-weight: bold;
+	color: #474747;
+	font-size: 11.0pt;
+	mc-heading-level: 0;
+	font-family: Lato, "lato", futura;
+}
+
+h6
+{
+	font-weight: bold;
+	font-size: 8.0pt;
+	color: #334052;
+	mc-heading-level: 0;
+	font-family: "lato";
+}
+
+MadCap|dropDownHead.releasenoteheading
+{
+	color: #334052;
+	font-weight: 800;
+	font-size: 16pt;
+	line-height: 28pt;
+}
+
+/* Home page topic */
+
+div.home-layout
+{
+	padding: 2% 5%;
+}
+
+div.home-section
+{
+	padding: 5% 0;
+}
+
+/*==Home Tiles section==*/
+
+div.home-tiles	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	display: inline flex;
+	flex-flow: wrap;
+	width: 80%;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFF;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	/*Adds transition animation when switching between screen sizes*/
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px none #d3d3d3;
+	padding: 40px 20px 40px 20px;
+	box-shadow: 0 11px 19px 0 rgba(0,0,0,0.06);
+	overflow: hidden;
+	padding-left: 20px;
+	padding-right: 20px;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+div.home-tiles > div:hover	/*When hovering over a home-tile, these properties apply*/
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	height: 50%;
+	margin-top: 2%;
+	width: 25%;
+	margin-left: 10.5%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	height: 50%;
+	width: 25%;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	height: 50%;
+	width: 25%;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+/*==Home Tiles 2 per row section==*/
+
+div.home-tiles2	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+div.home-tiles2::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles2::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles2 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFF;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	/*Adds transition animation when switching between screen sizes*/
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px none #d3d3d3;
+	padding: 20px 10px 20px 10px;
+	overflow: auto;
+	height: 400px;
+	width: 448px;
+	box-shadow: 0 11px 19px 0 rgba(0,0,0,0.06);
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.home-tiles2 > div:hover	/*When hovering over a home-tile, these properties apply*/
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.home-tiles2 > div:nth-child(1)
+{
+	height: 50%;
+	width: 16.667%;
+	margin-left: 33.333%;
+}
+
+div.home-tiles2 > div:nth-child(2)
+{
+	height: 50%;
+	width: 16.667%;
+	margin: 0px;
+	margin-left: 2%;
+}
+
+/*==Home Tiles 2 per row section for other pages==*/
+
+div.home-tiles3	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: 20px;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 80%;
+}
+
+div.home-tiles3::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles3::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles3 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFF;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	/*Adds transition animation when switching between screen sizes*/
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px none #d3d3d3;
+	padding: 20px 10px 20px 10px;
+	overflow: hidden;
+	height: 400px;
+	width: 448px;
+	box-shadow: 0 11px 19px 0 rgba(0,0,0,0.06);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.home-tiles3 > div:hover	/*When hovering over a home-tile, these properties apply*/
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.home-tiles3 > div:nth-child(1)
+{
+	height: 50%;
+	margin-left: 25%;
+	width: 25%;
+}
+
+div.home-tiles3 > div:nth-child(2)
+{
+	height: 50%;
+	margin-left: 2%;
+	width: 25%;
+}
+
+/*=Elements for text contained within each home-tile=*/
+
+p.tile-title
+{
+	text-align: center;
+	color: #334052;
+	font-size: 1.5em;
+	font-weight: 800;
+	line-height: 1em;
+	font-family: Proxima Nova, Lato;
+}
+
+p.tile-content
+{
+	text-align: center;
+	color: #334052;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 20px;
+	line-height: 1.2em;
+	font-family: Proxima Nova, Lato;
+}
+
+p.tile-items
+{
+	color: #7E8890;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+div.home-tiles a	/*Complex Selector: Any anchor (links) tags that are within div.home-tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #565656;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.home-tiles2 a	/*Complex Selector: Any anchor (links) tags that are within div.home-tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #565656;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.home-tiles3 a	/*Complex Selector: Any anchor (links) tags that are within div.home-tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #565656;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+a:link
+{
+	color: #3399cc;
+}
+
+a:visited
+{
+	color: #e38102;
+}
+
+div.home-tiles a:hover	/*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
+{
+	color: #848484;
+}
+
+div.quick-links	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+div.quick-links::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.quick-links::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.quick-links > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.quick-links > div:nth-child(1)
+{
+	width: 16.66666%;
+	margin-left: 2%;
+}
+
+div.quick-links > div:nth-child(2)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(3)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(4)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links > div:nth-child(5)
+{
+	width: 16.66666%;
+	margin-left: 3%;
+}
+
+div.quick-links *	/*Text-align center set to all elements within div.quick-links*/
+{
+	text-align: center;
+}
+
+div.topic-hero
+{
+	padding: 5%;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 300px;
+	background-image: url(../Images/hero-background.jpg);
+}
+
+div.topic-hero h1
+{
+	color: var(--White);
+	font-size: 48pt;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 10pt;
+}
+
+html.home-topic	/*Used on home topic to override padding set in the skin*/
+{
+	
+}
+
+html.home-topic .body-container	/*Overrides padding set in the skin*/
+{
+	padding: 0;
+}
+
+html.home-topic .main-section > .outer-row	/*Overrides padding set in the skin when in tablet/mobile*/
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom-width: 0;
+	color: #848484;
+	font-size: 11pt;
+	font-family: "proxima-nova";
+}
+
+/* Notes and Tips */
+
+p.note
+{
+	background-color: #d7e8f8;
+	background-image: url(../Images/i_note.png);
+	background-size: 40px 40px;
+	background-position: 9px 5px;
+	background-repeat: no-repeat;
+	border-left: solid 4px #88baeb;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 60px;
+}
+
+p.tip
+{
+	background-color: #ccefe7;
+	background-image: url(../Images/i_tip.png);
+	background-size: 40px 40px;
+	background-position: 9px 5px;
+	background-repeat: no-repeat;
+	border-left: solid 4px #66d0b8;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 60px;
+}
+
+p.warning
+{
+	background-color: #ffebd0;
+	background-image: url(../Images/i_warning.png);
+	background-size: 40px 40px;
+	background-position: 9px 5px;
+	background-repeat: no-repeat;
+	border-left: solid 4px #ffc474;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 60px;
+	margin-right: auto;
+}
+
+p.example
+{
+	background-color: #e0f4d6;
+	background-image: url(../Images/i_checkmark.png);
+	background-size: 40px 40px;
+	background-position: 9px 5px;
+	background-repeat: no-repeat;
+	border-left: solid 4px #a3e084;
+	line-height: 18px;
+	overflow: hidden;
+	padding: 15px 60px;
+}
+
+/* Links */
+
+a
+{
+	color: var(--Blue);
+	font-family: "lato";
+	font-weight: 500;
+}
+
+MadCap|dropDown
+{
+	mc-image-position: left;
+	padding-bottom: 6px;
+	border-bottom: solid 1px #e7ebf1;
+	mc-image-spacing: 5px;
+	padding-left: 0px;
+	mc-open-image: url('../Images/i_down.png') !important;
+	mc-closed-image: url('../Images/i_right.png') !important;
+	padding-top: 6px;
+}
+
+MadCap|dropDownBody
+{
+	padding-top: 10px;
+}
+
+MadCap|dropDownHotspot
+{
+	cursor: hand;
+	text-decoration: none;
+	border-bottom: none;
+	color: #2D394A;
+	font-family: Lato;
+	font-size: 12pt;
+	font-variant: normal;
+	font-weight: 600;
+	font-style: normal;
+	mc-open-image: url('../Images/i_down.png') !important;
+	mc-closed-image: url('../Images/i_right.png') !important;
+}
+
+MadCap|expandingBody
+{
+	color: var(--Dark-Gray);
+	font-style: normal;
+	display: table;
+}
+
+MadCap|expandingHead
+{
+	font-style: normal;
+	font-weight: bold;
+	cursor: hand;
+	text-decoration: none;
+	color: var(--Brand);
+}
+
+MadCap|xref
+{
+	font-weight: bold;
+	mc-format: '{para}';
+	text-decoration: underline;
+	color: var(--Brand);
+}
+
+/* Lists */
+
+li
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: lato;
+	font-size: 11pt;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 15pt;
+	font-weight: 500;
+	color: #2D394A;
+	mc-hyphenate: never;
+}
+
+li p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	mc-hyphenate: never;
+}
+
+ol,
+ul
+{
+	letter-spacing: .25;
+	line-height: 20pt;
+	mc-hyphenate: never;
+}
+
+/* Page layout */
+
+p.frame-footer-page-number
+{
+	color: var(--Medium-Gray);
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: right;
+}
+
+p.frame-footer-text
+{
+	color: var(--Medium-Gray);
+	font-size: 11pt;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Master page */
+
+div.home-footer
+{
+	background-color: #FFF;
+	border-top: solid 8px #6EBE44;
+	height: 365px;
+	width: 100%;
+	padding: 1% 5% 1%;
+}
+
+p.footer
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 13pt;
+	color: #848484;
+	font-size: 11pt;
+}
+
+p.footer-sub
+{
+	color: var(--White);
+	font-size: 14pt;
+	margin-top: 14px;
+}
+
+MadCap|dropDownHead
+{
+	color: #2D394A;
+	font-style: normal;
+	font-weight: 500;
+	font-variant: normal;
+	font-size: 12pt;
+	font-family: Lato;
+	line-height: 15pt;
+	mc-closed-image: url('../Images/i_right.png');
+	mc-open-image: url('../Images/i_down.png');
+}
+
+ol
+{
+	font-style: normal;
+	font-size: 11pt;
+	color: #334052;
+}
+
+ul
+{
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: normal;
+	color: #334052;
+}
+
+div.NewRowClass1	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: 20px;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width: 80%;
+}
+
+div.NewRowClass1::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.NewRowClass1::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.NewRowClass1 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFF;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	-moz-border-radius: 10x;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px none #d3d3d3;
+	padding: 20px 10px 20px 10px;
+	overflow: hidden;
+	height: 400px;
+	width: 448px;
+	box-shadow: 0 11px 19px 0 rgba(0,0,0,0.06);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.NewRowClass1 > div:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+div.NewRowClass1 > div:nth-child(1)
+{
+	height: 50%;
+	width: 16.667%;
+	margin-left: 0%;
+}
+
+div.NewRowClass1 > div:nth-child(2)
+{
+	height: 50%;
+	margin-left: 2%;
+	width: 20%;
+}
+
+div.NewRowClass1 a
+{
+	text-decoration: none;
+	color: #565656;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media tablet
+{
+	/* Home page topic */
+
+	.body-container
+	{
+		padding-left: 2%;
+		padding-right: 2% !important;
+		padding-top: 2%;
+		border-top: none !important;
+		font-family: Lato;
+	}
+
+	div.home-tiles	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+	{
+		mc-grid-row: false;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		display: inline flex;
+		flex-flow: wrap;
+		width: 90%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 10.5%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 2%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 2%;
+	}
+
+	div.home-tiles2 > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 24%;
+	}
+
+	div.home-tiles2 > div:nth-child(2)
+	{
+		width: 25%;
+		margin-left: 2%;
+	}
+
+	div.home-tiles-layout > div:nth-child(1)
+	{
+		width: 40%;
+		margin-left: 30%;
+	}
+
+	div.home-tiles-layout > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 24%;
+		margin-left: 0%;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 24%;
+		margin-left: 19%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 24%;
+		margin-left: 14%;
+	}
+
+	html.home-topic .body-container
+	{
+		margin-left: 0;
+	}
+}
+
+@media mobile
+{
+	/* Home page topic */
+
+	body
+	{
+		font-family: Lato;
+	}
+
+	.body-container
+	{
+		padding-left: 2%;
+		padding-right: 2% !important;
+		padding-top: 2%;
+		border-top: none !important;
+		font-family: Lato;
+	}
+
+	div.home-tiles	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+	{
+		mc-grid-row: true;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		display: inline flex;
+		flex-flow: wrap;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		margin-top: 5%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+	}
+
+	div.home-tiles2 > div:nth-child(1)
+	{
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	div.home-tiles2 > div:nth-child(2)
+	{
+		margin-top: 5%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	div.home-tiles-layout p
+	{
+		line-height: 1.2;
+	}
+
+	div.quick-links > div:nth-child(1)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(2)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(3)
+	{
+		width: 49%;
+		margin-left: 0;
+	}
+
+	div.quick-links > div:nth-child(4)
+	{
+		width: 49%;
+		margin-left: 2%;
+	}
+
+	div.quick-links > div:nth-child(5)
+	{
+		width: 49%;
+		margin-left: 25.5%;
+	}
+
+	div.home-footer
+	{
+		display: none;
+	}
+
+	p
+	{
+		font-family: Lato, "Lato";
+	}
+}
+
+@media print
+{
+	body
+	{
+		color: var(--Black);
+		font-size: 11pt;
+		line-height: 13pt;
+		margin: 8px;
+		font-family: "lato";
+	}
+
+	/* Content */
+
+	p
+	{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		mc-hyphenate: never;
+		font-family: "lato";
+	}
+
+	p.table-text
+	{
+		font-size: 11pt;
+	}
+
+	table
+	{
+		width: 100%;
+	}
+
+	/* Headings */
+
+	h1
+	{
+		line-height: 27pt;
+		margin-bottom: 20px;
+		font-size: 20pt;
+		color: #3d4c62 !important;
+		mc-hyphenate: never;
+		font-family: 'Proxima Nova Extrabold';
+	}
+
+	h2
+	{
+		page-break-before: avoid;
+		font-weight: 800;
+		font-size: 18pt;
+		color: #3d4c62 !important;
+		mc-hyphenate: never;
+		margin-bottom: 10px;
+		margin-top: 20px;
+		font-family: 'Proxima Nova Extrabold';
+	}
+
+	h3
+	{
+		font-size: 14pt;
+		font-weight: 800;
+		mc-hyphenate: never;
+		color: #3d4c62 !important;
+		margin-bottom: 10px;
+		margin-top: 20px;
+		font-family: 'Proxima Nova Extrabold';
+	}
+
+	/* Links */
+
+	MadCap|xref
+	{
+		font-weight: normal;
+		mc-format: '{quote}{para}{quote} {pageref}';
+		text-decoration: none;
+	}
+
+	MadCap|dropDownHead
+	{
+		font-weight: 600;
+		padding-left: 8px;
+		border-left: solid 3px #bdc1c7;
+		mc-hyphenate: never;
+	}
+
+	h4
+	{
+		mc-hyphenate: never;
+		font-family: 'Proxima Nova Extrabold';
+	}
+
+	MadCap|dropDownHead.dropdownExample
+	{
+		font-style: bold;
+	}
+
+	MadCap|dropDown
+	{
+		padding-top: 6px;
+		padding-bottom: 12px;
+	}
+
+	MadCap|dropDownHotspot
+	{
+		font-weight: 600;
+	}
+}
+
+p.text-indent
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 20pt;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+	font-size: 10;
+	font: Calibri;
+	text-align: left;
+	text-indent: 20px;
+}
+
+p.FAQ
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+	font-style: italic;
+	font-weight: bold;
+	font: lato;
+	font-size: 11pt;
+	line-height: 15pt;
+}
+
+p.How-To
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 20pt;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+	font-weight: bold;
+	font: lato;
+	font-family: "lato";
+	padding-top: 10pt;
+	font-size: 12pt;
+}
+
+MadCap|dropDownHead.dropdownFAQ
+{
+	color: #2D394A;
+	font: lato;
+	font-family: "lato";
+	font-weight: 500;
+	font-variant: normal;
+	font-size: 12pt;
+	line-height: 15pt;
+	font-style: oblique !important;
+}
+
+MadCap|dropDownHead.dropdownExample
+{
+	cursor: hand;
+	text-decoration: none;
+	border-bottom: none;
+	color: #2D394A;
+	font: lato;
+	font-family: "lato";
+	font-size: 12pt;
+	font-variant: normal;
+	font-weight: 600;
+	font-style: normal;
+}
+
+MadCap|dropDownHotspot.FAQ
+{
+	font-style: oblique;
+	font-weight: 500;
+	mc-closed-image: url('../Images/i_right.png');
+	mc-open-image: url('../Images/i_down.png');
+}
+
+p.note
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+	line-height: 15pt;
+	font: lato;
+	font-family: "lato";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	width: auto;
+	padding-right: 100px;
+	font-size: 11pt;
+}
+
+p.codeblock
+{
+	background-color: #eeeeee;
+	border-left: solid 4px #767676;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 0.25;
+	widows: 3;
+	orphans: 3;
+	line-height: 15pt;
+	overflow: hidden;
+	padding: 12px;
+	margin-left: 5%;
+	width: 80%;
+	font-family: Consolas, Monaco, Lucinda Console, Liberation Mono, DejaVu Sans Mono, Courier New;
+}
+
+ul.BulletedList2
+{
+	
+}
+
+ul.BulletedList2 > li > ul
+{
+	list-style-image: none;
+}
+
+ul.BulletedList2 > li > ul > li::marker
+{
+	font-family: ;
+	content: '◦';
+}
+
+.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('../Images/i_down.png');
+	padding-left: 1px;
+	padding-right: 0;
+}
+
+.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('../Images/i_right.png');
+	padding-left: 0px;
+	padding-right: 0;
+}
+
+.MCExpanding_Open .MCExpandingHotSpot_.MCHotSpotImage
+{
+	background-position: right;
+	background-image: url('../Images/i_down.png');
+	padding-right: 1px;
+	padding-left: 0;
+}
+
+.MCExpanding_Closed .MCExpandingHotSpot_.MCHotSpotImage
+{
+	background-position: right;
+	background-image: url('../Images/i_right.png');
+	padding-right: 0px;
+	padding-left: 0;
+}
+
+table.SupportTable
+{
+	width: 60%;
+}
+
+MadCap|xref.RelLinkPageNumber
+{
+	mc-format: '{h1} on page {page}';
+}
+
+ul.checkbox
+{
+	list-style-image: url('../Images/i_checkbox.png');
+}
+
+ul.checkbox > li > ul
+{
+	list-style-image: none;
+}

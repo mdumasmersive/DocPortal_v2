@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Select a Pod from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab.</li>
+            <li>In the Display Name section, change the <b>Name</b> to one that corresponds with the location or room the Pod is in. For example, you can change the Pod name to North Conference Room to match the name of the conference room it is in. This makes it easier for users to know which Pod they are connecting to.</li>
+            <li>Click <b>Apply</b>. </li>
+            <li>Repeat steps 1-4 for all Pods in your deployment.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>In-room tech data captures how your team collaborates when they come together in meeting and learning spaces by providing data on the types of devices that are connecting to your organization's Solstice Pods, and the methods that are being used to share content. </p>
+        <ul>
+            <li>
+                <p><b>User Device Platform</b>: 
+						This shows the device operating systems that users are connecting to the Solstice Pods with. </p>
+            </li>
+            <li>
+                <p><b>Solstice Client App Version</b>: 
+						This shows the Solstice Client application versions that users are connecting to the Solstice Pods with.</p>
+            </li>
+            <li>
+                <p><b>User Device Resolution</b>: 
+						This shows the display resolution of the devices that users are connecting to the Solstice Pods with.</p>
+            </li>
+            <li>
+                <p><b>How Users Are Sharing</b>: 
+						This shows how users are sharing content to the Solstice Pods. Users can share content to Solstice using the Solstice app. Additionally, they can share to Solstice using app-free methods such as Miracast, AirPlay, or a web browser. They can also connect to their laptop device directly to the Pod using the HDMI input port on the front of the Pod. For users who connect with the Solstice app, some additional data is available about how they shared content (e.g. shared an application window, a video, or their desktop).</p>
+            </li>
+            <li>
+                <p><b>Software Used in&#160;Meetings</b>: 
+						This shows the applications that users a sharing to the Solstice Pods. By default, the application data is grouped into high-level categories. However, if you deselect the Grouped checkbox, data is presented by the specific software application being used. This data may need to be displayed on multiple pages; click the paging arrows on the right side of the chart to navigate between pages. This data is only collected from users sharing content using the Solstice app.</p>
+            </li>
+            <li>
+                <p><b>Proximate vs. Hybrid Meetings</b>: 
+						This plots the number of proximate meetings (where all users are in the same room) vs. hybrid meetings (where some participants are connecting to the meeting through a web conference. This data is collected when a Solstice Pod has Solstice Conference enabled (Features settings) or a Solstice user shares a video conferencing application to the Solstice display.</p>
+            </li>
+            <li>
+                <p><b>Conference Vendor Trends</b>: 
+						This plots the different web conferencing platforms that are being used with Solstice. This data is collected when a Solstice Pod has Solstice Conference enabled (Features settings) or a Solstice user shares a video conferencing application to the Solstice display.</p>
+            </li>
+        </ul>
+    </body>
+</html>

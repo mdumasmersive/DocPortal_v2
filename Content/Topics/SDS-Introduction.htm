@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Solstice Discovery Service (SDS)</title>
+    </head>
+    <body>
+        <h1>Solstice Discovery Service (SDS) </h1>
+        <p>Display discovery refers to the ability for a user to "discover" what Solstice displays are available to connect to. By default, Solstice utilizes UDP broadcast packets to enable discovery. We realize not every network allows broadcast traffic, so we built Solstice Discovery Service (SDS) to make connecting to a Solstice display fast and easy for users on those networks. </p>
+        <p>The Solstice Discovery Service (SDS) is a lightweight network application for display discovery that allows users to discover and click-to-connect to Solstice displays from their own devices to start sharing content. Users point their Solstice App to that same SDS host machine’s IP address (or they can inherit that setting from the first SDS-configured display they connect to) to see every available Solstice display. The result is the easy click-to-connect experience without the network congestion or security concerns associated with broadcast traffic. </p>
+        <h3>Do I&#160;Need SDS? </h3>
+        <p>Typically, SDS is used when multiple Solstice displays are deployed on an enterprise network (or any network that does not allow UDP broadcast traffic), and is installed during the initial deployment phase. SDS should be installed on your network to enable and support these scenarios:</p>
+        <ul>
+            <li>To enable users to connect to Solstice without entering an IP address </li>
+            <li>To enable a one-step meeting start by simply entering the&#160;Solstice display's screen key into the Solstice app</li>
+            <li>To enable ease of us with Solstice Conference </li>
+            <li>To enable users to view which displays/rooms are in use and by how many people</li>
+            <li>To choose which displays do and do not appear to users for connection</li>
+        </ul>
+        <h2>System Requirements</h2>
+        <p>The Solstice Discovery Service is a free software that must be installed on a Windows computer or Windows server attached to the same network as your Solstice Pods and Windows Software displays. Each Solstice Pod or Software display is configured to point to the IP&#160;address of the machine SDS is installed on, which allows the Pods and Software displays to publish their information to the SDS directory. </p>
+        <p>You must install SDS on a Windows machine with a static IP address because the Solstice displays and client applications will use this IP address to communicate with the directory. This can be a PC running Windows 8 or 10, or a Windows Server running 2012 R2  or later and a quad core processor with a minimum of 12GB RAM. A Windows 2016 Server may be used if desktop experience is enabled. </p>
+        <p class="note">SDS uses lightweight TCP/IP packets over network ports 53200, 53201, 53202, and port 80. SDS traffic through these ports will need to be allowed through the SDS host machine’s firewall and on the network. </p>
+        <p>Though many deployments use the same computer for SDS and the Solstice Dashboard, that is not required. Best practice dictates that the host computer be a domain controller with IP routes to all subnets that have Solstice displays deployed on them.</p>
+        <p class="note">Pods on Solstice 5.1 or later should be compatible with older versions of SDS. However, Mersive recommends updating your SDS version to 5.1 to benefit from the latest enhancements and retain screen key support for Solstice Pods and Solstice apps on version 5.1 or later. Visit <a href="https://www.mersive.com/download/get-sds/" target="_blank">mersive.com/download/get-sds</a> to get the latest version. </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 1: Download and Install SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Visit <a href="https://www.mersive.com/download/get-sds/" target="_blank">mersive.com/download/get-sds</a>.</li>
+                    <li>Under <b>Newest Version (recommended)</b>, click the link for the latest version of SDS. The installer will be downloaded. </li>
+                    <li>Run the SolsticeDiscoveryServiceSetup_[version_number].exe installer on the Windows host machine or Windows server and step through the InstallShield wizard until SDS is installed.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 2: Find the IP Address of the SDS Host</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If you already know the static IP address of the machine with SDS installed, move on to Step 2. </p>
+                <p>To find your IP address, open a Command Prompt window, type <b>ipconfig</b> then hit your Enter key. The IP address is listed in the results that appear. <br /><br /><img src="../Resources/Images/ex_cmd.png" style="mc-thumbnail-max-height: auto;width: 464px;height: 323px;" /></p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 3: Set the SDS Information to List the Display on SDS</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are two ways you can set the SDS configuration for Solstice: using Solstice Cloud, or using the Solstice Dashboard. </p>
+                <p><b>Solstice Cloud</b>
+                </p>
+                <ol>
+                    <li>Log into Solstice Cloud as an admin.</li>
+                    <li>Go to <b>Manage</b> &gt;&#160;<b>Pods</b> &gt;&#160;<b>Templates</b> &gt;&#160;<b>Discovery</b>. </li>
+                    <li>Edit an existing template, or create a new template. </li>
+                    <li>Select the <b>List display to SDS</b> option. </li>
+                    <li>In the <b>SDS&#160;Host field</b>, enter the IP&#160;address of the SDS&#160;host machine. If you have multiple instances of SDS, you can add the IP&#160;address of each SDS host machine (the order does not matter). </li>
+                    <li>Click <b>Save</b>. </li>
+                    <li>If the template was already applied to your Pods, the saved settings will be applied across those Pods. If the template was not already applied, you can batch apply it to your&#160;Pods by clicking <b>Assign Pods</b> and using the Pod Template Assignments table. </li>
+                </ol>
+                <p><b>Solstice Dashboard</b>
+                </p>
+                <ol>
+                    <li>Open the Solstice Dashboard.</li>
+                    <li>Go to the <b>SDS</b> tab and click the <b>Configure Primary SDS Host</b> button.</li>
+                    <li>In the pop-up that appears, enter the IP address of the SDS host machine, then click <b>Set</b>. The SDS tab’s icon will turn green once a connection to this host has been made.</li>
+                    <li>In the list of your Solstice instances, select the Solstice displays you want to add to the SDS directory.  Use CTRL+click or SHIFT+click to select multiple displays.</li>
+                    <li>Go to the <b>Network</b> tab.</li>
+                    <li>In the Display Discovery section, select the <b>List display to Solstice Directory Service</b> checkbox.</li>
+                    <li>In the <b>SDS Host 1</b> field, enter the SDS&#160;host machine’s IP address, then click <b>Apply</b>. <br /></li>
+                </ol>
+                <p class="note">Note that there are two SDS host fields available. A second SDS host can be listed for Solstice displays that are attached to two networks using Solstice’s dual-network capability. Displays attached to two networks will require an SDS host machine on each network in order to utilize SDS.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Step 4: Configure SDS&#160;in Solstice User Apps</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For users to see the Solstice displays listed in the SDS directory, each user will need to do a one-time configuration to enter the SDS host IP address in their Solstice app’s Settings. After entering the SDS host, the user will be able to see Solstice displays available for connection every time they open the app.</p>
+                <p>
+                    <img src="../Resources/Images/ex_app_sdshost.png" style="width: 430px;height: 280px;" />
+                </p>
+                <p>If centrally deploying the app to end-users using the <a href="Admin-MSI-Instuctions.htm">MSI</a>&#160;or <a href="Admin-SCCM-Instuctions.htm">SCCM</a>, SDS information can be pre-configured during the installation process. </p>
+                <p>Alternatively, if you have already applied the Discovery template containing the SDS information to your Solstice Pods, SDS will be automatically configured in a user's app when they connect to one of these displays by entering the display's URL&#160;in the app's search bar. </p>
+                <p>
+                    <img src="../Resources/Images/ex_displayURL_solsticeapp.png" style="width: 375px;height: 249px;" />
+                    <br />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Related Topics</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="SDS-Autorestart.htm">Configure SDS&#160;to Auto-restart (recommended)</a>
+        </p>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="SDS-Subnets.htm">Configure SDS for Multiple Subnets</a>
+        </p>
+    </body>
+</html>

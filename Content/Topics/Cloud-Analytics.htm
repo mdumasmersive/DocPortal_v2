@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head><title>Solstice Cloud Analytics</title>
+    </head>
+    <body>
+        <h1>Solstice Cloud Analytics Overview</h1>
+        <p>Solstice Cloud Analytics provides organizations with meaningful data on utilization, occupancy, and collaboration within their Solstice-enabled meeting and learning spaces. With unique data-driven insights - such as busiest meeting rooms and times, space occupancy levels, and more - Solstice Cloud empowers organizations to better understand how their collaboration spaces are being used and optimize them for better productivity.</p>
+        <p>
+            <MadCap:expanding MadCap:conditions="Default.ScreenOnly">
+                <MadCap:expandingHead>Watch Overview Video</MadCap:expandingHead>
+                <MadCap:expandingBody>
+                    <br />
+                    <br /><iframe width="550" height="310" src="https://www.youtube.com/embed/bxj4IzpIsqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+                </MadCap:expandingBody>
+            </MadCap:expanding>
+        </p>
+        <h2>Insights from Analytics</h2>
+        <p>Here are some insights you can gain from your Solstice Cloud Analytics: </p>
+        <ul>
+            <li>How often are your meeting spaces used?</li>
+            <li>What are the most popular times for meeting?</li>
+            <li>How many people attend your meetings?</li>
+            <li>How are different meeting spaces used?</li>
+            <li>How do people collaborate in meetings?</li>
+        </ul>
+        <h2>Analytics Pages</h2>
+        <p>Solstice Pods regularly collect data on the collaboration spaces where they're deployed. Solstice Cloud gathers this data for all Pods in the organization's account. This information can be viewed and plotted over time using Solstice Cloud’s analytics pages. </p>
+        <ul>
+            <li><b>Usage</b>: This page provides a graph of  Pod usage history. Up to two types of analytics data can be displayed simultaneously on the graph, and the types of data displayed are selectable using drop-downs. <a href="Cloud-Analytics-Usage.htm">Learn More</a></li>
+            <li><b>Compare</b>: This page provides a graph of Pod usage based on the categories and options you select. When specifying the category, you can additionally select any, or all, of the options contained in the category. <a href="Cloud-Analytics-Compare.htm">Learn More</a></li>
+            <li> <b>In-Room Tech</b>:&#160;This page displays data about the types of user devices that are connecting to your Pods, and the method that those devices are using to share content. For Pods that are being used for video conferencing, this page displays data about the number of in-person meetings as well as the number of meeting with a web conference (shown as "proximate meetings" vs.  "hybrid meetings", respectively). Additionally, Solstice Cloud can capture data around which  video conferencing platforms are being used  (e.g. Zoom, Teams, etc.). <a href="Cloud-Analytics-In-Room-Tech.htm">Learn More</a></li>
+        </ul>
+        <h2>Collected Data</h2>
+        <p>Solstice data is uploaded to Solstice Cloud on a daily basis. After it is uploaded to Solstice Cloud, the data is deleted from the Solstice Pod. Solstice Cloud tracks the following  data for Solstice Pods.</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Usage Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/UsageData.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Room Occupancy Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>If your Pod is connected to a USB camera and has Room Occupancy enabled (Features settings), the following room occupancy data can be collected. As a note, room occupancy data is only tracked as an aggregate numerical value. No image or video ever leaves the Solstice Pod.</p>
+                <ul>
+                    <li>
+                        <p><b>Average Hourly Occupancy</b>: 
+						The average number of people detected in the room each hour. Hour increments are determined at the top of the hour. For example, 1:00 p.m. to 2:00 p.m. If a meeting runs from 1:45 p.m. to 2:15 p.m., the number of people in the room will be averaged in to both the 1:00 p.m. and 2:00 p.m. calculations.</p>
+                    </li>
+                    <li>
+                        <p><b>Peak occupancy</b>: 
+						The maximum number of people that have been detected in the room during the course of the meeting.</p>
+                    </li>
+                </ul>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>User Trends</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>The User Trends Analytics page launched in Solstice Cloud provides insight into how end users of Solstice are engaging with meeting and learning spaces. An</p>
+                <MadCap:snippetBlock src="../Resources/Snippets/Cloud-Analytics-User-Trends.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>In-Room Tech Data</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/InRoomTechData.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2>Using Categories for More Meaningful Analytics</h2>
+        <p>In the context of analytics, it can be useful to think of Pods as "things" and categories as their "characteristics." For example, a Pod's characteristics might be its physical location, its owner (e.g. corporate, marketing, development), or its function (e.g. testing, signage, development). You can also think of categories as meta-data assigned to the Pod. Well-thought-out categories are essential to being able to effectively group Pods together for comparison or to filter out dissimilar Pods to keep visual noise to a minimum. For a detailed discussion of how to create categories, see <a href="Cloud-Create-Categories.htm">Create Categories and Assign Pods</a>.</p>
+        <p>After your categories have been created and assigned to Pods, the categories will be available to customize your analytics displays using check-boxes and dropdowns on the analytics pages.</p>
+        <h2>About Solstice Cloud Analytics and Privacy</h2>
+        <p>The data collected by Solstice Cloud Analytics is principally meta-data about meetings that are occurring on the Pods. Information about users is always aggregate information (i.e. the number of users) and never specific to a single user. Solstice Cloud adheres to the following principles and guidelines for collecting and managing data collected:</p>
+        <ul>
+            <li>No personally identifiable information (PII) is collected for Solstice end-users.</li>
+            <li>
+                <p>Solstice Cloud is European Union General Data Protection Regulation (GDPR) compliant as a Data Controller. Even though Mersive does not collect PII, Mersive treats all the analytic data it collects as if it were PII and complies with GDPR regulations regarding the handling of this data.</p>
+            </li>
+            <li>
+                <p>Shared content from Solstice meetings never leaves the Solstice Pod.</p>
+            </li>
+            <li>
+                <p>Room occupancy data is only tracked as an aggregate numerical value. No image or video ever leaves the Solstice Pod.</p>
+            </li>
+        </ul>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p><a href="Cloud-Analytics-Usage.htm">Solstice Cloud Analytics: Usage</a>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

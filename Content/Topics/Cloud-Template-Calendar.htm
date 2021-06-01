@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Calendar Template</h1>
+        <p>The  Calendar template allows you to display  the schedule and calendar information for the room when there is no other content being shared. Participants can see if the space is currently scheduled or available, as well as the next three upcoming meetings in the space. <MadCap:expanding MadCap:conditions="Default.ScreenOnly"><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_roomcalendaring.png" style="mc-thumbnail-max-height: 80px;mc-thumbnail: none;" /></MadCap:expandingBody></MadCap:expanding></p>
+        <p>
+            <img src="../Resources/Images/Templates-sidebarnav-calendar.png" style="width: 731px;height: 509px;" />
+        </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Access This Page</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>From the Solstice Cloud Home page, in the left sidebar navigation panel,  click <b>Manage</b> &gt; <b>Templates</b> &gt; <b>Calendar</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Create a New Calendar Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Click <b>Create New Calendar Template</b>.</li>
+                    <li>Enter the <b>Template Name</b>. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </li>
+                    <li>Click <b>Save.</b></li>
+                </ol>
+                <p class="tip"> You can also start by duplicating an existing template and making changes to it. Click on the three dots on the right side of the template you want to start with, and choose <b>Duplicate Template</b>.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate a Microsoft Exchange Calendar with a Solstice Display </MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/HowTo_Cloud_MSExchange_RoomCalendar.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate a Google Calendar with a Solstice Display</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>For more information about the additional Google Workspace configurations needed to integrate with Solstice, as well as how to obtain the necessary information for the fields below, see <a href="Info-Google-Calendar.htm" target="_blank">Updating Your Organization's Google Workspace Resource Calendars </a>.</p>
+                <ol>
+                    <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
+                    <li>From the <b>Calendar Type</b> drop-down, select <b>Google Calendar</b>.</li>
+                    <li>Click <b>Upload service account credentials</b>. </li>
+                    <li>Navigate to the location of the service account file you created for the Pod and select it.</li>
+                    <li>In the <b>Room Email</b> field, enter the resource email address.</li>
+                    <li>
+                        <p>By default, the meeting titles and meeting organizers will be visible on the display. If you wish to hide these for all meetings, disable <b>Show meeting titles</b> and <b>Show meeting organizers</b>.</p>
+                    </li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate an Office 365 Online Calendar with a Solstice Display</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/Cloud-O365-Calendar-Integration.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Integrate a 3rd Party Calendar with a Solstice Display</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <p class="warning">Utilizing this option to integrate a third-party calendar requires advanced configurations  using our <a href="API-OpenControl-Overview.htm">OpenControl API.</a></p>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>Select the <b>Enable Calendar Feature</b> checkbox. </li>
+                    <li>From the <b>Calendar Type</b> drop-down, select  <b>3rd Party Only</b>. </li>
+                    <li>If you wish to hide meeting titles or meeting organizers from being visible on the room display, deselect <b>Show meeting titles</b> and/or <b>Show meeting organizers</b>. </li>
+                    <li>From the <b>Update Interval</b> drop-down, select the frequency at which the Pod will update the calendar meeting information visible on the display. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown MadCap:conditions="Default.ScreenOnly">
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign the Template to Your Pods</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" MadCap:conditions="Default.ScreenOnly" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Features.htm">Features Template</a>
+        </p>
+    </body>
+</html>

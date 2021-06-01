@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Apply a Template <MadCap:annotation MadCap:createDate="2020-06-19T15:58:39.1018126-06:00" MadCap:creator="mdumas" MadCap:initials="MD" MadCap:comment="I vote we just go with the generic one so we can add it as a snippet! Less work for us :) " MadCap:editor="mdumas" MadCap:editDate="2020-06-19T15:59:01.1570487-06:00">to a </MadCap:annotation>Pod</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="ApplySolsticeCloudTemplate.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

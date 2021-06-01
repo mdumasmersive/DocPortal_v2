@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultConditionTagSet>
+  <ConditionTag
+    Comment=""
+    Name="ScreenOnly"
+    BackgroundColor="Blue" />
+  <ConditionTag
+    Comment=""
+    Name="PrintOnly"
+    BackgroundColor="Red" />
+  <ConditionTag
+    BackgroundColor="#008000"
+    Name="Dashboard"
+    Comment=""
+    OriginalName="Dashboard" />
+  <ConditionTag
+    BackgroundColor="#ffa500"
+    Name="PodLocal"
+    Comment=""
+    OriginalName="PodLocal" />
+  <ConditionTag
+    BackgroundColor="#8b008b"
+    Name="Quickstart"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00bfff"
+    Name="Future"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#00ff00"
+    Name="Exclude"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#8b4513"
+    Name="NotforEndUser"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#ff00ff"
+    Name="5_3_only"
+    Comment="" />
+  <ConditionTag
+    BackgroundColor="#2f4f4f"
+    Name="NewDevices"
+    Comment="" />
+</CatapultConditionTagSet>

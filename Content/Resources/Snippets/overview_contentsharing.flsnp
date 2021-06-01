@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>The main content sharing options available to users are desktop screen, application window, and media files such as videos and images. Enabling any given client sharing option means the users in the room will be able to share content to the Solstice display using that method. If a sharing option is disabled, users will not see that specific sharing option for the displays the option is disabled for. </p>
+        <p>Additionally, screen mirroring for mobile devices is available through AirPlay and Android mirroring support. Miracast support for Windows devices can also be enabled. For more information on how to configure Solstice to support sharing with Airplay and Miracast, see <a href="../../Topics/Admin-Enabling-AirPlay.htm">Enable Sharing with AirPlay</a> and <a href="../../Topics/Admin-Enabling-Miracast.htm">Enable Sharing with Miracast</a>.</p>
+    </body>
+</html>

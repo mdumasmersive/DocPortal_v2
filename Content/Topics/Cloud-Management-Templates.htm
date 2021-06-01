@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="True">
+    <head>
+    </head>
+    <body>
+        <h1>Managing Your Solstice Pod Settings</h1>
+        <p>Solstice Cloud allows you to manage your Solstice Pods remotely from anywhere. Solstice Cloud administrators can either apply settings to individual Pods, or use Solstice Cloud templates to easily apply configurations to multiple Pods across your deployment. Templates can be created for network settings, security settings, appearance settings, and more, and provide  access to all of the configuration options available in the Solstice Dashboard. Solstice Cloud templates can be applied to Pods managed by Solstice version 4.5 or later. </p>
+        <p>While most settings can be batch configured in templates, there are still certain settings or values that are unique to each Pod and will need to be set for each Pod individually, such as static IP addresses or DNS&#160;hostnames. When creating templates, these settings will be labeled with "Unique to Pod" if they need to be configured individually. </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Example</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>
+                    <img src="../Resources/Images/UniqueToPod.png" style="width: 400px;height: 136px;" />
+                </p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <p class="tip">To make the process of applying templates across your deployment more efficient, the <a href="Cloud-Create-Categories.htm">Create Categories</a> topic outlines how to create and use categories, as well as best practices to consider when creating categories.  This will allow you to apply configuration templates to Pods by location, room type, or any other categories you choose to define. </p>
+        <h2>How To</h2>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Apply Settings to Individual Pods</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>There are two ways to assign settings to an individual Pod:</p>
+                <ul>
+                    <li>Leave the Pod unassigned, and modify the specific settings for the Pod</li>
+                    <li>Create a template and then assign the template to the Pod (see <a href="#Create">Create a New Template</a>).</li>
+                </ul>
+                <p>To apply settings to a specific Pod without assigning a template:</p>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Pods</b>. </li>
+                    <li>In the Pod Template Assignments table, click the name of the Pod you want to configure.</li>
+                    <li>In the Template Configuration section click the expand icon <img src="../Resources/Images/i_expand.png" /> to display the options available for a particular category.<p><img src="../Resources/Images/cloud_configurePodSettings.png" /></p></li>
+                    <li>Configure the settings as desired and then click <b>Save as Unassigned</b>.<p><img src="../Resources/Images/cloud_saveAsUnassigned.png" /></p></li>
+                </ol>
+                <p>A message appears confirming the Pod configuration has been updated. Additionally, until the configuration has been successfully applied to the Pod, an option  is available to Cancel Pending Changes.</p>
+                <blockquote>
+                    <p>
+                        <img src="../Resources/Images/cloud_saveAsUnassigned_CancelPendingChanges.png" />
+                    </p>
+                </blockquote>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Define Default Templates</MadCap:dropDownHotspot>
+                <br />
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Default templates are used for pre-configuring Pod settings before the Pods are shipped. For customers in Mersive’s Pre-Provisioning Program, Solstice Pods will automatically import into their Solstice Cloud account, significantly reducing the time needed for Pod deployment upon arrival. Reach out to your sales representative for inquiries into the Pod Pre-Provisioning Program.</p>
+                <p class="note">Each template type can only have one default template. If you have Pods with different settings, Mersive recommends creating a default template that applies to most of your Pods, then use the <a href="#Duplicat">Duplicate a Template</a> option to create variations of the template for your other Pods. For example, the Time/Locale default template can only be configured for one time zone. If you have Pods in multiple time zones, create a Time/Locale default template that is configured for the most common time zone, then duplicate the template and modify the duplicates for the other time zones.</p>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. </li>
+                    <li>Select the template type of default template you want to edit. </li>
+                    <li>Click the first template in the list named <b>Default</b>. <p>The default template for the template type you selected appears.</p></li>
+                    <li>
+                        <p>Configure the settings in the default template, then  click <b>Save</b>.</p>
+                    </li>
+                </ol>
+                <p>Solstice cloud displays a confirmation that the "Template was updated."</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Create"></a>Create a New Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. </li>
+                    <li>Select the template type you wish to create. For example, you can select Welcome Screen or Features. </li>
+                    <li>Click <b>Create New Template</b> icon <img src="../Resources/Images/I_Cloud_createNewFeatureTemplate.png" style="width: 18px;height: 18px;" />. </li>
+                    <li>
+                        <p>Enter the <b>Template Name</b>. For example, you could name the template by location (London Office) or descriptively (Mountain Theme). </p>
+                    </li>
+                    <li>Configure the settings you wish to be applied for that template. </li>
+                    <li>Click <b>Save</b>.</li>
+                    <p class="note">While most settings can be batch configured in templates, there are still certain settings or values that are unique to each Pod and will need to be set for each Pod individually. </p>
+                    <li>Click <b>Save</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot><a name="Duplicat"></a>Duplicate a Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. The drop-down expands to show a list of templates. </li>
+                    <li>Select the template type you wish to edit. For example, you can select Welcome Screen or Features. </li>
+                    <li>For the template you wish to duplicate, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon, then select <b>Duplicate Template</b>. <p><img src="../Resources/Images/ex_SC_duplicatetemplate.png" style="width: 151px;height: 91px;" /><br /></p></li>
+                    <li>If you wish to, you can edit the template name, as well as edit or update any of the template's settings. </li>
+                    <li>Click <b>Save</b>. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Assign a Template to a Pod</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <MadCap:snippetBlock src="../Resources/Snippets/ApplySolsticeCloudTemplate.flsnp" />
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Edit a Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. The drop-down expands to show a list of templates. </li>
+                    <li>Select the template type you wish to edit. For example, you can select Welcome Screen or Features. </li>
+                    <li>Click on the template you wish to edit. </li>
+                    <li>Edit or update any of the template's settings. </li>
+                    <li>Click <b>Save</b>. If the template has been applied to any Pods, clicking Save will apply any changes to those Pods. </li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Delete a Template</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <ol>
+                    <li>In the left sidebar menu of the Solstice Cloud portal, click <b>Manage</b> &gt;&#160;<b>Templates</b>. The drop-down expands to show a list of templates. </li>
+                    <li>Select the template type you wish to edit. For example, you can select Welcome Screen or Features. </li>
+                    <li>For the template you wish to duplicate, click the vertical ellipsis <img src="../Resources/Images/i_verticalellipsis.png" style="width: 10px;height: 21px;" /> icon, then select <b>Delete Template</b>. <br /><img src="../Resources/Images/ex_SC_deletetemplate.png" style="width: 155px;height: 104px;" /><br /></li>
+                    <li>In the confirmation pop-up that appears, click <b>Delete</b>.</li>
+                </ol>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Perform other Pod Actions</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>From the Pod Status screen, which can be selected from the left sidebar menu of the Solstice Cloud portal at <b>Manage</b> &gt; <b>Pods</b>, you can perform the following Pod actions by clicking on the <b>Pod Actions</b> drop-down: </p>
+                <ul>
+                    <li>Reboot Pod — This performs a hardware reboot on the Pod.</li>
+                    <li>Disconnect all users  — This disconnects all users from Solstice Pod. For any users who are connected to the Pod, their Solstice Apps will remain open, but they will not be connected to the pod. They will need to re-enter the screen key to reconnect. </li>
+                    <li>Clear Screen — This clears any shared content from the Pod display. It does not disconnect the users.</li>
+                    <li>Power Management: Wake — This option wakes a Pod that has been suspended. It re-enables the HDMI signal to the display.</li>
+                    <li>Power Management: Suspend — This option disconnects all users from a Pod and suspends the HDMI signal to the display. </li>
+                </ul>
+                <p>&#160;</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h3 MadCap:conditions="Default.ScreenOnly">Next Topic</h3>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Cloud-Template-Welcome-Screen.htm">Welcome Screen Template</a>
+        </p>
+    </body>
+</html>

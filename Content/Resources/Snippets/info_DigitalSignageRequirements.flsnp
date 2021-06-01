@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../TableStylesheets/Alternate-Row-Color.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <p>When enabled, Digital Signage in Solstice defaults to Mersive's Solstice Pod information feed at https://digitalsignage.mersive.com. URL-based digital signage feeds such as Appspace, Carousel, 22Miles, Screenfeed, and Google Slides + Sites, as well as custom static welcome screens available at a web URL, are also supported.</p>
+        <p class="note">Certain individual feeds, even from supported sources, may not work with Solstice. If the URL you are attempting to run is resource intensive, stability and performance can be negatively affected. However, Solstice version 4.4 and later will cache up to 1 GB of content. </p>
+        <h2>Requirements</h2>
+        <ul>
+            <li>Solstice Pods with Enterprise Edition Licenses</li>
+            <li>Solstice version 4.0 or later (both Pods and Dashboard)</li>
+            <li>Source URL content must be compatible with Android WebView.<ul style="list-style-type: circle;"><li>Chrome browser and Android Webview are similar in many ways, but Android WebView will lack some advanced browser features and behaves best with less resource-intensive feeds.</li></ul><ul style="list-style-type: circle;"><li>Test your URL in Solstice and verify that it is playing well on a single display before rolling out to other Solstice Pods and/or leaving signage enabled on the Pod.</li></ul></li>
+        </ul>
+        <h2>Layout Options</h2>
+        <p>Some signage layout modes will render the source content in an HTML IFrame. The Solstice Platform supports three layout options: Full Screen, Footer Only, and Footer + Overlay. The digital signage source content is rendered differently depending on your layout choice. </p>
+        <table style="width: 100%;mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" style="width: 12%;" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">Mode</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">Description</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-weight: bold;">Notes</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">&#160;Full Screen</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Signage content is displayed in full screen mode on the Solstice display. No Solstice connection information is shown — users must know Solstice display name in order to connect. </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">Source URL is rendered as a full-screen web page.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Footer Only</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">Only the Solstice welcome screen footer that displays the Pod's display name and/or IP address is shown over the signage content. </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">Source URL is rendered within an IFrame, so content must be embedded in an IFrame within the website used for the source URL.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">Footer&#160;+ Overlay</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body2">The Solstice welcome screen footer and a sidebar overlay are shown on top of digital signage to provide users with full connection instructions and/or room calendar information. </td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body2">Source URL is rendered within an IFrame, so content must be embedded in an IFrame within the website used for the source URL.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Video Content</h2>
+        <p>Video content is supported if it is in one of the following formats and configured to auto-start. The maximum video quality is 1080p at 60 frames per second and up to 20 Mbps.</p>
+        <ul>
+            <li>H.264 Baseline Profile Level 3</li>
+            <li>VP8</li>
+            <li>VP9</li>
+        </ul>
+        <h2>Supported Authentication Methods</h2>
+        <p>Some signage systems provide mechanisms to identify the device with which it is communicating. This can be helpful to tailor content to groups of devices, to prevent unauthorized access to the feed content, and for analytics.</p>
+        <p>The Solstice digital signage playback supports the following authentication methods:</p>
+        <table style="width: 100%;mc-table-style: url('../TableStylesheets/Alternate-Row-Color.css');" class="TableStyle-Alternate-Row-Color" cellspacing="21">
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <col class="TableStyle-Alternate-Row-Color-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1" style="font-weight: bold;">Scheme</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1" style="font-weight: bold;">Description</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Open</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">The signage URL is not protected by an authentication scheme. The content will load in any network-connected browser for any user.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body1">URL-Based</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body1">The signage URL is protected by a URL-based parameter. In this case, the content will only load when the URL parameter is provided.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body2">
+                    <td class="TableStyle-Alternate-Row-Color-BodyE-Column1-Body2">Cookie or Local Storage</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyD-Column1-Body2">The signage URL will load an initial page that presents a unique identifier for the Pod. The signage administrator will record the code and enter it into the signage provider's device-management console. After this process is completed, a cookie or other browser-based persistent mechanism, like local storage, is utilized to store the identification information.</td>
+                </tr>
+                <tr class="TableStyle-Alternate-Row-Color-Body-Body1">
+                    <td class="TableStyle-Alternate-Row-Color-BodyB-Column1-Body1">MAC&#160;Address</td>
+                    <td class="TableStyle-Alternate-Row-Color-BodyA-Column1-Body1">Primarily relevant to an on-premises signage system, the administrator will configure the Pod MAC address as part of the device configuration in the management console. This process may be automated by the signage system; however, the signage server and Solstice Pod must typically be on the same VLAN.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <link href="../Stylesheets/Styles.css" rel="stylesheet" type="text/css" />
+        <style>
+		nav.sidenav-wrapper {
+		display:none;
+		}
+			div.search-bar {
+			display:none;
+			}
+	</style>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-16236886-1" async="true">
+        </script>
+        <script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-16236886-1');
+		</script>
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async="true" src="//js.hs-scripts.com/3989243.js">
+        </script>
+        <!-- End of HubSpot Embed Code -->
+    </head>
+    <body>
+        <map id="map1">
+            <area shape="rectangle" coords="-12,159,19,185" dragDirection="0" href="https://www.facebook.com/mersivetechnologies/" target="_blank" />
+            <area shape="rectangle" coords="62,159,95,188" dragDirection="0" href="https://twitter.com/Mersive" target="_blank" />
+            <area shape="rectangle" coords="140,159,178,189" dragDirection="0" href="https://www.instagram.com/mersive_technologies/" target="_blank" />
+            <area shape="rectangle" coords="219,159,260,188" dragDirection="0" href="https://www.linkedin.com/company/mersive/" target="_blank" />
+            <area shape="rectangle" coords="301,160,336,191" dragDirection="0" href="https://www.youtube.com/user/MersivePR" target="_blank" />
+            <area shape="rectangle" coords="40,211,281,233" dragDirection="0" href="https://goo.gl/maps/2j58K5diY1dqFo6F8" target="_blank" />
+            <area shape="rectangle" coords="10,-13,314,114" dragDirection="0" href="https://www.mersive.com/" target="_blank" />
+        </map>
+        <MadCap:bodyProxy />
+        <div class="home-footer hide-for-medium">
+            <table style="margin-left: auto;margin-right: auto;">
+                <col style="width: 500px;" />
+                <col style="width: 40px;" />
+                <col style="width: 250px;" />
+                <col style="width: 217px;" />
+                <tbody>
+                    <tr>
+                        <td style="text-align: left;">
+                            <p style="text-align: right;">
+                                <img src="../Images/footerlogo.png" usemap="#map1" style="min-width: auto;min-height: auto;" />
+                            </p>
+                        </td>
+                        <td>&#160;</td>
+                        <td valign="top" style="text-align: left;">
+                            <p><a class="footer2" href="../../topics/general-solstice-introduction.htm">Getting Started</a>
+                            </p>
+                            <p><a class="footer2" href="../../Pages/Using-Solstice.htm">Using Solstice</a>
+                            </p>
+                            <p><a class="footer2" href="../../topics/admin-getstarted-dashboard.htm">Solstice Dashboard</a>
+                            </p>
+                            <p><a class="footer2" href="../../Topics/Cloud-Introduction.htm">Solstice Cloud Portal</a>
+                            </p>
+                            <p><a class="footer2" href="../../Topics/solstice-conference-introduction.htm">Solstice Conference</a>
+                            </p>
+                            <p><a class="footer2" href="../../Topics/Active-Learning-Introduction.htm">Solstice Active Learning</a>
+                            </p>
+                            <p><a class="footer2" href="../../pages/integrations.htm">Integrations</a>
+                            </p>
+                            <p>
+                                <br />
+                            </p>
+                        </td>
+                        <td valign="top" style="text-align: left;">
+                            <p valign="top"><a class="footer2" href="../../Pages/pdf-guides.htm">PDF&#160;Guides</a>
+                            </p>
+                            <p valign="top"><a class="footer2" href="../../Pages/Release-Notes.htm">Release Notes</a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

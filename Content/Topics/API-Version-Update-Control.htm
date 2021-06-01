@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" style="mc-master-page: url('..\Resources\MasterPages\OtherTopics.flmsp');">
+    <head>
+    </head>
+    <body>
+        <h1>Other APIs</h1>
+        <h2>Version and Update Control API</h2>
+        <p><b>Solstice Host URLs</b>:</p>
+        <ul style="list-style-type: disc;margin-left: 41pt;">
+            <li style="list-style-type: disc;">IPAddress/api/version/currentversion&#160;// returns JSON containing the field ‘currentVersion’ as a string.</li>
+            <li style="list-style-type: disc;">IPAddress/api/version/updateavailable&#160;// returns JSON containing&#160;the bool field ‘isUpdateAvailable’. If this value is true, the string field ‘updateAvailableTo’ will be returned as well.</li>
+            <li style="list-style-type: disc;">IPAddress/api/version/update&#160;// updates Pod to version returned as ‘updateAvailableTo’ value.</li>
+        </ul>
+        <h2>Passing RS-232 Controls API</h2>
+        <p><b>Solstice Host URL</b>: IPAddress/api/serial-passthru</p>
+        <p>The RS-232 support API allows administrators to pass RS-232 controls such as power, volume, and input through to display monitors that support RS-232. Pods will have to connect to screens using a <a href="https://www.bhphotovideo.com/c/product/1420580-REG/sabrent_sbt_usc6m_usb_to_serial_cable.html/c/product/1420580-REG?utm_source=Transaction_Email&amp;utm_medium=Email&amp;utm_campaign=Shipping_Confirmation&amp;utm_term=Product_Detail" target="_blank">USB to serial adapter</a> and a <a href="https://www.bhphotovideo.com/c/product/1001035-REG/startech_scnm9ff_female_to_female_db9.html/c/product/1001035-REG?utm_source=Transaction_Email&amp;utm_medium=Email&amp;utm_campaign=Shipping_Confirmation&amp;utm_term=Product_Detail" target="_blank">null modem cable</a>. However, not all USB/RS-232 adapters may be supported. This functionality will only work with screens that support RS-232 controls. </p>
+        <p>Administrators will need to know the specific RS-232 code for the control they are trying to pass. For details on those controls, please consult the user manual for the display.</p>
+        <p>An example of the API request:</p>
+        <p class="codeblock">http://&lt;ip&gt;/api/serial-passthru/send?data=XX</p>
+        <p>In the example above, XX is a placeholder for the characters to send. Instead of a blank space, use “+” or “%20”. For any other non-alphanumeric character, use “%XX” where XX is the two digit hexadecimal encoding for the character. </p>
+        <h3>Next Topic</h3>
+        <p><a href="API-Stats.htm">Stats API</a>
+        </p>
+    </body>
+</html>

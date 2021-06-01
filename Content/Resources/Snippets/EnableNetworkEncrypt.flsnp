@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p>This setting allows for Solstice network traffic between the Pod and user devices to be encrypted using a standard RSA/SHA cipher with a 2048-bit private key. This also includes network traffic related to configuration via either the Solstice Dashboard or the Pod’s web-based configuration (if enabled). When this option is enabled, the Solstice Dashboard will also send SLR updates via port 443. </p>
+        <p>By default, the Pod is loaded with a self-signed TLS&#160;certificate that is used when the Pod receives TLS&#160;connections. However, there is an option to upload a custom TLS certificate to be used instead.  As a note, when the encryption option is disabled, the Pod will still use the TLS&#160;certificate for HTTPS traffic. </p>
+        <ol>
+            <li>Open the Solstice Dashboard.</li>
+            <li>Go to the <b>Security</b> tab.</li>
+            <li>In the Encryption section, select the <b>Encrypt Client/Server Communications</b> option.</li>
+            <li>If you wish to upload a custom TLS&#160;certificate to be used instead of the Pod's default self-signed certificate, go to the Certificate option and click the <b>Browse</b> button, then browse to and select the certificate file. </li>
+            <li>Click <b>Apply</b>.</li>
+        </ol>
+    </body>
+</html>

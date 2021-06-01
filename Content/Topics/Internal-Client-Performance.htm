@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:searchable="False" style="mc-master-page: url('../Resources/MasterPages/OtherTopics.flmsp');">
+    <head>
+        <meta name="robots" content="noindex, nofollow" />
+    </head>
+    <body>
+        <h1>Solstice Conference Performance Tool</h1>
+        <p class="warning"><a name="top"></a><b>Note:</b> The following document assumes you already have Solstice Conference set up and configured both on the Solstice Pod and within your testing environment, as well as having the Solstice app and its Solstice Conference drivers installed on the laptop device being tested. </p>
+        <h2>Overview</h2>
+        <p>The <b>Solstice Conference Performance tool</b> is a standalone executable file for Windows 10 machines intended to assess a host laptop’s qualifications for successfully running Solstice Conference. <a href="https://www.mersive.com/Support/SolsticeConferencePerformance-5.3.0.exe" target="_blank">Click here</a> to download the application. </p>
+        <p>The Solstice Conference Performance application has four tabs:</p>
+        <ul>
+            <li><a href="#System">System Information</a>
+            </li>
+            <li><a href="#Network">Network Performance</a>
+            </li>
+            <li><a href="#Conference">Conference Monitoring</a>
+            </li>
+            <li><a href="#Version">Version Information</a>
+            </li>
+        </ul>
+        <h2><a name="System"></a>System Information</h2>
+        <p>When the Solstice Conference Performance tool is launched, the application runs an initial scan of the laptop device to evaluate system resources. The <b>System Information</b> tab then presents the results of that initial scan and provides a rating along with an overall numerical score. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_testtool_1.png" style="width: 368px;height: 332px;" /></MadCap:expandingBody></MadCap:expanding></p>
+        <p>The following are the ratings and their definitions:</p>
+        <ul>
+            <li><b>Not Recommended</b> (Score: 0 - 25): The system is not recommended for use with Solstice Conference.</li>
+            <li><b>Marginal</b> (Score: 25 - 50): The system may not be capable of reliably running Solstice Conference.</li>
+            <li><b>Recommended</b> (Score: 50 - 75): The system meets the recommended specs and should be able to reliably run Solstice Conference.</li>
+            <li><b>Excellent</b> (Score: 75 - 100): The system exceeds the recommended specs and has ample resources to run Solstice Conference.</li>
+        </ul>
+        <p>The above rating estimates the system’s performance if you were simultaneously running the Solstice app, Solstice Conference functionality, a video conferencing application such as Zoom or GoToMeeting, and other applications such as web browsers and standard productivity tools.</p>
+        <p>The bottom section of the <b>System Information</b> tab shows the individual components affecting performance and their individual rating. The <b>Save Results</b> button allows you to save a JSON file which contains the version information, results, calculated weights, etc. The <b>Score Details</b> button gives the numerical value for the laptop device’s overall score.</p>
+        <h2><a name="Network"></a>Network Performance</h2>
+        <p>The <b>Network Performance</b> tab measures the speed of the network connection between the host laptop and the Solstice Pod. If a screen key is enabled for the Pod, you must enter the Pod’s valid screen key in the pop-up that appears, then click <b>Submit</b> to perform the test. To get the valid screen key, view the screen key on the Solstice Pod’s welcome screen display. If no screen key is enabled for the Pod, you can leave this field blank and simply click <b>Submit</b>. </p>
+        <p class="note"><b>Note:</b> If you need to re-enter the screen key, you will need to close the Solstice Conference Performance application, re-open the application, and then navigate back to the Network Performance tab.</p>
+        <p><b>Red</b> indicates the field is required and that you need to input a value. <b>Yellow</b> fields indicate an optional parameter that you are able to change. <b>Green</b> fields will display the results of the network performance test.</p>
+        <p>Before running, you will need to set the <b>Server Address</b> (i.e. the Pod’s IP address) and update the <b>Server Port</b> field to the Pod's configured base communication port (e.g. 53100 by default). You can find the configured base port by opening the Solstice Dashboard, selecting the Pod from the list of Solstice instances, going to the Network tab &gt;&#160;Communication Ports section,&#160;and locating the value in the Solstice Base Port field.  </p>
+        <p>You will also need to review the other optional fields. As a note, we recommend lowering the value for <b>Packets Sent</b>; however, the greater the quantity, the more accurate the test results will be.</p>
+        <p>You may select to run the <b>UDP Benchmark</b> or <b>TCP Benchmark</b> tests. These are run independently, and the order they are run in does not matter. Results for the number of packets received and lost, data size, transfer time, and network bandwidth are displayed. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_testtool_2.png" style="width: 394px;height: 357px;" class="noborder" /></MadCap:expandingBody></MadCap:expanding></p>
+        <h2><a name="Conference"></a>Conference Monitoring</h2>
+        <p>The <b>Conference Monitoring</b> tab provides CPU usage measurements for the Solstice app, Solstice Conference, and Solstice Virtual Display. </p>
+        <p>Before you begin monitoring, you will need to start a Solstice Conference session with the following:</p>
+        <ul>
+            <li>Solstice app running</li>
+            <li>Web conference running and bridged to Solstice</li>
+            <li>Solstice display (i.e. screen 2) shared in the web conference</li>
+        </ul>
+        <p>Once the above Solstice Conference session is running, select <b>Start Monitoring</b> and run through a working conference session to see how the system resources are utilized by the application. You may select <b>Stop Monitoring</b> at any time. <MadCap:expanding><MadCap:expandingHead>Example</MadCap:expandingHead><MadCap:expandingBody><br /><img src="../Resources/Images/ex_testtool_3.png" style="width: 394px;height: 357px;" class="noborder" /></MadCap:expandingBody></MadCap:expanding></p>
+        <p>The scale is identical to the one used by the Windows Task Manager, so CPU usage is divided by the number of cores within the laptop’s processor. For example, a CPU usage reading of 10% indicates an average load of 10% across all cores. </p>
+        <h2><a name="Version"></a>Version Information</h2>
+        <p>The <b>Version Information</b> tab provides information about the application’s release date and coinciding Solstice release as well as applicable Copyright information.</p>
+        <p><a href="#top">Back to Top</a>
+        </p>
+    </body>
+</html>

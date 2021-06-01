@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Select one or more Pods from the list of Your Solstice Instances.</li>
+            <li>Go to the <b>Appearance and Usage</b> tab.</li>
+            <li>In the Appearance section under Connection Instructions Overlay, select the radio button to either <b>Hide</b> or <b>Show instructions overlay</b>. </li>
+            <li>To hide or show the room calendar overlay, select or deselect the <b>Show calendar overlay</b> checkbox.</li>
+            <li>Click <b>Apply</b>. </li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul>
+            <li>
+                        Close the Solstice app window by clicking the Close 'X' icon. Solstice will ask if you wish to disconnect from the display and stop sharing all content. If yes, click <b>Disconnect</b>.
+</li>
+            <li>With the app open and connected, click the <b>Disconnect</b> button at the top of app.  A pop-up will ask you to confirm that you want to end the meeting and disconnect from the Pod. </li>
+            <li>If                   your Solstice app is minimized, click the Solstice icon in system tray, and then click Disconnect. Note that this option will only be visible if you have an active meeting.</li>
+        </ul>
+    </body>
+</html>
