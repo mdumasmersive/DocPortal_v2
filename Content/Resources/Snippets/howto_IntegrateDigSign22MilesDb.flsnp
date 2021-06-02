@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Open Solstice Dashboard.</li>
+            <li>In the list of Your Solstice Instances, select the Pod you want to display 22Miles Digital Signage on.</li>
+            <li>Go to the&#160;<b>Digital Signage</b>&#160;tab, <b>Enable</b>&#160;the&#160;digital&#160;signage&#160;feature, and select a display mode.</li>
+            <li>In <b>Source URL</b>, enter the URL for the desired 22Miles digital signage device, which should look similar to the following: http://h5.22miles.com/wl/[shortcode from 22Miles]</li>
+            <li>Click&#160;<b>Apply</b>. The Pod’s display will show the content assigned to that 22Miles device URL.</li>
+        </ol>
+    </body>
+</html>

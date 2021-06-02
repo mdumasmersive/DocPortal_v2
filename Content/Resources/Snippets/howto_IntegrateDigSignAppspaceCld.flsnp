@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ol>
+            <li>Log in to Solstice Cloud at <a href="../../PDF/Solstice_22Miles_Digital_Signage.pdf/#https://cloud.mersive.com/">https://cloud.mersive.com/</a>.</li>
+            <li>Go to <b>Manage</b> &gt; <b>Pods</b> and click the name of the Pod you want to display Carousel Digital Signage content on.</li>
+            <li>Scroll down and click the down arrow to expand the <b>Digital Signage</b> settings.</li>
+            <li>Check <b>Enable Digital Signage</b> and select the&#160;<b>Footer Only</b>&#160;display option.&#160;<p class="note"> The Footer Only option is selected here to enable proper viewing of the Appspace registration code. This setting can be changed after your device is registered with&#160;Appspace.</p></li>
+            <li>In the&#160;<b>Source URL</b>&#160;field, enter&#160;'https://cloud.appspace.com/app/' and click&#160;<b>Save as Unassigned</b>. The Pod’s display will show an&#160;Appspace&#160;screen with a registration code.<br /></li>
+            <li>
+                <p>Log in to Appspace and go to the dashboard. Enter the registration code in the&#160;<b>Device Registration</b>&#160;section, then click&#160;<b>Go</b>.<p><img src="../Images/ex_registerdevice.png" style="width: 475px;height: 384px;" /></p></p>
+            </li>
+            <li>Complete the fields&#160;to register your device&#160;and assign a channel.</li>
+            <li>Click&#160;<b>Register</b>. The Pod will begin&#160;displaying the content from the assigned&#160;Appspace&#160;channel.</li>
+        </ol>
+    </body>
+</html>
