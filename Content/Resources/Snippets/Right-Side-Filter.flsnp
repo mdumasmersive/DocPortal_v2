@@ -2,11 +2,11 @@
 <html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <body>
         <ol>
-            <li>Click <img src="../Images/AnalyticsInRoomTechFilter.png" style="max-width: 50%;width: 70px;height: 28px;" />.
-				<p>Filter by Category displays over the right side of the page.</p></li>
-            <li>Click the <img src="../Images/i_down-large.png" style="width: 24px;height: auto;" /> icon for each category to reveal the available category options.</li>
+            <li>Click <img src="../Images/AnalyticsInRoomTechFilter.png" style="max-width: 50%;width: 70px;height: 28px;" alt="blue Filter button" />.
+A Filter by Category pane displays over the right side of the page.<![CDATA[		]]></li>
+            <li>Click the <img src="../Images/i_down-large.png" style="width: 24px;height: auto;" alt="black down arrow" /> icon for each category to reveal the available category options.</li>
             <li>Select the options you want to filter for in each category.</li>
-            <li>Click the <img src="../Images/i_XonWhite-Close.png" style="width: 24px;height: auto;" /> icon to view the table with the selected filters applied.</li>
+            <li>Click the <img src="../Images/i_XonWhite-Close.png" style="width: 24px;height: auto;" alt="black X (close)" /> icon to view the table with the selected filters applied.</li>
         </ol>
         <p>The Filter by Category section lists all the categories that have been defined in Solstice Cloud. Clicking on any of the categories displays all the defined options for that category and indicates how many displays have that option set. When you select one or more options under that category, the table will display all Pods that belong to ANY of the selected options.</p>
         <p>However, when you make selections in a second category, the table will only display Pods that belong to either option selected in the first category AND either option selected in the second category.</p>
